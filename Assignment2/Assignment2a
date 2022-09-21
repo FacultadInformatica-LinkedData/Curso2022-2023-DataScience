@@ -1,0 +1,16 @@
+Turtle serialization
+
+@base <http://www.w3.org/example/> .
+@prefix m: <http://www.w3.org/relation/> .
+
+<Class01> m:includes <Sensor029>,
+	             <Computer101> .
+
+<Sensor029> m:hasMeasurement <Measurement8401> .
+
+<Measurement8401> m:hasTemperature "29" ;
+	          m:atTime "2010-06 12T12:00:12" .
+
+<Computer101> m:hasOwner <User10A> .
+
+<User10A> m:hasName "Pedro" .
