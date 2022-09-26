@@ -1,0 +1,21 @@
+@prefix clase: <http://www.accion.com/> .
+@prefix dispositivo: <http://www.dispositivo.org/> .
+@prefix informacion: <http://www.informacion.org/> .
+@prefix usuario: <http://www.usuario.org/> .
+@prefix relacion: <http://www.relacion.org/> .
+
+
+clase:Class01 
+    relacion:includes dispositivo:Sensor209;
+    relacion:includes dispositivo:Computer101.
+
+dispositivo:Sensor209 relacion:hasMeasurment informacion:Measurment8401.
+
+dispositivo:Computer101 relacion:hasOwner usuario:User10A.
+
+informacion:hasMeasurment8401
+    relacion:hasTempereature informacion:29;
+    relacion:atTime informacion:2010-06-12T12:00:12.
+
+usuario:User10A
+    relacion:hasName usuario:Pedro.
