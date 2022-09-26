@@ -1,19 +1,20 @@
 Turtle serialization option 1:
 
 @base <http://www.w3.org/example/> .
-@prefix m: <http://www.w3.org/relation/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema>.
+@prefix : <http://www.w3.org/relation/> .
 
-<Class01> m:includes <Sensor029>,
+<Class01> :includes <Sensor029>,
 	             <Computer101> .
 
-<Sensor029> m:hasMeasurement <Measurement8401> .
+<Sensor029> :hasMeasurement <Measurement8401> .
 
-<Measurement8401> m:hasTemperature "29" ;
-	          m:atTime "2010-06 12T12:00:12" .
+<Measurement8401> :hasTemperature "29"^^xsd:integer;
+	          :atTime "2010-06 12T12:00:12"^^xsd:dateTime.
 
-<Computer101> m:hasOwner <User10A> .
+<Computer101> :hasOwner <User10A> .
 
-<User10A> m:hasName "Pedro" .
+<User10A> :hasName "Pedro" .
 
 
 
@@ -27,8 +28,8 @@ Turtle serialization option 2:
 
 :Sensor029 m:hasMeasurement :Measurement8401 .
 
-:Measurement8401 m:hasTemperature "29" ;
-	          m:atTime "2010-06 12T12:00:12" .
+:Measurement8401 m:hasTemperature "29"^^xsd:integer ;
+	          m:atTime "2010-06 12T12:00:12"^^xsd:dateTime .
 
 :Computer101 m:hasOwner :User10A .
 
@@ -46,8 +47,8 @@ Trutle serialization option 3:
 
 :Sensor029 foaf:hasMeasurement :Measurement8401 .
 
-:Measurement8401 foaf:hasTemperature "29" ;
-	          foaf:atTime "2010-06 12T12:00:12" .
+:Measurement8401 foaf:hasTemperature "29"^^xsd:integer ;
+	          foaf:atTime "2010-06 12T12:00:12"^^xsd:dateTime .
 
 :Computer101 foaf:hasOwner :User10A .
 
