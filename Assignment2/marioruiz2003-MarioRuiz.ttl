@@ -14,3 +14,4 @@
      rdfs:atTime "2010-06-12T12:00:12".
 
 :User10A rdfs:hasName "Pedro".
+   
