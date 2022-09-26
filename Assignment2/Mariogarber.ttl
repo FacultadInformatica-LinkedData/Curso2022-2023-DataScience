@@ -1,21 +1,21 @@
-@prefix date: <http://www.w3.org/2001/XMLSchema#date> .
-@prefix event: <http://upm.event.org/> .
-@prefix vocab: <http://upm.vocabulary.org/>.
-@prefix prof: <http://upm.proffesors.org/>.
+@prefix time: <http://time.real.org/>.
+@prefix n: <http://numbers.org/>.
+@prefix person: <http://upm.persons.org/>.
+@prefix user: <http://upm.users.org/>.
+@prefix class: <http://upm.class.org/> .
+@prefix voc: <http://upm.vocabulary.org/>.
+@prefix device: <http://upm.device.org/>.
 
-event:event1 vocab:exists event:event1.
+class:Class01
+   voc:includes device:Computer101;
+   voc:includes device:Sensor029.
 
-event:event2 vocab:exists event:event2.
+device:Sensor029 voc:hasMeasurement device:Measurement8401.
 
-event:event3
-   vocab:involves prof:PinarAlper;
-   vocab:involves prof:CaroleGoble;
-   date: "2006-05-15".
+device:Computer101 voc:hasOwner user:User10A.
 
-event:event4
-   vocab:involves prof:OscarCorcho;
-   date: "2006-05-16".
+user:User10A voc:hasNane person:Pedro.
 
-event:event5
-   vocab:involves prof:CaroleGoble;
-   date: "2006-05-15".
+device:Measurement8401 
+   voc:hasTemperature n:29;
+   voc:atTime time:2010-06-12T12:00:12.
