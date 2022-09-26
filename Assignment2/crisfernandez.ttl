@@ -1,0 +1,13 @@
+@prefix:<http://example.org/assignment2/#>.
+@prefix pred:<http://example.org/assignment2/predicates#>.
+@prefix xsd:<http://www.w3.org/2001/XMLSchema#>.
+
+:Class01 pred:includes :Sensor029;pred:includes :Computer101.
+
+:Sensor029 pred:hasMeasurement :Measurement8401.
+
+:Measurement8401 pred:hasTemperature "29"^^xsd:integer;
+pred:atTime "2010-06-12T12"^^xsd:date.
+
+:Computer101 pred:hasOwner :User10A.
+:User10A pred:hasName "Pedro".
