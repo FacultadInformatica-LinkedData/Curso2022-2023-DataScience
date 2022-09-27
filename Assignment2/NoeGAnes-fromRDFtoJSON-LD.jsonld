@@ -1,0 +1,43 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Person",
+  "@id":"http://mypersonalpage.com/personalinfo",
+  "name": "Noe",
+  "hometown": "Madrid",
+  "age":"24",
+  "almaMater":"Universidad Politécnica de Madrid",
+  "parentsName":["Sandra", "Lina"] ,
+  "subjects":[
+  	{"@type": "subject",
+	"@id":"http://upm.es/grados/GCDIA/subjects/KG",
+		"name":"Knowledge Graphs", 
+		"teachers":["OscarCorcho", "" ],
+       "briefDescription":""
+	   },
+	{"@type": "subject",
+	"@id":"http://upm.es/grados/GCDIA/subjects/AI",
+		"name": "Artificial Intelligence",
+		"teachers": ["teacher1", "teacher2"],
+       "briefDescription":""
+	   },
+	{"@type": "subject",
+	"@id":"http://upm.es/grados/GCDIA/subjects/NA",
+		"name":"Numerical Algorithm",
+		"teachers": ["teacher1", "teacher2"],
+		"briefDescription":""
+	},
+	{"@type": "subject",
+	"@id":"http://upm.es/grados/GCDIA/subjects/P",
+		"name":"Programming",
+		"teachers": ["teacher1", "teacher2"],
+		"briefDescription":""
+	},
+	{"@type": "subject",
+	"@id":"http://upm.es/grados/GCDIA/subjects/NLP",
+		"name":"NPL",
+		"teachers": ["teacher1", "teacher2"],
+		"briefDescription":"Natural Languague Processing"
+	}
+    
+  ]
+}
