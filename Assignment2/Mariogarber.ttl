@@ -1,5 +1,3 @@
-@prefix time: <http://time.real.org/>.
-@prefix n: <http://numbers.org/>.
 @prefix person: <http://upm.persons.org/>.
 @prefix user: <http://upm.users.org/>.
 @prefix class: <http://upm.class.org/> .
@@ -17,5 +15,5 @@ device:Computer101 voc:hasOwner user:User10A.
 user:User10A voc:hasNane person:Pedro.
 
 device:Measurement8401 
-   voc:hasTemperature n:29;
-   voc:atTime time:2010-06-12T12:00:12.
+   voc:hasTemperature "29";
+   voc:atTime "2010-06-12T12:00:12".
