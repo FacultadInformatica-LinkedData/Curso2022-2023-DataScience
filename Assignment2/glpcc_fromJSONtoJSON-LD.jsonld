@@ -1,0 +1,45 @@
+{
+    "fullName":"Gonzalo Lope Carrasco",
+    "homeTown":"Las Rozas de Madrid",
+    "age":19,
+    "almaMater": "Universidad Politecnica de Madrid",
+    "parentsNames":["Pedro","Maria"],
+    "subjects":[
+        {
+            "name": "Inteligencia Artificial",
+            "teachers":[
+                "Asunción Gómez Pérez"
+            ],
+            "briefDescription": "Introduccion a la Inteligencia Artificial y sus aplicaciones"
+        },
+        {
+            "name": "Algoritmica numerica",
+            "teachers":[
+                "Antonio Tabernero", "Esther Dopazo"
+            ],
+            "briefDescription": "Resolver problemas de las matemáticas “continuas” a través de métodos numéricos de discretización."
+        },
+        {
+            "name": "Procesamiento del lenguaje natural",
+            "teachers":[
+                "Mariano Rico", "Pablo Calleja"
+            ],
+            "briefDescription": "Introduccion al procesamiento natural del lenguaje con R"
+        },
+        {
+            "name": "Web Semántica, Linked Data y Grafos de Conocimientos",
+            "teachers":[
+                "Oscar Corcho", "Raul García Castro"
+            ],
+            "briefDescription": "Introduccion a la Inteligencia Artificial y sus aplicaciones"
+        },
+        {
+            "name": "Inteligencia Artificial",
+            "teachers":[
+                "Asunción Gómez Pérez"
+            ],
+            "briefDescription": "Introduccion a la Inteligencia Artificial y sus aplicaciones"
+        }
+    ]
+
+}
