@@ -1,0 +1,48 @@
+{
+    "@context": {
+        "@atTime": "http://www.assignment2.es/ejer1b/attributes#atTime",
+        "@hasMeasurement": "http://www.assignment2.es/ejer1b/attributes#hasMeasurement",
+        "@hasName": "http://www.assignment2.es/ejer1b/attributes#hasName",
+        "@hasOwner": "http://www.assignment2.es/ejer1b/attributes#hasOwner",
+        "@hasTemperature": "http://www.assignment2.es/ejer1b/attributes#hasTemperature",
+        "@includes": "http://www.assignment2.es/ejer1b/attributes#includes",
+        "@xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+        {
+            "@hasName": "Pedro",
+            "@id": "http://www.assignment2.es/ejer1b/#User10A"
+        },
+        {
+            "@id": "http://www.assignment2.es/ejer1b/#Class01",
+            "@includes": [
+                {
+                    "@id": "http://www.assignment2.es/ejer1b/#Sensor029"
+                },
+                {
+                    "@id": "http://www.assignment2.es/ejer1b/#Computer101"
+                }
+            ]
+        },
+        {
+            "@hasOwner": {
+                "@id": "http://www.assignment2.es/ejer1b/#User10A"
+            },
+            "@id": "http://www.assignment2.es/ejer1b/#Computer101"
+        },
+        {
+            "@hasMeasurement": {
+                "@id": "http://www.assignment2.es/ejer1b/#Measurement8401"
+            },
+            "@id": "http://www.assignment2.es/ejer1b/#Sensor029"
+        },
+        {
+            "@atTime": {
+                "@type": "@xsd:dateTime",
+                "@value": "2010-06-12T12:00:12"
+            },
+            "@hasTemperature": 29,
+            "@id": "http://www.assignment2.es/ejer1b/#Measurement8401"
+        }
+    ]
+}

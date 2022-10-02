@@ -1,0 +1,15 @@
+@prefix: <http://www.oeg-upm.net/ontologies/ejercicio1b/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix vocab: <http://www.ontologies.org/ontologies/ejercicio1b#>.
+
+:Class01 vocab:includes :Sensor09;
+         vocab:includes :Computer101.
+
+:Sensor09 vocab:hasMeasurement :Measurement8401.
+
+:Computer101 vocab:hasOwner :User10A.
+
+:Measurement8401 vocab:hasTemperature "29"^^xsd:integer;
+                 vocab:atTime "2010-06-12t12:00:12"^^xsd:dateTime.
+
+:User10A vocab:hasName "Pedro"^^xsd:string.

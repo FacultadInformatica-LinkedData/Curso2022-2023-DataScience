@@ -1,0 +1,20 @@
+@prefix element: <http://www.ejer1b.es/#> .
+@prefix attr: <http://www.ejer1b.es/attributes/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+element:Class01    
+attr:includes element:Sensor029;
+attr:includes element:Computer101.
+
+element:Sensor029
+attr:hasMeasurment element:Measurment8401.
+
+element:Measurment8401
+attr:hasTemperature 29;
+attr:atTime "2010-06-12T12:00:12"^^xsd:datetime.
+
+element:Computer101
+attr:hasOwner element:User10A.
+
+element:User10A
+attr:hasName "Pedro".
