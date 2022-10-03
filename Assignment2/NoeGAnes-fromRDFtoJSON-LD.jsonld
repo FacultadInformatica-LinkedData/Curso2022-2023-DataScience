@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema"
+  },
+  "@graph": [
+    {
+      "@id": "http://www.w3.org/example/Class01",
+      "http://www.w3.org/relation/includes": [
+        {
+          "@id": "http://www.w3.org/example/Sensor029"
+        },
+        {
+          "@id": "http://www.w3.org/example/Computer101"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/example/Sensor029",
+      "http://www.w3.org/relation/hasMeasurement": {
+        "@id": "http://www.w3.org/example/Measurement8401"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/example/Computer101",
+      "http://www.w3.org/relation/hasOwner": {
+        "@id": "http://www.w3.org/example/User10A"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/example/Measurement8401",
+      "http://www.w3.org/relation/hasTemperature": {
+        "@type": "http://www.w3.org/2001/XMLSchemainteger",
+        "@value": "29"
+      },
+      "http://www.w3.org/relation/atTime": {
+        "@type": "http://www.w3.org/2001/XMLSchemadateTime",
+        "@value": "2010-06 12T12:00:12"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/example/User10A",
+      "http://www.w3.org/relation/hasName": "Pedro"
+    }
+  ]
+}
