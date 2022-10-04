@@ -1,0 +1,54 @@
+{
+    "@context": {
+        "@atTime": "http://www.oeg-upm.net/ejercicio2b/Vocabulary#atTime",
+        "@hasMeasurement": "http://www.oeg-upm.net/ejercicio2b/Vocabulary#hasMeasurement",
+        "@hasName": "http://www.oeg-upm.net/ejercicio2b/Vocabulary#hasName",
+        "@hasOwner": "http://www.oeg-upm.net/ejercicio2b/Vocabulary#hasOwner",
+        "@hasTemperature": "http://www.oeg-upm.net/ejercicio2b/Vocabulary#hasTemperature",
+        "@includes": "http://www.oeg-upm.net/ejercicio2b/Vocabulary#includes",
+        "@xsd": "http://www.w3c.org/2001/XMLShema#"
+    },
+    "@graph": [
+        {
+            "@hasMeasurement": {
+                "@id": "http://www.oeg-upm.net/ejercicio2b#Measurement8401"
+            },
+            "@id": "http://www.oeg-upm.net/ejercicio2b#Sensor09"
+        },
+        {
+            "@atTime": {
+                "@type": "@xsd:dateTime",
+                "@value": "2010-06-12t12:00:12"
+            },
+            "@hasTemperature": {
+                "@type": "@xsd:integer",
+                "@value": "29"
+            },
+            "@id": "http://www.oeg-upm.net/ejercicio2b#Measurement8401"
+        },
+        {
+            "@id": "http://www.oeg-upm.net/ejercicio2b#Class01",
+            "@includes": [
+                {
+                    "@id": "http://www.oeg-upm.net/ejercicio2b#Sensor09"
+                },
+                {
+                    "@id": "http://www.oeg-upm.net/ejercicio2b#Computer101"
+                }
+            ]
+        },
+        {
+            "@hasName": {
+                "@type": "@xsd:string",
+                "@value": "Pedro"
+            },
+            "@id": "http://www.oeg-upm.net/ejercicio2b#User10A"
+        },
+        {
+            "@hasOwner": {
+                "@id": "http://www.oeg-upm.net/ejercicio2b#User10A"
+            },
+            "@id": "http://www.oeg-upm.net/ejercicio2b#Computer101"
+        }
+    ]
+}
