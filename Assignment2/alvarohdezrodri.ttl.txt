@@ -1,6 +1,6 @@
 @prefix : <http://example.org/#>.
 @prefix att: <http://example.org/Attributes#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>. 
 
 :Class01 att:includes :Sensor029; 
          att:includes :Computer101.
