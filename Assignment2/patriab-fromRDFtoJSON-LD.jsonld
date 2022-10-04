@@ -1,0 +1,47 @@
+{
+  "@context": {
+    "ejer": "http://www.assignment2.org/ejer2b/#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dbo": "http://www.assignment2.org/ejer2b/dbo#"
+  },
+  "@graph": [
+    {
+      "@id": "http://www.assignment2.org/ejer2b/#Class01",
+      "dbo:includes": [
+        {
+          "@id": "http://www.assignment2.org/ejer2b/#Sensor029"
+        },
+        {
+          "@id": "http://www.assignment2.org/ejer2b/#Computer101"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.assignment2.org/ejer2b/#Sensor029",
+      "dbo:hasMeasurement": {
+        "@id": "http://www.assignment2.org/ejer2b/#Measurement8401"
+      }
+    },
+    {
+      "@id": "http://www.assignment2.org/ejer2b/#Computer101",
+      "dbo:hasOwner": {
+        "@id": "http://www.assignment2.org/ejer2b/#User10A"
+      }
+    },
+    {
+      "@id": "http://www.assignment2.org/ejer2b/#User10A",
+      "dbo:hasName": {
+        "@value": "Pedro",
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "http://www.assignment2.org/ejer2b/#Measurement8401",
+      "dbo:atTime": {
+        "@value": "2010-06-12T12:0http://www.assignment2.org/ejer2b/#12",
+        "@type": "xsd:dateTime"
+      },
+      "dbo:hasTemperature": 29
+    }
+  ]
+}
