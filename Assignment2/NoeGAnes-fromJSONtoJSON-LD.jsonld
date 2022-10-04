@@ -7,35 +7,35 @@
   "age":"24",
   "affiliation":"Universidad Politécnica de Madrid",
   "parent":["Sandra", "Lina"] ,
-  "subjects":[
-  	{"@type": "subject",
+  "courses":[
+  	{"@type": "course",
 	"@id":"http://upm.es/grados/GCDIA/subjects/KG",
 		"name":"Knowledge Graphs", 
-		"teachers":["OscarCorcho", "" ],
+		"instructor":["OscarCorcho", "" ],
        "briefDescription":""
 	   },
-	{"@type": "subject",
+	{"@type": "course",
 	"@id":"http://upm.es/grados/GCDIA/subjects/AI",
 		"name": "Artificial Intelligence",
-		"teachers": ["teacher1", "teacher2"],
+		"instructor": ["teacher1", "teacher2"],
        "briefDescription":""
 	   },
-	{"@type": "subject",
+	{"@type": "course",
 	"@id":"http://upm.es/grados/GCDIA/subjects/NA",
 		"name":"Numerical Algorithm",
-		"teachers": ["teacher1", "teacher2"],
+		"instructor": ["teacher1", "teacher2"],
 		"briefDescription":""
 	},
-	{"@type": "subject",
+	{"@type": "course",
 	"@id":"http://upm.es/grados/GCDIA/subjects/P",
 		"name":"Programming",
-		"teachers": ["teacher1", "teacher2"],
+		"instructor": ["teacher1", "teacher2"],
 		"briefDescription":""
 	},
-	{"@type": "subject",
+	{"@type": "course",
 	"@id":"http://upm.es/grados/GCDIA/subjects/NLP",
 		"name":"NPL",
-		"teachers": ["teacher1", "teacher2"],
+		"instructor": ["teacher1", "teacher2"],
 		"briefDescription":"Natural Languague Processing"
 	}
     
