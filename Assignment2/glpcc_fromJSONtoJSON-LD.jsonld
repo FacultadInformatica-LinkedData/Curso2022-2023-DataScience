@@ -1,44 +1,124 @@
 {
+    "@context":{
+        "ej":"http://www.assignment2.org/ejer2b/",
+        "rdfs":"http://www.w3.org/2000/01/rdf-schema#",
+        "foaf":"http://www.w3.org/2000/01/foaf#",
+        "xsd":"http://www.w3.org/2001/XMLSchema#",
+        "fullName": "foaf:name",
+        "name":"rdf:label",
+        "homeTown": "rdfs:label",
+        "almaMater": "rdfs:label",
+        "parents": "rdfs:container",
+        "subjects": "rdfs:container",
+        "universitySubject": "http://www.assignment2.org/ejer2b/universitySubject",
+        "briefDescription": "rdfs:comment"
+    },
+    "@id":"ej:GonzaloLopeCarrasco",
     "fullName":"Gonzalo Lope Carrasco",
     "homeTown":"Las Rozas de Madrid",
     "age":19,
     "almaMater": "Universidad Politecnica de Madrid",
-    "parentsNames":["Pedro","Maria"],
+    "parents":[
+    {
+        "@id":"ej:GonzaloLopeCarrasco/parents/Pedro",
+        "@type":"foaf:Person",
+        "fullName":"Pedro Lope"
+    },
+    {
+        "@id":"ej:GonzaloLopeCarrasco/parents/Maria",
+        "@type":"foaf:Person",
+        "fullName":"Maria Carrasco"       
+    }],
     "subjects":[
         {
+            "@id":"ej:GonzaloLopeCarrasco/subjects/InteligenciaArtificial",
+            "@type":"universitySubject",
             "name": "Inteligencia Artificial",
             "teachers":[
-                "Asunción Gómez Pérez"
+                {
+                    "@id":"ej:GonzaloLopeCarrasco/subjects/InteligenciaArtificial/teachers/AsunciónGómezPérez",
+                    "@type":"foaf:Person",
+                    "fullName":"Asunción Gómez Pérez"
+                }
             ],
             "briefDescription": "Introduccion a la Inteligencia Artificial y sus aplicaciones"
         },
         {
+            "@id":"ej:GonzaloLopeCarrasco/subjects/AlgoritmicaNumerica",
+            "@type":"universitySubject",
             "name": "Algoritmica numerica",
             "teachers":[
-                "Antonio Tabernero", "Esther Dopazo"
+                {
+                    "@id":"ej:GonzaloLopeCarrasco/subjects/AlgoritmicaNumerica/teachers/AntonioTabernero",
+                    "@type":"foaf:Person",
+                    "fullName":"Antonio Tabernero"
+                },
+                {
+                    "@id":"ej:GonzaloLopeCarrasco/subjects/AlgoritmicaNumerica/teachers/EstherDopazo",
+                    "@type":"foaf:Person",
+                    "fullName":"Esther Dopazo"
+                }
             ],
             "briefDescription": "Resolver problemas de las matemáticas “continuas” a través de métodos numéricos de discretización."
         },
         {
+            "@id":"ej:GonzaloLopeCarrasco/subjects/ProcesamientoDelLenguajeNatural",
+            "@type":"universitySubject",
             "name": "Procesamiento del lenguaje natural",
             "teachers":[
-                "Mariano Rico", "Pablo Calleja"
+                {
+                    "@id":"ej:GonzaloLopeCarrasco/subjects/ProcesamientoDelLenguajeNatural/teachers/MarianoRico",
+                    "@type":"foaf:Person",
+                    "fullName":"Mariano Rico"
+                },
+                {
+                    "@id":"ej:GonzaloLopeCarrasco/subjects/ProcesamientoDelLenguajeNatural/teachers/PabloCalleja",
+                    "@type":"foaf:Person",
+                    "fullName":"Pablo Calleja"
+                }
             ],
             "briefDescription": "Introduccion al procesamiento natural del lenguaje con R"
         },
         {
+            "@id":"ej:GonzaloLopeCarrasco/subjects/WebSemánticaLinkedDataYGrafoDeConocimientos",
+            "@type":"universitySubject",
             "name": "Web Semántica, Linked Data y Grafos de Conocimientos",
             "teachers":[
-                "Oscar Corcho", "Raul García Castro"
+                {
+                    "@id":"ej:GonzaloLopeCarrasco/subjects/WebSemánticaLinkedDataYGrafoDeConocimientos/teachers/OscarCorcho",
+                    "@type":"foaf:Person",
+                    "fullName":"Oscar Corcho"
+                },
+                {
+                    "@id":"ej:GonzaloLopeCarrasco/subjects/WebSemánticaLinkedDataYGrafoDeConocimientos/teachers/PabloCalleja",
+                    "@type":"foaf:Person",
+                    "fullName":"Pablo Calleja"
+                }
             ],
-            "briefDescription": "Introduccion a la Inteligencia Artificial y sus aplicaciones"
+            "briefDescription": "Introduccion al mundo de los grafos de conocimiento y la web semantica"
         },
         {
-            "name": "Inteligencia Artificial",
+            "@id":"ej:GonzaloLopeCarrasco/subjects/ProgramacionParaLaCienciaDeDatos",
+            "@type":"universitySubject",
+            "name": "Programacion para la ciencia de datos",
             "teachers":[
-                "Asunción Gómez Pérez"
+                {
+                    "@id":"ej:GonzaloLopeCarrasco/subjects/ProgramacionParaLaCienciaDeDatos/teachers/GuillermoVigueras",
+                    "@type":"foaf:Person",
+                    "fullName":"Guillermo Vigueras"
+                },
+                {
+                    "@id":"ej:GonzaloLopeCarrasco/subjects/ProgramacionParaLaCienciaDeDatos/teachers/SergioParaíso",
+                    "@type":"foaf:Person",
+                    "fullName":"SergioParaíso"
+                },
+                {
+                    "@id":"ej:GonzaloLopeCarrasco/subjects/ProgramacionParaLaCienciaDeDatos/teachers/AntonioDíaz",
+                    "@type":"foaf:Person",
+                    "fullName":"Antonio Díaz"
+                }
             ],
-            "briefDescription": "Introduccion a la Inteligencia Artificial y sus aplicaciones"
+            "briefDescription": "Programación en python para tareas de la ciencia de datos"
         }
     ]
 
