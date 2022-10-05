@@ -2,15 +2,15 @@
 	"@context":{
 		"GCDIA":"http://www.upm.es/GCDIA/",
 		"fullname":"rdfs:label",
-		"hometown":"http://www.ComunidadDeMadrid/barrios/",
-		"age":"rdfs:label",
-		"AlmaMaters":"http://www.ComunidadDeMadrid/universidades/",
+		"hometown":"http://www.ComunidadDeMadrid.es/barrios/",
+		"age":"http://www.upm.es/EdadAlumnos/",
+		"AlmaMaters":"http://www.ComunidadDeMadrid.es/universidades/",
 		"NameOfParents":"rdfs:label",
-		"subjects":"http://www.ComunidadDeMadrid/universidades/UPM/asignaturas/",
+		"subjects":"http://www.ComunidadDeMadrid.es/universidades/UPM/asignaturas/",
 		"Name":"rdfs:label",
 		"Teachers":"GCDIA:Profesores/",
 		"Description":"GCDIA:KnowledgeGraphs/Description/"
-	}
+	},
 	"@id":"http://www.upm.es/GCDIA/alumno/21c025",
 	"@type":"GCDIA:alumno",
 	"fullname": "Mario García Berenguer",
