@@ -1,0 +1,14 @@
+Query 1:
+SELECT ?p ?o
+{
+<http://dbpedia.org/ontology/Politician> ?p ?o
+}
+
+Query 2:
+SELECT ?p ?o
+{
+<http://dbpedia.org/ontology/Politician> ?p ?o
+MINUS {<http://dbpedia.org/ontology/Politician> rdf:type ?o}
+}
+
+property
