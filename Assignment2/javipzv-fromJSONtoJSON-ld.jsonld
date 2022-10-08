@@ -1,0 +1,151 @@
+{
+    "@context":{"name":"https://JavierPerezVargas/name",
+               "surname":"https://JavierPerezVargas/surname",
+               "age":"https://JavierPerezVargas/age",
+               "place":"https://JavierPerezVargas/place",
+               "mother":"https://JavierPerezVargas/mother",
+               "person":"https://JavierPerezVargas/person",
+               "father":"https://JavierPerezVargas/father",
+               "subject":"https://JavierPerezVargas/subject",
+               "organization":"https://JavierPerezVargas/organization",
+               "description":"https://JavierPerezVargas/description"
+                },
+    
+    "@type":"Person",
+    
+    "name":{"@id":"https://JavierPerezVargas/name/#Javier",
+                "@type":"name",
+                "name":"Javier",
+                "surname":"Pérez"},
+    
+    "hometown":{"@id":"https://JavierPerezVargas/hometown/#Ribadeo",
+                "@type":"place",
+                "name":"Ribadeo"},
+    
+    "Age":{"@id":"https://JavierPerezVargas/age/#19",
+                "@type":"age",
+                "name":"19"},
+    
+    "Alma mater":{"@id":"https://JavierPerezVargas/organization/#UniversidadPolitécnicaDeMadrid",
+                "@type":"organization",
+                "name":"Universidad Politécnica de Madrid"},
+    
+    "Parents name":[{"@id":"https://JavierPerezVargas/mother/#Margarita",
+                     "@type":"person",
+                     "name":"Margarita",
+                     "surname":"Vargas"},
+                     
+                    {"@id":"https://JavierPerezVargas/father/#Antonio",
+                     "@type":"person",
+                     "name":"Antonio",
+                     "surname":"Pérez"}],
+                     
+    "Subjects Set":[
+      {"@id":"https://JavierPerezVargas/subject/#AlgorítmicaNumérica",
+       "@type":"subject",
+       "name":"Algorítmica Numérica",
+       "Teacher1":{"@id":"https://JavierPerezVargas/teacher/#AntonioTabernero",
+                   "@type":"person",
+                   "name":"Antonio",
+                     "surname":"Tabernero"},
+       
+       "Teacher2":{"@id":"https://JavierPerezVargas/teacher/#EstherDopazo",
+                   "@type":"person",
+                   "name":"Esther",
+                   "surname":"Dopazo"},
+                    "Brief Description":{"@id":"https://JavierPerezVargas/description/#DescAlgNum",
+                                        "@type":"description",
+                                        "text":"Curso introductorio a los métodos numéricos y su implementación en Matlab."}
+      },
+      
+      {"@id":"https://JavierPerezVargas/subject/#ProcesamientodeLenguajeNatural",
+       "@type":"subject",
+       "name":"Procesamiento de Lenguaje Natural",
+       "Teacher1":{"@id":"https://JavierPerezVargas/teacher/#MarianoRico",
+                   "@type":"person",
+                   "name":"Mariano",
+                     "surname":"Rico"},
+       
+       "Teacher2":{"@id":"https://JavierPerezVargas/teacher/#PabloCalleja",
+                   "@type":"person",
+                   "name":"Pablo",
+                     "surname":"Calleja"},
+                    "Brief Description":{"@id":"https://JavierPerezVargas/description/#DescPLN",
+                                        "@type":"description",
+                                        "text":"Fundamentos de las técnicas básicas para realizar análisis morfológicos y sintácticos de forma automática."}
+                          
+      },
+      
+      {"@id":"https://JavierPerezVargas/subject/#InteligenciaArtificial",
+       "@type":"subject",
+       "name":"Inteligencia Artificial",
+       "Teacher1":{"@id":"https://JavierPerezVargas/teacher/#DanielManrique",
+                   "@type":"person",
+                   "name":"Daniel",
+                     "surname":"Manrique"},
+       
+       "Teacher2":{"@id":"https://JavierPerezVargas/teacher/#AsunciónGómez",
+                   "@type":"person",
+                   "name":"Asunción",
+                     "surname":"Gómez"},
+                    "Brief Description":{"@id":"https://JavierPerezVargas/description/#DescIA",
+                                        "@type":"description",
+                                        "text":"Lenguajes formales de representación de diferentes tipos de conocimiento así como sus modelos específicos de razonamiento para afrontar problemas reales."}
+       
+      
+      },
+      
+      {"@id":"https://JavierPerezVargas/subject/#ProgramaciónParaCienciaDeDatos",
+       "@type":"subject",
+       "name":"Programación para Ciencia de Datos",
+       "Teacher1":{"@id":"https://JavierPerezVargas/teacher/#AntonioJesúsDíaz",
+                   "@type":"person",
+                   "name":"Antonio Jesús",
+                     "surname":"Díaz"},
+       
+       "Teacher2":{"@id":"https://JavierPerezVargas/teacher/#GuillermoAntonioVigueras",
+                   "@type":"person",
+                   "name":"Guillermo Antonio",
+                     "surname":"Vigueras"},
+                    "Brief Description":{"@id":"https://JavierPerezVargas/description/#DescProgCD",
+                                        "@type":"description",
+                                        "text":"Proporciona una visión práctica de la programación para tratamiento y visualización de datos, utilizando como lenguaje vehicular Python."}
+      
+      },    
+      
+      {"@id":"https://JavierPerezVargas/subject/#RepresentaciónEIntercambioDeDatos",
+       "@type":"subject",
+       "name":"Representación e intercambio de datos",
+       "Teacher1":{"@id":"https://JavierPerezVargas/teacher/#RaúlGutiérrez",
+                   "@type":"person",
+                   "name":"Raúl",
+                     "surname":"Gutiérrez"},
+       
+       "Teacher2":{"@id":"https://JavierPerezVargas/teacher/#FranciscoJavierSoriano",
+                   "@type":"person",
+                   "name":"Francisco Javier",
+                     "surname":"Soriano"},
+                     "Brief Description":{"@id":"https://JavierPerezVargas/description/#DescRepeIntDatos",
+                                        "@type":"description",
+                                        "text":"Conceptos fundamentales de la arquitectura de comunicaciones TCP/IP, sus protocolos y los principales servicios de nivel de aplicación."}
+      
+      },
+      
+      {"@id":"https://JavierPerezVargas/subject/#WebSemánticaLinkedDataKnowledgeGraphs",
+       "@type":"subject",
+       "name":"Web Semántica, Linked Data y Knowledge Graphs",
+       "Teacher1":{"@id":"https://JavierPerezVargas/teacher/#RaúlGarcía",
+                   "@type":"person",
+                   "name":"Raúl",
+                     "surname":"García"},
+       
+       "Teacher2":{"@id":"https://JavierPerezVargas/teacher/#ÓscarCorcho",
+                   "@type":"person",
+                   "name":"Óscar",
+                    "surname":"Corcho"},
+                    "Brief Description":{"@id":"https://JavierPerezVargas/description/#DescWSLDKG",
+                                        "@type":"description",
+                                        "text":"El objetivo de esta subject es proporcionar la base teórica y práctica sobre los fundamentos metodológicos y tecnológicos implicados en la generación y gestión de grafos de conocimientos."}
+      	}
+                      ]
+  }
