@@ -1,0 +1,31 @@
+1.
+select distinct ?prop
+where {
+?ins a <http://dbpedia.org/ontology/Politician>.
+?ins ?prop ?val
+} 
+
+
+2.
+select distinct ?prop
+where {
+?ins a <http://dbpedia.org/ontology/Politician>.
+?ins ?prop ?val.
+filter(!?prop=rdf:type).
+} 
+
+3.
+select distinct ?val
+where {
+?ins a <http://dbpedia.org/ontology/Politician>.
+?ins ?prop ?val.
+filter(!?prop=rdf:type).
+} 
+
+4.
+select distinct ?prop count(?val)
+where {
+?ins a <http://dbpedia.org/ontology/Politician>.
+?ins ?prop ?val.
+filter(!?prop=rdf:type).
+} 
