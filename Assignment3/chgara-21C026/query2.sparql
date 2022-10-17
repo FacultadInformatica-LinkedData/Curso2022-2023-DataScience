@@ -1,0 +1,11 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ont:  <http://dbpedia.org/ontology/>
+
+select distinct ?propety where{
+    ?politician a ont:Politician .
+    ?politician ?propety ?x .
+    FILTER(?propety != rdf:type) .
+}
+
+# results under query2.csv
