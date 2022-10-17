@@ -1,0 +1,39 @@
+{
+	"@context":{
+		"device": "http://upm.device.org/",
+		"voc": "http://upm.vocabulary.org/",
+		"users": "http://upm.users.org/",
+		"class": "http://upm.class.org/",
+		"persons": "http://upm.persons.org/",
+		"includes1":"voc:includes1/",
+		"includes2":"voc:includes2/",
+		"hasMeasurement":"voc:hasMeasurement/",
+		"hasTemperature":"voc:hasTemperature/",
+		"atTime":"voc:atTime/",
+		"hasOwner":"voc:hasOwner/",
+		"hasName":"voc:hasName/"
+   },
+  
+	"@id": "class:Class01",
+	"@type": "class:",
+	"includes1":{
+		"@id":"device:Sensor029",
+		"@type":"device:",
+		"hasMeasurement":{
+			"@id":"device:Measurement8401",
+			"@type":"device:",
+			"hasTemperature":29,
+			"atTime":"2010-06-12T12:00:12"
+
+		}
+	},
+	"includes2":{
+		"@id":"device:Computer101",
+		"@type":"device:",
+		"hasOwner":{
+			"@id":"users:User10A",
+			"@type":"users:",
+			"hasName":"Pedro"
+		}
+	}
+}
