@@ -31,7 +31,7 @@
   	}
   
 5.
-  	SELECT DISTINCT ?properties COUNT(?properties)
+  	SELECT DISTINCT ?properties COUNT(?objc)
   	WHERE {
   		?Politician a <http://dbpedia.org/ontology/Politician>.
   		?Politician ?properties ?objc.
