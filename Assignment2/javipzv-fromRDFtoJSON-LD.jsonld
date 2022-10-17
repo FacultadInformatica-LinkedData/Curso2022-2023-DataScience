@@ -1,0 +1,36 @@
+{
+    "@context": {
+                  "@includes":"https://www.FromRDFtoJsonLD.es/#includes",
+                  "@hasMeasurement":"https://www.FromRDFtoJsonLD.es/#hasMeasurement",
+                  "@hasOwner":"https://www.FromRDFtoJsonLD.es/#hasOwner",
+                  "@hasTemperature":"https://www.FromRDFtoJsonLD.es/#hasTemperature",
+                 "@atTime":"https://www.FromRDFtoJsonLD.es/#atTime",
+                  "@hasName":"https://www.FromRDFtoJsonLD.es/#hasName",
+                "@schema":"https://schema.org"
+                },
+      
+      "@id": "http://www.FromRDFtoJsonLD.es/#Class01",
+      "@includes":[
+                    {"@id":"http://www.FromRDFtoJsonLD.es/#Computer101",
+                    "@hasOwner":{"@id":"http://www.FromRDFtoJsonLD.es/#User10A",
+                             "@hasName":{"@id":"http://www.FromRDFtoJsonLD.es/#Pedro",
+                                         "@type":"https://schema.org/givenName",
+                                         "@value":"Pedro"
+                                         }
+                                }
+                    },
+                   {"@id":"http://www.FromRDFtoJsonLD.es/#Sensor29",
+                    "@hasMeasurement":{"id":"http://www.FromRDFtoJsonLD.es/#Measurement8401",				
+                                   "@hasTemperature":{"@id":"http://www.FromRDFtoJsonLD.es/#29",
+                                                      "@type":"https://schema.org/Integer",
+                                                      "@value":"29"
+                                                       },
+                                   "@atTime":{"@id":"http://www.FromRDFtoJsonLD.es/#2010-06-12T12:00:12",
+                                              "@type":"https://schema.org/DateTime",
+                                              "@value":"2010-06-12T12:00:12"
+                                                }
+                             
+                                      }
+                   }
+                 ]
+    }
