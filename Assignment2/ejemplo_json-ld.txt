@@ -1,0 +1,56 @@
+{	"@context":{
+		"base": "http://www.eder.com",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"asignaturas": "http://www.upm.es/cdia/asignaturas",
+		"fullname": "foaf:fullname",
+		"homoetown": "rdfs:label",
+		"age": "rdfs:value",
+		"almamater": "rdfs:label",
+		"parents": "rdfs:label",
+		"subjects2022-2023": "rdsf:container",
+		"Descripción" : "rdfs:comment"
+	},
+	"@id": "http://www.eder.com/informacionpersonal",
+	"@type": "foaf:Person",
+	"fullname":"Eder Tarifa Fernández",
+	"hometown":"aoiz",
+	"age":"19",
+	"almamater":"upm",
+	"parents":"Ana y Gonzalo",
+	"subjects2022-2023":[
+		{	
+			"@id": "http://www.upm.es/cdia/asignaturas/algoritmicanumerica",
+			"@type": "asignaturas",
+			"Algorítmica numérica":{
+						"fullname":"Antonio",
+						"Description": "adfadfad"
+			}
+		},	
+		{	
+			"@id": "http://www.upm.es/cdia/asignaturas/pln",
+			"@type": "asignaturas",
+			"PLN":{
+				"fullname":"Mariano",
+				"Description": "adfadfafadfd"
+		
+			}
+		},
+		{	
+			"@id": "http://www.upm.es/cdia/asignaturas/programacion",
+			"@type": "asignaturas",
+			"Programación":{
+				"fullname":"Javier",
+				"Description": "adfaafadfadfad"
+			}
+		},
+		{	
+			"@id": "http://www.upm.es/cdia/asignaturas/knowledgegraphs",
+			"@type": "asignaturas",
+			"Knowledge graphs":{
+				"fullname":"Pablo",
+				"Description": "adfadadfafad"
+			}
+		}
+	]
+}
