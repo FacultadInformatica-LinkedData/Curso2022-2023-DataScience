@@ -1,0 +1,9 @@
+{
+"Class01":{
+	"Sensor029":{
+		"Measurement8401":{"temperature":29,"time":"2010-06-12T12:00:12"}
+	},
+	"Computer":{"owner":["User10A","Pedro"}
+}
+	
+}
