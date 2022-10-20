@@ -1,0 +1,33 @@
+{"@context": {
+              "@includes":"http://www.RDF-JSONLD.es/#includes",
+              "@hasMeasurement":"http://www.RDF-JSONLD.es/#hasMeasurement",
+              "@hasOwner":"http://www.RDF-JSONLD.es/#hasOwner",
+      			  "@hasTemperature": "http://www.RDF-JSONLD.es/#hasTemperature",
+              "@atTime":"http://www.RDF-JSONLD.es/#atTime",
+              "@hasName":"http://www.RDF-JSONLD.es/#hasName",
+              "@schema":"https://schema.org"
+              },
+
+     "@id": "http://www.RDF-JSONLD.es/#Class01",
+     "@includes":[
+                    {"@id":"http://www.RDF-JSONLD.es/#Computer101",
+                    "@hasOwner":{"@id":"http://www.RDF-JSONLD.es/#User10A",
+                             "@hasName":{"@id":"http://www.RDF-JSONLD.es/#Pedro",
+                                         "@type":"https://schema.org/name",
+                                         "@value":"Pedro"}        
+                                }
+                    },
+
+                   {"@id":"http://www.RDF-JSONLD.es/#Sensor29",
+                    "@hasMeasurement":{"id":"http://www.RDF-JSONLD.es/#Measurement8401",				
+                                   "@hasTemperature":{"@id":"http://www.RDF-JSONLD.es/#29",
+                                                      "@type":"https://schema.org/integer",
+                                                      "@value":"29"
+                                                       },
+                                   "@atTime":{"@id":"http://www.RDF-JSONLD.es/#2010-06-12T12:00:12",
+                                              "@type":"https://schema.org/dateTime",
+                                              "@value":"2010-06-12T12:00:12"}
+                                      }
+                   }
+                 ]
+}
