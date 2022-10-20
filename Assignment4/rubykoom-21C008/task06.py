@@ -9,7 +9,6 @@ Original file is located at
 **Task 06: Modifying RDF(s)**
 """
 
-!pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2022-2023/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -59,7 +58,6 @@ print(g.serialize(format="ttl"))
 """**TASK 6.4: Add to the individual JaneSmith the fullName, given and family names**"""
 
 # TO DO
-from rdflib import FOAF
 vcard = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
 
 fullName = Literal("Jane Smith")
@@ -78,7 +76,7 @@ print(g.serialize(format="ttl"))
 # TO DO
 g.add((ns.UPM, RDF.type, ns.University))
 
-g.add((ns.JohnSmith, vcard.worksAt, ns.UPM))
+g.add((ns.JohnSmith, ns.worksAt, ns.UPM))
 
 # Visualize the results
 print(g.serialize(format="ttl"))

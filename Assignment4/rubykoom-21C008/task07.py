@@ -9,7 +9,6 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2022-2023/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -34,7 +33,7 @@ print("Results RDFlib:")
 print("")
 for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)): # Accomplish this
     print(s)
-    subclass_of_person += [s]   # Adding them to empty list given
+    subclass_of_person.append(s)   # Adding them to empty list given
 
 # SPARQL:
 print("")
@@ -59,43 +58,37 @@ for r in g.query(query1):
 # TO DO
 
 # RDFlib:
-personas = []  # Create an empty list where store requested data.
+people = []  # Create an empty list where store requested data.
 print("Results RDFlib:")
 print("")
 for s, p, o in g.triples((None, RDF.type, ns.Person)):  # Individuals who belong to class Person.
-    personas += [s]
+    people.append(s)
     print(s)
 for subclass in subclass_of_person:
     for s1, p1, o1 in g.triples((None, RDF.type, subclass)): # Individuals who belong to sublcass Person.
         print(s1)
-        personas += [s1]
+        people.append(s1)
 
 # SPARQL:
 print("")
-# Individuals who belong to class Person.
 query2 = prepareQuery('''
-  SELECT DISTINCT ?People WHERE { 
-    ?People RDF:type ns:Person.
-  }
+  SELECT DISTINCT ?People WHERE {
+    {
+      ?People RDF:type ns:Person.             # Individuals who belong to class Person.
+    }
+    UNION
+    {
+      ?Subclass RDFS:subClassOf ns:Person.
+      ?People RDF:type ?Subclass              # Individuals who belong to subclass Person.
+    }}
   ''',
-                  initNs={"ns": ns, "RDF": RDF}
-                  )
-# Individuals who belong to sublcass Person.
-query3 = prepareQuery('''
-  SELECT DISTINCT ?People WHERE { 
-    ?Subclass RDFS:subClassOf ns:Person.
-    ?People RDF:type ?Subclass
-  }
-  ''',
-                  initNs={"RDFS": RDFS, "ns": ns, "RDF": RDF}
+                  initNs={"ns": ns, "RDF": RDF, "RDFS": RDFS}
                   )
 
 # Visualize the results
 print("Results SPARQL:")
 print("")
 for r in g.query(query2):
-    print(r.People)
-for r in g.query(query3):
     print(r.People)
 
 """**TASK 7.3: List all individuals of "Person" and all their properties including their class with RDFLib and SPARQL**
@@ -107,44 +100,36 @@ for r in g.query(query3):
 # With RDFlib:
 print("Results RDFlib:")
 print("")
-for person in personas:
+for person in people:
     print("Person:", person, "------->")
     for s, p, o in g.triples((person, None, None)):
         print(p, o)
     print("")
 
 # With SPARQL:
-# Individuals who belong to class Person and their properties.
-query4 = prepareQuery('''
-  SELECT DISTINCT ?People ?Property ?Object WHERE { 
-    ?People  RDF:type ns:Person.
-    ?People  ?Property ?Object
-  }
+query3 = prepareQuery('''
+  SELECT DISTINCT ?People ?Property ?Object WHERE {
+    {
+      ?People  RDF:type ns:Person.
+      ?People  ?Property ?Object             # Individuals who belong to class Person and their properties.
+    }
+    UNION
+    {
+      ?Subclass RDFS:subClassOf ns:Person.
+      ?People  RDF:type ?Subclass.
+      ?People  ?Property ?Object.            # Individuals who belong to subclass Person and their properties.
+    }}
   ''',
-                  initNs={"ns": ns, "RDF": RDF}
-                  )
-
-# Individuals who belong to sublcass Person and their properties.
-query5 = prepareQuery('''
-  SELECT DISTINCT ?People ?Property ?Object WHERE { 
-    ?Subclass RDFS:subClassOf ns:Person.
-    ?People  RDF:type ?Subclass.
-    ?People  ?Property ?Object.
-  }
-  ''',
-                  initNs={"RDFS": RDFS, "ns": ns, "RDF": RDF}
+                  initNs={"ns": ns, "RDF": RDF, "RDFS": RDFS}
                   )
 
 # Visualize the results
 print("")
 print("Results SPARQL:")
 print("")
-for person in personas:
+for person in people:
     print("Person:", person, "------->")
-    for r in g.query(query4):
-        if r.People  == person:
-            print(r.Property, r.Object)
-    for r in g.query(query5):
+    for r in g.query(query3):
         if r.People  == person:
             print(r.Property, r.Object)
     print("")
