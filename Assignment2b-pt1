@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "@atTime": "http://www.assignment2.es/ejer1b/attributes#atTime",
+    "@hasMeasurement": "http://www.assignment2.es/ejer1b/attributes#hasMeasurement",
+    "@hasName": "http://www.assignment2.es/ejer1b/attributes#hasName",
+    "@hasOwner": "http://www.assignment2.es/ejer1b/attributes#hasOwner",
+    "@hasTemperature": "http://www.assignment2.es/ejer1b/attributes#hasTemperature",
+    "@includes": "http://www.assignment2.es/ejer1b/attributes#includes",
+    "@pred": "http://example.org/assignment2/predicates#",
+    "@xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://example.org/assignment2/#User10A",
+      "@pred:hasName": "Pedro"
+    },
+    {
+      "@id": "http://example.org/assignment2/#Sensor029",
+      "@pred:hasMeasurement": {
+        "@id": "http://example.org/assignment2/#Measurement8401"
+      }
+    },
+    {
+      "@id": "http://example.org/assignment2/#Computer101",
+      "@pred:hasOwner": {
+        "@id": "http://example.org/assignment2/#User10A"
+      }
+    },
+    {
+      "@id": "http://example.org/assignment2/#Measurement8401",
+      "@pred:atTime": {
+        "@type": "@xsd:dateTime",
+        "@value": "2010-06-12T12:00:00"
+      },
+      "@pred:hasTemperature": 29
+    },
+    {
+      "@id": "http://example.org/assignment2/#Class01",
+      "@pred:includes": [
+        {
+          "@id": "http://example.org/assignment2/#Sensor029"
+        },
+        {
+          "@id": "http://example.org/assignment2/#Computer101"
+        }
+      ]
+    }
+  ]
+}
