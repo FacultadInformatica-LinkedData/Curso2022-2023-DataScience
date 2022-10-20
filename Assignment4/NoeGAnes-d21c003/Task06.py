@@ -6,6 +6,8 @@ from rdflib.namespace import RDF, RDFS
 g = Graph()
 g.namespace_manager.bind('ns', Namespace("http://somewhere#"), override=False)
 g.namespace_manager.bind('vcard', Namespace("http://www.w3.org/2001/vcard-rdf/3.0#"), override=False)
+g.namespace_manager.bind('sc', Namespace("http://schema.org/#"), override=False)
+
 g.parse(github_storage+"/rdf/example5.rdf", format="xml")
 
 ns = Namespace("http://somewhere#")
@@ -39,6 +41,6 @@ for s, p, o in g:
 
 #TASK 6.5: Add UPM as the university where John Smith works
 g.add((ns.UPM,RDF.type,ns.University))
-g.add((ns.JonSmith, vcard.work, ns.UPM))
+g.add((ns.JonSmith, sc.worksFor, ns.UPM))
 for s, p, o in g:
   print(s,p,o)
