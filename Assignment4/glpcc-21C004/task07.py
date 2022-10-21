@@ -38,9 +38,9 @@ for person in individuals:
     for s,p,o in g.triples((person,None,None)):
         print(p,o)
         
-q1 = 'SELECT ?x ?prop ?y WHERE {?x RDF:type ns:Person. ?x ?prop ?y}'
+q1 = 'SELECT ?x ?prop ?y WHERE {?class RDFS:subClassOf* ns:Person. ?x RDF:type ?class. ?x ?prop ?y}'
 individuals = set()
-for r in g.query(q1,initNs={'ns':ns,'RDF':RDF}):
+for r in g.query(q1,initNs={'ns':ns,'RDF':RDF,'RDFS':RDFS}):
     if r.x not in individuals:
         print(f'Individual:{r.x}')
         individuals.add(r.x)
