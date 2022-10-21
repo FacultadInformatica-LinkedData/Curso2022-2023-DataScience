@@ -34,6 +34,7 @@ print("")
 for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)): # Accomplish this
     print(s)
     subclass_of_person.append(s)   # Adding them to empty list given
+print(g.value(None, RDFS.subClassOf, s))
 
 # SPARQL:
 print("")
@@ -41,7 +42,7 @@ print("Results SPARQL:")
 print("")
 query1 = prepareQuery('''
   SELECT ?Subclass WHERE { 
-    ?Subclass RDFS:subClassOf ns:Person.  
+    ?Subclass RDFS:subClassOf/RDFS:subClassOf* ns:Person.  # Get each subclass and their respective subclasses.
   }
   ''',
                   initNs={"RDFS": RDFS, "ns": ns}
@@ -72,15 +73,10 @@ for subclass in subclass_of_person:
 # SPARQL:
 print("")
 query2 = prepareQuery('''
-  SELECT DISTINCT ?People WHERE {
-    {
-      ?People RDF:type ns:Person.             # Individuals who belong to class Person.
+   SELECT ?People WHERE { 
+    ?subclass RDFS:subClassOf* ns:Person.   # Get each subclass and its respective subclasses.
+    ?People RDF:type ?subclass.             
     }
-    UNION
-    {
-      ?Subclass RDFS:subClassOf ns:Person.
-      ?People RDF:type ?Subclass              # Individuals who belong to subclass Person.
-    }}
   ''',
                   initNs={"ns": ns, "RDF": RDF, "RDFS": RDFS}
                   )
@@ -109,16 +105,10 @@ for person in people:
 # With SPARQL:
 query3 = prepareQuery('''
   SELECT DISTINCT ?People ?Property ?Object WHERE {
-    {
-      ?People  RDF:type ns:Person.
-      ?People  ?Property ?Object             # Individuals who belong to class Person and their properties.
-    }
-    UNION
-    {
-      ?Subclass RDFS:subClassOf ns:Person.
+      ?Subclass RDFS:subClassOf* ns:Person.  # Get each subclass and its respective subclasses.
       ?People  RDF:type ?Subclass.
-      ?People  ?Property ?Object.            # Individuals who belong to subclass Person and their properties.
-    }}
+      ?People  ?Property ?Object.           
+    }
   ''',
                   initNs={"ns": ns, "RDF": RDF, "RDFS": RDFS}
                   )
