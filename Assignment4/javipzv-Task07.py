@@ -42,10 +42,9 @@ print(" ")
 
 # SPARQL
 q1 = prepareQuery('''
-SELECT DISTINCT ?subclass ?subclassof
+SELECT DISTINCT ?subclass
 WHERE{
-?subclass rdfs:subClassOf <http://somewhere#Person>.
-?subclassof rdfs:subClassOf ?subclass
+?subclass rdfs:subClassOf* <http://somewhere#Person>.
 }
 ''')
 
