@@ -86,9 +86,8 @@ print("\n")
 print("6.5")
 NS = Namespace("http://somewhere#")
 NS1 = Namespace("http://property#")
-XSD = Namespace("http://www.w3.org/2001/XMLSchema#")
-g.add((NS.JohnSmith, NS1.worksAt, Literal('UPM', datatype=XSD.string)))
 g.add((NS.UPM, RDF.type, NS.University))
+g.add((NS.JohnSmith, NS1.worksAt, NS.UPM))
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)
