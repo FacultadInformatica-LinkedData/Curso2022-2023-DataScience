@@ -93,7 +93,7 @@ for r in g.query(q2):
 def rec_IndividualsAndProperties(className):
   for instance in rec_InstancesOfClassAndSubclasses(className, []):
     for s, p, o in g.triples((instance, None, None)):
-      print(instance, property, o)
+      print(instance, p, o)
 
 rec_IndividualsAndProperties(ns.Person)
 
