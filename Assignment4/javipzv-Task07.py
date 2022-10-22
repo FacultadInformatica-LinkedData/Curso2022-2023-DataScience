@@ -75,9 +75,8 @@ print(" ")
 q2 = prepareQuery('''
 SELECT DISTINCT ?person
 WHERE {
-  ?subclass rdfs:subClassOf <http://somewhere#Person>.
-  {?person rdf:type <http://somewhere#Person>}
-  UNION { ?person rdf:type ?subclass}
+  ?subclass rdfs:subClassOf* <http://somewhere#Person>.
+  ?person rdf:type ?subclass
 }
 ''')
 
