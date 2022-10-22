@@ -109,5 +109,6 @@ WHERE {
 }
 ''')
 
+
 for s,p,o in g.query(q2):
   print(s,p,o)
