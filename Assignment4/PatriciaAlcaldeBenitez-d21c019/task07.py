@@ -61,7 +61,7 @@ q2 = prepareQuery('''
   initNs = { "rdf": RDF}
 )
 q2_2 = prepareQuery('''
-  SELECT DISTINCT ?Subject WHERE { 
+  SELECT DISTINCT * WHERE { 
     ?Subject rdf:type ?Person. 
     ?Person rdfs:subClassOf <http://somewhere#Person>
   }
@@ -103,7 +103,7 @@ q3 = prepareQuery('''
   initNs = { "rdf":RDF}
 )
 q3_2 = prepareQuery('''
-  SELECT DISTINCT ?Subject ?Person ?Property WHERE { 
+  SELECT DISTINCT * WHERE { 
     ?Subject rdf:type ?Person. 
     ?Person rdfs:subClassOf <http://somewhere#Person>.
     ?Subject ?Property ?Object.
