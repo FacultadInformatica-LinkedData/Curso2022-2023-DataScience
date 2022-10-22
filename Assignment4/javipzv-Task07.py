@@ -92,10 +92,8 @@ for r in g.query(q2):
 # RDFLib
 def rec_IndividualsAndProperties(className):
   for instance in rec_InstancesOfClassAndSubclasses(className, []):
-    for s, p, o in g.triples((instance, RDF.type, None)):
-      Class = o
-    for s, p, o2 in g.triples((instance, None, None)):
-      print(instance, Class, p)
+    for s, p, o in g.triples((instance, None, None)):
+      print(instance, property, o)
 
 rec_IndividualsAndProperties(ns.Person)
 
@@ -103,13 +101,11 @@ print(" ")
 
 # SPARQL
 q2 = prepareQuery('''
-SELECT DISTINCT ?person ?class ?property
+SELECT DISTINCT ?person ?property ?x
 WHERE {
-  ?subclass rdfs:subClassOf <http://somewhere#Person>.
-  {?person rdf:type <http://somewhere#Person>}
-  UNION { ?person rdf:type ?subclass}
-  ?person ?property ?value.
-  ?person rdf:type ?class
+  ?subclass rdfs:subClassOf* <http://somewhere#Person>.
+  ?person rdf:type ?subclass.
+  ?person ?property ?x
 }
 ''')
 
