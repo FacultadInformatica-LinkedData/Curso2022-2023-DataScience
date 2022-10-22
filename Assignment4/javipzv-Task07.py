@@ -106,7 +106,7 @@ WHERE {
   ?subclass rdfs:subClassOf* <http://somewhere#Person>.
   ?person rdf:type ?subclass.
   ?person ?property ?x
-}
+      }
 ''')
 
 
