@@ -1,0 +1,45 @@
+{
+    "@context":{
+        "ej": "http://www.assignment2.es/ejer2b/",
+        "elem": "ej:elements/",
+        "attr": "ej:attributes/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph":[
+        {
+            "@id":"elem:Class01",
+            "attr:includes":[
+                {
+                    "@id":"elem:Sensor029"
+                },
+                {
+                    "@id":"elem:Computer101"
+                }
+            ]
+        },
+        {
+            "@id":"elem:Sensor029",
+            "attr:hasMeasurment": {
+                "@id":"elem:Measurment8401"
+            }
+        },
+        {
+            "@id":"elem:Computer101",
+            "attr:hasOwner":{
+                "@id":"elem:User10A"
+            }
+        },
+        {
+            "@id":"elem:User10A",
+            "attr:hasName":"Pedro"
+        },
+        {
+            "@id":"elem:Measurment8401",
+            "attr:hasTemperature":29,
+            "attr:atTime":{
+                "@type":"xsd:dateTime",
+                "@value": "2010-06-12T12:00:13"
+            }
+        }
+    ]
+}
