@@ -73,7 +73,7 @@ print("Adding 'UPM' as the university where John Smith works")
 g.add((ns.UPM, RDF.type, ns.University))
 
 # John Smith works for UPM
-g.add((ns.JohnSmith, vcard.Work, ns.UPM))
+g.add((ns.JohnSmith, ns.worksAt, ns.UPM))
 
 # Visualize the results
 for s, p, o in g:
