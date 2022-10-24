@@ -33,16 +33,20 @@ for r in g.query(q1):
 
 #TASK 7.2: List all individuals of "Person" with RDFLib and SPARQL (remember the subClasses)
 #RDFLib
-for s, p, o in g.triples((None, RDF.type, ns.Person)):
-  print(s)
+#Option 1
+for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
+  for s1, p1, o in g.triples((None, RDF.type, ns.Person)):
+  print(s1)
+#Option 2
   
 #SPARQL
 q2 = prepareQuery('''
   SELECT 
     ?Subject
   WHERE { 
-    ?Subject rdf:type ns:Person. 
-  }
+    ?Class RDFS:subClassOf* ns:Person.
+    ?Subject RDF:type ?Class
+    }
   ''',
   initNs = { "rdfs":RDFS , "ns":ns}
 )
@@ -52,16 +56,18 @@ for r in g.query(q2):
 
 #TASK 7.3: List all individuals of "Person" and all their properties including their class with RDFLib and SPARQL
 #RDFLib
-for s1, p1, o1 in g.triples((None, RDF.type, ns.Person)):
-  for s1,p2,o2 in g.triples((s1, None, None)):
-    print(p2,o2)
+for class_, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
+  for s,p2,class_ in g.triples((None, RDF.type, None)):
+    for s,p3,o3 in g.triples((None, None, None)):
+      print(s,p3,o3)
     
 #SPARQL
 q3 = prepareQuery('''
   SELECT 
-    ?Property ?Object 
+    ?Class ?Subject ?Property ?Object 
   WHERE { 
-    ?Subject rdf:type ?Person. 
+    ?Class RDFS:subClassOf* ?Person. 
+    ?Subject RDF:type ?Class
     ?Subject ?Property ?Object.
   }
   ''',
