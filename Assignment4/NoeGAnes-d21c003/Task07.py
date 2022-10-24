@@ -33,11 +33,9 @@ for r in g.query(q1):
 
 #TASK 7.2: List all individuals of "Person" with RDFLib and SPARQL (remember the subClasses)
 #RDFLib
-#Option 1
 for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
   for s1, p1, o in g.triples((None, RDF.type, ns.Person)):
   print(s1)
-#Option 2
   
 #SPARQL
 q2 = prepareQuery('''
