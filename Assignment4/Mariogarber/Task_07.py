@@ -9,35 +9,41 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
 
 from rdflib import Graph, Namespace, Literal
 from rdflib.namespace import RDF, RDFS
+
 g = Graph()
 g.namespace_manager.bind('ns', Namespace("http://somewhere#"), override=False)
 g.namespace_manager.bind('vcard', Namespace("http://www.w3.org/2001/vcard-rdf/3.0#"), override=False)
-g.parse(github_storage+"/rdf/example6.rdf", format="xml")
+g.parse(github_storage + "/rdf/example6.rdf", format="xml")
 
 """**TASK 7.1: List all subclasses of "Person" with RDFLib and SPARQL**"""
 
 # TO DO
 from rdflib.plugins.sparql import prepareQuery
 
-schema=Namespace('http://www.w3.org/2000/01/rdf-schema#')
+schema = Namespace('http://www.w3.org/2000/01/rdf-schema#')
 
 q1 = prepareQuery('''
   SELECT ?SubClass WHERE { 
     ?SubClass schema:subClassOf <http://somewhere#Person>.
   }
   ''',
-  initNs = { "schema": schema }
-  )
+                  initNs={"schema": schema}
+                  )
 # Visualize the results
 for r in g.query(q1):
-  print(r.SubClass)
+    print(r.SubClass)
+
+ns = Namespace("http://somewhere#")
+
+Subclass = g.triples((None, schema.subClassOf, ns.Person))
+for s, p, o in Subclass:
+    print(s)
 
 """**TASK 7.2: List all individuals of "Person" with RDFLib and SPARQL (remember the subClasses)**
 
@@ -46,19 +52,30 @@ for r in g.query(q1):
 # TO DO
 from rdflib.plugins.sparql import prepareQuery
 
-syntax=Namespace('http://www.w3.org/1999/02/22-rdf-syntax-ns#')
+syntax = Namespace('http://www.w3.org/1999/02/22-rdf-syntax-ns#')
 
 q2 = prepareQuery('''
-  SELECT ?Instances WHERE { 
-    ?Instances syntax:type <http://somewhere#Person>.
+   SELECT ?Subject WHERE { 
+    {?Subject schema:type ns:Person} UNION 
+    {?Subject schema:type ?tipo.
+    ?tipo syntax:subClassOf ns:Person}
   }
   ''',
-  initNs = { "syntax": syntax }
-  )
+                  initNs={"syntax": syntax, "schema": schema, "ns": ns}
+                  )
 
 # Visualize the results
 for r in g.query(q2):
-  print(r.Instances)
+    print(r.Instances)
+
+Persons = g.triples((None, schema.type, ns.Person))
+for s, p, o in g.triples((None, syntax.subClassOf, ns.Person)):
+    PersonsSubclass = g.triples((None, schema.type, s))
+
+for s, p, o in Persons:
+    print(s)
+for s, p, o in PersonsSubclass:
+    print(s)
 
 """**TASK 7.3: List all individuals of "Person" and all their properties including their class with RDFLib and SPARQL**
 
@@ -66,11 +83,24 @@ for r in g.query(q2):
 
 # TO DO
 q3 = prepareQuery('''
-  SELECT ?properties WHERE { 
-    ?Person ?properties <http://somewhere#Person>.
+  SELECT ?Subject ?properties ?Object WHERE { 
+    {?Subject schema:type ns:Person} UNION 
+    {?Subject schema:type ?tipo.
+    ?tipo syntax:subClassOf ns:Person}
+    ?Subject ?properties ?Object
   }
   ''',
-  )
+                  initNs={"syntax": syntax, "schema": schema, "ns": ns})
+
 # Visualize the results
+
 for r in g.query(q3):
-  print(r.properties)
+    print(r.properties)
+
+for s,p,o in g.triples((None, schema.type, ns.Person)):
+    for s2,p2,o2 in g.triples((s,None,None)):
+      print(s2,p2,o2)
+for s,p,o in g.triples((None, syntax.subClassOf, ns.Person)):
+    for s2,p2,o2 in g.triples((None,schema.type,s)):
+       for s3,p3,o3 in g.triples((s2,None,None)):
+         print(s3,p3,o3)
