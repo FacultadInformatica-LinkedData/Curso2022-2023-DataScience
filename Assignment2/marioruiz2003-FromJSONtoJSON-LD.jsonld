@@ -1,0 +1,47 @@
+{
+	"@context":{
+		"GCDIA":"http://MarioRuiz/UPM/GCDIA",
+		"fullname":"rdfs:label",
+		"hometown":"http://MarioRuiz/hometown",
+		"age":"https://MarioRuizVaquett/age/",							
+		"AlmaMaters":"http://MarioRuiz/Universidad",
+		"NameOfParents":"foaf:hasParent",
+		"subjects":"http://MarioRuiz/UPM/asignaturas/",
+		"Name":"rdfs:label",
+		"Teachers":"http://MarioRuiz/GCDIA/Profesores",
+		"Description":"http://MarioRuiz/GCDIA/Description"
+	},
+	"@id":"http://www.upm.es/GCDIA/alumno/21c023",
+	"@type":"GCDIA:alumno",
+	"fullname": "Mario Ruiz Vaquett",
+	"hometown": "Ciudad Universitaria",
+	"age": 19,
+	"AlmaMaters": "Universidad Politécnica de Madrid",
+	"NameOfParents": ["Salvador", "Inés"],
+	"subjects": [
+		{"Name": "Knowledge Graph",
+		"Teachers": ["Óscar Corcho", "Raúl García", "Daniel Garijo"],
+		"Description": "Subject based on the development of knowledge graphs, semantic webs..."
+		},
+		{"Name": "Algorítmica Numérica",
+		"Teachers": ["Antonio Tabernero", "Esther Dopazo"],
+		"Description": "The main object is to resolve maths problems by the use of algorithms"
+		},
+		{"Name": "Procesamiento de Lenguaje Natural",
+		"Teachers": ["Mariano Rico","Pablo Calleja"],
+		"Description": "Subject based on processing natural language on R"
+		},
+		{"Name": "Programación para ciencia de datos",
+		"Teachers": ["Guillermo Vigeras","Sergio Paraíso", "Antonio Díaz"],
+		"Description": "Subject based on learning how to use data and web scrapping"
+		},
+		{"Name": "Inteligencia Artificial",
+		"Teachers": ["Asunción Gómez Pérez", "María del Carmen Suárez de Figueroa Baonza"],
+		"Description": "The main object is to get to know the logic that IA use."
+		},
+		{"Name": "Representación e Intercambio de Datos",
+		"Teachers": ["Raúl Gutiérrez", "José Ramón Sánchez", "Javier Yagüez"],
+		"Description": "Main object is to identify and use the information technologies."
+		}
+	]
+}

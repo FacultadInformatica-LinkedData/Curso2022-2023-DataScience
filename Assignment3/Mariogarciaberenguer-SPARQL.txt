@@ -1,0 +1,39 @@
+1.
+	SELECT DISTINCT ?properties
+	WHERE {
+    		?Politician a <http://dbpedia.org/ontology/Politician>.
+    		?Politician ?properties ?objc.
+  	}
+
+2.
+  	SELECT DISTINCT ?properties
+  	WHERE {
+    		?Politican a <http://dbpedia.org/ontology/Politician>.
+    		?Politician ?properties ?objc.
+    		FILTER(?properties != rdf:type)
+  	}
+  
+3.
+  	SELECT DISTINCT ?objc
+ 	WHERE {
+   		?Politician a <http://dbpedia.org/ontology/Politician>.
+    	?Politician ?properties ?objc.
+    	FILTER(?prop != rdf:type)
+  	}
+
+4.
+  	SELECT DISTINCT ?objc2
+  	WHERE {
+  		?Politician a  <http://dbpedia.org/ontology/Politician>.
+  		?Politician ?properties ?objc.
+  		?suj ?properties ?objc2.
+  		FILTER(?properties != rdf:type)
+  	}
+  
+5.
+  	SELECT DISTINCT ?properties COUNT(?objc)
+  	WHERE {
+  		?Politician a <http://dbpedia.org/ontology/Politician>.
+  		?Politician ?properties ?objc.
+  		FILTER(?properties != rfd:type)
+  	}

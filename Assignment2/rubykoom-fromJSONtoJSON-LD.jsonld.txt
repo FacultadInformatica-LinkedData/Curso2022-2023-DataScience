@@ -1,0 +1,242 @@
+{
+    "@context":{
+        "base": "http://www.assignment2.es/ejer2b",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "name": "foaf:name",
+        "PrimerApellido": "foaf:surname",
+        "SegundoApellido": "foaf:surname",
+        "place": "rdfs:label",
+        "almaMater": "rdfs:label",
+        "subjects": "rdfs:container",
+        "UniversitySubject": "https://www.upm.es/University/BachellorSubject",
+        "brief-description": "rdfs:comment"
+    },
+    "@id": "http://www.assignment2.es/ejer2b/Alumnos/RubenSanchez",
+    "@type": "foaf:Person",
+    "FullName":{
+        "@id": "http://www.assignment2.es/ejer2b/Alumnos/RubenSanchez/FullName",
+        "name": "Rubén",
+        "surname": "Sánchez",
+        "lastName": "Fernández"
+    },
+    "HomeTown": "Madrid",
+    "age": 19,
+    "almaMater": "Universidad Politécnica de Madrid",
+    "parents": [
+        {
+            "@id": "http://www.assignment2.es/ejer2b/Alumnos/RubenSanchez/Padre",
+            "@type": "foaf:Person",
+            "fullName":{
+                "@id": "http://www.example.org/Alumnos/RubenCid/Padre/fullName",
+                "name": "Jesús Manuel"
+            }
+        },
+        {
+            "@id": "http://www.assignment2.es/ejer2b/Alumnos/RubenSanchez/Madre",
+            "@type": "foaf:Person",
+            "fullName":{
+                "@id": "http://www.example.org/Alumnos/RubenCid/Madre/fullName",
+                "name": "María del Prado"
+            }
+        }
+    ],
+    "subjects":[
+	{
+            "@id": "https://www.upm.es/Bachellor/DataScienceandIA/subjects/AdquisiciondeDatos",
+            "@type": "UniversitySubject",
+            "name": "Adquisición y Procesamiento Numérico de Datos",
+            "teacher": {
+                "@type": "foaf:Person",
+                "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/AntonioTabernero",
+                "fullName": {
+                    "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/AntonioTabernero/fullName",
+                    "name": "Antonio",
+                    "surname": "Tabernero"
+                }
+            },
+            "brief-description": "Fundamentos y técnicas básicas de la adquisición de datos."
+        },
+	{
+            "@id": "https://www.upm.es/Bachellor/DataScienceandIA/subjects/AlgoritmicaNumerica",
+            "@type": "UniversitySubject",
+            "name": "Algorítmica Numérica",
+            "teacher": {
+                "@type": "foaf:Person",
+                "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/AntonioTabernero",
+                "fullName": {
+                    "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/AntonioTabernero",
+                    "name": "Antonio",
+                    "surname": "Tabernero"
+                }
+            },
+            "brief-description": "Curso introductorio a los métodos numéricos y su implementación en Matlab."
+        },
+	{
+            "@id": "https://www.upm.es/Bachellor/DataScienceandIA/subjects/AspectosSocialesIA",
+            "@type": "UniversitySubject",
+            "name": "Aspectos Sociales, Éticos y Legales de los Datos y la Inteligencia Artificial",
+            "teacher": {
+                "@type": "foaf:Person",
+                "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/AsuncionGomez",
+                "fullName": {
+                    "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/AsuncionGomez/fullName",
+                    "name": "Asuncion",
+                    "surname": "De Maria Gomez Perez"
+                }
+            },
+            "brief-description": "Análisis del impacto ético y social de proyectos de innovación."
+        },
+	{
+            "@id": "https://www.upm.es/Bachellor/DataScienceandIA/subjects/BasesdeDatosI",
+            "@type": "UniversitySubject",
+            "name": "Bases de Datos I",
+            "teacher": {
+                "@type": "foaf:Person",
+                "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/AntonioDiaz",
+                "fullName": {
+                    "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/AntonioDiaz",
+                    "name": "Antonio Jesús",
+                    "surname": "Diaz Honrubia"
+                }
+            },
+            "brief-description": "Conceptos para diseñar e implementar bases de datos relacionales."
+        },
+	{
+            "@id": "https://www.upm.es/Bachellor/DataScienceandIA/subjects/ComputacionSocial",
+            "@type": "UniversitySubject",
+            "name": "Computación Social y Personalización",
+            "teacher": {
+                "@type": "foaf:Person",
+                "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/JosefaZuleide",
+                "fullName": {
+                    "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/JosefaZuleide/fullName",
+                    "name": "Josefa Zuleide",
+                    "surname": "Hernandez Diego"
+                }
+            },
+            "brief-description": "Análisis de los principios de la computación social."
+        },
+	{
+            "@id": "https://www.upm.es/Bachellor/DataScienceandIA/subjects/FundamentosEconomia",
+            "@type": "UniversitySubject",
+            "name": "Fundamentos de Economía y Administración de Empresas",
+            "teacher": {
+                "@type": "foaf:Person",
+                "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/SergioJose",
+                "fullName": {
+                    "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/SergioJose/fullName",
+                    "name": "Sergio Jose",
+                    "surname": "Rios Aguilar"
+                }
+            },
+            "brief-description": "Aproximación a los diferentes aspectos de la Economía y de la Administración de Empresas."
+        },
+	{
+            "@id": "https://www.upm.es/Bachellor/DataScienceandIA/subjects/IA",
+            "@type": "UniversitySubject",
+            "name": "Inteligencia Artificial",
+            "teacher": {
+                "@type": "foaf:Person",
+                "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/MariadelCarmen",
+                "fullName": {
+                    "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/MariadelCarmen/fullName",
+                    "name": "María del Carmen",
+                    "surname": "Suárez de Figueroa Baonza"
+                }
+            },
+            "brief-description": "Fundamentos de la Inteligencia Artificial."
+        },
+	{
+            "@id": "https://www.upm.es/Bachellor/DataScienceandIA/subjects/ProbabilidadII",
+            "@type": "UniversitySubject",
+            "name": "Probabilidad y Estadística II",
+            "teacher": {
+                "@type": "foaf:Person",
+                "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/ArmindaMoreno",
+                "fullName": {
+                    "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/ArmindaMoreno/fullName",
+                    "name": "Arminda",
+                    "surname": "Moreno Diaz"
+                }
+            },
+            "brief-description": "Introducción a la inferencia estadística."
+        },
+	{
+            "@id": "https://www.upm.es/Bachellor/DataScienceandIA/subjects/ProcesamientoLenguaje",
+            "@type": "UniversitySubject",
+            "name": "Procesamiento del Lenguaje Natural",
+            "teacher": {
+                "@type": "foaf:Person",
+                "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/MarianoRico",
+                "fullName": {
+                    "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/MarianoRico/fullName",
+                    "name": "Mariano",
+                    "surname": "Rico"
+                }
+            },
+            "brief-description": "Fundamentos de las técnicas básicas para realizar análisis morfológicos y sintácticos de forma automática."
+        },
+	{
+            "@id": "https://www.upm.es/Bachellor/DataScienceandIA/subjects/ProgramacionCD",
+            "@type": "UniversitySubject",
+            "name": "Programación para Ciencia de Datos",
+            "teacher": {
+                "@type": "foaf:Person",
+                "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/SergioParaiso",
+                "fullName": {
+                    "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/SergioParaiso/fullName",
+                    "name": "Sergio",
+                    "surname": "Paraiso Medina"
+                }
+            },
+            "brief-description": "Visión práctica de la programación para tratamiento y visualización de datos."
+        },
+	{
+            "@id": "https://www.upm.es/Bachellor/DataScienceandIA/subjects/RepresentacionDatos",
+            "@type": "UniversitySubject",
+            "name": "Representación e Intercambio de Datos",
+            "teacher": {
+                "@type": "foaf:Person",
+                "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/JoseRamon",
+                "fullName": {
+                    "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/JoseRamon/fullName",
+                    "name": "Jose Ramon",
+                    "surname": "Sanchez Palomares"
+                }
+            },
+            "brief-description": "Intercambio de datos entre aplicaciones distribuidas a través de Internet."
+        },
+        {
+            "@id": "https://www.upm.es/Bachellor/DataScienceandIA/subjects/SeguridadTecnologiasInformacion",
+            "@type": "UniversitySubject",
+            "name": "Seguridad de las Tecnologías de la Información",
+            "teacher": {
+                "@type": "foaf:Person",
+                "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/MariaBernardos",
+                "fullName": {
+                    "@id": "https://www.upm.es/Bachellor/DataScienceandIA/professors/MariaBernardos/fullName",
+                    "name": "Maria Del Socorro",
+                    "surname": "Bernardos Galindo"
+                }
+            },
+            "brief-description": " Comprender el papel central de los algoritmos y las estructuras de datos en la seguridad de los sistemas informáticos."
+        },
+	{
+            "@id": "https://www.upm.es/Bachellor/DataScienceandIA/subjects/WebSemantica",
+            "@type": "UniversitySubject",
+            "name": "Web Semantica,Linked Data y grafos del Conocimiento",
+            "teacher": {
+                "@type": "foaf:Person",
+                "@id": "https://www.upm.es/Bachellor/DataScienceandIA/teachers/OscarCorcho",
+                "fullName": {
+                    "@id": "https://www.upm.es/Bachellor/DataScienceandIA/teachers/OscarCorcho/fullName",
+                    "name": "Oscar",
+                    "surname": "Corcho"
+                }
+            },
+            "brief-description": "Fundamentos metodológicos y tecnológicos implicados en la generación y gestión de grafos de conocimientos."
+        }
+    ] 
+}
