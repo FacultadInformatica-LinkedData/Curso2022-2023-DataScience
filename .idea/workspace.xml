@@ -23,7 +23,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/pythonProject/PROGRAMACION2" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="Task_07" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -64,6 +65,7 @@
       <updated>1666706455531</updated>
       <workItem from="1666706461359" duration="99000" />
       <workItem from="1666708328327" duration="13000" />
+      <workItem from="1666710740188" duration="383000" />
     </task>
     <servers />
   </component>
