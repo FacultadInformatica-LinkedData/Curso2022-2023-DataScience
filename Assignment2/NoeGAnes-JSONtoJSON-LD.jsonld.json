@@ -11,7 +11,7 @@
   	{"@type": "subject",
 	"@id":"http://upm.es/grados/GCDIA/subjects/KG",
 		"name":"Knowledge Graphs", 
-		"teachers":["OscarCorcho", "" ],
+		"teachers":["Oscar Corcho", "Daniel Garijo" ],
        "briefDescription":""
 	   },
 	{"@type": "subject",
