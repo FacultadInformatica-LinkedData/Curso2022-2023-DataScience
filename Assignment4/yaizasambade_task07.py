@@ -7,9 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1jQ4N-fdgf4ETeUX2QkSuEsYrgq2WaEM3
 
 **Task 07: Querying RDF(s)**
-"""
-
-!pip install rdflib 
+""" 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
