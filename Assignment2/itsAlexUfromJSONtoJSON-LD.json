@@ -1,0 +1,107 @@
+{
+  "@context": {
+       "xsd": "http://www.example.org/",
+       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+       "fullName": "rdfs:label",
+       "hometown": "rdfs:label",
+       "age": "rdfs:Literal",
+       "AlmaMater": "rdfs:label",
+       "parentsNames": "rdfs:Container",
+       "subjectsSet": "rdfs:Container",
+  	   "name": "rdfs:label",
+       "teachers": "rdfs:Container",
+       "description": "rdfs:Comment"
+
+  },
+  "@id": "xsd:assignment2b",
+  "fullName": "Alejandro Calderón Guachún",
+  "hometown": "Madrid",
+  "age": "20",
+  "AlmaMater": "Universidad Politécnica de Madrid (UPM)",
+  "parentsNames": ["Ana","Xavier"],
+  "subjectsSet": [
+    {
+      "name": "Algebra Lineal",
+      "teachers": ["M. Del Carmen Escribano Iglesias","M.del Carmen Torres Blanc"],
+      "description": "En esta asignatura se estudian las estructuras de los espacios vectoriales, los espacios euclideos, sus propiedades y aplicaciones a través del cálculo y el análisis matricial y la resolución de sistemas de ecuaciones."
+    },
+    
+    {
+      "name": "Cálculo I",
+      "teachers": ["Javier Lopez De La Cruz","Raquel Natividad Gonzalo Palomar"],
+      "description": "La asignatura se basa en el estudio de las funciones reales de una variable real, haciendo especial énfasis en la formalización y lenguaje matemático."
+    },
+    
+    {
+      "name": "Inteligencia Artificial",
+      "teachers": ["Daniel Manrique Gamo","M. Carmen Suarez De Figueroa Baonza","Vicente Martinez Orga","Asuncion De Maria Gomez","Miguel Garcia Remesal "],
+      "description": "La inteligencia artificial es una rama de la informática que estudia técnicas para simular el comportamiento inteligente en un computador. En esta asignatura se estudian lenguajes formales de representación de diferentes tipos de conocimiento así como sus modelos específicos de razonamiento para afrontar problemas reales. "
+    },
+    
+    {
+      "name": "Procesamiento De Lenguaje Natural",
+      "teachers": ["Mariano Rico Almodovar","Emilio Serrano Fernandez"],
+      "description": "En este curso de introducción al Procesamiento del Lenguaje Natural se aprenderán los fundamentos de las técnicas básicas para realizar análisis morfológicos y sintácticos de forma automática, así como tratamiento de textos en distintos idiomas (como español e inglés) y aspectos básicos de la semántica computacional."
+    },
+    
+    {
+      "name": "Programación Para Ciencia De Datos",
+      "teachers": ["Antonio Jesus Diaz Honrubia","Guillermo Antonio Vigueras","Sergio Paraiso Medina"],
+      "description": "La asignatura proporciona una visión práctica de la programación para tratamiento y visualización de datos, utilizando como lenguaje vehicular Python, profundizando en el conocimiento del estilo de programación orientado a datos así como las principales librerías y frameworks para la manipulación y análisis de datos."
+    },
+    
+    {
+      "name": "Representación E Intercambio De Datos",
+      "teachers": ["Raul Gutierrez Gil","Francisco Javier Soriano","Jose Ramon Sanchez"],
+      "description": "La asignatura se centra en estudiar cómo se realiza el intercambio de datos entre aplicaciones distribuidas a través de Internet. Para ello, se explicarán los conceptos fundamentales de la arquitectura de comunicaciones TCP/IP, sus protocolos y los principales servicios de nivel de aplicación."
+    },
+    
+    {
+      "name": "Web Semántica, Linked Data Y Grafos De Conocimientos",
+      "teachers": ["Raul Garcia Castro","Oscar Corcho Garcia"],
+      "description": "El objetivo de esta asignatura es proporcionar la base teórica y práctica sobre los fundamentos metodológicos y tecnológicos implicados en la generación y gestión de grafos de conocimientos."
+    },
+    
+    {
+      "name": "Algoritmos Y Estructuras De Datos",
+      "teachers": ["Jaime Ramirez Rodriguez","Angel Lucas Gonzalez"],
+      "description": "La asignatura proporciona una visión más fundamentada y avanzada de la programación, utilizando como lenguaje vehicular Python, mejorando la capacidad del estudiante en el análisis del coste de los algoritmos, en el desarrollo de algoritmos más complejos y ampliando el catálogo de tipos de datos que puede utilizar en distintos ámbitos de aplicación."
+    },
+    
+    {
+      "name": "Fundamentos de los Computadores",
+      "teachers": ["Angel Rodriguez Mtnez.De Bartolome","Fco Javier Rosales Garcia"],
+      "description": "Se trata de una asignatura de introducción a los sistemas informáticos que sigue un enfoque bottom-up al describir los aspectos más relevantes tanto del hardware como de los sistemas operativos que permiten utilizar los recursos disponibles de una forma eficiente y cómoda para los usuarios"
+    },
+    
+    {
+      "name": "Matemática Discreta II",
+      "teachers": ["Victoria Zarzosa Rodriguez","Luis Magdalena Layos"],
+      "description": "En ella se siguen estudiando algunas de las estructuras discretas importantes en Matemáticas y en Computación, fundamentalmente los grafos."
+    },
+    
+    {
+      "name": "Adquisición y Procesamiento Numérico de Datos",
+      "teachers": ["Antonio Tabernero","Esther Dopazo","José Crespo"],
+      "description": "En este curso se pretende dar una visión de los fundamentos y técnicas básicas de la adquisición de datos, su muestreo y el procesado digital de las señales resultantes. "
+    },
+    
+    {
+      "name": "Aspectos Sociales, éticos Y Legales De Los Datos Y La Inteligencia Artificial",
+      "teachers": ["Asuncion De Maria Gomez","M. Carmen Suarez De Figueroa Baonza","Victor Rodriguez Doncel"],
+      "description": "Esta asignatura proporciona las herramientas téoricas y prácticas para afrontar los retos éticos, legales y sociales que plantean los recientes avances de la ciencia de datos y la inteligencia artificial."
+    },
+    
+    {
+      "name": "Computación Social Y Personalización",
+      "teachers": ["Javier Bajo Perez","Josefa Zuleide Hernandez","Emilio Serrano Fernandez"],
+      "description": "La computación social es un área de conocimiento que surge de la intersección de los sistemas computacionales y del análisis del comportamiento social."
+    },
+    
+    {
+      "name": "Seguridad De Las Tecnologías De La Información",
+      "teachers": ["Jorge Davila Muro","Jorge Davila Muro"],
+      "description": "El objetivo de esta asignatura es hacer comprender a los alumnos el papel central que tienen los algoritmos y lasestructuras de datos en la seguridad de los sistemas informáticos."
+    }
+  ]	
+}

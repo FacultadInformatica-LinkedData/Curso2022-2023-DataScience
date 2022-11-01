@@ -1,0 +1,102 @@
+{
+  "@context": {
+       "ex": "http://www.example.org/",
+       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+       "fullName": "rdfs:label",
+       "hometown": "rdfs:label",
+       "age": "rdfs:Literal",
+       "AlmaMater": "rdfs:label",
+       "parentsNames": "rdfs:Container",
+       "subjectsSet": "rdfs:Container",
+       "name": "rdfs:label",
+       "teachers": "rdfs:Container",
+       "description": "rdfs:comment"
+
+  },
+  "@id": "ex:assignment2b",
+  "fullName": "Ángel Romero Huici",
+  "hometown": "Madrid",
+  "age": 19,
+  "AlmaMater": "Universidad Politécnica de Madrid",
+  "parentsNames": ["Eva","Antonio"],
+  "subjectsSet": [
+    {
+      "@id": "ex:APND",
+      "name": "Adquisición y Procesamiento Numérico de Datos",
+      "teachers": ["Antonio Tabernero","Esther Dopazo","José Crespo"],
+      "description": "Obtención y tratamiendo de datos mediante diversas herramientas"
+    },
+    {
+      "@id": "ex:AN",
+      "name": "Algorítmica Numérica",
+      "teachers": ["Antonio Tabernero","Esther Dopazo"],
+      "description": "Manejo de errores y creación de algoritmos mediante Matlab"
+    },
+    {
+      "@id": "ex:ASELDIA",
+      "name": "Aspectos Sociales, éticos y Legales de los Datos y la Inteligencia Artificial",
+      "teachers": ["Víctor Rodríguez Doncel","Mari Carmen Suárez de Figueroa Baonza"],
+      "description": "Bases éticas, sociales y legales sobre la recolección y el uso de datos "
+    },
+    {
+      "@id": "ex:BDI",
+      "name": "Bases de Datos I",
+      "teachers": ["Alejandro Rodríguez","Covadonga Fernandez-Baizan","Luis Mengual","Antonio Jesús Díaz Honrubia","Ernestina Menasalvas Ruiz"],
+      "description": "Fundamentos de diseño de bases de datos relacionales"
+    },
+    {
+      "@id": "ex:CSP",
+      "name": "Computación Social y Personalización",
+      "teachers": ["Javier Bajo","Javier Bajo","Josefa Z. Hernández"],
+      "description": "Bases del uso de la computación social y de la computación personalizada"
+    },
+    {
+      "@id": "ex:FEAE",
+      "name": "Fundamentos de Economía y Administración de Empresas",
+      "teachers": ["Sergio José Ríos Aguilar"],
+      "description": "Aplicación de conocimientos sobre economía y administración de empresas para la ciencia de datos y la IA"
+    },
+    {
+      "@id": "ex:IA",
+      "name": "Inteligencia Artificial",
+      "teachers": ["Asunción Gómez Pérez"],
+      "description": "Desarrollo y aplicación de los diferentes tipos de inteligencia artificial"
+    },
+    {
+      "@id": "ex:PEII",
+      "name": "Probabilidades y Estadística II",
+      "teachers": ["Arminda Moreno Díaz"],
+      "description": "Uso de conocimientos estadísticos para la ciencia de datos"
+    },
+    {
+      "@id": "ex:PLN",
+      "name": "Procesamiento de Lenguaje Natural",
+      "teachers": ["Mariano Rico","Pablo Calleja"],
+      "description": "Fundamentos de traducción del lenguaje natural para su correcto tratamiento"
+    },
+    {
+      "@id": "ex:PCD",
+      "name": "Programación para Ciencia de Datos",
+      "teachers": ["Guillermo Vigueras","Sergio Paraíso","Antonio Díaz"],
+      "description": "Obtención de datos para su tratamiento y visualización"
+    },
+    {
+      "@id": "ex:RID",
+      "name": "Representación e Intercambio de Datos",
+      "teachers": ["Raúl Gutiérrez","José Ramón Sánchez","Javier Yagüez"],
+      "description": "Visiones sobre la representación e intercambio de datos en diferentes formas"
+    },
+    {
+      "@id": "ex:STI",
+      "name": "Seguridad de las Tecnologías de la Información",
+      "teachers": ["María del Socorro Bernardos Galindo"],
+      "description": "Bases en la seguridad de los sistemas de intercambio de información"
+    },
+    {
+      "@id": "ex:WSLDGC",
+      "name": "Web Semántica, Linked Data y Grafos de Conocimientos",
+      "teachers": ["Oscar Corcho","Raúl García Castro","Daniel Garijo"],
+      "description": "Fundamentos de la obtención de información mediante grafos de conocimiento en la web"
+    }
+  ]	
+}
