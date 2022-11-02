@@ -1,0 +1,41 @@
+Query 1
+WHERE
+{
+?subject rdf:type <http://dbpedia.org/ontology/Politician>.
+?subject ?properties ?object
+}
+
+Query 2
+WHERE
+{
+?subject rdf:type <http://dbpedia.org/ontology/Politician>.
+?subject ?properties ?object
+MINUS{?subject rdf:type ?object} .
+}
+
+Query 3
+SELECT DISTINCT ?properties
+WHERE
+{
+?subject rdf:type <http://dbpedia.org/ontology/Politician>.
+?subject ?properties ?object
+MINUS{?subject rdf:type ?object} .
+}
+
+Query 4
+SELECT DISTINCT ?properties ?object
+WHERE
+{
+?subject rdf:type <http://dbpedia.org/ontology/Politician>.
+?subject ?properties ?object
+MINUS{?subject rdf:type ?object} .
+}
+
+Query 5
+SELECT COUNT (DISTINCT ?object)
+WHERE
+{
+?subject rdf:type <http://dbpedia.org/ontology/Politician>.
+?subject ?properties ?object
+MINUS{?subject rdf:type ?object} .
+}
