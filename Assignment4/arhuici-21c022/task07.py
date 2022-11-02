@@ -9,7 +9,7 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-#pip install rdflib 
+# !pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -23,44 +23,69 @@ g.parse(github_storage+"/rdf/example6.rdf", format="xml")
 
 """**TASK 7.1: List all subclasses of "Person" with RDFLib and SPARQL**"""
 
-# TO DO
+from rdflib.plugins.sparql import prepareQuery
+
+# SPARQL
 q1 = """
 SELECT DISTINCT ?subclass
 WHERE {
     ?subclass rdfs:subClassOf ns:Person .
 }"""
-# Visualize the results
 
 for r in g.query(q1):
  print(r)
+
+# RDFLib
+ns = Namespace("http://somewhere#")
+
+for s, p, o in g.triples((None, RDFS.subClassOf,ns.Person)):
+  print(s,p,o)
 
 """**TASK 7.2: List all individuals of "Person" with RDFLib and SPARQL (remember the subClasses)**
 
 """
 
-# TO DO
+# SPARQL
 q2 = """
 SELECT DISTINCT ?individual
 WHERE {
-    ?individual a ns:Person .
+    ?subclass rdfs:subClassOf* ns:Person .
+    ?individual a ?subclass .
 }"""
-# Visualize the results
 
 for r in g.query(q2):
  print(r)
+
+# RDFLib
+for s, p, o in g.triples((None, RDF.type,ns.Person)):
+  print(s)
+
+for s, p, o in g.triples((None, RDFS.subClassOf,ns.Person)):
+  for s2, p2, o2 in g.triples((None, RDF.type,s)):
+    print(s2)
 
 """**TASK 7.3: List all individuals of "Person" and all their properties including their class with RDFLib and SPARQL**
 
 """
 
-# TO DO
+# SPARQL
 q3 = """
 SELECT DISTINCT ?individual ?property ?value
 WHERE {
-    ?individual a ns:Person ;
+    ?subclass rdfs:subClassOf* ns:Person .
+    ?individual a ?subclass ;
     ?property ?value .
 }"""
-# Visualize the results
 
 for r in g.query(q3):
  print(r)
+
+# RDFLib
+for s, p, o in g.triples((None, RDF.type,ns.Person)):
+  for s2, p2, o2 in g.triples((s, None, None)):
+    print(s2, p2, o2)
+
+for s, p, o in g.triples((None, RDFS.subClassOf,ns.Person)):
+  for s2, p2, o2 in g.triples((None, RDF.type,s)):
+    for s3, p3, o3 in g.triples((s2, None, None)):
+      print(s3, p3, o3)
