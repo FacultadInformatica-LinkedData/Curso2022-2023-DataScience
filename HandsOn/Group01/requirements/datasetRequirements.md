@@ -36,4 +36,17 @@
 
    4. In this data set we can find a column which associates each sport facility with an specific ID, so it may be linked with other sources of data related to the city of Madrid.
 
+   5. There is associated documentation for the data and it can be read [here] (https://datos.madrid.es/sites/v/index.jsp?vgnextoid=8690aed774503410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD)
+
+4. ### Sedes y centros con espacios deportivos
+   
+   1. This dataset contain information about sports clubs and facilities where people can practice. , so it may be linked with other data sources related to sports in the city domain.
+
+   2.It is available as a csv file.
+   
+   3.The data usage follows the conditions specified [here] https://datos.madrid.es/egob/catalogo/aviso-legal   so it is open to be published and used.
+   
+   4.This dataset contains a column that associates sports centers with a specific ID, so it can be linked with other data sources related to the city of Madrid.
+   
    5. There is associated documentation for the data and it can be read [here](https://datos.madrid.es/sites/v/index.jsp?vgnextoid=8690aed774503410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD)
+
