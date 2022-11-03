@@ -23,7 +23,7 @@
    
    4. This dataset contain a column which associates each park and garden with an specific ID, so it may be linked with other sources of data related to the city of Madrid.
    
-   5. There is documentation for the data, and it can be read [here]("https://datos.madrid.es/sites/v/index.jsp?vgnextoid=dc758935dde13410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD")
+   5. There is documentation for the data, and it can be read [here](https://datos.madrid.es/sites/v/index.jsp?vgnextoid=dc758935dde13410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD)
    
 
 3. ### Instalaciones Deportivas
@@ -32,7 +32,7 @@
 
    2. It is available as a csv file.
 
-   3. The data usage follows the conditions specified [here] (https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default) so it is open to be published and used.
+   3. The data usage follows the conditions specified [here](https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default) so it is open to be published and used.
 
    4. In this data set we can find a column which associates each sport facility with an specific ID, so it may be linked with other sources of data related to the city of Madrid.
 
@@ -48,4 +48,5 @@
    
    4.This dataset contains a column that associates sports centers with a specific ID, so it can be linked with other data sources related to the city of Madrid.
    
-   5. We can find associated documentation like:  https://datos.madrid.es/FWProjects/egob/Catalogo/XComun/Ficheros/Estructura_DS_ConjuntoDatos.pdf
+   5. There is associated documentation for the data and it can be read [here](https://datos.madrid.es/sites/v/index.jsp?vgnextoid=8690aed774503410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD)
+
