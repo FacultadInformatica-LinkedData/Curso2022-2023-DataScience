@@ -1,0 +1,53 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+1.-------------------------------------------------------
+
+SELECT DISTINCT ?p
+WHERE
+{
+	?x a dbo:Politician .
+	?x ?p ?o .
+}
+
+2.--------------------------------------------------------
+
+SELECT DISTINCT ?p 
+WHERE
+{
+	?x a dbo:Politician.
+	?x ?p ?o.
+	FILTER (?p != rdf:type)
+}
+
+3.--------------------------------------------------------
+
+SELECT DISTINCT ?o
+
+WHERE{
+	?x a dbo:Politician.
+	?x ?p ?o.
+	FILTER (?p != rdf:type)
+}
+
+4.--------------------------------------------------------
+
+SELECT DISTINCT ?p ?o
+WHERE
+{
+	?x a dbo:Politician .
+	?x ?p ?o .
+	FILTER (?p != rdf:type)
+ 
+}
+
+5.--------------------------------------------------------
+
+SELECT  DISTINCT ?p COUNT(DISTINCT ?o) as ?ocurrencias
+WHERE
+{
+	?x a dbo:Politician .
+	?x ?p ?o .
+	FILTER (?p != rdf:type)
+}

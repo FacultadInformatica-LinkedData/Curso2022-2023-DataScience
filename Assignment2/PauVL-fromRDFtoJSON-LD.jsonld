@@ -1,0 +1,48 @@
+{
+    "@context": {
+        "@atTime": "http://www.ontologies.org/ontologies/ejercicio1b#atTime",
+        "@hasMeasurement": "http://www.ontologies.org/ontologies/ejercicio1b#hasMeasurement",
+        "@hasName": "http://www.ontologies.org/ontologies/ejercicio1b#hasName",
+        "@hasOwner": "http://www.ontologies.org/ontologies/ejercicio1b#hasOwner",
+        "@hasTemperature": "http://www.ontologies.org/ontologies/ejercicio1b#hasTemperature",
+        "@includes": "http://www.ontologies.org/ontologies/ejercicio1b#includes",
+        "@xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+        {
+            "@hasMeasurement": {
+                "@id": "http://www.oeg-upm.net/ontologies/ejercicio1b/Measurement8401"
+            },
+            "@id": "http://www.oeg-upm.net/ontologies/ejercicio1b/Sensor09"
+        },
+        {
+            "@hasName": "Pedro",
+            "@id": "http://www.oeg-upm.net/ontologies/ejercicio1b/User10A"
+        },
+        {
+            "@hasOwner": {
+                "@id": "http://www.oeg-upm.net/ontologies/ejercicio1b/User10A"
+            },
+            "@id": "http://www.oeg-upm.net/ontologies/ejercicio1b/Computer101"
+        },
+        {
+            "@atTime": {
+                "@type": "@xsd:dateTime",
+                "@value": "2010-06-12T12:00:12"
+            },
+            "@hasTemperature": 29,
+            "@id": "http://www.oeg-upm.net/ontologies/ejercicio1b/Measurement8401"
+        },
+        {
+            "@id": "http://www.oeg-upm.net/ontologies/ejercicio1b/Class01",
+            "@includes": [
+                {
+                    "@id": "http://www.oeg-upm.net/ontologies/ejercicio1b/Sensor09"
+                },
+                {
+                    "@id": "http://www.oeg-upm.net/ontologies/ejercicio1b/Computer101"
+                }
+            ]
+        }
+    ]
+}
