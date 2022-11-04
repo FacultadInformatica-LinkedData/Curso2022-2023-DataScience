@@ -8,8 +8,6 @@ Siendo ambiciosos con este proyecto se nos ha ocurrido que una posible aplicaci�
 
 ## Aplication Ui
 
-Placeholder for ui image 
-
 En la siguiente imagen se muestra un ejemplo de la aplicación, donde el usuario ha buscado los parques y polideportivos que tiene en un radio de 5 km, y en cuales de ellos se puede practicar Bádminton.
 
-<img src="file:///C:/Users/gonza/Pictures/wallpapers/0005.jpg" title="" alt="" width="574">
+<img title="" src="file:///home/gl/OneDrive/universidad/Segundo Año/grafos de conocimientp/tareas/HandsOn/Group02/requirements/mockup aplicacion deportes.png" alt="" width="574">
