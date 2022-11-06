@@ -1,0 +1,81 @@
+{
+    "@context":{
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "subjects": "http://www.w3.org/Ej2b/Subjects/",
+        "subjectName": "http://www.w3.org/Ej2b/SubjectName/",
+        "teachers": "http://www.w3.org/Ej2b/Teachers/",
+        "description": "http://www.w3.org/Ej2b/Description/",
+        "attrib": "http://www.w3.org/Ej2b/Attributes/",
+        "student": "http://www.w3.org/Ej2b/Students/",
+        "fullName": "attrib:fullName",
+        "homeTown": "attrib:homeTown",
+        "age": "attrib:age",
+        "almaMater": "attrib:almaMater",
+        "parentsName": "attrib:parentsName"
+
+
+    },
+    "@id": "https://alvarohernandezrodriguez.com",
+    "@type": "student",
+    "fullName":"Alvaro Hernandez Rodriguez",
+    "homeTown":"Madrid",
+    "age":"18",
+    "almaMater":"ETSIINF Universidad Politecnica de Madrid",
+    "parentsName": [
+        "Agustin",
+        "Begoña"
+    ],
+    "subjects":[
+        {
+            "subjectName":"Web Semántica, Linked Data y Grafos de Conocimientos",
+            "teachers":[
+                "Oscar Corcho",
+                "Raul Garcia Castro",
+                "Daniel Garijo"
+            ],
+            "description":"El objetivo de esta asignatura es proporcionar la base teórica y práctica sobre los fundamentos metodológicos y tecnológicos implicados en la generación y publicación de datos en la Web de datos enlazados, así como en forma de grafos de conocimientos."
+        },
+        {
+            "subjectName":"Programación para ciencia de datos",
+            "teachers":[
+                "Guillermo Antonio Vigueras",
+                "Sergio Paraíso Medina"
+            ],
+            "description":"Proporcionar una visión práctica de la programación para tratamiento y visualización de datos, utilizando como lenguaje vehicular Python."
+        },
+        {
+            "subjectName":"Inteligencia Artificial",
+            "teachers":[
+                "María del Carmen Suárez de Figueroa Baonza",
+                "Asunción Gómez Pérez",
+                "Daniel Manrique Gamo"
+            ],
+            "description":"Aplicar técnicas para representar conocimientos. Aplicar técnicas de inferencia. Diseñar y construir sistemas informáticos capaces de resolver problemas para los que no se conoce solución"
+        },
+        {
+            "subjectName":"Representacion e Intercambio de Datos",
+            "teachers":[
+                "Francisco Javier Soriano Camino",
+                "Jose Ramon Sanchez Palomares",
+		    "Fco. Javier Yaguez Garcia"
+            ],
+            "description":"La asignatura se centra en estudiar cómo se realiza el intercambio de datos entre aplicaciones distribuidas a través de Internet"
+        },
+        {
+            "subjectName":"Algorítmica Numérica",
+            "teachers":[
+                "Antonio Tabernero",
+                "Esther Dopazo"
+            ],
+            "description":"La asignatura se centra en resolver problemas de las matemáticas “continuas” a través de métodos numéricos de discretización."
+        }
+        {
+            "subjectName":"Procesamiento de Lenguaje Natural",
+            "teachers":[
+                "Mariano Rico Almodovar",
+                "Pablo Calleja"
+            ],
+            "description":"Se aprenderán los fundamentos de las técnicas básicas para realizar análisis morfológicos y sintácticos de forma automática, así como tratamiento de textos en distintos idiomas (como español e inglés) y aspectos básicos de la semántica computacional."
+        }
+    ]
+} 
