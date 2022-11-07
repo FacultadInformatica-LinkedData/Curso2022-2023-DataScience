@@ -87,7 +87,7 @@ ns:11358784 ns:estaEnDistrito "VILLA DE VALLECAS"^^string .
 ns:Localizacion1 ns:tieneLatitud "40.37277996162931"^^float .
 ns:Localizacion1 ns:tieneLongitud "-3.6253783281885656"^^float .
 ns:Dirección1 ns:tieneCalle ns:puertoDePorzuna .
-ns:Dirección1 ns:Número "0"^^interger .
+ns:Dirección1 ns:tieneNúmero "0"^^integer .
 #################################################################
 #    General Axioms
 #################################################################
