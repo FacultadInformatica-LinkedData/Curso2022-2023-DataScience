@@ -1,9 +1,9 @@
-## Análisis de los datos
+Analysis of the datasets
+=======
 
-Primeramente hicimos un sondeo inicial de los datos en Excel, viendo de nuevo un poco la estructura de los diferentes datasets y la información que queríamos extraer de estos. Junto con esto, revisamos la información acerca del contenido del dataset provista en la página web de donde extaímos los datos. Esto nos dio una noción general de las principales clases que definirian la ontología y englobarían a las otras clases e instancias.
-Disponemos de tres datasets:
+First of all, we did an initial survey of the data in Excel, looking again at the structure of the different datasets and the information we wanted to extract from them. Along with this, we review the information about the content of the dataset provided on the web page from which we extracted the data. This gave us a general notion of the main classes that would define the ontology and encompass the other classes and instances. We have three datasets:
 
-* Dataset acerca de parques y jardines de Madrid. Pretendemos extraer aquellos parques y jardines que dispongan de instalaciones deportivas o que por sus características sean ideales para practicar algún deporte. Por ejemplo, un jardín botánico puede ser ideal para hacer footing mientras disfrutas de las vistas, un parque amplio puede servir para correr, etc. Los tipos de parques y jardines que se definen dentro del dataset son:
+* Dataset about parks and gardens in Madrid. We intend to extract those parks and gardens that have sports facilities or that, due to their characteristics, are ideal for practicing a sport. For example, a botanical garden can be ideal for jogging while enjoying the views, a large park can be used for running, etc. The types of parks and gardens that are defined within the dataset are:
   
   * Parques y jardines
   
@@ -13,7 +13,7 @@ Disponemos de tres datasets:
   
   * Parques históricos
 
-* Dataset acerca de centros deportivos de Madrid. Incluye información acerca de:
+* Dataset about sports centers in Madrid. Includes information about:
   
   * Agrupaciones deportivas
   
@@ -25,21 +25,19 @@ Disponemos de tres datasets:
   
   * Centros de tecnificación
 
-* Dataset acerca de instalaciones deportivas de Madrid. Aunque puede parecer similar al anterior, este recoge aquellos espacios deportivos que están constituidos por una unidad o unidades deportivas y no están recogidos por ningún centro deportivo. Es decir, son instalaciones básicas que suelen ser de uso libre.
+* Dataset about sports facilities in Madrid. Although it may seem similar to the previous one, this includes those sports spaces that are made up of a sports unit or units and are not covered by any sports center. That is, they are basic facilities that are usually free to use.
 
-* Dataset acerca de calles tranquilas de Madrid. Calles por las que se puede transitar en bicicleta por su bajo tráfico y otras características que lo hacen más seguro e ideal para practicar ciclismo. El usuario puede tener una idea de la red de calles adecuadas si planea hacer una ruta o tiene que hacer un trayecto en bici.
+* Dataset about quiet streets of Madrid. Streets that can be traveled by bicycle due to its low traffic and other characteristics that make it safer and ideal for cycling. The user can get an idea of ​​the appropriate street network if he plans to take a route or has to take a bike trip.
 
-Lo central para nuestro proyecto y algo que tienen en común los tres primeros datasets son las instalaciones deportivas. Tanto los parques y jardines, como las instalaciones deportivas y los centros deportivos tienen en común que incluyen o son instalaciones deportivas. Nos pareció ideal definir primeramente una entidad llamada Espacio Deportivo, que englobaría las posibles clases de espacios donde realizar deporte, así, un espacio deportivo puede ser:
+Central to our project and something that the first three datasets have in common are sports facilities. Both parks and gardens, sports facilities and sports centers have in common that they include or are sports facilities. It seemed ideal to us to first define an entity called Sports Space, which would encompass the possible classes of spaces where sports can be performed. Thus, a sports space can be:
 
-* Una instalación deportiva básica (no incluida dentro de un centro deportivo). Dentro de la misma puede haber una o varias unidades deportivas (por ejemplo, varias pistas de fútbol y un patinódromo, o simplemente constar de una pista de baloncesto).
+* A basic sports facility (not included within a sports center). Within it there may be one or more sports units (for example, several soccer fields and a skating rink, or simply a basketball court).
 
-* Un centro deportivo, dentro de los cuales hay instalaciones deportivas.
+* A sports center, within which there are sports facilities.
 
-* Los parques y jardines, dentro de los cuales hay instalaciones deportivas.
+* The parks and gardens, within which there are sports facilities.
 
-Para un análisis más detallado de la información y para poder profundizar más en la ontología, hemos usado OpenRefine como apoyo para detectar las entidades. Seleccionando facet >> text facet en la columna que nos interesaba ojeabamos las clases o tipos principales que del dataset. 
-
-En todos los datasets que hemos seleccionado, hay una columna llamada "Tipo", la cual categoriza el tipo de parque, jardin, instalación, etc. Por ejemplo, en el dataset Parques y Jardines, haciendo facet >> text facet en la columna "Tipo" vemos las siguiente información:
+For a more detailed analysis of the information and to be able to delve deeper into the ontology, we have used OpenRefine as support to detect the entities. Selecting facet >> text facet in the column that interested us, we browsed the main classes or types of the dataset. In all the datasets that we have selected, there is a column called "Type", which categorizes the type of park, garden, facility, etc. For example, in the Parks and Gardens dataset, doing facet >> text facet in the "Type" column we see the following information:
 
 /contenido/entidadesYorganismos/ParquesJardines
 
@@ -49,32 +47,48 @@ En todos los datasets que hemos seleccionado, hay una columna llamada "Tipo", la
 
 /contenido/entidadesYorganismos/ParquesJardines/ParquesHistoricos
 
-En este caso particular, nos ha sido muy útil porque está información no estaba en la descripción de los datos de la página web. 
+In this particular case, it has been very useful to us because this information was not in the description of the data on the web page.
 
-Así teníamos como superclase el Espacio deportivo, dentro del cual hay instalaciones deportivas básicas, centros deportivos y parques. Estos con sus correspondientes subclases. 
+Thus, we had EspaciosDeporte as a superclass, within which there are basic sports facilities, sports centers and parks. These with their corresponding subclasses.
 
-Otro aspecto muy positivo de los datos es que todos ellos tienen información acerca de su localización, por lo que también lo hemos incluido en el grafo como entidades.
+Another very positive aspect of the data is that they all have information about their location, which is why we have also included them in the graph as entities.
 
-## Licencia
+License
+=======
 
-La Comunidad de Madrid publicó estos datos Bajo una [licencia abierta](https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=8742d660ccb62610VgnVCM1000001d4a900aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default), que permite el uso de los datos libremente siempre que se cite a la comunidad y se cumplan algunas normas explicadas más en detalle en el link a la licencia.
+Righstholder: The rightsholder is the Madrid City Council.
 
-## Estrategia para el nombramiento de los recursos.
+Publisher: The publisher of the data is the Open Data Portal of the Madrid City Council.
 
-Para nombrar los elementos hemos decidido seguir la siguiente estructura.
+License: According to the [Portal de Datos abiertos del Ayuntamiento de Madrid](https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=8742d660ccb62610VgnVCM1000001d4a900aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default), "...these conditions allow the reuse of open documents and data from the catalog and library loans submitted to them for commercial and non-commercial purposes." There are a series of conditions for its use:
 
-* El dominio elegido para las URIs es el siguiente http://DeportesMadridGroup2.es, que hemos comprobado que no esta en uso
+1.- It is forbidden to distort the meaning of the information.
 
-* Las instancias de cualquier clase en la ontologia tienen el URI con la forma http://DeportesMadridGroup2.es/Espacios/ontology/#
+2.- The source of the documents subject to reuse must be cited. This appointment may be made as follows: "Data source: Community of Madrid and Madrid City Council
 
-* Las clases de la ontologia tendran el URI de la forma http://DeportesMadridGroup2.es/Espacios/ontology/#
+3.- The date of the last update of the documents subject to reuse must be mentioned, as long as it was included in the original document.
 
-* En el caso de las instancias de calle en su URI aparecera el nombre de la calle en camelCase.
+4.- It may not be indicated, insinuated or suggested that the Community of Madrid and the Madrid City Council participate, sponsor or support the reuse that is carried out with the information.
 
-* Para las instancias de subclases de espacio deportivo, su URI es la de cualquier instancia seguida de un ID unico que aparece en los datos obtenidos.
+5.- The metadata on the update date and the applicable reuse conditions included, where appropriate, in the document made available for reuse must be kept, not altered or deleted.
 
-* Finalmente para instancias de otras clases como Localización o Dirección se seguira un nombramiento del estilo LocalizaciónXX siendo XX un ID unico que se asignará incrementalmente
+6.- In the case of anonymized information for the protection of personal data or other reasons, it is expressly prohibited to carry out work to re-identify people based on these data and other possible, past, current or future sources of data and information.
 
+We will use the same class of license in all the datasets that we generate.
 
+Resource Naming Strategy
+===============
 
+To name the elements we have decided to follow the following structure.
 
+* The domain chosen for the URIs is the following http://DeportesMadridGroup2.es, which we have verified is not in use
+
+* Instances of any class in the ontology have the URI in the form http://DeportesMadridGroup2.es/Espacios/ontology/#
+
+* The ontology classes will have the URI in the form http://DeportesMadridGroup2.es/Espacios/ontology/#
+
+* In the case of street instances, the name of the street will appear in camelCase in its URI.
+
+* For instances of sports space subclasses, their URI is that of any instance followed by a unique ID that appears in the data obtained.
+
+* Finally, for instances of other classes such as Location or Address, a LocationXX style naming will be followed, where XX is a unique ID that will be assigned incrementally
