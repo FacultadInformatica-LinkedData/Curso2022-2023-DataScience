@@ -1,0 +1,94 @@
+ @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix ns: <http://example.com> .
+@prefix other: <http://other.namespace.com> .
+@base <http://example.com> .
+
+<http://example.com> rdf:type owl:Ontology ;
+			dc:description "Ontology code created by Chowlk" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+### ns:tieneLocalizacion
+ns:tieneLocalizacion rdf:type owl:ObjectProperty ;
+		rdfs:label "tiene localizacion" .
+
+### ns:tieneDirección
+ns:tieneDirección rdf:type owl:ObjectProperty ;
+		rdfs:label "tiene dirección" .
+
+### ns:tieneCalle
+ns:tieneCalle rdf:type owl:ObjectProperty ;
+		rdfs:label "tiene calle" .
+
+#################################################################
+#    Data Properties
+#################################################################
+
+#################################################################
+#    Classes
+#################################################################
+
+### ns:PistasPatinaje
+ns:PistasPatinaje rdf:type owl:Class ;
+	rdfs:label "Pistas Patinaje" .
+
+### ns:Localización
+ns:Localización rdf:type owl:Class ;
+	rdfs:label "Localización" .
+
+### ns:Dirreción
+ns:Dirreción rdf:type owl:Class ;
+	rdfs:label "Dirreción" .
+
+### ns:Calle
+ns:Calle rdf:type owl:Class ;
+	rdfs:label "Calle" .
+
+#################################################################
+#    Instances
+#################################################################
+
+### ns:11358784
+ns:11358784 rdf:type owl:NamedIndividual;
+		rdf:type ns:PistasPatinaje;
+		rdf:type ns:PistasPatinaje .
+
+### ns:Localizacion1
+ns:Localizacion1 rdf:type owl:NamedIndividual;
+		rdf:type ns:Localización;
+		rdf:type ns:Localización .
+
+### ns:Dirrección1
+ns:Dirrección1 rdf:type owl:NamedIndividual;
+		rdf:type ns:Dirreción;
+		rdf:type ns:Dirreción .
+
+### ns:puertoDePorzuna
+ns:puertoDePorzuna rdf:type owl:NamedIndividual;
+		rdf:type ns:Calle;
+		rdf:type ns:Calle .
+
+ns:11358784 ns:tieneLocalizacion ns:Localizacion1 .
+ns:11358784 ns:tieneDirección ns:Dirrección1 .
+ns:11358784 ns:Nombre "Instalación Deportiva Básica Pista de Patinaje" .
+ns:11358784 ns:Localidad "MADRID" .
+ns:11358784 ns:CodigoPostal "28031" .
+ns:11358784 ns:Barrio "ENSANCHE DE VALLECAS" .
+ns:11358784 ns:Distrito "VILLA DE VALLECAS" .
+ns:Localizacion1 ns:Latitud "40.37277996162931"^^float .
+ns:Localizacion1 ns:Longitud "-3.6253783281885656"^^float .
+ns:Dirrección1 ns:tieneCalle ns:puertoDePorzuna .
+ns:Dirrección1 ns:Número "0"^^interger .
+#################################################################
+#    General Axioms
+#################################################################
+
