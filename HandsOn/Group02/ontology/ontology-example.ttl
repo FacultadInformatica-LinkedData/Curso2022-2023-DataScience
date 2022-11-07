@@ -79,15 +79,15 @@ ns:puertoDePorzuna rdf:type owl:NamedIndividual;
 
 ns:11358784 ns:tieneLocalizacion ns:Localizacion1 .
 ns:11358784 ns:tieneDirección ns:Dirección1 .
-ns:11358784 ns:Nombre "Instalación Deportiva Básica Pista de Patinaje" .
-ns:11358784 ns:Localidad "MADRID" .
-ns:11358784 ns:CodigoPostal "28031" .
-ns:11358784 ns:Barrio "ENSANCHE DE VALLECAS" .
-ns:11358784 ns:Distrito "VILLA DE VALLECAS" .
-ns:Localizacion1 ns:Latitud "40.37277996162931"^^float .
-ns:Localizacion1 ns:Longitud "-3.6253783281885656"^^float .
+ns:11358784 ns:tieneNombre "Instalación Deportiva Básica Pista de Patinaje"^^string .
+ns:11358784 ns:estaEnLocalidad "MADRID"^^string .
+ns:11358784 ns:tieneCodigoPostal "28031"^^string .
+ns:11358784 ns:estaEnBarrio "ENSANCHE DE VALLECAS"^^string .
+ns:11358784 ns:estaEnDistrito "VILLA DE VALLECAS"^^string .
+ns:Localizacion1 ns:tieneLatitud "40.37277996162931"^^float .
+ns:Localizacion1 ns:tieneLongitud "-3.6253783281885656"^^float .
 ns:Dirección1 ns:tieneCalle ns:puertoDePorzuna .
-ns:Dirección1 ns:Número "0"^^integer .
+ns:Dirección1 ns:Número "0"^^interger .
 #################################################################
 #    General Axioms
 #################################################################

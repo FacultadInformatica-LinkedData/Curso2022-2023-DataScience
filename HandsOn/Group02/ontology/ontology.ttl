@@ -7,11 +7,6 @@
 ns: a owl:Ontology ;
     dc:description "Ontology code created by Chowlk" .
 
-ns:Barrio a owl:DatatypeProperty ;
-    rdfs:label "barrio" ;
-    rdfs:domain ns:EspaciosDeporte ;
-    rdfs:range xsd:string .
-
 ns:CalleTranquila a owl:Class ;
     rdfs:label "Calle Tranquila" ;
     rdfs:subClassOf ns:Calle .
@@ -44,19 +39,9 @@ ns:CircuitoFooting a owl:Class ;
     rdfs:label "Circuito Footing" ;
     rdfs:subClassOf ns:InstalaciónDeportiva .
 
-ns:CodigoPostal a owl:DatatypeProperty ;
-    rdfs:label "codigo postal" ;
-    rdfs:domain ns:EspaciosDeporte ;
-    rdfs:range xsd:string .
-
 ns:ColeccionesBotanicas a owl:Class ;
     rdfs:label "Colecciones Botanicas" ;
     rdfs:subClassOf ns:ParquesJardines .
-
-ns:Distrito a owl:DatatypeProperty ;
-    rdfs:label "distrito" ;
-    rdfs:domain ns:EspaciosDeporte ;
-    rdfs:range xsd:string .
 
 ns:Embarcadero a owl:Class ;
     rdfs:label "Embarcadero" ;
@@ -69,31 +54,6 @@ ns:Frontón a owl:Class ;
 ns:InstalacionDeportivaBasica a owl:Class ;
     rdfs:label "Instalacion Deportiva Basica" ;
     rdfs:subClassOf ns:InstalaciónDeportiva .
-
-ns:Latitud a owl:DatatypeProperty ;
-    rdfs:label "latitud" ;
-    rdfs:domain ns:Localización ;
-    rdfs:range xsd:float .
-
-ns:Localidad a owl:DatatypeProperty ;
-    rdfs:label "localidad" ;
-    rdfs:domain ns:EspaciosDeporte ;
-    rdfs:range xsd:string .
-
-ns:Longitud a owl:DatatypeProperty ;
-    rdfs:label "longitud" ;
-    rdfs:domain ns:Localización ;
-    rdfs:range xsd:float .
-
-ns:Nombre a owl:DatatypeProperty ;
-    rdfs:label "nombre" ;
-    rdfs:domain ns:EspaciosDeporte ;
-    rdfs:range xsd:string .
-
-ns:Número a owl:DatatypeProperty ;
-    rdfs:label "número" ;
-    rdfs:domain ns:Dirección ;
-    rdfs:range xsd:integer .
 
 ns:ParquesForestales a owl:Class ;
     rdfs:label "Parques Forestales" ;
@@ -115,20 +75,60 @@ ns:PistasPatinaje a owl:Class ;
     rdfs:label "Pistas Patinaje" ;
     rdfs:subClassOf ns:InstalaciónDeportiva .
 
+ns:estaEnBarrio a owl:DatatypeProperty ;
+    rdfs:label "esta en barrio" ;
+    rdfs:domain ns:EspaciosDeporte ;
+    rdfs:range xsd:string .
+
+ns:estaEnDistrito a owl:DatatypeProperty ;
+    rdfs:label "esta en distrito" ;
+    rdfs:domain ns:EspaciosDeporte ;
+    rdfs:range xsd:string .
+
+ns:estaEnLocalidad a owl:DatatypeProperty ;
+    rdfs:label "esta en localidad" ;
+    rdfs:domain ns:EspaciosDeporte ;
+    rdfs:range xsd:string .
+
 ns:tieneCalle a owl:ObjectProperty ;
     rdfs:label "tiene calle" ;
     rdfs:domain ns:Dirección ;
     rdfs:range ns:Calle .
+
+ns:tieneCodigoPostal a owl:DatatypeProperty ;
+    rdfs:label "tiene codigo postal" ;
+    rdfs:domain ns:EspaciosDeporte ;
+    rdfs:range xsd:string .
 
 ns:tieneDireccion a owl:ObjectProperty ;
     rdfs:label "tiene direccion" ;
     rdfs:domain ns:EspaciosDeporte ;
     rdfs:range ns:Dirección .
 
+ns:tieneLatitud a owl:DatatypeProperty ;
+    rdfs:label "tiene latitud" ;
+    rdfs:domain ns:Localización ;
+    rdfs:range xsd:float .
+
 ns:tieneLocalizacion a owl:ObjectProperty ;
     rdfs:label "tiene localizacion" ;
     rdfs:domain ns:EspaciosDeporte ;
     rdfs:range ns:Localización .
+
+ns:tieneLongitud a owl:DatatypeProperty ;
+    rdfs:label "tiene longitud" ;
+    rdfs:domain ns:Localización ;
+    rdfs:range xsd:float .
+
+ns:tieneNombre a owl:DatatypeProperty ;
+    rdfs:label "tiene nombre" ;
+    rdfs:domain ns:EspaciosDeporte ;
+    rdfs:range xsd:string .
+
+ns:tieneNúmero a owl:DatatypeProperty ;
+    rdfs:label "tiene número" ;
+    rdfs:domain ns:Dirección ;
+    rdfs:range xsd:integer .
 
 ns:Calle a owl:Class ;
     rdfs:label "Calle" .
