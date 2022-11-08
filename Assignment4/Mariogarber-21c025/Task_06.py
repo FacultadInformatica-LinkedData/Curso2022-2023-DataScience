@@ -71,10 +71,10 @@ for s, p, o in g:
 """**TASK 6.5: Add UPM as the university where John Smith works**"""
 
 # TO DO
-VCARD2006=Namespace("http://www.w3.org/2006/vcard/ns#")
+LinkedData=Namespace("http://www.exampleLinkedData.com/ontology/")
 UPMURI=ns.UPM
 g.add((UPMURI, RDF.type, ns.University))
-g.add((ns.JohnSmith, VCARD2006.worksAt, ns.UPM))
+g.add((ns.JohnSmith, LinkedData.worksAt, ns.UPM))
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)
