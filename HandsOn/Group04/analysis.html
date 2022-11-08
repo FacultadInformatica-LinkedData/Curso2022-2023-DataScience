@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+  <head>
+    <meta charset="utf-8">
+    <title>analysis</title>
+  </head>
+  
+  <body>
+    
+	<h3>Lycense</h3>
+	
+		<ul>
+			<li type="square"><b>Publisher.</b> Portal de datos abiertos del Ayuntamiento de Madrid. <a href="https://datos.madrid.es/portal/site/egob/">https://datos.madrid.es/portal/site/egob/</a></li>
+			<li type="square"><b>Rightsholder.</b> El ayuntamiento de la comunidad de Madrid.</li>
+			<li type="square"><b>License: </b><a href="https://datos.madrid.es/egob/catalogo/aviso-legal"</a> https://datos.madrid.es/egob/catalogo/aviso-legal</a>
+				<ul>
+					<li type="circle">Garantizar que la información mostrada en su sistema esté siempre actualizada.</li>
+					<li type="circle">Permite difundir, reutilizar o adaptar los datos siempre y cuando se haga referencia a la autoría de estos, el ayuntamiento de Madrid.</li>
+                    <li type="circle">Condiciones generales para la reutilización</li>
+                    <ul>
+                        <li> Está prohibido desnaturalizar el sentido de la información.</li>
+                        <li> Debe citarse la fuente de los documentos objeto de la reutilización. Esta cita podrá realizarse de la siguiente manera: "Origen de los datos: Ayuntamiento de Madrid (o, en su caso, órgano administrativo, organismo o entidad de que se trate)".</li>
+                        <li> Debe mencionarse la fecha de la última actualización de los documentos objeto de la reutilización, siempre y cuando estuviera incluida en el documento original.</li>
+                        <li> No se podrá indicar, insinuar o sugerir que el Ayuntamiento de Madrid participa, patrocina o apoya la reutilización que se lleve a cabo con la información.</li>
+                        <li> Deben conservarse, no alterarse ni suprimirse los metadatos sobre la fecha de actualización y las condiciones de reutilización aplicables incluidos, en su caso, en el documento puesto a disposición para su reutilización.</li>
+                        <li> En caso de información anonimizada por protección de datos personales u otros motivos, está expresamente prohibido realizar labores de re-identificación de personas a partir de estos datos y otras fuentes de datos e información posibles, pasadas, actuales o futuras.</li>
+                    </ul>
+                    <li type="circle">Para obtener más información sobre la licencia acceda al link facilitado.</li>
+				</ul>
+			</li>	
+		</ul>
+	
+	<h3>Analising dataset</h3>
+	
+		<table class="egt">
+		<tbody style="background: rgba(224, 249, 30, 0.3); border: 1px solid rgba(0, 0, 0, 1);">
+			<tr>
+
+				<th>Columna</th>
+
+				<th>Tipo</th>
+
+				<th>Descripción</th>
+
+			</tr>
+		</tbody>
+		
+		<tbody style="background: rgba(2, 199, 254, 0.3); border: 1px solid rgba(0, 0, 0, 0.3);">
+
+        <tr>
+
+            <td>TIPO</td>
+            <td>String</td>
+            <td> Indica el tipo de contenedor(punto limpio,ropa,pilas,etc)</td>
+        
+        </tr>
+    
+		<tr>
+
+			<td>DIRECCIÓN</td>
+			<td>String</td>
+			<td>Indica donde se encuentra ubicado (calle/paseo) cada contendor</td>
+		
+		</tr>
+		
+		<tr>
+
+			<td>DISTRITO</td>
+			<td>String</td>
+			<td>Indica el distrito donde se encuentra cada contenedor</td>
+
+		</tr>
+		
+		<tr>
+
+			<td>COORDENADA X</td>
+			<td>Float</td>
+			<td>Indica la respectiva coordenda x de cada contenedor</td>
+		
+		</tr>
+		
+		<tr>
+
+			<td>COORDENADA Y</td>
+			<td>Float</td>
+			<td> Indica la respectiva coordenda y de cada contenedor</td>
+
+		
+		</tr>
+		
+		<tr>
+
+			<td>HORARIO</td>
+			<td>String</td>
+			<td>Indica el horario de disponibilidad de cada contenedor</td>
+
+		
+		</tr>
+		</tbody>
+
+		</table>
+	
+	
+	
+	<h3>Resource naming strategy</h3>
+		<ul>
+			<li><b>Domain: </b><a href="https://www.madridcontenedores.com/">https://www.madridcontenedores.com/</a> </li>
+			<li><b>Classes: </b><a href="https://www.madridcontenedores.com/classes#">https://www.madridcontenedores.com/classes#</a>
+				<ul>
+					<li>Contenedor</li>
+					<li>Ubicación</li>
+					<li>Residuos</li>
+                    <li>Tipo de Contenedor(Subclass of Contenedor)</li>
+				</ul>
+			</li>
+			<li><b>Properties: </b><a href="https://www.madridcontenedores.com/properties#">https://www.madridcontenedores.com/properties#</a> 
+				<ul>
+					<li type="circle">Se tira en</li>
+					<li type="circle">Se ubica en</li>
+					<li type="circle">Coordenada X</li>
+					<li type="circle">Coordenada Y</li>
+					<li type="circle">Distrito</li>
+					<li type="circle">Dirección</li>
+				</ul>
+			</li>
+			<li><b>Individuals: </b><a href="https://www.madridcontenedores.com/individuals#">https://www.madridcontenedores.com/individuals#</a> </li>
+		</ul>
+		
+  </body>
+  
+</html> 
