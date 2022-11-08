@@ -1,0 +1,138 @@
+@prefix base: <http://accidentesdetrafico.es/ontology/TrafficAccident#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+base: a owl:Ontology ;
+    dc:description "Ontology code created by Chowlk" .
+
+base:conEstadoMeteorologico a owl:DatatypeProperty ;
+    rdfs:label "con estado meteorologico" ;
+    rdfs:domain base:Accidente ;
+    rdfs:range xsd:xsd .
+
+base:conNumeroExpediente a owl:DatatypeProperty ;
+    rdfs:label "con numero expediente" ;
+    rdfs:domain base:Accidente ;
+    rdfs:range xsd:xsd .
+
+base:conVehiculo a owl:DatatypeProperty ;
+    rdfs:label "con vehiculo" ;
+    rdfs:domain base:Accidente ;
+    rdfs:range xsd:xsd .
+
+base:enDistrito a owl:ObjectProperty ;
+    rdfs:label "en distrito" ;
+    rdfs:domain base:Localizacion ;
+    rdfs:range base:Distrito .
+
+base:involucraA a owl:ObjectProperty ;
+    rdfs:label "involucra a" ;
+    rdfs:domain base:Accidente ;
+    rdfs:range base:Persona .
+
+base:nombreLesividad a owl:DatatypeProperty ;
+    rdfs:label "nombre lesividad" ;
+    rdfs:domain base:Lesividad ;
+    rdfs:range xsd:xsd .
+
+base:positivaAlcohol a owl:DatatypeProperty ;
+    rdfs:label "positiva alcohol" ;
+    rdfs:domain base:Persona ;
+    rdfs:range xsd:xsd .
+
+base:positivaDroga a owl:DatatypeProperty ;
+    rdfs:label "positiva droga" ;
+    rdfs:domain base:Persona ;
+    rdfs:range xsd:xsd .
+
+base:tieneCodigoDistrito a owl:DatatypeProperty ;
+    rdfs:label "tiene codigo distrito" ;
+    rdfs:domain base:Distrito ;
+    rdfs:range xsd:xsd .
+
+base:tieneCodigoLesividad a owl:DatatypeProperty ;
+    rdfs:label "tiene codigo lesividad" ;
+    rdfs:domain base:Lesividad ;
+    rdfs:range xsd:xsd .
+
+base:tieneFecha a owl:DatatypeProperty ;
+    rdfs:label "tiene fecha" ;
+    rdfs:domain base:Accidente ;
+    rdfs:range xsd:xsd .
+
+base:tieneHora a owl:DatatypeProperty ;
+    rdfs:label "tiene hora" ;
+    rdfs:domain base:Accidente ;
+    rdfs:range xsd:xsd .
+
+base:tieneLatitud a owl:DatatypeProperty ;
+    rdfs:label "tiene latitud" ;
+    rdfs:range xsd:xsd .
+
+base:tieneLesividad a owl:ObjectProperty ;
+    rdfs:label "tiene lesividad" ;
+    rdfs:domain base:Persona ;
+    rdfs:range base:Lesividad .
+
+base:tieneLocalizacion a owl:ObjectProperty ;
+    rdfs:label "tiene localizacion" ;
+    rdfs:domain base:Accidente ;
+    rdfs:range base:Localizacion .
+
+base:tieneLongitud a owl:DatatypeProperty ;
+    rdfs:label "tiene longitud" ;
+    rdfs:domain base:Localizacion ;
+    rdfs:range xsd:xsd .
+
+base:tieneNombreCalle a owl:DatatypeProperty ;
+    rdfs:label "tiene nombre calle" ;
+    rdfs:domain base:Localizacion ;
+    rdfs:range xsd:xsd .
+
+base:tieneNombreDistrito a owl:DatatypeProperty ;
+    rdfs:label "tiene nombre distrito" ;
+    rdfs:domain base:Distrito ;
+    rdfs:range xsd:xsd .
+
+base:tieneNumeroCalle a owl:DatatypeProperty ;
+    rdfs:label "tiene numero calle" ;
+    rdfs:domain base:Localizacion ;
+    rdfs:range xsd:xsd .
+
+base:tieneRangoEdad a owl:DatatypeProperty ;
+    rdfs:label "tiene rango edad" ;
+    rdfs:domain base:Persona ;
+    rdfs:range xsd:xsd .
+
+base:tieneSexo a owl:DatatypeProperty ;
+    rdfs:label "tiene sexo" ;
+    rdfs:domain base:Persona ;
+    rdfs:range xsd:xsd .
+
+base:tieneTipoAccidente a owl:DatatypeProperty ;
+    rdfs:label "tiene tipo accidente" ;
+    rdfs:domain base:Accidente ;
+    rdfs:range xsd:xsd .
+
+base:tieneTipoPersona a owl:DatatypeProperty ;
+    rdfs:label "tiene tipo persona" ;
+    rdfs:domain base:Persona ;
+    rdfs:range xsd:xsd .
+
+base:Distrito a owl:Class ;
+    rdfs:label "Distrito" .
+
+base:Lesividad a owl:Class ;
+    rdfs:label "Lesividad" .
+
+base:Localizacion a owl:Class ;
+    rdfs:label "Localizacion" .
+
+base:Persona a owl:Class ;
+    rdfs:label "Persona" .
+
+base:Accidente a owl:Class ;
+    rdfs:label "Accidente" .
+
