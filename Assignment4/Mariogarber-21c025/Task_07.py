@@ -56,12 +56,11 @@ syntax = Namespace('http://www.w3.org/1999/02/22-rdf-syntax-ns#')
 
 q2 = prepareQuery('''
    SELECT ?Subject WHERE { 
-    {?Subject schema:subClassOf ns:Person} UNION 
-    {?Subject schema:subClassOf ?tipo.
-    ?tipo syntax:subClassOf ns:Person}
+    ?Subclase schema:subClassOf* ns:Person. 
+    ?tipo rdf:type ns:Subclase.
   }
   ''',
-                  initNs={"syntax": syntax, "schema": schema, "ns": ns}
+                  initNs={"schema": schema, "ns": ns}
                   )
 
 # Visualize the results
@@ -84,9 +83,8 @@ for s, p, o in PersonsSubclass:
 # TO DO
 q3 = prepareQuery('''
   SELECT ?Subject ?properties ?Object WHERE { 
-    {?Subject schema:subClassOf ns:Person} UNION 
-    {?Subject schema:subClassOf ?tipo.
-    ?tipo syntax:subClassOf ns:Person}
+    ?Subclase schema:subClassOf* ns:Person.
+    ?Subject schema:type ?Subclase
     ?Subject ?properties ?Object
   }
   ''',
