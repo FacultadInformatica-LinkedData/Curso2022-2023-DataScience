@@ -1,0 +1,509 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value.replace(/[0-9]*/,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column EQUIPAMIENTO using expression value.replace(/[0-9]*/,\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value.replace(/Mini/i,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column EQUIPAMIENTO using expression value.replace(/Mini/i,\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value.replace(/Campo/i,\"Pista\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column EQUIPAMIENTO using expression value.replace(/Campo/i,\"Pista\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value.replace(/Circuito/i,\"Pista\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column EQUIPAMIENTO using expression value.replace(/Circuito/i,\"Pista\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "EQUIPAMIENTO",
+    "expression": "jython:import re \nb = value + ' ' \na = re.findall('([Pp]istas? de .+?[ .])',b) \na = a + re.findall('[Pp]istas? polideportiva',b)\nreturn ','.join(a)",
+    "onError": "set-to-blank",
+    "newColumnName": "pistas",
+    "columnInsertIndex": 5,
+    "description": "Create column pistas at index 5 based on column EQUIPAMIENTO using expression jython:import re \nb = value + ' ' \na = re.findall('([Pp]istas? de .+?[ .])',b) \na = a + re.findall('[Pp]istas? polideportiva',b)\nreturn ','.join(a)"
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "pistas",
+    "keyColumnName": "PK",
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "description": "Split multi-valued cells in column pistas"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pistas",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pistas de pádel ",
+          "Pistas de Pádel ",
+          "Pistas de Padel ",
+          "pistas de pádel ",
+          "Pistas de padel ",
+          "Pistas de pádel.",
+          "pistas de pádel."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pistas de pádel "
+      },
+      {
+        "from": [
+          "Pista de baloncesto ",
+          "Pista de baloncesto.",
+          "Pista de Baloncesto ",
+          "pista de baloncesto ",
+          "Pista de baloncesto* ",
+          "pista de baloncesto."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de baloncesto "
+      },
+      {
+        "from": [
+          "Pista de fútbol ",
+          "Pista de Fútbol ",
+          "Pista de fútbol.",
+          "Pista de  fútbol ",
+          "Pista de futbol ",
+          "Pista de fútbol"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de fútbol "
+      },
+      {
+        "from": [
+          "Pista de Fútbol-Sala ",
+          "Pista de fútbol-sala ",
+          "Pista de futbol-sala ",
+          "Pista de fútbol-sala.",
+          "pista de fútbol-sala "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de Fútbol-Sala "
+      },
+      {
+        "from": [
+          "Pista de patinaje ",
+          "Pista de patinaje.",
+          "Pista de Patinaje ",
+          "pista de patinaje.",
+          "pista de patinaje "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de patinaje "
+      },
+      {
+        "from": [
+          "Pistas de baloncesto ",
+          "Pistas de baloncesto.",
+          "pistas de baloncesto ",
+          "Pistas de Baloncesto ",
+          "pistas de baloncesto."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de baloncesto "
+      },
+      {
+        "from": [
+          "Pista de chito ",
+          "Pista de Chito ",
+          "Pista de chito.",
+          "pista de chito."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de chito "
+      },
+      {
+        "from": [
+          "Pistas de petanca ",
+          "Pistas de petanca.",
+          "Pistas de Petanca ",
+          "Pistas de Petanca."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de petanca "
+      },
+      {
+        "from": [
+          "Pista de petanca ",
+          "Pista de Petanca ",
+          "Pista de petanca."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de petanca "
+      },
+      {
+        "from": [
+          "Pistas de patinaje ",
+          "Pistas de patinaje.",
+          "pistas de patinaje."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de patinaje "
+      },
+      {
+        "from": [
+          "Pista de balonmano ",
+          "Pista de Balonmano ",
+          "pista de balonmano."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de balonmano "
+      },
+      {
+        "from": [
+          "Pistas de chito ",
+          "Pistas de Chito ",
+          "Pistas de chito."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pistas de chito "
+      },
+      {
+        "from": [
+          "Pistas de tenis ",
+          "Pistas de Tenis ",
+          "pistas de tenis "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pistas de tenis "
+      },
+      {
+        "from": [
+          "",
+          " "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      },
+      {
+        "from": [
+          "Pista de hockey ",
+          "Pista de hockey."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de hockey "
+      },
+      {
+        "from": [
+          "Pista de calva ",
+          "pista de calva "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de calva "
+      },
+      {
+        "from": [
+          "Pistas de balonmano ",
+          "Pistas de Balonmano "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de balonmano "
+      },
+      {
+        "from": [
+          "Pistas de bolos ",
+          "pistas de bolos "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de bolos "
+      },
+      {
+        "from": [
+          "Pista de skate ",
+          "Pista de skate."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de skate "
+      },
+      {
+        "from": [
+          "Pistas de Fútbol-Sala.",
+          "pistas de fútbol-sala."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de Fútbol-Sala."
+      },
+      {
+        "from": [
+          "Pista polideportiva",
+          "pista polideportiva"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista polideportiva"
+      },
+      {
+        "from": [
+          "Pistas de fútbol ",
+          "Pistas de Fútbol "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de fútbol "
+      },
+      {
+        "from": [
+          "Pista de polideportiva ",
+          "pista de polideportiva "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista polideportiva "
+      },
+      {
+        "from": [
+          "Pista de voley ",
+          "Pista de vóley "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de voley "
+      },
+      {
+        "from": [
+          "Pista de footing ",
+          "Pista de Footing "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de footing "
+      }
+    ],
+    "description": "Mass edit cells in column pistas"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pistas",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pista polideportiva",
+          "Pista polideportiva "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista polideportiva"
+      },
+      {
+        "from": [
+          "Pista de Fútbol-Sala ",
+          "Pista de Fútbol-Sala."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de Fútbol-Sala "
+      }
+    ],
+    "description": "Mass edit cells in column pistas"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pistas",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pista de baloncesto ",
+          "Pista de baloncestoVestuario ",
+          "Pista de baloncestoVestuarios "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de baloncesto "
+      },
+      {
+        "from": [
+          "Pistas de baloncestoPista ",
+          "Pistas de BaloncestoTenis "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pistas de baloncesto"
+      },
+      {
+        "from": [
+          "Pistas de pádel ",
+          "Pistas de padell "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pistas de pádel "
+      },
+      {
+        "from": [
+          "Pistas de petancaBolera ",
+          "Pistas de petancaSkatepark "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pistas de petanca"
+      }
+    ],
+    "description": "Mass edit cells in column pistas"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pistas",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pista de calva ",
+          "Pistas de calva "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de calva "
+      },
+      {
+        "from": [
+          "Pista de frontón ",
+          "Pistas de frontón "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista de frontón "
+      },
+      {
+        "from": [
+          "Pistas de chito ",
+          "Pista de chito "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pistas de chito "
+      },
+      {
+        "from": [
+          "Pista polideportiva",
+          "Pistas polideportiva"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pista polideportiva"
+      },
+      {
+        "from": [
+          "Pistas de tenis ",
+          "Pista de tenis "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pistas de tenis "
+      },
+      {
+        "from": [
+          "Pistas de pádel ",
+          "Pista de pádel "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pistas de pádel "
+      }
+    ],
+    "description": "Mass edit cells in column pistas"
+  },
+  {
+    "op": "core/multivalued-cell-join",
+    "columnName": "pistas",
+    "keyColumnName": "PK",
+    "separator": ",",
+    "description": "Join multi-valued cells in column pistas"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO",
+    "expression": "value.replace(\"/contenido/entidadesYorganismos/CentrosEspaciosDeporte/\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO using expression value.replace(\"/contenido/entidadesYorganismos/CentrosEspaciosDeporte/\",\"\")"
+  }
+]
