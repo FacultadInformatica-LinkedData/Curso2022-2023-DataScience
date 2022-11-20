@@ -83,7 +83,7 @@ To name the elements we have decided to follow the following structure.
 
 * The domain chosen for the URIs is the following http://DeportesMadridGroup2.es, which we have verified is not in use
 
-* Instances of any class in the ontology have the URI in the form http://DeportesMadridGroup2.es/Espacios/ontology/#
+* Instances of any class in the ontology have the URI in the form http://DeportesMadridGroup2.es/Espacios/instances/#
 
 * The ontology classes will have the URI in the form http://DeportesMadridGroup2.es/Espacios/ontology/#
 
