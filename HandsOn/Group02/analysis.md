@@ -91,4 +91,4 @@ To name the elements we have decided to follow the following structure.
 
 * For instances of sports space subclasses, their URI is that of any instance followed by a unique ID that appears in the data obtained.
 
-* Finally, for instances of other classes such as Location or Address, a LocationXX style naming will be followed, where XX is a unique ID that will be assigned incrementally
+* Finally, for instances of other classes such as Location or Address, a LocationXX style naming will be followed, where XX is the unique ID of the instance it will be reference to.

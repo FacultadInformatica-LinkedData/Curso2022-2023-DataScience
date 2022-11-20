@@ -11,24 +11,27 @@ prefixes:
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   vocab: http://example.org#
   ns: http://DeportesMadridGroup2.es/Espacios/ontology/#
+  nso: http://DeportesMadridGroup2.es/Espacios/instances/#
   
 mappings:
   triplesmap1:
     sources:
-      - [pathToData.csv~csv]
-    s: http://subjectUri/$(columnReference)
+      - [csv/200215-0-instalaciones-deportivas.csv~csv]
+    s: nso:$(PK)
     po:
-      - [a, vocab:MyClass]
-      - [vocab:property1,$(column)]
-      - [vocab:property2,$(uri-column)~iri]
-      - [vocab:property3,$(integer-column),xsd:integer]
-      - p: vocab:relation
+      - [a, ns:$(TIPO)]
+      - [ns:estaEnBarrio,$(BARRIO)]
+      - [ns:estaEnDistrito,$(DISTRITO)]
+      - [ns:estaEnLocalidad,$(LOCALIDAD)]
+      - [ns:tieneCodigoPostal,$(CODIGO-POSTAL)]
+      - [ns:tieneNombre,$(NOMBRE)]
+      - p: ns:tieneLocalizacion
         o:
           mapping: triplesmap2
 
   triplesmap2:
     sources:
-      - [pathToData.csv~csv]
-    s: $(uri-column)
+      - [csv/200215-0-instalaciones-deportivas.csv~csv]
+    s: nso:Localizacion
     po:
       - [a, vocab:MyClass2]
