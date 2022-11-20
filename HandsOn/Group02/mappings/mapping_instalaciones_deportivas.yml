@@ -9,7 +9,7 @@ prefixes:
 mappings:
   triplesmap1:
     sources:
-      - [csv/200215-0-instalaciones-deportivas.csv~csv]
+      - [./csv/200215-0-instalaciones-deportivas-updated.csv~csv]
     s: nso:$(PK)
     po:
       - [a, ns:$(TIPO)]
@@ -35,7 +35,7 @@ mappings:
 
   triplesmap2:
     sources:
-      - [csv/200215-0-instalaciones-deportivas.csv~csv]
+      - [./csv/200215-0-instalaciones-deportivas-updated.csv~csv]
     s: nso:Localizacion$(PK)
     po:
       - [a, ns:Localizacion]
@@ -44,7 +44,7 @@ mappings:
   
   triplesmap3:
     sources:
-      - [csv/200215-0-instalaciones-deportivas.csv~csv]
+      - [./csv/200215-0-instalaciones-deportivas-updated.csv~csv]
     s: nso:Direccion$(PK)
     po:
       - [a, ns:Direccion]
@@ -59,7 +59,7 @@ mappings:
   
   triplesmap4:
     sources:
-      - [csv/200215-0-instalaciones-deportivas.csv~csv]
+      - [./csv/200215-0-instalaciones-deportivas-updated.csv~csv]
     s: nso:calle/$(NOMBRE-VIA)
     po:
       - [a, ns:Calle]
