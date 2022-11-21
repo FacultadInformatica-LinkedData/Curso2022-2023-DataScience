@@ -27,6 +27,12 @@ lib:closeDays a owl:ObjectProperty ;
     rdfs:domain lib:openingHours ;
     rdfs:range xsd:string .
 
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#comments
+lib:comments a owl:ObjectProperty ;
+    rdfs:label "comments" ;
+    rdfs:domain lib:openingHours ;
+    rdfs:range xsd:string .
+
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasAdress
 lib:hasAdress a owl:ObjectProperty ;
@@ -63,9 +69,30 @@ lib:hasDistrict a owl:ObjectProperty ;
     rdfs:range lib:District .
 
 
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasDistrictCode
+lib:hasDistrictCode a owl:ObjectProperty ;
+    rdfs:label "has district code" ;
+    rdfs:domain lib:District ;
+    rdfs:range xsd:integer .
+
+
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFacilities
 lib:hasFacilities a owl:ObjectProperty ;
     rdfs:label "has facilities" ;
+    rdfs:domain lib:Library ;
+    rdfs:range xsd:string .
+
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#accessibility
+lib:accessibility a owl:ObjectProperty ;
+    rdfs:label "accessibility" ;
+    rdfs:domain lib:Library ;
+    rdfs:range xsd:string .
+
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#espacios
+lib:espacios a owl:ObjectProperty ;
+    rdfs:label "espacios" ;
     rdfs:domain lib:Library ;
     rdfs:range xsd:string .
 
@@ -84,6 +111,13 @@ lib:hasLocation a owl:ObjectProperty ;
     rdfs:range lib:Location .
 
 
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#province
+lib:province a owl:ObjectProperty ;
+    rdfs:label "province" ;
+    rdfs:domain lib:Location ;
+    rdfs:range xsd:string .
+
+
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasLongitude
 lib:hasLongitude a owl:ObjectProperty ;
     rdfs:label "has longitude" ;
@@ -98,9 +132,37 @@ lib:hasNeighbourhood a owl:ObjectProperty ;
     rdfs:range lib:Neighbourhood .
 
 
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasNeighbourhood
+lib:hasNeighbourhoodCode a owl:ObjectProperty ;
+    rdfs:label "has neighbourhood code" ;
+    rdfs:domain lib:Neighbourhood ;
+    rdfs:range xsd:integer .
+
+
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasNumber
 lib:hasNumber a owl:ObjectProperty ;
     rdfs:label "has number" ;
+    rdfs:domain lib:Adress ;
+    rdfs:range xsd:string .
+
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#numType
+lib:numType a owl:ObjectProperty ;
+    rdfs:label "num type" ;
+    rdfs:domain lib:Adress ;
+    rdfs:range xsd:string .
+
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#streetName
+lib:streetName a owl:ObjectProperty ;
+    rdfs:label "street name" ;
+    rdfs:domain lib:Adress ;
+    rdfs:range xsd:string .
+
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#streetName
+lib:streetName a owl:ObjectProperty ;
+    rdfs:label "street name" ;
     rdfs:domain lib:Adress ;
     rdfs:range xsd:string .
 
@@ -389,20 +451,20 @@ sch:coordinateY a owl:ObjectProperty ;
 	rdfs:domain sch:Coordinates ;
 	rdfs:range xsd:int.
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#coordinateX
-lib:coordinateX a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasCoordinateX
+lib:hasCoordinateX a owl:ObjectProperty ;
 	rdfs:label "Coordinates X" ;
 	rdfs:domain lib:Coordinates ;
 	rdfs:range xsd:int.
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#coordinateY
-lib:coordinateY a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasCoordinateY
+lib:hasCoordinateY a owl:ObjectProperty ;
 	rdfs:label "Coordinates Y" ;
 	rdfs:domain lib:Coordinates ;
 	rdfs:range xsd:int.
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#faxNumber
-lib:hasfaxNumber a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax
+lib:hasFax a owl:ObjectProperty ;
 	rdfs:label "has fax number" ;
 	rdfs:domain lib:ContactInfo ;
 	rdfs:range xsd:string.
