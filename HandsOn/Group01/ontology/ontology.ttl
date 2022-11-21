@@ -124,6 +124,12 @@ lib:hasLongitude a owl:ObjectProperty ;
     rdfs:domain lib:Coordinates ;
     rdfs:range vcard:Longitude .
 
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasLatitude
+lib:hasLatitude a owl:ObjectProperty ;
+    rdfs:label "has latitude" ;
+    rdfs:domain lib:Coordinates ;
+    rdfs:range vcard:Latitude .
+
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasNeighbourhood
 lib:hasNeighbourhood a owl:ObjectProperty ;
@@ -132,7 +138,7 @@ lib:hasNeighbourhood a owl:ObjectProperty ;
     rdfs:range lib:Neighbourhood .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasNeighbourhood
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasNeighbourhoodCode
 lib:hasNeighbourhoodCode a owl:ObjectProperty ;
     rdfs:label "has neighbourhood code" ;
     rdfs:domain lib:Neighbourhood ;
@@ -149,13 +155,6 @@ lib:hasNumber a owl:ObjectProperty ;
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#numType
 lib:numType a owl:ObjectProperty ;
     rdfs:label "num type" ;
-    rdfs:domain lib:Adress ;
-    rdfs:range xsd:string .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#streetName
-lib:streetName a owl:ObjectProperty ;
-    rdfs:label "street name" ;
     rdfs:domain lib:Adress ;
     rdfs:range xsd:string .
 
