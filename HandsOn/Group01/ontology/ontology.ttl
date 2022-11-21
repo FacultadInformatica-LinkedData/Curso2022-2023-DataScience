@@ -92,10 +92,10 @@ lib:hasLongitude a owl:ObjectProperty ;
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasNeighbourhood
-lib:hasNeighborghood a owl:ObjectProperty ;
-    rdfs:label "has neighborghood" ;
+lib:hasNeighbourhood a owl:ObjectProperty ;
+    rdfs:label "has neighbourhood" ;
     rdfs:domain lib:District ;
-    rdfs:range lib:Neighbourdhood .
+    rdfs:range lib:Neighbourhood .
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasNumber
@@ -120,8 +120,8 @@ lib:hasTimetable a owl:ObjectProperty ;
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasTransport
-lib:hasTransportt a owl:ObjectProperty ;
-    rdfs:label "has transportt" ;
+lib:hasTransport a owl:ObjectProperty ;
+    rdfs:label "has transport" ;
     rdfs:domain lib:Library ;
     rdfs:range lib:Transport .
 
@@ -218,10 +218,10 @@ sch:hasLocation a owl:ObjectProperty ;
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasNeighbourhood
-sch:hasNeighbourghood a owl:ObjectProperty ;
-    rdfs:label "has neighbourghood" ;
+sch:hasNeighbourhood a owl:ObjectProperty ;
+    rdfs:label "has neighbourhood" ;
     rdfs:domain sch:District ;
-    rdfs:range sch:Neighbourdhood .
+    rdfs:range sch:Neighbourhood .
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasNumber
@@ -410,6 +410,4 @@ sch:Transport a owl:Class ;
 ### https://www.biblioescuela.educamadrid.org/ontologies/Library#openingHours
 lib:openingHours a owl:Class ;
     rdfs:label "opening Hours" .
-
-
 
