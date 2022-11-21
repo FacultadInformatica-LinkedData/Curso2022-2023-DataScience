@@ -1,0 +1,334 @@
+[
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "﻿CONTENEDOR RESTO (TAPA NARANJA)",
+      "CONTENEDOR ORGÁCNICA (TAPA MARRÓN)",
+      "CONTENEDOR ENVASES (AMARILLO)",
+      "CONTENEDOR PAPEL-CARTÓN (AZUL)",
+      "CONTENEDOR VIDRIO (VERDE)",
+      "PUNTO LIMPIO FIJO",
+      "PUNTO LIMPIO MÓVIL",
+      "PUNTO LIMPIO DE PROXIMIDAD",
+      "MARQUESINA PARADAS AUTOBÚS",
+      "CONTENEDOR DE RESIDUOS TEXTILES"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿CONTENEDOR RESTO (TAPA NARANJA)",
+    "newColumnName": "RESTO",
+    "description": "Rename column ﻿CONTENEDOR RESTO (TAPA NARANJA) to RESTO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CONTENEDOR ORGÁCNICA (TAPA MARRÓN)",
+    "newColumnName": "ORGACNICA",
+    "description": "Rename column CONTENEDOR ORGÁCNICA (TAPA MARRÓN) to ORGACNICA"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CONTENEDOR ENVASES (AMARILLO)",
+    "newColumnName": "ENVASES",
+    "description": "Rename column CONTENEDOR ENVASES (AMARILLO) to ENVASES"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CONTENEDOR PAPEL-CARTÓN (AZUL)",
+    "newColumnName": "PAPEL-CARTÓN",
+    "description": "Rename column CONTENEDOR PAPEL-CARTÓN (AZUL) to PAPEL-CARTÓN"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "PAPEL-CARTÓN",
+    "newColumnName": "PAPEL-CARTON",
+    "description": "Rename column PAPEL-CARTÓN to PAPEL-CARTON"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CONTENEDOR VIDRIO (VERDE)",
+    "newColumnName": "VIDRIO",
+    "description": "Rename column CONTENEDOR VIDRIO (VERDE) to VIDRIO"
+  },
+  {
+    "op": "core/transpose-columns-into-rows",
+    "startColumnName": "RESTO",
+    "columnCount": -1,
+    "ignoreBlankCells": true,
+    "fillDown": false,
+    "separator": null,
+    "keyColumnName": "TIPO CONTENEDOR",
+    "valueColumnName": "TIPO RESIDUO",
+    "description": "Transpose cells in columns starting with RESTO into rows in two new columns named TIPO CONTENEDOR and TIPO RESIDUO"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "TIPO RESIDUO",
+      "TIPO CONTENEDOR"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO RESIDUO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Envases de plástico para alimentación: botellas de bebidas, aceite, salsas, envases de plástico de productos lácteos y sus tapas: yogures, mantequillas... bandejas, cajas y embalajes de \"corcho blanco\" o \"poliespán\" usado en alimentación y como protector de productos frágiles, hueveras de plástico, vasos y platos de plástico desechables, tapones y tapas de plástico, mallas de frutas y verduras…"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Envases de plástico para alimentación"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO RESIDUO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO RESIDUO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ropa y calzado usado (producción doméstica)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ropa y calzado usado"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO RESIDUO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO RESIDUO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Aceite vegetal de cocina (producción doméstica)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aceite vegetal de cocina"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO RESIDUO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO RESIDUO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Briks de leche, nata, zumo, batido, vino, caldo…"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Briks"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO RESIDUO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO RESIDUO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Botellas de vidrio, de zumos, refrescos, cervezas, mostos, sidras, vinos, licores… de cualquier color"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Botellas de vidrio"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO RESIDUO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO RESIDUO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Envases de plástico de productos de aseo y limpieza: botes de productos de aseo no aerosoles, botes de limpieza vacíos: jabones de baño, detergentes..."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Envases de plástico de productos de aseo y limpieza"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO RESIDUO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO RESIDUO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Cápsulas de café (producción doméstica)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cápsulas de café"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO RESIDUO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO RESIDUO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Envases de cosméticos de plástico (envases de maquillaje, pincel de pintauñas, pintalabios… )"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Envases de cosméticos de plástico"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO RESIDUO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO RESIDUO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Envases de cosméticos de vidrio (envases de maquillaje, pincel de pintauñas, pintalabios, etc.)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Envases de cosméticos de vidrio"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO RESIDUO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO RESIDUO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pilas alcalinas, salinas y baterías usadas (producción doméstica)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pilas alcalinas, salinas y baterías usadas"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO RESIDUO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO RESIDUO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pequeños aparatos elécrtricos y electrónicos (RAEE´s): ebooks, MP3, MP4, MP5, Ipods, tablets, mandos de televisión, USB´s y teléfonos móviles, lectores de DVDs y CDs… (producción doméstica) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pequeños aparatos elécrtricos y electrónicos (RAEE´s): ebooks, MP3, MP4, MP5, Ipods, tablets, mandos de televisión, USB´s y teléfonos móviles, lectores de DVDs y CDs "
+      }
+    ],
+    "description": "Mass edit cells in column TIPO RESIDUO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO RESIDUO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Envases  (producción doméstica)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Envases"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO RESIDUO"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO RESIDUO",
+          "expression": "value",
+          "columnName": "TIPO RESIDUO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  }
+]

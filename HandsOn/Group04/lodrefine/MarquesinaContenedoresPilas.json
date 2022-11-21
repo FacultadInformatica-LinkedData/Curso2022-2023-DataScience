@@ -1,0 +1,165 @@
+[
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "TIPO MOBILIARIO (ACTUAL)",
+      "DISTRITO",
+      "Direccion_completa",
+      "Coord ED50_X",
+      "Coord ED50_Y",
+      "CONT PILAS",
+      "X ETRS89 U.T.M.",
+      "Y ETRS89 U.T.M."
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "Direccion_completa",
+      "DISTRITO",
+      "Coord ED50_X",
+      "Coord ED50_Y"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Direccion_completa",
+    "newColumnName": "DIRECCION",
+    "description": "Rename column Direccion_completa to DIRECCION"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Coord ED50_X",
+    "newColumnName": "COORDENADAX",
+    "description": "Rename column Coord ED50_X to COORDENADAX"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Coord ED50_Y",
+    "newColumnName": "COORDENADAY",
+    "description": "Rename column Coord ED50_Y to COORDENADAY"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DIRECCION",
+    "expression": "grel:null",
+    "onError": "set-to-blank",
+    "newColumnName": "TIPO CONTENEDOR",
+    "columnInsertIndex": 1,
+    "description": "Create column TIPO CONTENEDOR at index 1 based on column DIRECCION using expression grel:null"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO CONTENEDOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "Contenedor de pilas"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO CONTENEDOR"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "TIPO CONTENEDOR",
+      "DIRECCION",
+      "DISTRITO",
+      "COORDENADAX",
+      "COORDENADAY"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADAY",
+    "description": "Fill down cells in column COORDENADAY"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADAX",
+    "description": "Fill down cells in column COORDENADAX"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "description": "Fill down cells in column DISTRITO"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION",
+    "description": "Fill down cells in column DIRECCION"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO CONTENEDOR",
+    "description": "Fill down cells in column TIPO CONTENEDOR"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "TIPO CONTENEDOR",
+    "expression": "join ([coalesce(cells['TIPO CONTENEDOR'].value,''),coalesce(cells['COORDENADAX'].value,''),coalesce(cells['COORDENADAY'].value,'')],'-')",
+    "onError": "keep-original",
+    "newColumnName": "ID",
+    "columnInsertIndex": 1,
+    "description": "Create column ID at index 1 based on column TIPO CONTENEDOR using expression join ([coalesce(cells['TIPO CONTENEDOR'].value,''),coalesce(cells['COORDENADAX'].value,''),coalesce(cells['COORDENADAY'].value,'')],'-')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "COORDENADAY",
+    "expression": "join ([],'')",
+    "onError": "keep-original",
+    "newColumnName": "HORARIO",
+    "columnInsertIndex": 6,
+    "description": "Create column HORARIO at index 6 based on column COORDENADAY using expression join ([],'')"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIPO CONTENEDOR",
+    "newColumnName": "TIPO",
+    "description": "Rename column TIPO CONTENEDOR to TIPO"
+  }
+]
