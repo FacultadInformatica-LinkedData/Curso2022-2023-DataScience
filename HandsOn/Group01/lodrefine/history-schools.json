@@ -1,0 +1,2989 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "TRANSPORTE",
+    "expression": "grel:substring(value + \"Z\", indexOf(value, \"BUS\"), lastIndexOf(value, \"Z\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "BUS",
+    "columnInsertIndex": 6,
+    "description": "Create column BUS at index 6 based on column TRANSPORTE using expression grel:substring(value + \"Z\", indexOf(value, \"BUS\"), lastIndexOf(value, \"Z\"))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "TRANSPORTE",
+    "expression": "grel:substring(value + \"Z\", indexOf(value, \"Bus\"), lastIndexOf(value, \"Z\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "bus",
+    "columnInsertIndex": 6,
+    "description": "Create column bus at index 6 based on column TRANSPORTE using expression grel:substring(value + \"Z\", indexOf(value, \"Bus\"), lastIndexOf(value, \"Z\"))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "bus",
+    "expression": "grel:substring(value + \"Z\", indexOf(value, \"Bus\"), indexOf(value, \"Metro\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "busFinal",
+    "columnInsertIndex": 7,
+    "description": "Create column busFinal at index 7 based on column bus using expression grel:substring(value + \"Z\", indexOf(value, \"Bus\"), indexOf(value, \"Metro\"))"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "bus",
+    "description": "Remove column bus"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "BUS",
+    "expression": "grel:substring(value + \"Z\", indexOf(value, \"BUS\"), indexOf(value, \"METRO\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "BUS-METRO",
+    "columnInsertIndex": 8,
+    "description": "Create column BUS-METRO at index 8 based on column BUS using expression grel:substring(value + \"Z\", indexOf(value, \"BUS\"), indexOf(value, \"METRO\"))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "BUS-METRO",
+    "expression": "grel:substring(value + \"Z\", indexOf(value, \"BUS\"), indexOf(value, \"RENFE\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "BUS-RENFE",
+    "columnInsertIndex": 9,
+    "description": "Create column BUS-RENFE at index 9 based on column BUS-METRO using expression grel:substring(value + \"Z\", indexOf(value, \"BUS\"), indexOf(value, \"RENFE\"))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "BUS-RENFE",
+    "expression": "grel:substring(value + \"Z\", indexOf(value, \"BUS\"), indexOf(value, \"Metro\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "BUS_FINAL",
+    "columnInsertIndex": 10,
+    "description": "Create column BUS_FINAL at index 10 based on column BUS-RENFE using expression grel:substring(value + \"Z\", indexOf(value, \"BUS\"), indexOf(value, \"Metro\"))"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "BUS-METRO",
+    "description": "Remove column BUS-METRO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "BUS-RENFE",
+    "description": "Remove column BUS-RENFE"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BUS_FINAL",
+    "expression": "join ([coalesce(cells['BUS_FINAL'].value,''),coalesce(cells['busFinal'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column BUS_FINAL using expression join ([coalesce(cells['BUS_FINAL'].value,''),coalesce(cells['busFinal'].value,'')],'')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "busFinal",
+    "description": "Remove column busFinal"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "BUS",
+    "description": "Remove column BUS"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "TRANSPORTE",
+    "expression": "grel:substring(value + \"Z\", indexOf(value, \"METRO\"), indexOf(value, \"BUS\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "METRO-ST",
+    "columnInsertIndex": 6,
+    "description": "Create column METRO-ST at index 6 based on column TRANSPORTE using expression grel:substring(value + \"Z\", indexOf(value, \"METRO\"), indexOf(value, \"BUS\"))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "TRANSPORTE",
+    "expression": "grel:substring(value + \"Z\", indexOf(value, \"METRO\"), indexOf(value, \"Z\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "METRORAW",
+    "columnInsertIndex": 6,
+    "description": "Create column METRORAW at index 6 based on column TRANSPORTE using expression grel:substring(value + \"Z\", indexOf(value, \"METRO\"), indexOf(value, \"Z\"))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "METRORAW",
+    "expression": "grel:substring(value + \"Z\", indexOf(value, \"METRO\"), indexOf(value, \"BUS\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "METRO_BUS",
+    "columnInsertIndex": 7,
+    "description": "Create column METRO_BUS at index 7 based on column METRORAW using expression grel:substring(value + \"Z\", indexOf(value, \"METRO\"), indexOf(value, \"BUS\"))"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "METRO-ST",
+    "description": "Remove column METRO-ST"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "TRANSPORTE",
+    "expression": "grel:substring(value + \"Z\", indexOf(value, \"Metro\"), indexOf(value, \"Z\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "Metro",
+    "columnInsertIndex": 6,
+    "description": "Create column Metro at index 6 based on column TRANSPORTE using expression grel:substring(value + \"Z\", indexOf(value, \"Metro\"), indexOf(value, \"Z\"))"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "METRORAW",
+    "description": "Remove column METRORAW"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Metro",
+    "expression": "grel:substring(value + \"Z\", indexOf(value, \"Metro\"), indexOf(value, \"Bus\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "metro-bus",
+    "columnInsertIndex": 7,
+    "description": "Create column metro-bus at index 7 based on column Metro using expression grel:substring(value + \"Z\", indexOf(value, \"Metro\"), indexOf(value, \"Bus\"))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "metro-bus",
+    "expression": "grel:substring(value + \"Z\", indexOf(value, \"Metro\"), indexOf(value, \"Cercanías\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "metro-cercanias",
+    "columnInsertIndex": 8,
+    "description": "Create column metro-cercanias at index 8 based on column metro-bus using expression grel:substring(value + \"Z\", indexOf(value, \"Metro\"), indexOf(value, \"Cercanías\"))"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "metro-bus",
+    "description": "Remove column metro-bus"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Metro",
+    "description": "Remove column Metro"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "metro-cercanias",
+    "expression": "join ([coalesce(cells['metro-cercanias'].value,''),coalesce(cells['METRO_BUS'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column metro-cercanias using expression join ([coalesce(cells['metro-cercanias'].value,''),coalesce(cells['METRO_BUS'].value,'')],'')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "METRO_BUS",
+    "description": "Remove column METRO_BUS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "metro-cercanias",
+    "newColumnName": "METRO_FINAL",
+    "description": "Rename column metro-cercanias to METRO_FINAL"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "TRANSPORTE",
+    "expression": "grel:substring(value + \"Z\", indexOf(value, \"RENFE\"), indexOf(value, \"Z\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "RENFE",
+    "columnInsertIndex": 6,
+    "description": "Create column RENFE at index 6 based on column TRANSPORTE using expression grel:substring(value + \"Z\", indexOf(value, \"RENFE\"), indexOf(value, \"Z\"))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "RENFE",
+    "expression": "grel:substring(value + \"Z\", indexOf(value, \"RENFE\"), indexOf(value, \"BUS\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "RENFE_FINAL",
+    "columnInsertIndex": 7,
+    "description": "Create column RENFE_FINAL at index 7 based on column RENFE using expression grel:substring(value + \"Z\", indexOf(value, \"RENFE\"), indexOf(value, \"BUS\"))"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "RENFE",
+    "description": "Remove column RENFE"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Transporte - Horario ampliado - Comedor - Planes de mejora."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Transporte - Horario ampliado - Comedor - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Transporte - Comedor - Planes de mejora - Horario ampliado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Transporte - Comedor - Horario ampliado - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Transporte - Comedor - Horario ampliado - Integración preferente (motóricos)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado -  - Integración preferente (motóricos)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Transporte - Comedor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Transporte - Comedor - Horario ampliado - Planes de mejora - Integración preferente (trastornos generales del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - Integración preferente (trastornos generales del desarrollo)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Transporte -  Horario ampliado - Comedor - Planes de mejora - Integración preferente (motóricos)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - Integración preferente (motóricos)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "  -   - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Integración (General) - Comedor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor -   -   - Integración (General)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Horario ampliado - Comedor."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado "
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Horario ampliado - Comedor - Planes de mejora."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Horario ampliado - Transporte - Comedor - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Horario ampliado - Comedor - Planes de mejora - Integración preferente (Trastornos generales del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - Integración preferente (Trastornos generales del desarrollo)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Horario ampliado - Comedor - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Horario ampliado - Comedor - Integración prefernete (Trastornos generales del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Integración preferente (Trastornos generales del desarrollo)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Horario ampliado - Comedor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Horario ampliado - Comedor - Integración preferente: motóricos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado -   - Integración preferente: motóricos"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor. Planes de mejora."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor -   - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Planes de mejora- Horario ampliado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor -  - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor -Horario ampliado - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Integración preferente (motóricos) - Horario ampliado - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - Integración preferente (motóricos)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Integración preferente (motóricos) - Horario ampliado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado -  - Integración preferente (motóricos)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Integración (preferentemente motóricos) - Horario ampliado - Planes de mejora -Convenio con el British Council"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - Integración (preferentemente motóricos) - Convenio con el British Council"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Integración (preferentemente motóricos) - Horario ampliado - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - Integración (preferentemente motóricos) "
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Integración (preferentemente motóricos) - Horario ampliado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado -  - Integración (preferentemente motóricos)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Horario ampliado -Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Horario ampliado - Planes de mejora."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Integración (preferentemente auditivos) - Horario ampliado - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - Integración (preferentemente auditivos)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Horario ampliado - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Horario ampliado - Planes de mejora - Integración preferente (Trastornos generales del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - Integración preferente (Trastornos generales del desarrollo)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Horario Ampliado - Integración preferente: Audtitivos- Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario Ampliado - Planes de mejora -  Integración preferente: Auditivos"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Horario ampliado - Integración preferente (Trastorno generalizado del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado -  - Integración preferente (Trastorno generalizado del desarrollo)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Horario ampliado - Integracion preferente (motóricos)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado -  - Integración preferente (motóricos)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Horario ampliado - Horario ampliado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte - Horario ampliado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte -  Horario ampliado - Planes de mejora."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte -  Horario ampliado - Planes de mejora - Integración preferente (Trastornos generales del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - Integración preferente (Trastornos generales del desarrollo)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte -  Horario ampliado - Planes de mejora - Convenio con British Council"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora -  - Convenio con British Council"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte -  Horario ampliado - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Transporte"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Planes de mejora - Horario ampliado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Planes de mejora -  Horario ampliado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor -  - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Integración preferente (Trastornos generales del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor -  -  - Integración preferente (Trastornos generales del desarrollo)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Integración (preferentemente auditivos) - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor -  - Planes de mejora - Integración (preferentemente auditivos)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Integración (General) - Horario ampliado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Integración (General)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor  - Horario ampliado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor -   - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor -  - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor -   -   - Integración (General)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor -  -  - Integración (General)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor -  -  - Integración preferente (Trastornos generales del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor -  -  - Integración preferente (Trastornos generales del desarrollo)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor -  Horario ampliado - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor -  Horario ampliado - Planes de mejora - Integración preferente (Trastornos generales del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - Integración preferente (Trastornos generales del desarrollo)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado -   - Integración preferente: motóricos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado -  - Integración preferente (motóricos)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Comedor - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Integración (General)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado -  - Integración (General)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Integración (preferentemente auditivos)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado -  - Integración (preferentemente auditivos)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Integración preferente (Trastornos generales del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado -  - Integración preferente (Trastornos generales del desarrollo)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Integración preferente (Trastornos generales del desarrollo) - Enseñanza biling&amp;uuml;e"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado -  - Integración preferente (Trastornos generales del desarrollo) - Enseñanza biling&amp;uuml;e"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Integración preferente (Tratornos generales del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado -  - Integración preferente (Trastornos generales del desarrollo)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario Ampliado - Planes de mejora -  Integración preferente: Auditivos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario Ampliado - Planes de mejora -  Integración preferente (Auditivos)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Planes de mejora - Convenio con Bristish Council"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - \n - Convenio con British Council"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Planes de mejora - Integración (preferentemente motóricos) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - Integración (preferentemente motóricos) "
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Planes de mejora - Integración (preferentemente motóricos) - Convenio con el British Council"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - Integración (preferentemente motóricos) - Convenio con British Council"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Planes de mejora -Integración preferente (auditivos)."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora -Integración preferente (auditivos)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Planes de mejora."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Residencia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado -  -  - Residencia"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Transporte - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Integración - Horario ampliado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado -  - Integración "
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Planes de mejora -Integración preferente (auditivos)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - Integración preferente (auditivos)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Integración (General)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor -  -  - Integración (General)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario ampliado - Planes de mejora - Integración preferente (trastornos generales del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora - Integración preferente (trastornos generales del desarrollo)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor -  Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor -  - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "  -   - Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " -  - Planes de mejora"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor - Horario Ampliado - Planes de mejora -  Integración preferente (Auditivos)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Comedor - Horario ampliado - Planes de mejora -  Integración preferente (Auditivos)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " - ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column EQUIPAMIENTO by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "EQUIPAMIENTO 3",
+    "newColumnName": "Planes de mejora",
+    "description": "Rename column EQUIPAMIENTO 3 to Planes de mejora"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Planes de mejora",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Planes de mejora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column Planes de mejora"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Planes de mejora",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column Planes de mejora"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Horario ampliado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO 2"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO 2"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "EQUIPAMIENTO 2",
+    "newColumnName": "Horario ampliado",
+    "description": "Rename column EQUIPAMIENTO 2 to Horario ampliado"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "EQUIPAMIENTO 4",
+    "newColumnName": "Integración",
+    "description": "Rename column EQUIPAMIENTO 4 to Integración"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Integración",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Integración preferente (trastornos generales del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Trastornos generales del desarrollo"
+      }
+    ],
+    "description": "Mass edit cells in column Integración"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Integración",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Integración preferente (Trastornos generales del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Trastornos generales del desarrollo"
+      }
+    ],
+    "description": "Mass edit cells in column Integración"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Integración",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Integración preferente (Trastorno generalizado del desarrollo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Trastornos generales del desarrollo"
+      }
+    ],
+    "description": "Mass edit cells in column Integración"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Integración",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Integración preferente (motóricos)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Motóricos"
+      }
+    ],
+    "description": "Mass edit cells in column Integración"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Integración",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Integración preferente (auditivos)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Auditivos"
+      }
+    ],
+    "description": "Mass edit cells in column Integración"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Integración",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Integración (preferentemente motóricos) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Motóricos "
+      }
+    ],
+    "description": "Mass edit cells in column Integración"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Integración",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Motóricos "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Motóricos"
+      }
+    ],
+    "description": "Mass edit cells in column Integración"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Integración",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Integración (preferentemente motóricos)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Motóricos"
+      }
+    ],
+    "description": "Mass edit cells in column Integración"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Integración",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Integración (preferentemente auditivos)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Auditivos"
+      }
+    ],
+    "description": "Mass edit cells in column Integración"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Integración",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Integración (General)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Trastornos generales del desarrollo"
+      }
+    ],
+    "description": "Mass edit cells in column Integración"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Integración",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Integración preferente (Auditivos)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Auditivos"
+      }
+    ],
+    "description": "Mass edit cells in column Integración"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Integración",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Integración "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Trastornos generales del desarrollo"
+      }
+    ],
+    "description": "Mass edit cells in column Integración"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Integración",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NaN"
+      }
+    ],
+    "description": "Mass edit cells in column Integración"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO 5",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NaN"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO 5"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "EQUIPAMIENTO 5",
+    "newColumnName": "Equipamiento extra",
+    "description": "Rename column EQUIPAMIENTO 5 to Equipamiento extra"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "EQUIPAMIENTO 1",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "Comedor",
+    "columnInsertIndex": 6,
+    "description": "Create column Comedor at index 6 based on column EQUIPAMIENTO 1 using expression grel:value"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wifi gratuito."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.",
+          "Espacios:   Sala de consulta y lectura Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.",
+          "Espacios: Sala de Consulta y Lectura; Zona de publicaciones periódicas; Sala infantil y juvenil.  Sala de consulta y lectura Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.",
+          "Espacios:   Sala de consulta y lectura. Zona de publicaciones periódicas. Sala infantil y juvenil.    Servicios:   Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros) Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.",
+          "Espacios:   Sala de consulta y lectura. Zona de publicaciones periódicas. Sala infantil y juvenil.    Servicios:   Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.",
+          "Espacios: Sala de Consulta y Lectura; Zona de publicaciones periódicas; Sala infantil y juvenil.  Sala de consulta y lectura Sala infantil y juvenil.    Servicios:   Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Espacios:   Sala de consulta y lectura. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+      },
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.",
+          "Espacios:   Sala de consulta y lectura. Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil.    Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros) Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.",
+          "Espacios:   Sala de consulta y lectura. Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.",
+          "Espacios: Sala de Consulta y Lectura; Zona de publicaciones periódicas; Sala infantil y juvenil; Sala polivalente.  Sala de consulta y lectura Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Espacios:   Sala de consulta y lectura Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+      },
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura. Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.",
+          "Espacios:   Sala de consulta y lectura. Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil.    Servicios:   Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Espacios:   Sala de consulta y lectura. Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+      },
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.",
+          "Espacios: Sala de Consulta y Lectura; Zona de publicaciones periódicas; Sala infantil y juvenil.  Sala de consulta y lectura Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Espacios:   Sala de consulta y lectura Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Accesible a personas con discapacidad intelectual al contar con señalización mediante pictogramas.   Espacios: Sala de Consulta y Lectura; Zona de publicaciones periódicas; Sala infantil y juvenil.  Sala de consulta y lectura. Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios: Préstamo de libros, multimedia y revistas; Servicio de Acceso Público a Internet; Zona wifi; Información bibliográfica; Animación a la lectura; Formación de usuarios; Reprografía.  Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Datos de localización de los distintos módulos de Bibliometro. Servicios: Préstamo y renovación de libros. Acceda al catálogo de Bibliometro para búsqueda de libros y renovar sus préstamos."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil. Comiteca     Servicios: Préstamo de libros, multimedia y revistas; Servicio de Acceso Público a Internet; Zona wifi; Información bibliográfica; Animación a la lectura; Formación de usuarios; Reprografía.  Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura Zona de publicaciones periódicas. Sala infantil.   Servicios:    Préstamo de libros, multimedia y revistas. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura. Sala polivalente y de actividades. Zona de publicaciones periódicas. Sala infantil y juvenil. Bebeteca.    Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura. Sala polivalente y salas de trabajo en grupo. Zona de publicaciones periódicas. Sala infantil y juvenil.    Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura. Sala polivalente, sala de Madrid y sala de trabajo en grupo. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura. Sala polivalente, sala especializada en medio ambiente y salas de trabajo en grupo. Zona de publicaciones periódicas. Sala infantil y juvenil.    Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura. Sala polivalente, salas de trabajo en grupo. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura. Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Equipos de autopréstamo. Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura. Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Zona de publicaciones periódicas. Sala infantil y juvenil.    Servicios:   Préstamo de libros, multimedia y revistas. Préstamo de dispositivos de ayuda a la lectura (lupas para libros). Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios: .  Sala de consulta y lectura. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Préstamo de libros, multimedia, revistas y colección de libros en rumano. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios: Sala de Consulta y Lectura; Zona de publicaciones periódicas; Sala infantil y juvenil.  Sala de consulta y lectura Zona de publicaciones periódicas. Sala infantil y juvenil.    Servicios:   Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Especializada en cine, música y material audiovisual."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Servicios: Préstamo y renovación de libros. Acceda al catálogo para la búsqueda de libros y renovar sus préstamos."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comedor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column Comedor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Comedor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wifi gratuito."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Servicios:   Wifi gratuito"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Servicios: Préstamo y renovación de libros. Acceda al catálogo para la búsqueda de libros y renovar sus préstamos."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Servicios:   Préstamo y renovación de libros. Acceda al catálogo para la búsqueda de libros y renovar sus préstamos."
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Accesible a personas con discapacidad intelectual al contar con señalización mediante pictogramas.   Espacios: Sala de Consulta y Lectura; Zona de publicaciones periódicas; Sala infantil y juvenil.  Sala de consulta y lectura. Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios: Préstamo de libros, multimedia y revistas; Servicio de Acceso Público a Internet; Zona wifi; Información bibliográfica; Animación a la lectura; Formación de usuarios; Reprografía.  Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Accesible a personas con discapacidad intelectual al contar con señalización mediante pictogramas.   Espacios: Sala de Consulta y Lectura; Zona de publicaciones periódicas; Sala infantil y juvenil.  Sala de consulta y lectura. Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil.   Servicios:   Préstamo de libros, multimedia y revistas; Servicio de Acceso Público a Internet; Zona wifi; Información bibliográfica; Animación a la lectura; Formación de usuarios; Reprografía.  Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Datos de localización de los distintos módulos de Bibliometro. Servicios: Préstamo y renovación de libros. Acceda al catálogo de Bibliometro para búsqueda de libros y renovar sus préstamos."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Datos de localización de los distintos módulos de Bibliometro. Servicios:   Préstamo y renovación de libros. Acceda al catálogo de Bibliometro para búsqueda de libros y renovar sus préstamos."
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Espacios:   Sala de consulta y lectura Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil. Comiteca     Servicios: Préstamo de libros, multimedia y revistas; Servicio de Acceso Público a Internet; Zona wifi; Información bibliográfica; Animación a la lectura; Formación de usuarios; Reprografía.  Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Espacios:   Sala de consulta y lectura Sala polivalente. Zona de publicaciones periódicas. Sala infantil y juvenil. Comiteca     Servicios: \n  Préstamo de libros, multimedia y revistas; Servicio de Acceso Público a Internet; Zona wifi; Información bibliográfica; Animación a la lectura; Formación de usuarios; Reprografía.  Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios."
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Especializada en cine, música y material audiovisual."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Servicios:   Especializada en cine, música y material audiovisual"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO 1"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO 1",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "Servicios:   ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column EQUIPAMIENTO 1 by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Comedor",
+    "newColumnName": "COMEDOR",
+    "description": "Rename column Comedor to COMEDOR"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Horario ampliado",
+    "newColumnName": "HORARIO AMPLIADO",
+    "description": "Rename column Horario ampliado to HORARIO AMPLIADO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Planes de mejora",
+    "newColumnName": "PLANES DE MEJORA",
+    "description": "Rename column Planes de mejora to PLANES DE MEJORA"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Integración",
+    "newColumnName": "INTEGRACIÓN",
+    "description": "Rename column Integración to INTEGRACIÓN"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Equipamiento extra",
+    "newColumnName": "EQUIPAMIENTO EXTRA",
+    "description": "Rename column Equipamiento extra to EQUIPAMIENTO EXTRA"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "HORARIO",
+    "expression": "grel:value[31, 46]",
+    "onError": "set-to-blank",
+    "newColumnName": "Horario",
+    "columnInsertIndex": 4,
+    "description": "Create column Horario at index 4 based on column HORARIO using expression grel:value[31, 46]"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "HORARIO",
+    "newColumnName": "Apertura",
+    "description": "Rename column HORARIO to Apertura"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE",
+          "expression": "isBlank(value)",
+          "columnName": "NOMBRE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  }
+  {
+    "op": "core/column-removal",
+    "columnName": "DESCRIPCION-ENTIDAD",
+    "description": "Remove column DESCRIPCION-ENTIDAD"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PLANTA",
+    "description": "Remove column PLANTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PUERTA",
+    "description": "Remove column PUERTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESCALERAS",
+    "description": "Remove column ESCALERAS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ORIENTACION",
+    "description": "Remove column ORIENTACION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column",
+    "description": "Remove column Column"
+  }
+]
