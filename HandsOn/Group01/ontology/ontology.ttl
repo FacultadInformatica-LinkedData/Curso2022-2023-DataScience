@@ -405,13 +405,13 @@ lib:coordinateY a owl:ObjectProperty ;
 lib:hasfaxNumber a owl:ObjectProperty ;
 	rdfs:label "has fax number" ;
 	rdfs:domain lib:ContactInfo ;
-	rdfs:range xsd:int.
+	rdfs:range xsd:string.
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#faxNumber
 sch:hasfaxNumber a owl:ObjectProperty ;
 	rdfs:label "has fax number" ;
 	rdfs:domain sch:ContactInfo ;
-	rdfs:range xsd:int.
+	rdfs:range xsd:string.
 
 #################################################################
 #    Classes
