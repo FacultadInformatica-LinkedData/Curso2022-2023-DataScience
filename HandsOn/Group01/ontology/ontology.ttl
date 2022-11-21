@@ -165,7 +165,7 @@ sch:EducationType a owl:ObjectProperty ;
 sch:hasAccesibility a owl:ObjectProperty ;
     rdfs:label "has accesibility" ;
     rdfs:domain sch:School ;
-    rdfs:range sce:int .
+    rdfs:range xsd:string .
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasAdress
