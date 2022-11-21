@@ -253,173 +253,173 @@
 <https://www.biblioescuela.educamadrid.org/resource/Adress/1762> <https://www.biblioescuela.educamadrid.org/ontologies/Library#streetName> "TOREROS".
 <https://www.biblioescuela.educamadrid.org/resource/Adress/1760> <https://www.biblioescuela.educamadrid.org/ontologies/Library#streetName> "MANTUANO".
 <https://www.biblioescuela.educamadrid.org/resource/Adress/1754> <https://www.biblioescuela.educamadrid.org/ontologies/Library#streetName> "PUEBLO".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/185595> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/10395362> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/7697128> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/66904> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/8053214> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1754> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/186714> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/11737758> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/7902770> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1755> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/115056> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/51849> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/123303> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1745> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1757> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/79941> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1761> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1882> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1790> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1792> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1763> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1747> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/167128> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1760> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1752> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1756> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/5765642> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/11572165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1762> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/5768564> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1753> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1771> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1770> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1798> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1773> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1794> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/86719> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/181101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/5975465> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1748> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1759> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1764> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/25526> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/51188> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1746> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1777> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1774> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/6893633> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1750> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Contact>.
-<https://www.biblioescuela.educamadrid.org/resource/Contact/186714> <http://www.w3.org/2006/vcard/ns#hasEmail> "bppabloneruda@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1800> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.vallecas@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/123303> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.usera@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/11737758> <http://www.w3.org/2006/vcard/ns#hasEmail> "dbibliotecaspublicas@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/86719> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.villaverde@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1759> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpmariazambrano@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1764> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.chamberi@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/6893633> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpeugeniotrias@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1745> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpcanillejas@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1762> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpdavidgistau@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1748> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpgerardodiego@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/181101> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.villavallecas@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1770> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.hortaleza@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/185595> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpvazquezmontalban@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1771> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.acuna@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/8053214> <http://www.w3.org/2006/vcard/ns#hasEmail> "dbibliotecaspublicas@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1747> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpvicalvaro@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1777> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.ruizegea@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/5768564> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpangelgonzalez@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/66904> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.fuencarral@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1765> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.salamanca@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1761> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpvallecas@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1755> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpanammatute@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/5975465> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpivandevargas@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/115056> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpjosehierro@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1746> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpsanblas@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1753> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpportazgo@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/167128> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpfranciscoayala@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/25526> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.latina@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/5765642> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.carabanchel@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/51849> <http://www.w3.org/2006/vcard/ns#hasEmail> "bplaelipa@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/10395362> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpmarialejarraga@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1763> <http://www.w3.org/2006/vcard/ns#hasEmail> "bppiobaroja@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1882> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpperezgaldos@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1754> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpgarciamarquez@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1750> <http://www.w3.org/2006/vcard/ns#hasEmail> "bphuertasalud@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1752> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpmigueldelibes@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/51188> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpdamasoalonso@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1792> <http://www.w3.org/2006/vcard/ns#hasEmail> "bppozotr@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1798> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.centro@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1760> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpfranciscoibanez@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1756> <http://www.w3.org/2006/vcard/ns#hasEmail> "bplachata@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1757> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpaluche@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1773> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.moratalaz@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/79941> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpgloriafuertes@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1790> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpjosesaramago@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/7902770> <http://www.w3.org/2006/vcard/ns#hasEmail> "dbibliotecaspublicas@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/11572165> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpsanfermin@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1794> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpciudadlineal@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1774> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.retiro@madrid.org".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/7697128> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpvargasllosa@madrid.es".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1754> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 318 86 91".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1790> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 588 68 91".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1746> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 313 52 97".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1792> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 507 07 34".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1755> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 588 08 30".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/5765642> <http://www.w3.org/2006/vcard/ns#hasTelephone> "912 760 233".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1763> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 474 16 03".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/167128> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 301 64 66".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1752> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 328 73 00".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/8053214> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 591 39 01".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1745> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 741 11 34".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1757> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 719 89 96".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/79941> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 312 02 58".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1794> <http://www.w3.org/2006/vcard/ns#hasTelephone> "915 887 566".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1777> <http://www.w3.org/2006/vcard/ns#hasTelephone> "915 349 029".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/7697128> <http://www.w3.org/2006/vcard/ns#hasTelephone> "914 802 433".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/181101> <http://www.w3.org/2006/vcard/ns#hasTelephone> "912 760 231".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1774> <http://www.w3.org/2006/vcard/ns#hasTelephone> "915 019 146".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/11737758> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 588 41 81".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/51849> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 403 63 22".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1770> <http://www.w3.org/2006/vcard/ns#hasTelephone> "917 633 284".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1762> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 724 08 04".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1760> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 510 37 56".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/51188> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 350 31 50".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1764> <http://www.w3.org/2006/vcard/ns#hasTelephone> "914 459 782".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1800> <http://www.w3.org/2006/vcard/ns#hasTelephone> "913 033 195".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1748> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 380 66 33".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1756> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 422 05 33".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1798> <http://www.w3.org/2006/vcard/ns#hasTelephone> "913 665 407".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1759> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 733 90 43".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1750> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 764 52 43".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/115056> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 313 55 28".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1753> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 757 03 23".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/5768564> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 512 35 42".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1771> <http://www.w3.org/2006/vcard/ns#hasTelephone> "915 413 619".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/25526> <http://www.w3.org/2006/vcard/ns#hasTelephone> "915 093 625".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/66904> <http://www.w3.org/2006/vcard/ns#hasTelephone> "917 319 552 / 917 319 553".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/7902770> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 588 57 24".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/10395362> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 513 33 83".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/185595> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 398 07 23                                                                                                                                     \n91 398 07 26".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/86719> <http://www.w3.org/2006/vcard/ns#hasTelephone> "917 230 194".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1747> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 775 31 43".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/186714> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 406 14 72".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/11572165> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 480 47 25".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1765> <http://www.w3.org/2006/vcard/ns#hasTelephone> "917 263 701".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/5975465> <http://www.w3.org/2006/vcard/ns#hasTelephone> "917 586 211".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/123303> <http://www.w3.org/2006/vcard/ns#hasTelephone> "914 229 501".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/6893633> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 480 48 38".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1882> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 588 59 10".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1773> <http://www.w3.org/2006/vcard/ns#hasTelephone> "914 394 688".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1761> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 588 60 51".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1771> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "915 426 939".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1764> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "914 472 444".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1770> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "917 633 284".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1765> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "913 555 425".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1774> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "915 018 130".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1798> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "913 657 523".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/25526> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "917 068 193".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1773> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "914 370 234".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/86719> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "917 979 458".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1800> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "913 804 153".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/123303> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "914 691 901".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/66904> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "917 398 231".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1777> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "915 337 809".
-<https://www.biblioescuela.educamadrid.org/resource/Contact/5765642> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "914 613 331".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/185595> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/10395362> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/7697128> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/66904> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/8053214> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1754> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/186714> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/11737758> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/7902770> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1755> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/115056> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/51849> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/123303> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1745> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1757> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/79941> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1761> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1882> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1790> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1792> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1763> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1747> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/167128> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1760> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1752> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1756> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/5765642> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/11572165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1762> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/5768564> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1753> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1771> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1770> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1798> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1773> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1794> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/86719> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/181101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/5975465> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1748> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1759> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1764> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/25526> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/51188> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1746> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1777> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1774> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/6893633> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1750> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo>.
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/186714> <http://www.w3.org/2006/vcard/ns#hasEmail> "bppabloneruda@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1800> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.vallecas@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/123303> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.usera@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/11737758> <http://www.w3.org/2006/vcard/ns#hasEmail> "dbibliotecaspublicas@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/86719> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.villaverde@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1759> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpmariazambrano@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1764> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.chamberi@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/6893633> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpeugeniotrias@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1745> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpcanillejas@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1762> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpdavidgistau@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1748> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpgerardodiego@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/181101> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.villavallecas@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1770> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.hortaleza@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/185595> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpvazquezmontalban@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1771> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.acuna@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/8053214> <http://www.w3.org/2006/vcard/ns#hasEmail> "dbibliotecaspublicas@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1747> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpvicalvaro@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1777> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.ruizegea@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/5768564> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpangelgonzalez@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/66904> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.fuencarral@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1765> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.salamanca@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1761> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpvallecas@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1755> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpanammatute@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/5975465> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpivandevargas@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/115056> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpjosehierro@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1746> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpsanblas@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1753> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpportazgo@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/167128> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpfranciscoayala@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/25526> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.latina@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/5765642> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.carabanchel@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/51849> <http://www.w3.org/2006/vcard/ns#hasEmail> "bplaelipa@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/10395362> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpmarialejarraga@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1763> <http://www.w3.org/2006/vcard/ns#hasEmail> "bppiobaroja@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1882> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpperezgaldos@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1754> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpgarciamarquez@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1750> <http://www.w3.org/2006/vcard/ns#hasEmail> "bphuertasalud@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1752> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpmigueldelibes@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/51188> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpdamasoalonso@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1792> <http://www.w3.org/2006/vcard/ns#hasEmail> "bppozotr@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1798> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.centro@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1760> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpfranciscoibanez@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1756> <http://www.w3.org/2006/vcard/ns#hasEmail> "bplachata@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1757> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpaluche@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1773> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.moratalaz@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/79941> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpgloriafuertes@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1790> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpjosesaramago@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/7902770> <http://www.w3.org/2006/vcard/ns#hasEmail> "dbibliotecaspublicas@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/11572165> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpsanfermin@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1794> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpciudadlineal@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1774> <http://www.w3.org/2006/vcard/ns#hasEmail> "bib.retiro@madrid.org".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/7697128> <http://www.w3.org/2006/vcard/ns#hasEmail> "bpvargasllosa@madrid.es".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1754> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 318 86 91".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1790> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 588 68 91".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1746> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 313 52 97".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1792> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 507 07 34".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1755> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 588 08 30".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/5765642> <http://www.w3.org/2006/vcard/ns#hasTelephone> "912 760 233".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1763> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 474 16 03".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/167128> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 301 64 66".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1752> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 328 73 00".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/8053214> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 591 39 01".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1745> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 741 11 34".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1757> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 719 89 96".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/79941> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 312 02 58".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1794> <http://www.w3.org/2006/vcard/ns#hasTelephone> "915 887 566".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1777> <http://www.w3.org/2006/vcard/ns#hasTelephone> "915 349 029".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/7697128> <http://www.w3.org/2006/vcard/ns#hasTelephone> "914 802 433".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/181101> <http://www.w3.org/2006/vcard/ns#hasTelephone> "912 760 231".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1774> <http://www.w3.org/2006/vcard/ns#hasTelephone> "915 019 146".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/11737758> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 588 41 81".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/51849> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 403 63 22".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1770> <http://www.w3.org/2006/vcard/ns#hasTelephone> "917 633 284".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1762> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 724 08 04".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1760> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 510 37 56".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/51188> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 350 31 50".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1764> <http://www.w3.org/2006/vcard/ns#hasTelephone> "914 459 782".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1800> <http://www.w3.org/2006/vcard/ns#hasTelephone> "913 033 195".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1748> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 380 66 33".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1756> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 422 05 33".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1798> <http://www.w3.org/2006/vcard/ns#hasTelephone> "913 665 407".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1759> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 733 90 43".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1750> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 764 52 43".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/115056> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 313 55 28".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1753> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 757 03 23".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/5768564> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 512 35 42".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1771> <http://www.w3.org/2006/vcard/ns#hasTelephone> "915 413 619".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/25526> <http://www.w3.org/2006/vcard/ns#hasTelephone> "915 093 625".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/66904> <http://www.w3.org/2006/vcard/ns#hasTelephone> "917 319 552 / 917 319 553".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/7902770> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 588 57 24".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/10395362> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 513 33 83".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/185595> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 398 07 23                                                                                                                                     \n91 398 07 26".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/86719> <http://www.w3.org/2006/vcard/ns#hasTelephone> "917 230 194".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1747> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 775 31 43".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/186714> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 406 14 72".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/11572165> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 480 47 25".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1765> <http://www.w3.org/2006/vcard/ns#hasTelephone> "917 263 701".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/5975465> <http://www.w3.org/2006/vcard/ns#hasTelephone> "917 586 211".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/123303> <http://www.w3.org/2006/vcard/ns#hasTelephone> "914 229 501".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/6893633> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 480 48 38".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1882> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 588 59 10".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1773> <http://www.w3.org/2006/vcard/ns#hasTelephone> "914 394 688".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1761> <http://www.w3.org/2006/vcard/ns#hasTelephone> "91 588 60 51".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1771> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "915 426 939".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1764> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "914 472 444".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1770> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "917 633 284".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1765> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "913 555 425".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1774> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "915 018 130".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1798> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "913 657 523".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/25526> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "917 068 193".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1773> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "914 370 234".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/86719> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "917 979 458".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1800> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "913 804 153".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/123303> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "914 691 901".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/66904> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "917 398 231".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1777> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "915 337 809".
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/5765642> <https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax> "914 613 331".
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/51849> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Coordinates>.
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/123303> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Coordinates>.
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/11572165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Coordinates>.
@@ -726,57 +726,57 @@
 <https://www.biblioescuela.educamadrid.org/resource/Library/1755> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Library>.
 <https://www.biblioescuela.educamadrid.org/resource/Library/1790> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Library>.
 <https://www.biblioescuela.educamadrid.org/resource/Library/1773> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.biblioescuela.educamadrid.org/ontologies/Library#Library>.
-<https://www.biblioescuela.educamadrid.org/resource/Library/7902770> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/7902770".
-<https://www.biblioescuela.educamadrid.org/resource/Library/8053214> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/8053214".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1794> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1794".
-<https://www.biblioescuela.educamadrid.org/resource/Library/10395362> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/10395362".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1773> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1773".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1745> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1745".
-<https://www.biblioescuela.educamadrid.org/resource/Library/6893633> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/6893633".
-<https://www.biblioescuela.educamadrid.org/resource/Library/115056> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/115056".
-<https://www.biblioescuela.educamadrid.org/resource/Library/51849> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/51849".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1750> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1750".
-<https://www.biblioescuela.educamadrid.org/resource/Library/5768564> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/5768564".
-<https://www.biblioescuela.educamadrid.org/resource/Library/86719> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/86719".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1753> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1753".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1764> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1764".
-<https://www.biblioescuela.educamadrid.org/resource/Library/5765642> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/5765642".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1765> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1765".
-<https://www.biblioescuela.educamadrid.org/resource/Library/25526> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/25526".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1761> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1761".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1790> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1790".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1774> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1774".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1763> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1763".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1747> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1747".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1798> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1798".
-<https://www.biblioescuela.educamadrid.org/resource/Library/51188> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/51188".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1752> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1752".
-<https://www.biblioescuela.educamadrid.org/resource/Library/5975465> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/5975465".
-<https://www.biblioescuela.educamadrid.org/resource/Library/123303> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/123303".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1760> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1760".
-<https://www.biblioescuela.educamadrid.org/resource/Library/11737758> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/11737758".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1792> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1792".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1755> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1755".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1777> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1777".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1771> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1771".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1800> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1800".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1762> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1762".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1748> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1748".
-<https://www.biblioescuela.educamadrid.org/resource/Library/181101> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/181101".
-<https://www.biblioescuela.educamadrid.org/resource/Library/11572165> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/11572165".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1756> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1756".
-<https://www.biblioescuela.educamadrid.org/resource/Library/185595> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/185595".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1882> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1882".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1759> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1759".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1770> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1770".
-<https://www.biblioescuela.educamadrid.org/resource/Library/186714> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/186714".
-<https://www.biblioescuela.educamadrid.org/resource/Library/79941> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/79941".
-<https://www.biblioescuela.educamadrid.org/resource/Library/66904> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/66904".
-<https://www.biblioescuela.educamadrid.org/resource/Library/7697128> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/7697128".
-<https://www.biblioescuela.educamadrid.org/resource/Library/167128> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/167128".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1754> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1754".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1757> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1757".
-<https://www.biblioescuela.educamadrid.org/resource/Library/1746> <http://www.w3.org/2006/vcard/ns#hasCoordinates> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1746".
+<https://www.biblioescuela.educamadrid.org/resource/Library/7902770> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/7902770".
+<https://www.biblioescuela.educamadrid.org/resource/Library/8053214> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/8053214".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1794> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1794".
+<https://www.biblioescuela.educamadrid.org/resource/Library/10395362> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/10395362".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1773> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1773".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1745> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1745".
+<https://www.biblioescuela.educamadrid.org/resource/Library/6893633> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/6893633".
+<https://www.biblioescuela.educamadrid.org/resource/Library/115056> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/115056".
+<https://www.biblioescuela.educamadrid.org/resource/Library/51849> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/51849".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1750> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1750".
+<https://www.biblioescuela.educamadrid.org/resource/Library/5768564> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/5768564".
+<https://www.biblioescuela.educamadrid.org/resource/Library/86719> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/86719".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1753> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1753".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1764> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1764".
+<https://www.biblioescuela.educamadrid.org/resource/Library/5765642> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/5765642".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1765> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1765".
+<https://www.biblioescuela.educamadrid.org/resource/Library/25526> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/25526".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1761> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1761".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1790> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1790".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1774> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1774".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1763> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1763".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1747> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1747".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1798> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1798".
+<https://www.biblioescuela.educamadrid.org/resource/Library/51188> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/51188".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1752> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1752".
+<https://www.biblioescuela.educamadrid.org/resource/Library/5975465> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/5975465".
+<https://www.biblioescuela.educamadrid.org/resource/Library/123303> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/123303".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1760> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1760".
+<https://www.biblioescuela.educamadrid.org/resource/Library/11737758> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/11737758".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1792> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1792".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1755> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1755".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1777> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1777".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1771> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1771".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1800> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1800".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1762> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1762".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1748> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1748".
+<https://www.biblioescuela.educamadrid.org/resource/Library/181101> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/181101".
+<https://www.biblioescuela.educamadrid.org/resource/Library/11572165> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/11572165".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1756> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1756".
+<https://www.biblioescuela.educamadrid.org/resource/Library/185595> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/185595".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1882> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1882".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1759> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1759".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1770> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1770".
+<https://www.biblioescuela.educamadrid.org/resource/Library/186714> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/186714".
+<https://www.biblioescuela.educamadrid.org/resource/Library/79941> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/79941".
+<https://www.biblioescuela.educamadrid.org/resource/Library/66904> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/66904".
+<https://www.biblioescuela.educamadrid.org/resource/Library/7697128> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/7697128".
+<https://www.biblioescuela.educamadrid.org/resource/Library/167128> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/167128".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1754> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1754".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1757> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1757".
+<https://www.biblioescuela.educamadrid.org/resource/Library/1746> <http://www.w3.org/2006/vcard/ns#hasGeo> "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1746".
 <https://www.biblioescuela.educamadrid.org/resource/Library/1754> <http://www.w3.org/2006/vcard/ns#hasURL> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e4bf3d0b5e71c010VgnVCM1000000b205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyURI>.
 <https://www.biblioescuela.educamadrid.org/resource/Library/181101> <http://www.w3.org/2006/vcard/ns#hasURL> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=09ac38d60b41c010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyURI>.
 <https://www.biblioescuela.educamadrid.org/resource/Library/1798> <http://www.w3.org/2006/vcard/ns#hasURL> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=67ed995a8bf5d010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#anyURI>.
