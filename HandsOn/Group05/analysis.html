@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<!-- Author: chgara -->
+<!-- Please open this html file in the browser for a rich experience when reading the data-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Group 5 Data Analysis</title>
+        <meta name="author" content="name" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+        />
+        <!--Replace with your tailwind.css once created-->
+    </head>
+
+    <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+        <nav id="header" class="fixed w-full z-10 top-0">
+            <div
+                id="progress"
+                class="h-1 z-20 top-0"
+                style="
+                    background: linear-gradient(
+                        to right,
+                        #4dc0b5 var(--scroll),
+                        transparent 0
+                    );
+                "
+            ></div>
+
+            <div
+                class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3"
+            >
+                <div class="pl-4">
+                    <a
+                        class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl"
+                        href="#"
+                    >
+                        Group 5 Data Analysis
+                    </a>
+                </div>
+
+                <div class="block lg:hidden pr-4">
+                    <button
+                        id="nav-toggle"
+                        class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none"
+                    >
+                        <svg
+                            class="fill-current h-3 w-3"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <title>Menu</title>
+                            <path
+                                d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
+                            />
+                        </svg>
+                    </button>
+                </div>
+
+                <div
+                    class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20"
+                    id="nav-content"
+                >
+                    <ul
+                        class="list-reset lg:flex justify-end flex-1 items-center"
+                    >
+                        <li class="mr-3">
+                            <a
+                                class="inline-block py-2 px-4 text-gray-900 font-bold no-underline"
+                                href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=758352c974fb3410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRDvgnextfmt=default202318-0-escuelas-infantiles.csv"
+                                >Data</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Container-->
+        <div class="container w-full md:max-w-3xl mx-auto pt-20 pb-20">
+            <div
+                class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal"
+                style="font-family: Georgia, serif"
+            >
+                <!--Title-->
+                <div class="font-sans">
+                    <h1
+                        class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl"
+                    >
+                        Schools Dataset Analysis by Group 5
+                    </h1>
+                </div>
+
+                <blockquote
+                    class="border-l-4 border-green-500 italic my-8 pl-8 md:pl-12"
+                >
+                    You may find some parts of this data analysis in Spanish as
+                    the data used is in Spanish.
+                </blockquote>
+
+                <!--Post Content-->
+                <article>
+                    <header>
+                        <h2 class="font-bold text-3xl mt-0 mb-2 py-2 font-sans">
+                            Datasets License
+                        </h2>
+                    </header>
+
+                    <p class="py-6">
+                        The conditions that are going to be listed below allow
+                        us to reuse, as long as you do not have for the purpose
+                        of a public administrative activity, the following data
+                        for commercial purposes or not commercial. Anyone who
+                        makes use of this information, whether a person or a
+                        company, must meet the following conditions:
+                    </p>
+
+                    <ol class="list-decimal py-6 pl-9 text-gray-600 text-lg">
+                        <li class="py-2">
+                            It is forbidden to distort the meaning of the
+                            information.
+                        </li>
+                        <li class="py-2">
+                            The source of the documents subject to reuse must be
+                            cited. This appointment can be made as follows:
+                            "Source of data: Madrid City Council (or, where
+                            appropriate, body administrative body or entity in
+                            question)"
+                        </li>
+                        <li class="py-2">
+                            The date of the last update of the documents subject
+                            to reuse must be mentioned, as long as it was
+                            included in the original document.
+                        </li>
+                        <li class="py-2">
+                            It may not be indicated, insinuated or suggested
+                            that the Madrid City Council participates, sponsors
+                            or supports the reuse that is carried out with the
+                            information.
+                        </li>
+                        <li class="py-2">
+                            The metadata about the date of update and the
+                            applicable reuse conditions included, where
+                            appropriate, in the document made available
+                            provision for reuse.
+                        </li>
+                        <li class="py-2">
+                            In case of anonymized information for personal data
+                            protection or other reasons, it is It is expressly
+                            forbidden to carry out work to re-identify people
+                            based on this data. and other possible sources of
+                            data and information, past, current or future.
+                        </li>
+                    </ol>
+
+                    <p class="py-6">
+                        The use of this data will be done at your own risk. That
+                        is, in the event that any damage is suffered by a third
+                        party, the people who made use of this document should
+                        be the ones in charge of respond to these problems that
+                        may arise. The same happens in case there are losses
+                        economic or data, the Madrid City Council is not
+                        responsible
+                    </p>
+                </article>
+
+                <article>
+                    <header>
+                        <h2 class="font-bold text-3xl mt-0 mb-2 py-2 font-sans">
+                            Data inside the dataset
+                        </h2>
+                    </header>
+
+                    <blockquote
+                        class="border-l-4 border-green-500 italic my-8 pl-8 md:pl-12"
+                    >
+                        Some brief explanation of the contents of th dataset
+                    </blockquote>
+                    <!-- Table -->
+                    <div class="pt-6 font-sans py-1 bg-blueGray-50">
+                        <div
+                            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
+                        >
+                            <div class="rounded-t mb-0 px-4 py-3 border-0">
+                                <div class="flex flex-wrap items-center">
+                                    <div
+                                        class="relative w-full px-4 max-w-full flex-grow flex-1"
+                                    >
+                                        <h3
+                                            class="font-semibold text-base text-blueGray-700"
+                                        >
+                                            Dataset Contains
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block w-full overflow-x-auto">
+                                <table
+                                    class="items-center bg-transparent w-full border-collapse"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th
+                                                class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+                                            >
+                                                Name
+                                            </th>
+                                            <th
+                                                class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+                                            >
+                                                Type
+                                            </th>
+                                            <th
+                                                class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+                                            >
+                                                Description
+                                            </th>
+                                            <th
+                                                class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+                                            >
+                                                Optional
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                PK
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Integer
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-center border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Primary Key, unique identifier
+                                                for each row for internal use
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                No
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                NOMBRE
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Name of the institution
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                No
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                DESCRIPCION-ENTIDAD
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-center border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                A brief description of the
+                                                entity
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                HORARIO
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Opening hours
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                EQUIPAMIENTO
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String 
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Facilities aviable
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                TRANSPORTE
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Nearby metro stations, bus, ...
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                DESCRIPCION
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Additional description
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                ACCESIBILITY
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Integer(Max 6)
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                0 = Not accessible 1 =
+                                                Accessible 2 = Partially
+                                                accessible facility for people
+                                                with reduced mobility 3 = No
+                                                information on accessibility for
+                                                people with reduced mobility 4 =
+                                                Sign language 5 = Podotactile
+                                                signaling 6 = Magnetic induction
+                                                loop
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                CONTENT-URL
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Internet URI to access
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                NOMBRE-VIA
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Name of the road where is
+                                                located
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                No
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                CLASE-VIAL
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Type of road
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                No
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                TIPO-NUM
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String (V,NUM,KM,S/N)
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Road Number Type
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                NUM
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Integer
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Street Number
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                No
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                PLANTA
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Inside building location
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                PUERTA
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Property's door
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                LOCALIDAD
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                MADRID always
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                No
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                PROVINCIA
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                MADRID always
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                No
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                CODIGO-POSTAL
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Integer
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Postal code
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                No
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                DISTRITO
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                District where is located the
+                                                center
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                CORDENADA-X
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Float
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                X cordinate of the building
+                                                location
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                No
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                CORDENADA-Y
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Float
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Y cordinate of the building
+                                                location
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                No
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                LATITUD
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Float
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Center's latitude
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                No
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                LONGITUD
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Float
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Center's longitude
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                No
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                TELEFONO
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Integer
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Center's phone number
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                FAX
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Integer
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Center's FAX
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                EMAIL
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Integer
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Center's Email
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                                            >
+                                                TIPO
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                String
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Type of installation
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                            >
+                                                Yes
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Table End -->
+                    <p class="py-6">
+                        In the case of the csv with the data of the headquarters
+                        of education centers, the data with which we are going
+                        to work are the same
+                    </p>
+                </article>
+
+                <!-- Resource Naming Strategy -->
+                <article>
+                    <header>
+                        <h2 class="font-bold text-3xl mt-0 mb-2 py-2 font-sans">
+                            Resource Naming Strategy
+                        </h2>
+                    </header>
+
+                    <p class="py-6">
+                        There’s two kinds of URIs:
+                        <br />
+                        - URIs to define the ontology.
+                        <br />
+                        - URIs to define initialized resources.
+                    </p>
+
+                    <h3 class="font-bold text-2xl mt-0 mb-2 py-2 font-sans">
+                        URIs to define the ontology:
+                    </h3>
+
+                    <p class="py-6">
+				The URIs for the ontology constitute the model that we are going to use, and they use the following prefixes:
+                    </p>
+			  <p class="py-6">
+                        The “base” prefix is used to build most ontologies, which
+                        follow the following model:
+                        “http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#[ontologies]”, where “ontologies” is
+                        replaced by any class or property, for example "
+                        http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#EducationalCenter 
+                        ", which is a class.
+                        <br />
+                        <br />
+
+                        The “schema” prefix will also be used for various already existing
+                        properties, such as “email” (schema:email) or the
+                        telephone (schema:telephone). Also, we have used other already existing properties or class names
+				from other sources like wgs84 (wgs84:SpatialThing)
+                        <br />
+                        <br />
+
+                    </p>
+
+                    <h3 class="font-bold text-2xl mt-0 mb-2 py-2 font-sans">
+                        The URIs to define the instances.
+                    </h3>
+                    <p class="py-6">
+                        The instances are the resources that we have, and in the
+                        creation of these we will use the following prefix:
+                        <br />
+                        <br />
+                        @prefix resource:
+                        http://findeducationalcenter.linkeddata.es/lcc/resource/ .
+                        <br />
+
+                        And the schema of your usage will be prefix +
+                        ClassName + InstanceName
+                        <br />
+                        <br />
+                        Where ClassName is the name of the class and
+                        InstanceName is an instance. An example would be:
+                        http://findeducationalcenter.linkeddata.es/lcc/resource/EducationalCenter/1,
+                        an instance with id equals 1, of the EducationalCenter class.
+                    </p>
+
+                    <h3 class="font-bold text-2xl mt-0 mb-2 py-2 font-sans">
+                        Path:
+                    </h3>
+                    <p class="py-6">
+                        <a href="http://linkeddata.es/group04/">
+                            http://findeducationalcenter.linkeddata.es/lcc/
+                        </a>
+                    </p>
+
+                    <h3 class="font-bold text-2xl mt-0 mb-2 py-2 font-sans">
+                        Classes:
+                    </h3>
+                    <p class="py-6">
+                        <a href="http://linkeddata.es/group04/">
+                            Structure: http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#[ClassName]
+                        </a>
+                    </p>
+                    <ul class="pl-4 list-disc">
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#District 
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#EducationalCenter 
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing 
+                        </li>
+                        <li class="py-4 pl-4">
+                            https://schema.org/EducationalOrganization 
+                        </li>
+
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#Neighborhood
+                        </li>
+                    </ul>
+
+                    <h3 class="font-bold text-2xl mt-0 mb-2 py-2 font-sans">
+                        Data properties:
+                    </h3>
+                    <p class="py-6">
+                        <a href="http://linkeddata.es/group04/">
+                            Structure:
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#[PropertyName]
+                        </a>
+                    </p>
+                    <ul class="pl-4 list-disc">
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#accesibility 
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#bus 
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#cafeteria
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#city
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#description
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#districtName
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#equipment
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#extraHourOpening
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#name
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#neighborhoodName
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#nurseryEducation
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#orientation
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#postalCode
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#province
+                        </li>						
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#railwayStatione
+                        </li>												
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#streetName
+                        </li>				
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#streetNumber
+                        </li>										
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#streetNumberType
+                        </li>																
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#streetType
+                        </li>																						
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#subway
+                        </li>																												
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#type
+                        </li>																																		
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#xCoordinate
+                        </li>																																								
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#yCoordinate
+                        </li>																																														
+                        <li class="py-4 pl-4">
+                            http://www.w3.org/2003/01/geo/wgs84_pos#lat
+                        </li>																																																				
+                        <li class="py-4 pl-4">
+                            http://www.w3.org/2003/01/geo/wgs84_pos#long
+                        </li>																																																										
+                        <li class="py-4 pl-4">
+                            https://schema.org/url
+                        </li>
+                        <li class="py-4 pl-4">
+                            https://schema.org/email
+                        </li>
+                        <li class="py-4 pl-4">
+                            https://schema.org/telephone
+                        </li>
+			</ul>
+                    <h3 class="font-bold text-2xl mt-0 mb-2 py-2 font-sans">
+                        Object properties:
+                    </h3>
+                    <p class="py-6">
+                        <a href="http://linkeddata.es/group04/">
+                            Structure:
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#[PropertyName]
+                        </a>
+			<ul class="pl-4 list-disc">
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#hasDistrict
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#hasNeighborhood
+                        </li>
+                    </ul>
+                </article>
+
+                <!--/ Post Content-->
+            </div>
+        </div>
+        <!--/container-->
+        <script>
+            /* Progress bar */
+            //Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+            var h = document.documentElement,
+                b = document.body,
+                st = "scrollTop",
+                sh = "scrollHeight",
+                progress = document.querySelector("#progress"),
+                scroll;
+            var scrollpos = window.scrollY;
+            var header = document.getElementById("header");
+            var navcontent = document.getElementById("nav-content");
+
+            document.addEventListener("scroll", function () {
+                /*Refresh scroll % width*/
+                scroll =
+                    ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) *
+                    100;
+                progress.style.setProperty("--scroll", scroll + "%");
+
+                /*Apply classes for slide in bar*/
+                scrollpos = window.scrollY;
+
+                if (scrollpos > 10) {
+                    header.classList.add("bg-white");
+                    header.classList.add("shadow");
+                    navcontent.classList.remove("bg-gray-100");
+                    navcontent.classList.add("bg-white");
+                } else {
+                    header.classList.remove("bg-white");
+                    header.classList.remove("shadow");
+                    navcontent.classList.remove("bg-white");
+                    navcontent.classList.add("bg-gray-100");
+                }
+            });
+
+            //Javascript to toggle the menu
+            document.getElementById("nav-toggle").onclick = function () {
+                document
+                    .getElementById("nav-content")
+                    .classList.toggle("hidden");
+            };
+        </script>
+    </body>
+</html>
