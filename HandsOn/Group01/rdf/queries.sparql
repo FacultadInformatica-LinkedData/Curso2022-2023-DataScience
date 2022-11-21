@@ -1,0 +1,82 @@
+PREFIX lib: <https://www.biblioescuela.educamadrid.org/ontologies/Library#> 
+PREFIX sch: <https://www.biblioescuela.educamadrid.org/ontologies/School#> 
+PREFIX sce: <https://www.schema.org/> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX date: <http://www.contextus.net/ontology/ontomedia/misc/date#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+PREFIX vcard: <http://www.owl-ontologies.com/vcard#> 
+
+
+# QUERIES CLASS LIBRARY
+
+
+# 1: It returns all the libraries (52 in total).
+SELECT ?Library WHERE {
+    ?Library rdf:type lib:Library.
+}
+
+# 2: It returns all the libraries with its respective telephone numbers (52 in total).
+SELECT ?Library ?Phone WHERE {
+   ?Library rdf:type lib:Library.
+   ?Library lib:hasContactInfo ?Contact.
+   ?Contact vcard:hasTelephone ?Phone.
+}
+
+# 3: It returns all the neighbourhoods of Madrid that have a public library (44 distinct neighbourhoods).
+SELECT DISTINCT ?Neighbourhood_name WHERE {
+   ?Neighbourhood rdf:type lib:hasNeighbourhood.
+   ?Neighbourhood foaf:name ?Neighbourhood_name.
+}
+
+# 4: It returns all the libraries which are accesible by bus and its respective bus lines (49 libraries).
+SELECT DISTINCT ?Library ?Bus WHERE {
+   ?Library rdf:type lib:Library.
+   ?Library lib:hasTransport ?Transport.
+   ?Transport lib:hasBusLine ?Bus.
+}
+
+# 5: It returns the name of the libraries (only the ones in wikidata) as well as their link to wikidata.
+SELECT ?Library_name ?Wiki_Library WHERE {
+    ?Library rdf:type lib:Library.
+    ?Library owl:sameAs ?Wiki_Library.
+    ?Library foaf:name ?Library_name.
+}
+
+
+# QUERIES CLASS SCHOOL
+
+
+# 1: It returns all the schools (251 in total).
+SELECT ?School WHERE {
+    ?School rdf:type sch:School.
+}
+
+# 2: It returns all the schools with its respective coordinates (251 in total).
+SELECT ?School ?Latitude ?Longitude WHERE {
+    ?School rdf:type sch:School.
+    ?School vcard:hasGeo ?Coordinates.
+    ?Coordinates sch:hasLatitude ?Latitude.
+    ?Coordinates sch:hasLongitude ?Longitude.
+}
+
+# 3: It returns all the districts of Madrid that have a public school (21 distinct districts).
+SELECT DISTINCT ?District_name WHERE {
+    ?District rdf:type sch:hasDistrict.
+    ?District foaf:name ?District_name.
+}
+
+# 4: It returns the public schools of Madrid and their respective educational stage (251 in total).
+SELECT DISTINCT ?School ?Education WHERE {
+    ?School rdf:type sch:School.
+    ?School sch:EducationType ?Education.
+}
+
+# 5: It returns the name of the schools (only the ones in wikidata) as well as their link to wikidata.
+SELECT ?School_name ?Wiki_School WHERE {
+    ?School_name rdf:type sch:Library.
+    ?School_name owl:sameAs ?Wiki_School.
+    ?School_name foaf:name ?School_name.
+}
+
