@@ -1,0 +1,11 @@
+prefixes:
+ ex: "http://example.com/"
+
+mappings:
+  person:
+    sources:
+      - ['./csv/calles_tranquilas.csv~csv']
+    s: http://example.com/person/$(TX_NOMBRE)
+    po:
+      - [a, ns:calleTranquila]
+      
