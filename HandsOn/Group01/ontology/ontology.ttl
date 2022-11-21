@@ -332,6 +332,29 @@ foaf:name a owl:ObjectProperty ;
         sch:School ;
     rdfs:range xsd:string .
 
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#coordinateX
+sch:coordinateX a owl:ObjectProperty ;
+	rdfs:label "Coordinates X" ;
+	rdfs:domain sch:Coordinates ;
+	rdfs:range xsd:int.
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#coordinateY
+sch:coordinateY a owl:ObjectProperty ;
+	rdfs:label "Coordinates Y" ;
+	rdfs:domain sch:Coordinates ;
+	rdfs:range xsd:int.
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#coordinateX
+lib:coordinateX a owl:ObjectProperty ;
+	rdfs:label "Coordinates X" ;
+	rdfs:domain lib:Coordinates ;
+	rdfs:range xsd:int.
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#coordinateY
+lib:coordinateY a owl:ObjectProperty ;
+	rdfs:label "Coordinates Y" ;
+	rdfs:domain lib:Coordinates ;
+	rdfs:range xsd:int.
 
 #################################################################
 #    Classes
