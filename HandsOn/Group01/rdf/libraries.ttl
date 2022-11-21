@@ -360,636 +360,636 @@
   lib:numType "V" ;
   lib:streetName "CANTALAPIEDRA" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/185595>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/185595>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpvazquezmontalban@madrid.es" ;
   vcard:hasTelephone """91 398 07 23                                                                                                                                     
 91 398 07 26""" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/10395362>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/10395362>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpmarialejarraga@madrid.es" ;
   vcard:hasTelephone "91 513 33 83" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/7697128>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/7697128>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpvargasllosa@madrid.es" ;
   vcard:hasTelephone "914 802 433" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/66904>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/66904>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.fuencarral@madrid.org" ;
   vcard:hasTelephone "917 319 552 / 917 319 553" ;
   lib:hasFax "917 398 231" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/8053214>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/8053214>
+  a lib:ContactInfo ;
   vcard:hasEmail "dbibliotecaspublicas@madrid.es" ;
   vcard:hasTelephone "91 591 39 01" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1754>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1754>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpgarciamarquez@madrid.es" ;
   vcard:hasTelephone "91 318 86 91" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/186714>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/186714>
+  a lib:ContactInfo ;
   vcard:hasEmail "bppabloneruda@madrid.es" ;
   vcard:hasTelephone "91 406 14 72" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/11737758>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/11737758>
+  a lib:ContactInfo ;
   vcard:hasEmail "dbibliotecaspublicas@madrid.es" ;
   vcard:hasTelephone "91 588 41 81" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/7902770>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/7902770>
+  a lib:ContactInfo ;
   vcard:hasEmail "dbibliotecaspublicas@madrid.es" ;
   vcard:hasTelephone "91 588 57 24" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1755>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1755>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpanammatute@madrid.es" ;
   vcard:hasTelephone "91 588 08 30" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/115056>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/115056>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpjosehierro@madrid.es" ;
   vcard:hasTelephone "91 313 55 28" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/51849>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/51849>
+  a lib:ContactInfo ;
   vcard:hasEmail "bplaelipa@madrid.es" ;
   vcard:hasTelephone "91 403 63 22" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/123303>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/123303>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.usera@madrid.org" ;
   vcard:hasTelephone "914 229 501" ;
   lib:hasFax "914 691 901" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1745>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1745>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpcanillejas@madrid.es" ;
   vcard:hasTelephone "91 741 11 34" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1757>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1757>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpaluche@madrid.es" ;
   vcard:hasTelephone "91 719 89 96" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/79941>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/79941>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpgloriafuertes@madrid.es" ;
   vcard:hasTelephone "91 312 02 58" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1761>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1761>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpvallecas@madrid.es" ;
   vcard:hasTelephone "91 588 60 51" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1882>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1882>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpperezgaldos@madrid.es" ;
   vcard:hasTelephone "91 588 59 10" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1790>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1790>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpjosesaramago@madrid.es" ;
   vcard:hasTelephone "91 588 68 91" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1792>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1792>
+  a lib:ContactInfo ;
   vcard:hasEmail "bppozotr@madrid.es" ;
   vcard:hasTelephone "91 507 07 34" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1763>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1763>
+  a lib:ContactInfo ;
   vcard:hasEmail "bppiobaroja@madrid.es" ;
   vcard:hasTelephone "91 474 16 03" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1765>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1765>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.salamanca@madrid.org" ;
   vcard:hasTelephone "917 263 701" ;
   lib:hasFax "913 555 425" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1747>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1747>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpvicalvaro@madrid.es" ;
   vcard:hasTelephone "91 775 31 43" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/167128>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/167128>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpfranciscoayala@madrid.es" ;
   vcard:hasTelephone "91 301 64 66" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1760>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1760>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpfranciscoibanez@madrid.es" ;
   vcard:hasTelephone "91 510 37 56" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1752>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1752>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpmigueldelibes@madrid.es" ;
   vcard:hasTelephone "91 328 73 00" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1756>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1756>
+  a lib:ContactInfo ;
   vcard:hasEmail "bplachata@madrid.es" ;
   vcard:hasTelephone "91 422 05 33" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/5765642>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/5765642>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.carabanchel@madrid.org" ;
   vcard:hasTelephone "912 760 233" ;
   lib:hasFax "914 613 331" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/11572165>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/11572165>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpsanfermin@madrid.es" ;
   vcard:hasTelephone "91 480 47 25" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1762>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1762>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpdavidgistau@madrid.es" ;
   vcard:hasTelephone "91 724 08 04" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/5768564>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/5768564>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpangelgonzalez@madrid.es" ;
   vcard:hasTelephone "91 512 35 42" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1753>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1753>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpportazgo@madrid.es" ;
   vcard:hasTelephone "91 757 03 23" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1771>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1771>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.acuna@madrid.org" ;
   vcard:hasTelephone "915 413 619" ;
   lib:hasFax "915 426 939" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1770>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1770>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.hortaleza@madrid.org" ;
   vcard:hasTelephone "917 633 284" ;
   lib:hasFax "917 633 284" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1798>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1798>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.centro@madrid.org" ;
   vcard:hasTelephone "913 665 407" ;
   lib:hasFax "913 657 523" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1773>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1773>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.moratalaz@madrid.org" ;
   vcard:hasTelephone "914 394 688" ;
   lib:hasFax "914 370 234" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1800>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1800>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.vallecas@madrid.org" ;
   vcard:hasTelephone "913 033 195" ;
   lib:hasFax "913 804 153" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1794>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1794>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpciudadlineal@madrid.es" ;
   vcard:hasTelephone "915 887 566" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/86719>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/86719>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.villaverde@madrid.org" ;
   vcard:hasTelephone "917 230 194" ;
   lib:hasFax "917 979 458" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/181101>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/181101>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.villavallecas@madrid.org" ;
   vcard:hasTelephone "912 760 231" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/5975465>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/5975465>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpivandevargas@madrid.es" ;
   vcard:hasTelephone "917 586 211" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1748>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1748>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpgerardodiego@madrid.es" ;
   vcard:hasTelephone "91 380 66 33" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1759>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1759>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpmariazambrano@madrid.es" ;
   vcard:hasTelephone "91 733 90 43" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1764>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1764>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.chamberi@madrid.org" ;
   vcard:hasTelephone "914 459 782" ;
   lib:hasFax "914 472 444" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/25526>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/25526>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.latina@madrid.org" ;
   vcard:hasTelephone "915 093 625" ;
   lib:hasFax "917 068 193" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/51188>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/51188>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpdamasoalonso@madrid.es" ;
   vcard:hasTelephone "91 350 31 50" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1746>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1746>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpsanblas@madrid.es" ;
   vcard:hasTelephone "91 313 52 97" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1777>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1777>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.ruizegea@madrid.org" ;
   vcard:hasTelephone "915 349 029" ;
   lib:hasFax "915 337 809" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1774>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1774>
+  a lib:ContactInfo ;
   vcard:hasEmail "bib.retiro@madrid.org" ;
   vcard:hasTelephone "915 019 146" ;
   lib:hasFax "915 018 130" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/6893633>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/6893633>
+  a lib:ContactInfo ;
   vcard:hasEmail "bpeugeniotrias@madrid.es" ;
   vcard:hasTelephone "91 480 48 38" .
 
-<https://www.biblioescuela.educamadrid.org/resource/Contact/1750>
-  a lib:Contact ;
+<https://www.biblioescuela.educamadrid.org/resource/ContactInfo/1750>
+  a lib:ContactInfo ;
   vcard:hasEmail "bphuertasalud@madrid.es" ;
   vcard:hasTelephone "91 764 52 43" .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/51849>
   a lib:Coordinates ;
-  vcard:Latitude "40.42342659084215" ;
-  vcard:Longitude "-3.651841641389484" ;
+  lib:hasLatitude "40.42342659084215" ;
+  lib:hasLongitude "-3.651841641389484" ;
   lib:hasCoordinateX 444705 ;
   lib:hasCoordinateY 4474959 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/123303>
   a lib:Coordinates ;
-  vcard:Latitude "40.38188182427109" ;
-  vcard:Longitude "-3.7106164073640233" ;
+  lib:hasLatitude "40.38188182427109" ;
+  lib:hasLongitude "-3.7106164073640233" ;
   lib:hasCoordinateX 439681 ;
   lib:hasCoordinateY 4470386 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/11572165>
   a lib:Coordinates ;
-  vcard:Latitude "40.3711623444796" ;
-  vcard:Longitude "-3.692742821990015" ;
+  lib:hasLatitude "40.3711623444796" ;
+  lib:hasLongitude "-3.692742821990015" ;
   lib:hasCoordinateX 441188 ;
   lib:hasCoordinateY 4469184 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1762>
   a lib:Coordinates ;
-  vcard:Latitude "40.43199309720514" ;
-  vcard:Longitude "-3.670929243543714" ;
+  lib:hasLatitude "40.43199309720514" ;
+  lib:hasLongitude "-3.670929243543714" ;
   lib:hasCoordinateX 443092 ;
   lib:hasCoordinateY 4475923 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/66904>
   a lib:Coordinates ;
-  vcard:Latitude "40.48791129077104" ;
-  vcard:Longitude "-3.6984002338920092" ;
+  lib:hasLatitude "40.48791129077104" ;
+  lib:hasLongitude "-3.6984002338920092" ;
   lib:hasCoordinateX 440811 ;
   lib:hasCoordinateY 4482147 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/7902770>
   a lib:Coordinates ;
-  vcard:Latitude "40.42803383242307" ;
-  vcard:Longitude "-3.710173215834519" ;
+  lib:hasLatitude "40.42803383242307" ;
+  lib:hasLongitude "-3.710173215834519" ;
   lib:hasCoordinateX 439759 ;
   lib:hasCoordinateY 4475508 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1882>
   a lib:Coordinates ;
-  vcard:Latitude "40.42738668300474" ;
-  vcard:Longitude "-3.7105999955473625" ;
+  lib:hasLatitude "40.42738668300474" ;
+  lib:hasLongitude "-3.7105999955473625" ;
   lib:hasCoordinateX 439723 ;
   lib:hasCoordinateY 4475438 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/86719>
   a lib:Coordinates ;
-  vcard:Latitude "40.34952409541233" ;
-  vcard:Longitude "-3.710123586489839" ;
+  lib:hasLatitude "40.34952409541233" ;
+  lib:hasLongitude "-3.710123586489839" ;
   lib:hasCoordinateX 439694 ;
   lib:hasCoordinateY 4466794 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/167128>
   a lib:Coordinates ;
-  vcard:Latitude "40.39982891410407" ;
-  vcard:Longitude "-3.621281890570377" ;
+  lib:hasLatitude "40.39982891410407" ;
+  lib:hasLongitude "-3.621281890570377" ;
   lib:hasCoordinateX 447278 ;
   lib:hasCoordinateY 4472321 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/5975465>
   a lib:Coordinates ;
-  vcard:Latitude "40.41410290844665" ;
-  vcard:Longitude "-3.7098591212735883" ;
+  lib:hasLatitude "40.41410290844665" ;
+  lib:hasLongitude "-3.7098591212735883" ;
   lib:hasCoordinateX 439775 ;
   lib:hasCoordinateY 4473962 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/5765642>
   a lib:Coordinates ;
-  vcard:Latitude "40.373420234648606" ;
-  vcard:Longitude "-3.7480802097487653" ;
+  lib:hasLatitude "40.373420234648606" ;
+  lib:hasLongitude "-3.7480802097487653" ;
   lib:hasCoordinateX 436493 ;
   lib:hasCoordinateY 4469473 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/51188>
   a lib:Coordinates ;
-  vcard:Latitude "40.467453379213175" ;
-  vcard:Longitude "-3.6846112774442705" ;
+  lib:hasLatitude "40.467453379213175" ;
+  lib:hasLongitude "-3.6846112774442705" ;
   lib:hasCoordinateX 441962 ;
   lib:hasCoordinateY 4479867 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1750>
   a lib:Coordinates ;
-  vcard:Latitude "40.47571688103069" ;
-  vcard:Longitude "-3.64667257750353" ;
+  lib:hasLatitude "40.47571688103069" ;
+  lib:hasLongitude "-3.64667257750353" ;
   lib:hasCoordinateX 445295 ;
   lib:hasCoordinateY 4480968 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1760>
   a lib:Coordinates ;
-  vcard:Latitude "40.44810636195716" ;
-  vcard:Longitude "-3.6762309620097398" ;
+  lib:hasLatitude "40.44810636195716" ;
+  lib:hasLongitude "-3.6762309620097398" ;
   lib:hasCoordinateX 442766 ;
   lib:hasCoordinateY 4477922 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1773>
   a lib:Coordinates ;
-  vcard:Latitude "40.404043531769375" ;
-  vcard:Longitude "-3.649450874958104" ;
+  lib:hasLatitude "40.404043531769375" ;
+  lib:hasLongitude "-3.649450874958104" ;
   lib:hasCoordinateX 444891 ;
   lib:hasCoordinateY 4472806 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1774>
   a lib:Coordinates ;
-  vcard:Latitude "40.40356992125351" ;
-  vcard:Longitude "-3.672414651864732" ;
+  lib:hasLatitude "40.40356992125351" ;
+  lib:hasLongitude "-3.672414651864732" ;
   lib:hasCoordinateX 442942 ;
   lib:hasCoordinateY 4472769 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1746>
   a lib:Coordinates ;
-  vcard:Latitude "40.420231627534996" ;
-  vcard:Longitude "-3.6218113860909074" ;
+  lib:hasLatitude "40.420231627534996" ;
+  lib:hasLongitude "-3.6218113860909074" ;
   lib:hasCoordinateX 447249 ;
   lib:hasCoordinateY 4474586 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1763>
   a lib:Coordinates ;
-  vcard:Latitude "40.40003652682007" ;
-  vcard:Longitude "-3.7074488154950584" ;
+  lib:hasLatitude "40.40003652682007" ;
+  lib:hasLongitude "-3.7074488154950584" ;
   lib:hasCoordinateX 439967 ;
   lib:hasCoordinateY 4472399 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1792>
   a lib:Coordinates ;
-  vcard:Latitude "40.3735856436473" ;
-  vcard:Longitude "-3.6602546064905397" ;
+  lib:hasLatitude "40.3735856436473" ;
+  lib:hasLongitude "-3.6602546064905397" ;
   lib:hasCoordinateX 443950 ;
   lib:hasCoordinateY 4469433 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/11737758>
   a lib:Coordinates ;
-  vcard:Latitude "40.35075302554859" ;
-  vcard:Longitude "-3.6871905881900373" ;
+  lib:hasLatitude "40.35075302554859" ;
+  lib:hasLongitude "-3.6871905881900373" ;
   lib:hasCoordinateX 441642 ;
   lib:hasCoordinateY 4466915 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/25526>
   a lib:Coordinates ;
-  vcard:Latitude "40.37944226151668" ;
-  vcard:Longitude "-3.769445829090458" ;
+  lib:hasLatitude "40.37944226151668" ;
+  lib:hasLongitude "-3.769445829090458" ;
   lib:hasCoordinateX 434685 ;
   lib:hasCoordinateY 4470157 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/6893633>
   a lib:Coordinates ;
-  vcard:Latitude "40.4166091081099" ;
-  vcard:Longitude "-3.6795930368034804" ;
+  lib:hasLatitude "40.4166091081099" ;
+  lib:hasLongitude "-3.6795930368034804" ;
   lib:hasCoordinateX 442345 ;
   lib:hasCoordinateY 4474221 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/5768564>
   a lib:Coordinates ;
-  vcard:Latitude "40.397074625115906" ;
-  vcard:Longitude "-3.7664885474841556" ;
+  lib:hasLatitude "40.397074625115906" ;
+  lib:hasLongitude "-3.7664885474841556" ;
   lib:hasCoordinateX 434954 ;
   lib:hasCoordinateY 4472113 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1752>
   a lib:Coordinates ;
-  vcard:Latitude "40.40971737692924" ;
-  vcard:Longitude "-3.6529822109115133" ;
+  lib:hasLatitude "40.40971737692924" ;
+  lib:hasLongitude "-3.6529822109115133" ;
   lib:hasCoordinateX 444597 ;
   lib:hasCoordinateY 4473439 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/115056>
   a lib:Coordinates ;
-  vcard:Latitude "40.433291625973624" ;
-  vcard:Longitude "-3.6105662311927453" ;
+  lib:hasLatitude "40.433291625973624" ;
+  lib:hasLongitude "-3.6105662311927453" ;
   lib:hasCoordinateX 448214 ;
   lib:hasCoordinateY 4476029 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1756>
   a lib:Coordinates ;
-  vcard:Latitude "40.38330593504341" ;
-  vcard:Longitude "-3.7420633861175796" ;
+  lib:hasLatitude "40.38330593504341" ;
+  lib:hasLongitude "-3.7420633861175796" ;
   lib:hasCoordinateX 437014 ;
   lib:hasCoordinateY 4470566 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/7697128>
   a lib:Coordinates ;
-  vcard:Latitude "40.426642215368176" ;
-  vcard:Longitude "-3.699722994908341" ;
+  lib:hasLatitude "40.426642215368176" ;
+  lib:hasLongitude "-3.699722994908341" ;
   lib:hasCoordinateX 440645 ;
   lib:hasCoordinateY 4475347 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1794>
   a lib:Coordinates ;
-  vcard:Latitude "40.43644651057092" ;
-  vcard:Longitude "-3.6372924261150033" ;
+  lib:hasLatitude "40.43644651057092" ;
+  lib:hasLongitude "-3.6372924261150033" ;
   lib:hasCoordinateX 445948 ;
   lib:hasCoordinateY 4476395 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1754>
   a lib:Coordinates ;
-  vcard:Latitude "40.366768324753416" ;
-  vcard:Longitude "-3.701141063083806" ;
+  lib:hasLatitude "40.366768324753416" ;
+  lib:hasLongitude "-3.701141063083806" ;
   lib:hasCoordinateX 440472 ;
   lib:hasCoordinateY 4468702 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/10395362>
   a lib:Coordinates ;
-  vcard:Latitude "40.49041562546542" ;
-  vcard:Longitude "-3.655356751728003" ;
+  lib:hasLatitude "40.49041562546542" ;
+  lib:hasLongitude "-3.655356751728003" ;
   lib:hasCoordinateX 444461 ;
   lib:hasCoordinateY 4482397 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1777>
   a lib:Coordinates ;
-  vcard:Latitude "40.446595985821794" ;
-  vcard:Longitude "-3.7028897237155656" ;
+  lib:hasLatitude "40.446595985821794" ;
+  lib:hasLongitude "-3.7028897237155656" ;
   lib:hasCoordinateX 440394 ;
   lib:hasCoordinateY 4477564 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1745>
   a lib:Coordinates ;
-  vcard:Latitude "40.44640229188281" ;
-  vcard:Longitude "-3.6117933204271098" ;
+  lib:hasLatitude "40.44640229188281" ;
+  lib:hasLongitude "-3.6117933204271098" ;
   lib:hasCoordinateX 448119 ;
   lib:hasCoordinateY 4477485 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/79941>
   a lib:Coordinates ;
-  vcard:Latitude "40.46055947228695" ;
-  vcard:Longitude "-3.5937461811785347" ;
+  lib:hasLatitude "40.46055947228695" ;
+  lib:hasLongitude "-3.5937461811785347" ;
   lib:hasCoordinateX 449661 ;
   lib:hasCoordinateY 4479046 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1800>
   a lib:Coordinates ;
-  vcard:Latitude "40.38449423079662" ;
-  vcard:Longitude "-3.6429247082087737" ;
+  lib:hasLatitude "40.38449423079662" ;
+  lib:hasLongitude "-3.6429247082087737" ;
   lib:hasCoordinateX 445429 ;
   lib:hasCoordinateY 4470632 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1790>
   a lib:Coordinates ;
-  vcard:Latitude "40.47860087334554" ;
-  vcard:Longitude "-3.7094408342979954" ;
+  lib:hasLatitude "40.47860087334554" ;
+  lib:hasLongitude "-3.7094408342979954" ;
   lib:hasCoordinateX 439867 ;
   lib:hasCoordinateY 4481122 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1761>
   a lib:Coordinates ;
-  vcard:Latitude "40.395023959810636" ;
-  vcard:Longitude "-3.665554302127492" ;
+  lib:hasLatitude "40.395023959810636" ;
+  lib:hasLongitude "-3.665554302127492" ;
   lib:hasCoordinateX 443517 ;
   lib:hasCoordinateY 4471815 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/181101>
   a lib:Coordinates ;
-  vcard:Latitude "40.38091437280583" ;
-  vcard:Longitude "-3.613674447421734" ;
+  lib:hasLatitude "40.38091437280583" ;
+  lib:hasLongitude "-3.613674447421734" ;
   lib:hasCoordinateX 447909 ;
   lib:hasCoordinateY 4470217 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1757>
   a lib:Coordinates ;
-  vcard:Latitude "40.39597072367931" ;
-  vcard:Longitude "-3.7562716852987847" ;
+  lib:hasLatitude "40.39597072367931" ;
+  lib:hasLongitude "-3.7562716852987847" ;
   lib:hasCoordinateX 435820 ;
   lib:hasCoordinateY 4471982 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/185595>
   a lib:Coordinates ;
-  vcard:Latitude "40.45749513485957" ;
-  vcard:Longitude "-3.710539712535917" ;
+  lib:hasLatitude "40.45749513485957" ;
+  lib:hasLongitude "-3.710539712535917" ;
   lib:hasCoordinateX 439755 ;
   lib:hasCoordinateY 4478779 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1748>
   a lib:Coordinates ;
-  vcard:Latitude "40.37790196240434" ;
-  vcard:Longitude "-3.6227296605039516" ;
+  lib:hasLatitude "40.37790196240434" ;
+  lib:hasLongitude "-3.6227296605039516" ;
   lib:hasCoordinateX 447138 ;
   lib:hasCoordinateY 4469889 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1771>
   a lib:Coordinates ;
-  vcard:Latitude "40.427942010682415" ;
-  vcard:Longitude "-3.7169600607379985" ;
+  lib:hasLatitude "40.427942010682415" ;
+  lib:hasLongitude "-3.7169600607379985" ;
   lib:hasCoordinateX 439184 ;
   lib:hasCoordinateY 4475503 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1798>
   a lib:Coordinates ;
-  vcard:Latitude "40.40709558029403" ;
-  vcard:Longitude "-3.711046518464516" ;
+  lib:hasLatitude "40.40709558029403" ;
+  lib:hasLongitude "-3.711046518464516" ;
   lib:hasCoordinateX 439667 ;
   lib:hasCoordinateY 4473185 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/8053214>
   a lib:Coordinates ;
-  vcard:Latitude "40.433719454283505" ;
-  vcard:Longitude "-3.7104468992841753" ;
+  lib:hasLatitude "40.433719454283505" ;
+  lib:hasLongitude "-3.7104468992841753" ;
   lib:hasCoordinateX 439741 ;
   lib:hasCoordinateY 4476139 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1765>
   a lib:Coordinates ;
-  vcard:Latitude "40.43440083847048" ;
-  vcard:Longitude "-3.66897244650415" ;
+  lib:hasLatitude "40.43440083847048" ;
+  lib:hasLongitude "-3.66897244650415" ;
   lib:hasCoordinateX 443260 ;
   lib:hasCoordinateY 4476188 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1770>
   a lib:Coordinates ;
-  vcard:Latitude "40.47723185032398" ;
-  vcard:Longitude "-3.6496247031818596" ;
+  lib:hasLatitude "40.47723185032398" ;
+  lib:hasLongitude "-3.6496247031818596" ;
   lib:hasCoordinateX 445046 ;
   lib:hasCoordinateY 4481138 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1753>
   a lib:Coordinates ;
-  vcard:Latitude "40.393189968014696" ;
-  vcard:Longitude "-3.6554147649183943" ;
+  lib:hasLatitude "40.393189968014696" ;
+  lib:hasLongitude "-3.6554147649183943" ;
   lib:hasCoordinateX 444376 ;
   lib:hasCoordinateY 4471605 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1764>
   a lib:Coordinates ;
-  vcard:Latitude "40.43539063992494" ;
-  vcard:Longitude "-3.6996132452669075" ;
+  lib:hasLatitude "40.43539063992494" ;
+  lib:hasLongitude "-3.6996132452669075" ;
   lib:hasCoordinateX 440662 ;
   lib:hasCoordinateY 4476318 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1747>
   a lib:Coordinates ;
-  vcard:Latitude "40.405283650744316" ;
-  vcard:Longitude "-3.6086278232922804" ;
+  lib:hasLatitude "40.405283650744316" ;
+  lib:hasLongitude "-3.6086278232922804" ;
   lib:hasCoordinateX 448357 ;
   lib:hasCoordinateY 4472920 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/186714>
   a lib:Coordinates ;
-  vcard:Latitude "40.42941133441142" ;
-  vcard:Longitude "-3.6416899839787695" ;
+  lib:hasLatitude "40.42941133441142" ;
+  lib:hasLongitude "-3.6416899839787695" ;
   lib:hasCoordinateX 445570 ;
   lib:hasCoordinateY 4475617 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1755>
   a lib:Coordinates ;
-  vcard:Latitude "40.39786734087938" ;
-  vcard:Longitude "-3.720088245008897" ;
+  lib:hasLatitude "40.39786734087938" ;
+  lib:hasLongitude "-3.720088245008897" ;
   lib:hasCoordinateX 438891 ;
   lib:hasCoordinateY 4472167 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Coordinates/1759>
   a lib:Coordinates ;
-  vcard:Latitude "40.46903299144094" ;
-  vcard:Longitude "-3.6976620067964996" ;
+  lib:hasLatitude "40.46903299144094" ;
+  lib:hasLongitude "-3.6976620067964996" ;
   lib:hasCoordinateX 440857 ;
   lib:hasCoordinateY 4480052 .
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/7697128>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/7697128" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/7697128" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6c4dbc2658739410VgnVCM2000000c205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)" ;
   lib:accessibility "1,6" ;
@@ -1005,7 +1005,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/185595>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/185595" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/185595" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=b5ca89e2c9e5d010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Manuel Vázquez Montalbán (Tetuán)" ;
   lib:accessibility "1,6" ;
@@ -1021,7 +1021,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/51188>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/51188" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/51188" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5870007f8441f010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Dámaso Alonso (Chamartín)" ;
   lib:accessibility "1,6" ;
@@ -1037,7 +1037,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/8053214>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/8053214" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/8053214" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=917c40221457d410VgnVCM2000000c205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Bibliored Centro Cultural Galileo" ;
   lib:accessibility "1" ;
@@ -1051,7 +1051,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1765>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1765" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1765" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d51979262ef5d010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública del Estado Manuel Alvar  (Salamanca)" ;
   lib:accessibility "1" ;
@@ -1065,7 +1065,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1770>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1770" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1770" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e42e995a8bf5d010VgnVCM2000000c205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Hortaleza" ;
   lib:accessibility "3" ;
@@ -1077,7 +1077,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1771>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1771" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1771" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e9ad995a8bf5d010VgnVCM2000000c205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública José Acuña (Moncloa - Aravaca)" ;
   lib:accessibility "3" ;
@@ -1090,7 +1090,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/25526>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/25526" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/25526" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c73e995a8bf5d010VgnVCM2000000c205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Antonio Mingote (Latina)" ;
   lib:accessibility "1" ;
@@ -1104,7 +1104,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1757>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1757" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1757" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7f0e3d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Aluche (Latina)" ;
   lib:accessibility "1,6" ;
@@ -1120,7 +1120,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1756>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1756" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1756" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d9a879262ef5d010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal La Chata (Carabanchel)" ;
   lib:accessibility "1,6" ;
@@ -1136,7 +1136,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/51849>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/51849" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/51849" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=697c598d1351c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal La Elipa (Ciudad Lineal)" ;
   lib:accessibility "1,6" ;
@@ -1152,7 +1152,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1748>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1748" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1748" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ca903d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Gerardo Diego (Villa de Vallecas)" ;
   lib:accessibility "1,6" ;
@@ -1168,7 +1168,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/123303>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/123303" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/123303" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=943979262ef5d010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública José Hierro (Usera)" ;
   lib:accessibility "1" ;
@@ -1181,7 +1181,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1763>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1763" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1763" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=17f879262ef5d010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Pío Baroja (Arganzuela)" ;
   lib:accessibility "1,6" ;
@@ -1197,7 +1197,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1754>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1754" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1754" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e4bf3d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Gabriel García Márquez (Usera)" ;
   lib:accessibility "1,6" ;
@@ -1213,7 +1213,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1774>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1774" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1774" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=44213d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Elena Fortún (Retiro)" ;
   lib:accessibility "1" ;
@@ -1227,7 +1227,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1798>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1798" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1798" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=67ed995a8bf5d010VgnVCM2000000c205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Pedro Salinas (Centro)" ;
   lib:accessibility "1" ;
@@ -1241,7 +1241,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/11572165>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/11572165" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/11572165" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=83e748aaf535e710VgnVCM1000001d4a900aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal San Fermín (Usera)" ;
   lib:accessibility "1,5,6" ;
@@ -1257,7 +1257,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1760>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1760" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1760" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0fce3d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Francisco Ibáñez (Chamartín)" ;
   lib:accessibility "1,6" ;
@@ -1273,7 +1273,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/11737758>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/11737758" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/11737758" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=dc65a358a3a32810VgnVCM1000001d4a900aRCRD"^^xsd:anyURI ;
   foaf:name "Bibliored Sala León Felipe" ;
   lib:accessibility "1" ;
@@ -1287,7 +1287,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/115056>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/115056" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/115056" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=338879262ef5d010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)" ;
   lib:accessibility "1,6" ;
@@ -1303,7 +1303,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1752>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1752" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1752" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9e8f3d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Miguel Delibes (Moratalaz)" ;
   lib:accessibility "1,6" ;
@@ -1319,7 +1319,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1762>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1762" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1762" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c53e3d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal David Gistau (Salamanca)" ;
   lib:accessibility "1" ;
@@ -1335,7 +1335,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1753>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1753" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1753" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=89a40a47f441f010VgnVCM2000000c205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Portazgo (Puente de Vallecas)" ;
   lib:accessibility "1,6" ;
@@ -1351,7 +1351,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/79941>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/79941" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/79941" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=1f64c2c6e051c010VgnVCM2000000c205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Gloria Fuertes (Barajas)" ;
   lib:accessibility "1,6" ;
@@ -1367,7 +1367,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1746>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1746" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1746" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=2e403d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal San Blas (San Blas-Canillejas)" ;
   lib:accessibility "1,6" ;
@@ -1383,7 +1383,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/7902770>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/7902770" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/7902770" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=3d2cd4bdf66bb410VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Bibliometro" ;
   lib:accessibility "0" ;
@@ -1398,7 +1398,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1794>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1794" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1794" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=82ce995a8bf5d010VgnVCM2000000c205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Ciudad Lineal (Ciudad Lineal)" ;
   lib:accessibility "1,6" ;
@@ -1414,7 +1414,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/66904>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/66904" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/66904" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=260e995a8bf5d010VgnVCM2000000c205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Rafael Alberti (Fuencarral - El Pardo)" ;
   lib:accessibility "1" ;
@@ -1428,7 +1428,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1750>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1750" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1750" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9c5879262ef5d010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Huerta de la Salud (Hortaleza)" ;
   lib:accessibility "1,6" ;
@@ -1444,7 +1444,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1747>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1747" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1747" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=67e03d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Vicálvaro" ;
   lib:accessibility "1,6" ;
@@ -1460,7 +1460,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1792>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1792" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1792" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d7203d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Pozo del Tío Raimundo (Puente de Vallecas)" ;
   lib:accessibility "1,6" ;
@@ -1476,7 +1476,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1777>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1777" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1777" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=b2413d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Ruiz Egea (Chamberí)" ;
   lib:accessibility "1" ;
@@ -1489,7 +1489,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1764>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1764" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1764" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5a2279262ef5d010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública José Luis Sampedro (Chamberí)" ;
   lib:accessibility "1" ;
@@ -1503,7 +1503,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/181101>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/181101" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/181101" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=09ac38d60b41c010VgnVCM2000000c205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Luis Martín Santos (Villa de Vallecas)" ;
   lib:accessibility "1" ;
@@ -1517,7 +1517,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/6893633>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/6893633" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/6893633" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e791bed05ceed310VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)" ;
   lib:accessibility "1,6" ;
@@ -1533,7 +1533,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/186714>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/186714" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/186714" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d5c548d20675e010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)" ;
   lib:accessibility "1,6" ;
@@ -1549,7 +1549,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1745>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1745" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1745" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=eb9e995a8bf5d010VgnVCM2000000c205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Canillejas (San Blas-Canillejas)" ;
   lib:accessibility "0,6" ;
@@ -1565,7 +1565,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/10395362>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/10395362" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/10395362" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d862492de8c8c510VgnVCM2000001f4a900aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal María Lejárraga (Hortaleza)" ;
   lib:accessibility "1,6" ;
@@ -1581,7 +1581,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/5768564>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/5768564" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/5768564" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ec750a2153ef9210VgnVCM2000000c205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Ángel González (Latina)" ;
   lib:accessibility "1,6" ;
@@ -1597,7 +1597,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1761>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1761" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1761" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=11c03d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Vallecas (Puente de Vallecas)" ;
   lib:accessibility "0,6" ;
@@ -1613,7 +1613,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/5765642>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/5765642" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/5765642" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7a73f884ad3f9210VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Luis Rosales (Carabanchel)" ;
   lib:accessibility "1,6" ;
@@ -1627,7 +1627,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1882>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1882" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1882" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=13ec3d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Benito Pérez Galdós (Centro)" ;
   lib:accessibility "1,6" ;
@@ -1643,7 +1643,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1800>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1800" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1800" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=535979262ef5d010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Miguel Hernández (Puente de Vallecas)" ;
   lib:accessibility "1" ;
@@ -1657,7 +1657,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/167128>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/167128" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/167128" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f05279262ef5d010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Francisco Ayala (Vicálvaro)" ;
   lib:accessibility "1,6" ;
@@ -1673,7 +1673,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1759>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1759" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1759" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=74703d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal María Zambrano (Tetuán)" ;
   lib:accessibility "1,6" ;
@@ -1689,7 +1689,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/5975465>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/5975465" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/5975465" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0b60e92be3c5e210VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Iván de Vargas (Centro)" ;
   lib:accessibility "1,6" ;
@@ -1705,7 +1705,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/86719>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/86719" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/86719" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=127979262ef5d010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública María Moliner (Villaverde)" ;
   lib:accessibility "1" ;
@@ -1719,7 +1719,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1755>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1755" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1755" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=628e3d0b5e71c010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal Ana María Matute (Carabanchel)" ;
   lib:accessibility "1,6" ;
@@ -1735,7 +1735,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1790>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1790" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1790" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=70d879262ef5d010VgnVCM1000000b205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Municipal José Saramago (Fuencarral-El Pardo)" ;
   lib:accessibility "1,6" ;
@@ -1751,7 +1751,7 @@
 
 <https://www.biblioescuela.educamadrid.org/resource/Library/1773>
   a lib:Library ;
-  vcard:hasCoordinates "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1773" ;
+  vcard:hasGeo "https://www.biblioescuela.educamadrid.org/resource/Coordinates/1773" ;
   vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=457e995a8bf5d010VgnVCM2000000c205a0aRCRD"^^xsd:anyURI ;
   foaf:name "Biblioteca Pública Moratalaz" ;
   lib:accessibility "1" ;
@@ -2779,4 +2779,3 @@
   a lib:Transport ;
   lib:hasBusLine "Bus: 1, 2, 7, 21, 44, 74, 147, Circular, Minibús M-2 " ;
   lib:hasUnderground "Metro: Ventura Rodríguez, Plaza de España, San Bernardo y Noviciado" .
-
