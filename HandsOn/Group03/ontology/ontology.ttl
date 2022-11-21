@@ -62,8 +62,8 @@ base:tieneFecha a owl:DatatypeProperty ;
     rdfs:domain base:Accidente ;
     rdfs:range xsd:dateTime .
 
-base:tieneLatitud a owl:DatatypeProperty ;
-    rdfs:label "tiene latitud" ;
+base:tieneCoordY a owl:DatatypeProperty ;
+    rdfs:label "tiene coord y" ;
     rdfs:range xsd:float .
 
 base:tieneLesividad a owl:ObjectProperty ;
@@ -76,8 +76,8 @@ base:tieneLocalizacion a owl:ObjectProperty ;
     rdfs:domain base:Accidente ;
     rdfs:range base:Localizacion .
 
-base:tieneLongitud a owl:DatatypeProperty ;
-    rdfs:label "tiene longitud" ;
+base:tieneCoordX a owl:DatatypeProperty ;
+    rdfs:label "tiene coord x" ;
     rdfs:domain base:Localizacion ;
     rdfs:range xsd:float .
 
