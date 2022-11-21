@@ -1,0 +1,44 @@
+# 1st query: We are looking for every park in Madrid which has 28041 as its postal code.
+PREFIX ns:<http://DeportesMadridGroup2.es/Espacios/ontology/#>
+PREFIX nso:<http://DeportesMadridGroup2.es/Espacios/instances/#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?parque ?nombre
+WHERE {
+  ?parque a ns:ParquesJardines.
+  ?parque ns:tieneCodigoPostal "28041".
+  ?parque ns:tieneNombre ?nombre
+}
+
+# 2nd query: We are looking for football fields which are in the district of "Villa de Vallecas"
+PREFIX ns:<http://DeportesMadridGroup2.es/Espacios/ontology/#>
+PREFIX nso:<http://DeportesMadridGroup2.es/Espacios/instances/#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?estadio ?nombre
+WHERE {
+  ?estadio a ns:CamposEstadiosFutbol.
+  ?estadio ns:estaEnDistrito "VILLA DE VALLECAS".
+  ?estadio ns:tieneNombre ?nombre
+}
+
+# 3rd query: We are looking for the name, neighbourhood, district and postal code of an specific sports centre given its URI.
+PREFIX ns:<http://DeportesMadridGroup2.es/Espacios/ontology/#>
+PREFIX nso:<http://DeportesMadridGroup2.es/Espacios/instances/#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?estadio ?nombre
+WHERE {
+  nso:4556019 ns:tieneNombre ?nombre.
+  nso:4556019 ns:estaEnBarrio ?barrio.
+  nso:4556019 ns:estaEnDistrito ?distrito.
+  nso:4556019 ns:tieneCodigoPostal ?codigopostal
+}
+
+# 4th query: We are looking for the latitude and longitude of an specific sports centre given its URI.
+PREFIX ns:<http://DeportesMadridGroup2.es/Espacios/ontology/#>
+PREFIX nso:<http://DeportesMadridGroup2.es/Espacios/instances/#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?estadio ?nombre
+WHERE {
+  nso:5983786 ns:tieneLocalizacion ?loc.
+  ?loc ns:tieneLatitud ?lat.
+  ?loc ns:tieneLongitud ?lon
+}
