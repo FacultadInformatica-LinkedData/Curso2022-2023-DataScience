@@ -401,6 +401,18 @@ lib:coordinateY a owl:ObjectProperty ;
 	rdfs:domain lib:Coordinates ;
 	rdfs:range xsd:int.
 
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#faxNumber
+lib:hasfaxNumber a owl:ObjectProperty ;
+	rdfs:label "has fax number" ;
+	rdfs:domain lib:ContactInfo ;
+	rdfs:range xsd:int.
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#faxNumber
+sch:hasfaxNumber a owl:ObjectProperty ;
+	rdfs:label "has fax number" ;
+	rdfs:domain sch:ContactInfo ;
+	rdfs:range xsd:int.
+
 #################################################################
 #    Classes
 #################################################################
