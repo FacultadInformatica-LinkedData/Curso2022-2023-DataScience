@@ -83,7 +83,7 @@ To name the elements we have decided to follow the following structure.
 
 * The domain chosen for the URIs is the following http://DeportesMadridGroup2.es, which we have verified is not in use
 
-* Instances of any class in the ontology have the URI in the form http://DeportesMadridGroup2.es/Espacios/ontology/#
+* Instances of any class in the ontology have the URI in the form http://DeportesMadridGroup2.es/Espacios/instances/#
 
 * The ontology classes will have the URI in the form http://DeportesMadridGroup2.es/Espacios/ontology/#
 
@@ -91,4 +91,4 @@ To name the elements we have decided to follow the following structure.
 
 * For instances of sports space subclasses, their URI is that of any instance followed by a unique ID that appears in the data obtained.
 
-* Finally, for instances of other classes such as Location or Address, a LocationXX style naming will be followed, where XX is a unique ID that will be assigned incrementally
+* Finally, for instances of other classes such as Location or Address, a LocationXX style naming will be followed, where XX is the unique ID of the instance it will be reference to.
