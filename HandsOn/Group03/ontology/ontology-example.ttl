@@ -67,8 +67,8 @@ basei:Accidente1 base:tieneLocalizacion basei:Localizacion1
 basei:Accidente1 base:involucraA basei:Persona1
 basei:Localizacion1 base:tieneNombreCalle "Call. María Teresa Saenz de Heredia, 6"^^string
 basei:Localizacion1 base:tieneNumeroCalle "6"^^string
-basei:Localizacion1 base:tieneLongitud "444462.918"^^float
-basei:Localizacion1 base:tieneLatitud "4474808.752"^^float
+basei:Localizacion1 base:tieneCoordX "444462.918"^^float
+basei:Localizacion1 base:tieneCoordY "4474808.752"^^float
 basei:Distrito1 base:tieneNombreDistrito "Ciudad Lineal"^^string
 basei:Distrito1 base:tieneCodigoDistrito "15"^^integer
 basei:Persona1 base:tieneRangoEdad "De 25 a 29 años"^^string
