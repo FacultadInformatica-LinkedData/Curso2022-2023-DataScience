@@ -2956,4 +2956,34 @@
     },
     "description": "Remove rows"
   }
+  {
+    "op": "core/column-removal",
+    "columnName": "DESCRIPCION-ENTIDAD",
+    "description": "Remove column DESCRIPCION-ENTIDAD"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PLANTA",
+    "description": "Remove column PLANTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PUERTA",
+    "description": "Remove column PUERTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESCALERAS",
+    "description": "Remove column ESCALERAS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ORIENTACION",
+    "description": "Remove column ORIENTACION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column",
+    "description": "Remove column Column"
+  }
 ]

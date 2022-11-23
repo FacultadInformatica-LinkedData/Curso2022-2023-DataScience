@@ -2985,5 +2985,50 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column COMENTARIOS using expression value.trim()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "HORARIO",
+    "description": "Remove column HORARIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TRANSPORTE",
+    "description": "Remove column TRANSPORTE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PLANTA",
+    "description": "Remove column PLANTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PUERTA",
+    "description": "Remove column PUERTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESCALERAS",
+    "description": "Remove column ESCALERAS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ORIENTACION",
+    "description": "Remove column ORIENTACION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column",
+    "description": "Remove column Column"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COMEDOR",
+    "description": "Remove column COMEDOR"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TIPO",
+    "description": "Remove column TIPO"
   }
 ]
