@@ -7,7 +7,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Group 4 Data Analysis</title>
+        <title>Group 5 Data Analysis</title>
         <meta name="author" content="name" />
         <link
             rel="stylesheet"
@@ -38,7 +38,7 @@
                         class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl"
                         href="#"
                     >
-                        Group 4 Data Analysis
+                        Group 5 Data Analysis
                     </a>
                 </div>
 
@@ -90,7 +90,7 @@
                     <h1
                         class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl"
                     >
-                        Schools Dataset Analysis by Group 4
+                        Schools Dataset Analysis by Group 5
                     </h1>
                 </div>
 
@@ -877,15 +877,15 @@
                         follow the following model:
                         “http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#[ontologies]”, where “ontologies” is
                         replaced by any class or property, for example "
-                        http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#EducationalLevel 
+                        http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#EducationalCenter 
                         ", which is a class.
                         <br />
                         <br />
 
                         The “schema” prefix will also be used for various already existing
-                        properties, such as “latitude” (schema:latitude) or the
-                        time the store opens (schema:openingHours). Also, we have used other already existing properties or class names
-				from other sources like dbpedia (example: db:RailwayStation .), esautob (example: esautob:Linea) and wgs84 (wgs84:SpatialThing)
+                        properties, such as “email” (schema:email) or the
+                        telephone (schema:telephone). Also, we have used other already existing properties or class names
+				from other sources like wgs84 (wgs84:SpatialThing)
                         <br />
                         <br />
 
@@ -909,8 +909,8 @@
                         <br />
                         Where ClassName is the name of the class and
                         InstanceName is an instance. An example would be:
-                        http://findeducationalcenter.linkeddata.es/lcc/resource/EducationalLevel/Example,
-                        an “Example” instance of the EducationalLevel class.
+                        http://findeducationalcenter.linkeddata.es/lcc/resource/EducationalCenter/1,
+                        an instance with id equals 1, of the EducationalCenter class.
                     </p>
 
                     <h3 class="font-bold text-2xl mt-0 mb-2 py-2 font-sans">
@@ -932,13 +932,7 @@
                     </p>
                     <ul class="pl-4 list-disc">
                         <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#Class
-                        </li>
-                        <li class="py-4 pl-4">
                             http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#District 
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#EductationLevel 
                         </li>
                         <li class="py-4 pl-4">
                             http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#EducationalCenter 
@@ -949,14 +943,9 @@
                         <li class="py-4 pl-4">
                             https://schema.org/EducationalOrganization 
                         </li>
+
                         <li class="py-4 pl-4">
-                            https://schema.org/OfferCatalog
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea
-                        </li>
-                        <li class="py-4 pl-4">
-                            https://schema.org/http://purl.org/dc/elements/1.1/RailWayStation
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#Neighborhood
                         </li>
                     </ul>
 
@@ -971,52 +960,88 @@
                     </p>
                     <ul class="pl-4 list-disc">
                         <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#centerType 
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#accesibility 
                         </li>
                         <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#description 
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#bus 
                         </li>
                         <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#centerType
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#orientacion
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#accesibility
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#centerCode
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#bachillerato
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#centerDescription
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#centerName
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#cafeteria
                         </li>
                         <li class="py-4 pl-4">
                             http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#city
                         </li>
                         <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#description
+                        </li>
+                        <li class="py-4 pl-4">
                             http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#districtName
                         </li>
                         <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#eso
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#equipment
                         </li>
                         <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#formacionProfesional
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#extraHourOpening
                         </li>
                         <li class="py-4 pl-4">
-                            https://schema.org/address
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#name
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#neighborhoodName
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#nurseryEducation
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#orientation
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#postalCode
+                        </li>
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#province
+                        </li>						
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#railwayStatione
+                        </li>												
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#streetName
+                        </li>				
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#streetNumber
+                        </li>										
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#streetNumberType
+                        </li>																
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#streetType
+                        </li>																						
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#subway
+                        </li>																												
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#type
+                        </li>																																		
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#xCoordinate
+                        </li>																																								
+                        <li class="py-4 pl-4">
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#yCoordinate
+                        </li>																																														
+                        <li class="py-4 pl-4">
+                            http://www.w3.org/2003/01/geo/wgs84_pos#lat
+                        </li>																																																				
+                        <li class="py-4 pl-4">
+                            http://www.w3.org/2003/01/geo/wgs84_pos#long
+                        </li>																																																										
+                        <li class="py-4 pl-4">
+                            https://schema.org/url
                         </li>
                         <li class="py-4 pl-4">
                             https://schema.org/email
                         </li>
                         <li class="py-4 pl-4">
-                            https://schema.org/faxnumber
+                            https://schema.org/telephone
                         </li>
 			</ul>
                     <h3 class="font-bold text-2xl mt-0 mb-2 py-2 font-sans">
@@ -1029,49 +1054,10 @@
                         </a>
 			<ul class="pl-4 list-disc">
                         <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#hasBusLine
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#hasCoordinate
-                        </li>
-                        <li class="py-4 pl-4">
                             http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#hasDistrict
                         </li>
                         <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#hasRailwayStation
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#infantilciclo1
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#infantilciclo2
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#lineaMetro
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#managementCompany
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#primaria
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#neighborhoodCode
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#neighborhoodName
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#PostalCode
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#province
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#x
-                        </li>
-                        <li class="py-4 pl-4">
-                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#y
+                            http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#hasNeighborhood
                         </li>
                     </ul>
                 </article>

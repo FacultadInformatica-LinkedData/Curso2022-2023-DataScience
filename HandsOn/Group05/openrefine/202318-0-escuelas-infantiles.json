@@ -1,0 +1,848 @@
+[
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "TRANSPORTE",
+        "expression": "value",
+        "edits": [
+            {
+                "from": ["Bus: 131, 22, 86, 130  Renfe: Puente Alcocer"],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "BUS: 131, 22, 86, 130  Renfe: Puente Alcocer"
+            }
+        ],
+        "description": "Mass edit cells in column TRANSPORTE"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "TRANSPORTE",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Bus: 22, 76, 86, 130, 131. Metro: Villaverde Bajo Cruce. Renfe: Puente Alcocer"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "BUS: 22, 76, 86, 130, 131. Metro: Villaverde Bajo Cruce. Renfe: Puente Alcocer"
+            }
+        ],
+        "description": "Mass edit cells in column TRANSPORTE"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "TRANSPORTE",
+        "expression": "value",
+        "edits": [
+            {
+                "from": ["Bus: 3, 37, 40, 149  Metro: Chueca, Tribunal"],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "BUS: 3, 37, 40, 149  Metro: Chueca, Tribunal"
+            }
+        ],
+        "description": "Mass edit cells in column TRANSPORTE"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "TRANSPORTE",
+        "expression": "value",
+        "edits": [
+            {
+                "from": ["Bus: 59, 79 Metro: San Cristóbal"],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "BUS: 59, 79 Metro: San Cristóbal"
+            }
+        ],
+        "description": "Mass edit cells in column TRANSPORTE"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "TRANSPORTE",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Transporte más próximo:     METRO:  Las Suertes / Valdecarros   BUS:  142, 145"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "METRO:  Las Suertes / Valdecarros   BUS:  142, 145"
+            }
+        ],
+        "description": "Mass edit cells in column TRANSPORTE"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "TRANSPORTE",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Transporte más próximo:     METRO:  Pitis, Arroyofresno, Mirasierra   BUS:  49, 64, 82   CERCANÍAS: C3, C8 y C7"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "METRO:  Pitis, Arroyofresno, Mirasierra   BUS:  49, 64, 82   CERCANÍAS: C3, C8 y C7"
+            }
+        ],
+        "description": "Mass edit cells in column TRANSPORTE"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "TRANSPORTE",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Transporte más próximo:    METRO: Sainz de Baranda.    BUS: 30, 56, 143, 156"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "METRO: Sainz de Baranda.    BUS: 30, 56, 143, 156"
+            }
+        ],
+        "description": "Mass edit cells in column TRANSPORTE"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "TRANSPORTE",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "BUS: 22, 76, 86, 130, 131. Metro: Villaverde Bajo Cruce. Renfe: Puente Alcocer"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "BUS: 22, 76, 86, 130, 131. METRO: Villaverde Bajo Cruce. Renfe: Puente Alcocer"
+            }
+        ],
+        "description": "Mass edit cells in column TRANSPORTE"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "TRANSPORTE",
+        "expression": "value",
+        "edits": [
+            {
+                "from": ["BUS: 3, 37, 40, 149  Metro: Chueca, Tribunal"],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "BUS: 3, 37, 40, 149  METRO: Chueca, Tribunal"
+            }
+        ],
+        "description": "Mass edit cells in column TRANSPORTE"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "TRANSPORTE",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "BUS: 22, 76, 86, 130, 131. METRO: Villaverde Bajo Cruce. Renfe: Puente Alcocer"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "BUS: 22, 76, 86, 130, 131. METRO: Villaverde Bajo Cruce. RENFE: Puente Alcocer"
+            }
+        ],
+        "description": "Mass edit cells in column TRANSPORTE"
+    },
+    {
+        "op": "core/column-split",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "TRANSPORTE",
+        "guessCellType": true,
+        "removeOriginalColumn": true,
+        "mode": "separator",
+        "separator": "BUS:",
+        "regex": false,
+        "maxColumns": 0,
+        "description": "Split column TRANSPORTE by separator"
+    },
+    {
+        "op": "core/column-split",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "TRANSPORTE 2",
+        "guessCellType": true,
+        "removeOriginalColumn": true,
+        "mode": "separator",
+        "separator": "(CERCANÍAS:?)|(RENFE:?)",
+        "regex": true,
+        "maxColumns": 2,
+        "description": "Split column TRANSPORTE 2 by separator"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "TRANSPORTE 1",
+        "newColumnName": "METRO",
+        "description": "Rename column TRANSPORTE 1 to METRO"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "TRANSPORTE 2 1",
+        "newColumnName": "BUS",
+        "description": "Rename column TRANSPORTE 2 1 to BUS"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "TRANSPORTE 2 2",
+        "newColumnName": "RENFE/CERCANÍAS",
+        "description": "Rename column TRANSPORTE 2 2 to RENFE/CERCANÍAS"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "ACCESIBILIDAD",
+        "expression": "value.toNumber()",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column ACCESIBILIDAD using expression value.toNumber()"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "CODIGO-POSTAL",
+        "expression": "value.toNumber()",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column CODIGO-POSTAL using expression value.toNumber()"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "HORARIO",
+        "description": "Remove column HORARIO"
+    },
+    {
+        "op": "core/column-split",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "METRO",
+        "guessCellType": true,
+        "removeOriginalColumn": true,
+        "mode": "separator",
+        "separator": "METRO:",
+        "regex": false,
+        "maxColumns": 0,
+        "description": "Split column METRO by separator"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "DESCRIPCION-ENTIDAD",
+        "description": "Remove column DESCRIPCION-ENTIDAD"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "METRO 1",
+        "description": "Remove column METRO 1"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "METRO 2",
+        "newColumnName": "METRO",
+        "description": "Rename column METRO 2 to METRO"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "PLANTA",
+        "description": "Remove column PLANTA"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "PUERTA",
+        "description": "Remove column PUERTA"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "ESCALERAS",
+        "description": "Remove column ESCALERAS"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "ORIENTACION",
+        "description": "Remove column ORIENTACION"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "FAX",
+        "description": "Remove column FAX"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "Column",
+        "description": "Remove column Column"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "PK",
+        "expression": "value.toNumber()",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column PK using expression value.toNumber()"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "DESCRIPCION",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "ENSEÑANZA: Educación infantil (Primer ciclo)",
+                    "ENSEÑANZA: Educación infantil (Primer Ciclo)",
+                    "ENSEÑANZA: Educación Infantil (Primer Ciclo)",
+                    "ENSEÑANZA: Educación infantil (Primer Ciclo).",
+                    "ENSEÑANZA: Educación Infantil (Primer ciclo)",
+                    "ENSEÑANZA: Educación Infantil (primer ciclo)",
+                    "ENSEÑANZA: Educación infantil (primer ciclo)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "ENSEÑANZA: Educación infantil (Primer ciclo)"
+            }
+        ],
+        "description": "Mass edit cells in column DESCRIPCION"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "DESCRIPCION",
+        "expression": "value",
+        "edits": [
+            {
+                "from": ["Educación infantil (primer ciclo)"],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "ENSEÑANZA: Educación infantil (Primer ciclo)"
+            }
+        ],
+        "description": "Mass edit cells in column DESCRIPCION"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "DESCRIPCION",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "ENSEÑANZA: Educación Infantil (Primer ciclo)  Curso 2014-2015: Dirección de la escuela infantil calle Albarracín número 31 (Distrito San Blas-Canillejas) Curso 2015-2016: calle Gandhi número 14 (Distrito Ciudad Lineal)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "ENSEÑANZA: Educación infantil (Primer ciclo)"
+            }
+        ],
+        "description": "Mass edit cells in column DESCRIPCION"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "DESCRIPCION",
+        "expression": "value",
+        "edits": [
+            {
+                "from": ["Escuela infantil (Primer ciclo)"],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "ENSEÑANZA: Educación infantil (Primer ciclo)"
+            }
+        ],
+        "description": "Mass edit cells in column DESCRIPCION"
+    },
+    {
+        "op": "core/row-removal",
+        "engineConfig": {
+            "facets": [
+                {
+                    "type": "list",
+                    "name": "DESCRIPCION",
+                    "expression": "value",
+                    "columnName": "DESCRIPCION",
+                    "invert": false,
+                    "omitBlank": false,
+                    "omitError": false,
+                    "selection": [],
+                    "selectBlank": true,
+                    "selectError": false
+                }
+            ],
+            "mode": "row-based"
+        },
+        "description": "Remove rows"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "EQUIPAMIENTO",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Horario ampliado. Comedor.",
+                    "Horario ampliado - Comedor",
+                    "Horario ampliado Comedor",
+                    "Horario ampliado Comedor.",
+                    "Horario ampliado. Comedor"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Horario ampliado. Comedor."
+            }
+        ],
+        "description": "Mass edit cells in column EQUIPAMIENTO"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "COD-BARRIO",
+        "expression": "value.toNumber()",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column COD-BARRIO using expression value.toNumber()"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "COD-DISTRITO",
+        "expression": "value.toNumber()",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column COD-DISTRITO using expression value.toNumber()"
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "EQUIPAMIENTO",
+        "expression": "grel:value.toLowercase().replace(\"comedor\",\"True\")",
+        "onError": "set-to-blank",
+        "newColumnName": "COMEDOR",
+        "columnInsertIndex": 3,
+        "description": "Create column COMEDOR at index 3 based on column EQUIPAMIENTO using expression grel:value.toLowercase().replace(\"comedor\",\"True\")"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "EQUIPAMIENTO",
+        "description": "Remove column EQUIPAMIENTO"
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "COMEDOR",
+        "expression": "grel:value.toLowercase().replace(\"true\",\"\").replace(\"horario ampliado\", \"True\").replace(\".\",\"\")",
+        "onError": "set-to-blank",
+        "newColumnName": "HORARIO-AMPLIADO",
+        "columnInsertIndex": 3,
+        "description": "Create column HORARIO-AMPLIADO at index 3 based on column COMEDOR using expression grel:value.toLowercase().replace(\"true\",\"\").replace(\"horario ampliado\", \"True\").replace(\".\",\"\")"
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "HORARIO-AMPLIADO",
+        "expression": "grel:value.toLowercase().replace(\"true\",\"\").replace(\"educación de 0 a 3 años\", \"True\")",
+        "onError": "set-to-blank",
+        "newColumnName": "EDUCACIÓN_0-3",
+        "columnInsertIndex": 4,
+        "description": "Create column EDUCACIÓN_0-3 at index 4 based on column HORARIO-AMPLIADO using expression grel:value.toLowercase().replace(\"true\",\"\").replace(\"educación de 0 a 3 años\", \"True\")"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "EDUCACIÓN_0-3",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [" -  True"],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "True"
+            }
+        ],
+        "description": "Mass edit cells in column EDUCACIÓN_0-3"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "EDUCACIÓN_0-3",
+        "expression": "value",
+        "edits": [
+            {
+                "from": ["  planes de mejora"],
+                "fromBlank": false,
+                "fromError": false,
+                "to": ""
+            }
+        ],
+        "description": "Mass edit cells in column EDUCACIÓN_0-3"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "EDUCACIÓN_0-3",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [],
+                "fromBlank": true,
+                "fromError": false,
+                "to": "False"
+            }
+        ],
+        "description": "Mass edit cells in column EDUCACIÓN_0-3"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "EDUCACIÓN_0-3",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [" "],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "False"
+            }
+        ],
+        "description": "Mass edit cells in column EDUCACIÓN_0-3"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "HORARIO-AMPLIADO",
+        "expression": "grel:value.toLowercase().replace(\"educación de 0 a 3 años\", \"\")",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column HORARIO-AMPLIADO using expression grel:value.toLowercase().replace(\"educación de 0 a 3 años\", \"\")"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "COMEDOR",
+        "expression": "grel:value.toLowercase().replace(\"educación de 0 a 3 años\", \"\")",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column COMEDOR using expression grel:value.toLowercase().replace(\"educación de 0 a 3 años\", \"\")"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "COMEDOR",
+        "expression": "grel:value.toLowercase().replace(\"horario ampliado.\", \"\")",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column COMEDOR using expression grel:value.toLowercase().replace(\"horario ampliado.\", \"\")"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "EDUCACIÓN_0-3",
+        "expression": "grel:value.toLowercase()",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column EDUCACIÓN_0-3 using expression grel:value.toLowercase()"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "COMEDOR",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [" true."],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "true"
+            }
+        ],
+        "description": "Mass edit cells in column COMEDOR"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "COMEDOR",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [" true. planes de mejora."],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "true"
+            }
+        ],
+        "description": "Mass edit cells in column COMEDOR"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "COMEDOR",
+        "expression": "value",
+        "edits": [
+            {
+                "from": ["horario ampliado - true "],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "true "
+            }
+        ],
+        "description": "Mass edit cells in column COMEDOR"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "COMEDOR",
+        "expression": "value",
+        "edits": [
+            {
+                "from": ["true "],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "true"
+            }
+        ],
+        "description": "Mass edit cells in column COMEDOR"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "COMEDOR",
+        "expression": "value",
+        "edits": [
+            {
+                "from": ["true."],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "true"
+            }
+        ],
+        "description": "Mass edit cells in column COMEDOR"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "COMEDOR",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [],
+                "fromBlank": true,
+                "fromError": false,
+                "to": "false"
+            }
+        ],
+        "description": "Mass edit cells in column COMEDOR"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "HORARIO-AMPLIADO",
+        "expression": "value",
+        "edits": [
+            {
+                "from": ["true  planes de mejora"],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "true"
+            }
+        ],
+        "description": "Mass edit cells in column HORARIO-AMPLIADO"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "HORARIO-AMPLIADO",
+        "expression": "value",
+        "edits": [
+            {
+                "from": ["true "],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "true"
+            }
+        ],
+        "description": "Mass edit cells in column HORARIO-AMPLIADO"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "HORARIO-AMPLIADO",
+        "expression": "value",
+        "edits": [
+            {
+                "from": ["true -  "],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "true"
+            }
+        ],
+        "description": "Mass edit cells in column HORARIO-AMPLIADO"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "HORARIO-AMPLIADO",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [],
+                "fromBlank": true,
+                "fromError": false,
+                "to": "false"
+            }
+        ],
+        "description": "Mass edit cells in column HORARIO-AMPLIADO"
+    }
+]
