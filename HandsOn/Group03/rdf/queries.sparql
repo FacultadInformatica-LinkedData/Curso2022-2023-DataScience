@@ -1,0 +1,18 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bicis: <http://grupo03.es/ontology/>
+
+#Resultado: Latina
+SELECT DISTINCT ?DISTRITO
+	WHERE{
+		?DISTRITO rdf:type <http://www.grupo03.es/ontology/DISTRITO>.
+		?DISTRITO owl:sameAs <https://www.wikidata.org/wiki/Q794954>
+	}
+
+#Resultado: numero de hombres accidentados
+SELECT COUNT(?sexo) AS ?genero
+    WHERE {
+        ?sexo rdf:type <http://www.grupo03.es/ontology/sexo>.
+        ?sexo owl:sameAs <https://www.wikidata.org/wiki/Q8441>.
+    }
