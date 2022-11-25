@@ -9,7 +9,7 @@ prefixes:
 mappings:
   triplesmap1:
     sources:
-      - [./csv/200215-0-instalaciones-deportivas-updated.csv~csv]
+      - [./csv/instalacionesDeportivas_analizado.csv~csv]
     s: nso:$(PK)
     po:
       - [a, ns:$(TIPO)]
@@ -32,10 +32,17 @@ mappings:
             function: equal
             parameters:
             - [str1, $(PK)]
+      - p: ns:tieneEquipamiento
+        o:
+          mapping: triplesmap4
+          condition:
+            function: equal
+            parameters:
+            - [str1, $(PK)]
 
   triplesmap2:
     sources:
-      - [./csv/200215-0-instalaciones-deportivas-updated.csv~csv]
+      - [./csv/instalacionesDeportivas_analizado.csv~csv]
     s: nso:Localizacion$(PK)
     po:
       - [a, ns:Localizacion]
@@ -44,7 +51,7 @@ mappings:
   
   triplesmap3:
     sources:
-      - [./csv/200215-0-instalaciones-deportivas-updated.csv~csv]
+      - [./csv/instalacionesDeportivas_analizado.csv~csv]
     s: nso:Direccion$(PK)
     po:
       - [a, ns:Direccion]
@@ -56,10 +63,18 @@ mappings:
             function: equal
             parameters:
             - [str1, $(PK)]
-  
+            
   triplesmap4:
     sources:
-      - [./csv/200215-0-instalaciones-deportivas-updated.csv~csv]
+      - [./csv/instalacionesDeportivas_analizado.csv~csv]
+    s: nso:Equipamiento$(equipamiento_cleaned1)
+    po:
+      - [a, ns:Equipamiento]
+      - [ns:sePractica, $(deporte)]
+            
+  triplesmap5:
+    sources:
+      - [./csv/instalacionesDeportivas_analizado.csv~csv]
     s: nso:calle/$(NOMBRE-VIA)
     po:
       - [a, ns:Calle]
