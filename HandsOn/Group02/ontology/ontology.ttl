@@ -13,19 +13,19 @@ ns:CalleTranquila a owl:Class ;
 
 ns:CamposEstadiosFutbol a owl:Class ;
     rdfs:label "Campos Estadios Futbol" ;
-    rdfs:subClassOf ns:InstalaciónDeportiva .
+    rdfs:subClassOf ns:InstalacionDeportiva .
 
 ns:CamposGolf a owl:Class ;
     rdfs:label "Campos Golf" ;
-    rdfs:subClassOf ns:InstalaciónDeportiva .
+    rdfs:subClassOf ns:InstalacionDeportiva .
 
 ns:CamposHockey a owl:Class ;
     rdfs:label "Campos Hockey" ;
-    rdfs:subClassOf ns:InstalaciónDeportiva .
+    rdfs:subClassOf ns:InstalacionDeportiva .
 
 ns:CanchasBaloncesto a owl:Class ;
     rdfs:label "Canchas Baloncesto" ;
-    rdfs:subClassOf ns:InstalaciónDeportiva .
+    rdfs:subClassOf ns:InstalacionDeportiva .
 
 ns:CentrosAltoRendimiento a owl:Class ;
     rdfs:label "Centros Alto Rendimiento" ;
@@ -33,11 +33,11 @@ ns:CentrosAltoRendimiento a owl:Class ;
 
 ns:CircuitoCiclismo a owl:Class ;
     rdfs:label "Circuito Ciclismo" ;
-    rdfs:subClassOf ns:InstalaciónDeportiva .
+    rdfs:subClassOf ns:InstalacionDeportiva .
 
 ns:CircuitoFooting a owl:Class ;
     rdfs:label "Circuito Footing" ;
-    rdfs:subClassOf ns:InstalaciónDeportiva .
+    rdfs:subClassOf ns:InstalacionDeportiva .
 
 ns:ColeccionesBotanicas a owl:Class ;
     rdfs:label "Colecciones Botanicas" ;
@@ -45,15 +45,15 @@ ns:ColeccionesBotanicas a owl:Class ;
 
 ns:Embarcadero a owl:Class ;
     rdfs:label "Embarcadero" ;
-    rdfs:subClassOf ns:InstalaciónDeportiva .
+    rdfs:subClassOf ns:InstalacionDeportiva .
 
-ns:Frontón a owl:Class ;
+ns:Fronton a owl:Class ;
     rdfs:label "Frontón" ;
-    rdfs:subClassOf ns:InstalaciónDeportiva .
+    rdfs:subClassOf ns:InstalacionDeportiva .
 
 ns:InstalacionDeportivaBasica a owl:Class ;
     rdfs:label "Instalacion Deportiva Basica" ;
-    rdfs:subClassOf ns:InstalaciónDeportiva .
+    rdfs:subClassOf ns:InstalacionDeportiva .
 
 ns:ParquesForestales a owl:Class ;
     rdfs:label "Parques Forestales" ;
@@ -65,15 +65,15 @@ ns:ParquesHistoricos a owl:Class ;
 
 ns:PistaPadel a owl:Class ;
     rdfs:label "Pista Padel" ;
-    rdfs:subClassOf ns:InstalaciónDeportiva .
+    rdfs:subClassOf ns:InstalacionDeportiva .
 
 ns:PistaTenisBadminton a owl:Class ;
     rdfs:label "Pista Tenis Badminton" ;
-    rdfs:subClassOf ns:InstalaciónDeportiva .
+    rdfs:subClassOf ns:InstalacionDeportiva .
 
 ns:PistasPatinaje a owl:Class ;
     rdfs:label "Pistas Patinaje" ;
-    rdfs:subClassOf ns:InstalaciónDeportiva .
+    rdfs:subClassOf ns:InstalacionDeportiva .
 
 ns:estaEnBarrio a owl:DatatypeProperty ;
     rdfs:label "esta en barrio" ;
@@ -92,7 +92,7 @@ ns:estaEnLocalidad a owl:DatatypeProperty ;
 
 ns:tieneCalle a owl:ObjectProperty ;
     rdfs:label "tiene calle" ;
-    rdfs:domain ns:Dirección ;
+    rdfs:domain ns:Direccion ;
     rdfs:range ns:Calle .
 
 ns:tieneCodigoPostal a owl:DatatypeProperty ;
@@ -103,21 +103,21 @@ ns:tieneCodigoPostal a owl:DatatypeProperty ;
 ns:tieneDireccion a owl:ObjectProperty ;
     rdfs:label "tiene direccion" ;
     rdfs:domain ns:EspaciosDeporte ;
-    rdfs:range ns:Dirección .
+    rdfs:range ns:Direccion .
 
 ns:tieneLatitud a owl:DatatypeProperty ;
     rdfs:label "tiene latitud" ;
-    rdfs:domain ns:Localización ;
+    rdfs:domain ns:Localizacion ;
     rdfs:range xsd:float .
 
 ns:tieneLocalizacion a owl:ObjectProperty ;
     rdfs:label "tiene localizacion" ;
     rdfs:domain ns:EspaciosDeporte ;
-    rdfs:range ns:Localización .
+    rdfs:range ns:Localizacion .
 
 ns:tieneLongitud a owl:DatatypeProperty ;
     rdfs:label "tiene longitud" ;
-    rdfs:domain ns:Localización ;
+    rdfs:domain ns:Localizacion ;
     rdfs:range xsd:float .
 
 ns:tieneNombre a owl:DatatypeProperty ;
@@ -127,16 +127,16 @@ ns:tieneNombre a owl:DatatypeProperty ;
 
 ns:tieneNúmero a owl:DatatypeProperty ;
     rdfs:label "tiene número" ;
-    rdfs:domain ns:Dirección ;
+    rdfs:domain ns:Direccion ;
     rdfs:range xsd:integer .
 
 ns:Calle a owl:Class ;
     rdfs:label "Calle" .
 
-ns:Dirección a owl:Class ;
+ns:Direccion a owl:Class ;
     rdfs:label "Dirección" .
 
-ns:Localización a owl:Class ;
+ns:Localizacion a owl:Class ;
     rdfs:label "Localización" .
 
 ns:ParquesJardines a owl:Class ;
@@ -146,7 +146,7 @@ ns:ParquesJardines a owl:Class ;
 ns:EspaciosDeporte a owl:Class ;
     rdfs:label "Espacios Deporte" .
 
-ns:InstalaciónDeportiva a owl:Class ;
+ns:InstalacionDeportiva a owl:Class ;
     rdfs:label "Instalación Deportiva" ;
     rdfs:subClassOf ns:EspaciosDeporte .
 
