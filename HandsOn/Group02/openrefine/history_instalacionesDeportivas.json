@@ -735,4 +735,13 @@
     "columnInsertIndex": 6,
     "description": "Create column deporte at index 6 based on column equipamiento_cleaned1 using expression jython:value = str(value) \nif 'piscina' in value: return 'natacion' \n#Deportes de balón\nif 'futbol' in value: return 'futbol' \nif 'baloncesto' in value: return 'baloncesto' \nif 'balonmano' in value: return 'balonmano' \nif 'voley' in value: return 'voley' \nif 'petanca' in value: return 'petanca'\n\n#Deportes de raqueta\nif 'badminton' in value: return 'badminton' \nif 'padel' in value: return 'padel'\nif 'squash' in value: return 'squash'\nif 'fronton' in value: return 'fronton'\nif value == 'tenis de mesa': return 'ping-pong'\nif value == 'pista de tenis': return 'tenis'\nif value == 'tenis de mesa': return 'ping-pong'\n\n#Deportes de ruedas\nif 'patinodromo' in value: return 'patinaje' \nif 'skate' in value: return 'skate'\nif 'patinaje' in value: return 'patinaje' \nif 'hockey' in value: return 'hockey'\nif 'bicicleta' in value: return 'ciclismo'\n\n#Otros deportes\nif 'rocodromo' in value: return 'escalada'\nif 'atletismo' in value: return 'atletismo'"
   }
+    {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "PK",
+    "description": "Fill down cells in column PK"
+  }
 ]
