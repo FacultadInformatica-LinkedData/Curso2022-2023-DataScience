@@ -22,4 +22,11 @@
 - [X] Includes a description of the application user interface
 
 ## Comments on the self-assessment
-_(No comentaries)_
+_Repartición de trabajo:
+
+* Ester Esteban Bruña/esteresteban ---> datasetRequirements.html
+* Cristina Fernández Gómez/crisfernandez ---> datasetRequirements.html
+* Jose Maria Sanchez Garabito/chgara ---> applicationRequirements.html
+* Paula Velasco López/PauVL ----> README.md, selfAssessmentHandsOn1.md, subida al Github del trabajo y bajada de los csvs.
+* Todos ---> Eleccion de los csvs y de la tematica de applicationRequirements.html
+_

@@ -1,0 +1,70 @@
+base: http://findeducationalcenter.linkeddata.es/lcc/resource/
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  schema: http://schema.org/
+  vocab: http://findeducationalcenter.linkeddata.es/lcc/vocab/
+  wgs84_pos: http://www.w3.org/2003/01/geo/wgs84_pos#
+mappings:
+  EducationalCenter:
+    sources:
+      - ["202318-0-escuelas-infantiles-updated.csv", "CSV"]
+      - ["212790-0-centros-educacion-updated.csv", "CSV"]
+    s: http://findeducationalcenter.linkeddata.es/lcc/resource/EducationalCenter/{COD-CENTRO}
+    po:
+      - [a, vocab:EducationalCenter]
+      - [vocab:name, NOMBRE]
+      - [vocab:cafeteria, COMEDOR]
+      - [vocab:extraHourOpening, HORARIO-AMPLIADO]
+      - [vocab:nurseryEducation, EDUCACION_0-3]
+      - [vocab:subway, METRO]
+      - [vocab:bus, BUS]
+      - [vocab:railwaySation, RENFE/CERCANÍAS]
+      - [vocab:description, DESCRIPCION]
+      - [vocab:accesibility, ACCESIBILIDAD]
+      - [vocab:url, CONTENT-URL]
+      - [vocab:streetAddress, NOMBRE-VIA]
+      - [vocab:streetType, CLASE-VIAL]
+      - [vocab:streetNumberType, TIPO-NUM]
+      - [vocab:streetNumber, NUM]
+      - [vocab:orientation, ORIENTACION]
+      - [vocab:city, LOCALIDAD]
+      - [vocab:province, PROVINCIA]
+      - [vocab:postalCode, CODIGO-POSTAL]
+      - [vocab:xCoordinate, COORDENADA-X]
+      - [vocab:yCoordinate, COORDENADA-Y]
+      - [wgs84_pos:lat, LATITUD]
+      - [wgs84_pos:long, LONGITUD]
+      - [schema:telephone, TELEFONO]
+      - [schema:email, EMAIL]
+      - [
+          vocab:hasNeighborhood,
+          [rr:parent, Neighborhood, { COD-BARRIO: COD-BARRIO }],
+        ]
+      - [
+          vocab:hasDistrict,
+          [rr:parent, District, { COD-DISTRITO: COD-DISTRITO }],
+        ]
+      - [schema:type, TIPO]
+      - [schema:openingHours, HORARIO]
+      - [vocab:equipment, EQUIPAMIENTO]
+
+  Neighborhood:
+    sources:
+      - ["212790-0-centros-educacion-updated.csv", "CSV"]
+      - ["202318-0-escuelas-infantiles-updated.csv", "CSV"]
+    s: http://findeducationalcenter.linkeddata.es/lcc/resource/Neighborhood/{COD-BARRIO}
+    po:
+      - [a, vocab:Neighborhood]
+      - [vocab:neighborhoodName, BARRIO]
+
+  District:
+    sources:
+      - ["212790-0-centros-educacion-updated.csv", "CSV"]
+      - ["202318-0-escuelas-infantiles-updated.csv", "CSV"]
+    s: http://findeducationalcenter.linkeddata.es/lcc/resource/District/{COD-DISTRITO}
+    po:
+      - [a, vocab:District]
+      - [vocab:districtName, DISTRITO]
+

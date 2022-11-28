@@ -1,0 +1,750 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADA-X",
+    "expression": "join ([coalesce(cells['COORDENADA-X'].value,''),coalesce(cells['COORDENADAX'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COORDENADA-X using expression join ([coalesce(cells['COORDENADA-X'].value,''),coalesce(cells['COORDENADAX'].value,'')],'')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "File",
+      "TIPO",
+      "ID",
+      "DIRECCION",
+      "DISTRITO",
+      "COORDENADAY",
+      "HORARIO",
+      "CODIGO POSTAL",
+      "COORDENADA-X",
+      "COORDENADA-Y"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADA-Y",
+    "expression": "join ([coalesce(cells['COORDENADA-Y'].value,''),coalesce(cells['COORDENADAY'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COORDENADA-Y using expression join ([coalesce(cells['COORDENADA-Y'].value,''),coalesce(cells['COORDENADAY'].value,'')],'')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "File",
+      "TIPO",
+      "ID",
+      "DIRECCION",
+      "DISTRITO",
+      "HORARIO",
+      "CODIGO POSTAL",
+      "COORDENADA-X",
+      "COORDENADA-Y"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "HORARIO",
+    "index": 8,
+    "description": "Move column HORARIO to position 8"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "File",
+    "description": "Remove column File"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "FUENCARRAL-EL PARDO",
+          "Fuencarral-El Pardo",
+          "FUENCARRAL-EL PARDO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FUENCARRAL-EL PARDO"
+      },
+      {
+        "from": [
+          "VILLA DE VALLECAS",
+          "VILLA DE VALLECAS",
+          "Villa de Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VILLA DE VALLECAS"
+      },
+      {
+        "from": [
+          "VICALVARO",
+          "Vicalvaro",
+          "Vicálvaro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VICALVARO"
+      },
+      {
+        "from": [
+          "LATINA",
+          "Latina"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LATINA"
+      },
+      {
+        "from": [
+          "MORATALAZ",
+          "Moratalaz"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MORATALAZ"
+      },
+      {
+        "from": [
+          "PUENTE DE VALLECAS",
+          "PUENTE DE VALLECAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PUENTE DE VALLECAS"
+      },
+      {
+        "from": [
+          "CIUDAD LINEAL",
+          "Ciudad Lineal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CIUDAD LINEAL"
+      },
+      {
+        "from": [
+          "USERA",
+          "Usera"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "USERA"
+      },
+      {
+        "from": [
+          "VILLAVERDE",
+          "Villaverde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VILLAVERDE"
+      },
+      {
+        "from": [
+          "CENTRO",
+          "Centro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CENTRO"
+      },
+      {
+        "from": [
+          "ARGANZUELA",
+          "Arganzuela"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ARGANZUELA"
+      },
+      {
+        "from": [
+          "CARABANCHEL",
+          "Carabanchel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARABANCHEL"
+      },
+      {
+        "from": [
+          "CHAMBERI",
+          "Chamberí"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHAMBERI"
+      },
+      {
+        "from": [
+          "Puente Vallecas",
+          "PUENTE VALLECAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PUENTE DE VALLECAS"
+      },
+      {
+        "from": [
+          "MONCLOA-ARAVACA",
+          "Moncloa-Aravaca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MONCLOA-ARAVACA"
+      },
+      {
+        "from": [
+          "TETUAN",
+          "Tetuán"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TETUAN"
+      },
+      {
+        "from": [
+          "HORTALEZA",
+          "Hortaleza"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HORTALEZA"
+      },
+      {
+        "from": [
+          "RETIRO",
+          "Retiro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RETIRO"
+      },
+      {
+        "from": [
+          "CHAMARTIN",
+          "Chamartín"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHAMARTIN"
+      },
+      {
+        "from": [
+          "SALAMANCA",
+          "Salamanca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SALAMANCA"
+      },
+      {
+        "from": [
+          "BARAJAS",
+          "Barajas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BARAJAS"
+      },
+      {
+        "from": [
+          "San Blas-Canillejas",
+          "SAN BLAS-CANILLEJAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Blas-Canillejas"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PUENTE DE VALLECAS",
+          "PUENTE DE VALLECAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PUENTE DE VALLECAS"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Villa Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VILLA DE VALLECAS"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Blas-Canillejas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SAN BLAS-CANILLEJAS"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "VILLA DE VALLECAS",
+          "VILLA DE VALLECAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VILLA DE VALLECAS"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SAN BLAS-CANILLEJAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SAN BLAS - CANILLEJAS"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADA-X",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COORDENADA-X using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "COORDENADA-X",
+          "expression": "value",
+          "columnName": "COORDENADA-X",
+          "from": 429000,
+          "to": 454000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADA-X",
+    "expression": "grel:value.replace(\",\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COORDENADA-X using expression grel:value.replace(\",\",\".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "COORDENADA-X",
+          "expression": "value",
+          "columnName": "COORDENADA-X",
+          "from": 429000,
+          "to": 454000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADA-X",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COORDENADA-X using expression value.toNumber()"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "COORDENADA-X",
+          "expression": "value",
+          "columnName": "COORDENADA-X",
+          "from": 429000,
+          "to": 454000,
+          "selectNumeric": false,
+          "selectNonNumeric": false,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "COORDENADA-X",
+          "expression": "value",
+          "columnName": "COORDENADA-X",
+          "from": 429000,
+          "to": 454000,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADA-Y",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COORDENADA-Y using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "COORDENADA-X",
+          "expression": "value",
+          "columnName": "COORDENADA-X",
+          "from": 429000,
+          "to": 454000,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "range",
+          "name": "COORDENADA-Y",
+          "expression": "value",
+          "columnName": "COORDENADA-Y",
+          "from": 4464000,
+          "to": 4490000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADA-Y",
+    "expression": "grel:value.replace(\",\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COORDENADA-Y using expression grel:value.replace(\",\",\".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "COORDENADA-X",
+          "expression": "value",
+          "columnName": "COORDENADA-X",
+          "from": 429000,
+          "to": 454000,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "range",
+          "name": "COORDENADA-Y",
+          "expression": "value",
+          "columnName": "COORDENADA-Y",
+          "from": 4464000,
+          "to": 4490000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADA-Y",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COORDENADA-Y using expression value.toNumber()"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "COORDENADA-X",
+          "expression": "value",
+          "columnName": "COORDENADA-X",
+          "from": 429000,
+          "to": 454000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "range",
+          "name": "COORDENADA-Y",
+          "expression": "value",
+          "columnName": "COORDENADA-Y",
+          "from": 4464000,
+          "to": 4490000,
+          "selectNumeric": true,
+          "selectNonNumeric": false,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "COORDENADA-Y",
+          "expression": "value",
+          "columnName": "COORDENADA-Y",
+          "from": 4464000,
+          "to": 4490000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO",
+    "expression": "grel:toUppercase(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO using expression grel:toUppercase(value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "grel:value.replace(\",\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ID using expression grel:value.replace(\",\",\".\")"
+  },
+  {
+    "op": "core/row-reorder",
+    "mode": "row-based",
+    "sorting": {
+      "criteria": [
+        {
+          "valueType": "string",
+          "column": "ID",
+          "blankPosition": 2,
+          "errorPosition": 1,
+          "reverse": false,
+          "caseSensitive": false
+        }
+      ]
+    },
+    "description": "Reorder rows"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "description": "Blank down cells in column ID"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ID",
+          "expression": "isBlank(value)",
+          "columnName": "ID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CODIGO POSTAL",
+    "description": "Remove column CODIGO POSTAL"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "24 horas"
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Todos los días, 24 horas. Situado en vía pública"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "24 horas"
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  }
+]

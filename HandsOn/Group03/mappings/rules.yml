@@ -1,0 +1,82 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  vocab: http://accidentesdetrafico.es/ontology/TrafficAccident#
+
+
+  
+mappings:
+  Accidente:
+    sources:
+      - [csv/AccidentesBicicletas-2022-updated.csv~csv]
+    s: http://accidentesdetrafico.es/Accidente/$(num_expediente)
+    po:
+      - [a, vocab:Accidente]
+      - [vocab:conNumeroExpediente,$(num_expediente),xsd:string]
+      - [vocab:tieneFecha,$(fecha),xsd:dateTime]
+      - [vocab:conEstadoMeteorologico,$(estado_meteorológico),xsd:string]
+      - [vocab:conVehiculo,$(tipo_vehiculo),xsd:string]
+      - [vocab:tieneTipoAccidente,$(tipo_accidente),xsd:string]
+      - p: vocab:tieneLocalizacion
+        o:
+          mapping: Localizacion
+      - p: vocab:involucraA
+        o:
+          mapping: Persona
+
+  Localizacion:
+    sources:
+      - [csv/AccidentesBicicletas-2022-updated.csv~csv]
+    s: http://accidentesdetrafico.es/Localizacion/$(localizacion)
+    po:
+      - [a, vocab:Accidente]
+      - [vocab:tieneNombreCalle,$(localizacion),xsd:string]
+      - [vocab:tieneNumeroCalle,$(numero),xsd:string]
+      - [vocab:tieneCoordX,$(coordenada_x_utm),xsd:float]
+      - [vocab:tieneCoordY,$(coordenada_y_utm),xsd:float]
+      - p: vocab:enDistrito
+        o:
+          mapping: Distrito
+
+  Distrito:
+    sources:
+      - [csv/AccidentesBicicletas-2022-updated.csv~csv]
+    s: http://accidentesdetrafico.es/Distrito/$(cod_distrito)
+    po:
+      - [a, vocab:Accidente]
+      - [vocab:tieneCodigoDistrito,$(cod_distrito),xsd:int]
+      - [vocab:tieneNombreDistrito,$(distrito),xsd:string]
+      - [vocab:tieneCoordX,$(coordenada_x_utm),xsd:float]
+      - [vocab:tieneCoordY,$(coordenada_y_utm),xsd:float]
+
+  Persona:
+    sources:
+      - [csv/AccidentesBicicletas-2022-updated.csv~csv]
+    s: http://accidentesdetrafico.es/Persona/$(rango_edad)
+    po:
+      - [a, vocab:Persona]
+      - [vocab:tieneRangoEdad,$(rango_edad),xsd:string]
+      - [vocab:tieneTipoPersona,$(tipo_persona),xsd:string]
+      - [vocab:positivaAlcohol,$(positiva_alcohol),xsd:boolean]
+      - [vocab:positivaDroga,$(positiva_droga),xsd:boolean]
+      - [vocab:tieneSexo,$(sexo),xsd:string]
+      - p: vocab:tieneLesividad
+        o:
+          mapping: Lesividad
+
+  Lesividad:
+    sources:
+      - [csv/AccidentesBicicletas-2022-updated.csv~csv]
+    s: http://accidentesdetrafico.es/Lesividad/$(cod_distrito)
+    po:
+      - [a, vocab:Lesividad]
+      - [vocab:tieneCodigoLesividad,$(cod_lesividad),xsd:int]
+      - [vocab:nombreLesividad,$(lesividad),xsd:string]

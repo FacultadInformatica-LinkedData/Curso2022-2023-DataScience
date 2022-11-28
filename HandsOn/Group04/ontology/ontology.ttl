@@ -1,70 +1,86 @@
 @base <http://madridcontenedores.com/ontologia> .
-@prefix classes: <http://madridcontenedores.com/classes#> .
+@prefix classes: <http://madridcontenedores.com/ontologia/classes#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix properties: <http://madridcontenedores.com/properties#> .
+@prefix properties: <http://madridcontenedores.com/ontologia/properties#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://madridcontenedores.com/ontologia> a owl:Ontology ;
     dc:description "Ontology code created by Chowlk" .
 
-### http://madridcontenedores.com/ontologia/properties/calle
+### http://madridcontenedores.com/ontologia/calle
 properties:calle a owl:DatatypeProperty ;
     rdfs:label "calle" ;
-    rdfs:domain classes:Ubicación ;
+    rdfs:domain classes:Ubicacion ;
     rdfs:range xsd:string .
 
-### http://madridcontenedores.com/ontologia/properties/coordenadaX
+### http://madridcontenedores.com/ontologia/codigoPostal
+properties:codigoPostal a owl:DatatypeProperty ;
+    rdfs:label "codigo postal" ;
+    rdfs:domain classes:Ubicacion ;
+    rdfs:range xsd:int .
+
+### http://madridcontenedores.com/ontologia/coordenadaX
 properties:coordenadaX a owl:DatatypeProperty ;
     rdfs:label "coordenada x" ;
-    rdfs:domain classes:Ubicación ;
+    rdfs:domain classes:Ubicacion ;
     rdfs:range xsd:float .
 
-### http://madridcontenedores.com/ontologia/properties/coordenadaY
+### http://madridcontenedores.com/ontologia/coordenadaY
 properties:coordenadaY a owl:DatatypeProperty ;
     rdfs:label "coordenada y" ;
-    rdfs:domain classes:Ubicación ;
+    rdfs:domain classes:Ubicacion ;
     rdfs:range xsd:float .
 
-### http://madridcontenedores.com/ontologia/properties/distrito
+### http://madridcontenedores.com/ontologia/distrito
 properties:distrito a owl:DatatypeProperty ;
     rdfs:label "distrito" ;
-    rdfs:domain classes:Ubicación ;
+    rdfs:domain classes:Ubicacion ;
     rdfs:range xsd:string .
 
-### http://madridcontenedores.com/ontologia/properties/esDeTipo
+### http://madridcontenedores.com/ontologia/esDeTipo
 properties:esDeTipo a owl:DatatypeProperty ;
     rdfs:label "es de tipo" ;
     rdfs:domain classes:Residuo ;
     rdfs:range xsd:string .
 
-### http://madridcontenedores.com/ontologia/properties/seTiraEn
+### http://madridcontenedores.com/ontologia/seTiraEn
 properties:seTiraEn a owl:ObjectProperty ;
     rdfs:label "se tira en" ;
     rdfs:domain classes:Residuo ;
     rdfs:range classes:TipoContenedor .
 
-### http://madridcontenedores.com/ontologia/properties/seUbicaEn
+### http://madridcontenedores.com/ontologia/seUbicaEn
 properties:seUbicaEn a owl:ObjectProperty ;
     rdfs:label "se ubica en" ;
     rdfs:domain classes:Contenedor ;
-    rdfs:range classes:Ubicación .
+    rdfs:range classes:Ubicacion .
 
-### http://madridcontenedores.com/ontologia/classes/TipoContenedor
+### http://madridcontenedores.com/ontologia/tieneHorario
+properties:tieneHorario a owl:ObjectProperty ;
+    rdfs:label "tiene horario" ;
+    rdfs:domain classes:Contenedor ;
+    rdfs:range classes:Horario .
+
+### http://madridcontenedores.com/ontologia/Horario
+classes:Horario a owl:Class ;
+    rdfs:label "Horario" .
+
+### http://madridcontenedores.com/ontologia/TipoContenedor
 classes:TipoContenedor a owl:Class ;
     rdfs:label "Tipo Contenedor" ;
     rdfs:subClassOf classes:Contenedor .
 
-### http://madridcontenedores.com/ontologia/classes/Contenedor
-classes:Contenedor a owl:Class ;
-    rdfs:label "Contenedor" .
-
-### http://madridcontenedores.com/ontologia/classes/Residuo
+### http://madridcontenedores.com/ontologia/Residuo
 classes:Residuo a owl:Class ;
     rdfs:label "Residuo" .
 
-### http://madridcontenedores.com/ontologia/classes/Ubicacion
+### http://madridcontenedores.com/ontologia/Contenedor
+classes:Contenedor a owl:Class ;
+    rdfs:label "Contenedor" .
+
+### http://madridcontenedores.com/ontologia/Ubicacion
 classes:Ubicacion a owl:Class ;
-    rdfs:label "Ubicación" .
+    rdfs:label "Ubicacion" .
 
