@@ -1,0 +1,747 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column EQUIPAMIENTO using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value.replace(\"á\",\"a\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column EQUIPAMIENTO using expression value.replace(\"á\",\"a\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value.replace(\"é\",\"e\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column EQUIPAMIENTO using expression value.replace(\"é\",\"e\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value.replace(\"í\",\"i\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column EQUIPAMIENTO using expression value.replace(\"í\",\"i\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value.replace(\"ó\",\"o\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column EQUIPAMIENTO using expression value.replace(\"ó\",\"o\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value.replace(\"ú\",\"u\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column EQUIPAMIENTO using expression value.replace(\"ú\",\"u\")"
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "EQUIPAMIENTO",
+    "keyColumnName": "PK",
+    "mode": "separator",
+    "separator": ".",
+    "regex": false,
+    "description": "Split multi-valued cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pista de baloncesto",
+          "  pista de baloncesto",
+          " pista de baloncesto",
+          "pista de baloncesto*"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de baloncesto"
+      },
+      {
+        "from": [
+          "1 campo de futbol (cesped artificial)",
+          "1 campo de futbol (de cesped artificial)",
+          "1 campo de futbol, cesped artificial"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1 campo de futbol (cesped artificial)"
+      },
+      {
+        "from": [
+          " 1 pista de chito",
+          "1 pista de chito"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 1 pista de chito"
+      },
+      {
+        "from": [
+          "pista polideportiva",
+          " pista polideportiva"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista polideportiva"
+      },
+      {
+        "from": [
+          "2 tenis de mesa",
+          " 2 tenis de mesa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 tenis de mesa"
+      },
+      {
+        "from": [
+          "pista de futbol-sala",
+          " pista de futbol-sala"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de futbol-sala"
+      },
+      {
+        "from": [
+          "pista de patinaje",
+          " pista de patinaje"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de patinaje"
+      },
+      {
+        "from": [
+          "1 tenis de mesa",
+          " 1 tenis de mesa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1 tenis de mesa"
+      },
+      {
+        "from": [
+          " pista de futbol sala",
+          "pista de futbol sala"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " pista de futbol sala"
+      },
+      {
+        "from": [
+          "pista de minibaloncesto",
+          " pista de minibaloncesto"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de minibaloncesto"
+      },
+      {
+        "from": [
+          " pista de skate",
+          "pista de skate"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " pista de skate"
+      },
+      {
+        "from": [
+          " 2 pistas de baloncesto (transversales)",
+          "2 pistas de baloncesto transversales"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " 2 pistas de baloncesto (transversales)"
+      },
+      {
+        "from": [
+          " pista de futbol 7 (cesped artificial)",
+          "pista de futbol 7 (cesped artificial)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " pista de futbol 7 (cesped artificial)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "campo de futbol 11 (cesped artificial)",
+          "campo de futbol 11 de cesped artificial"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "campo de futbol 11 (cesped artificial)"
+      }
+    ],
+    "description": "Mass edit cells in column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value.replace(/[0-9]/,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column EQUIPAMIENTO using expression value.replace(/[0-9]/,\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value.replace(\"^ \",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column EQUIPAMIENTO using expression value.replace(\"^ \",\"\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "EQUIPAMIENTO",
+    "expression": "jython:import re\npista1 = re.findall('(pista de \\w+[ \\w+]{1,20}?)',value)\npista2 = re.findall('pista polideportivas?.*\\(.*\\)',value)\ncampo = re.findall('campos? de futbol',value)\ncircuito = re.findall('circuito de \\w+',value)\n\nlista = pista1 + pista2 +campo +circuito\n#Otros equipamientos que quiero buscar\nlista_equipamientos = ['piscina', 'pabellón polideportivo','rocódromo','frontón','patinódromo','tenis de mesa']\n\n# Palabras que tienen varias una apariciones y quiero que me coja la primera\ndef buscar_palabras_y_add(lista_palabras, cadena_texto, lista_provisional):\n    for palabra in lista_palabras:\n        #Busco si la palabra está en la celda\n        palabra_buscada = re.search(palabra,cadena_texto)\n        #Si la palabra está la añado a mi lista de equipamientos encontrados\n        if palabra_buscada is not None:\n            palabra_buscada = palabra_buscada.group(0)\n            lista_provisional.append(palabra_buscada)\n    return lista_provisional\n\n#Llamo a la función\nlista_final = buscar_palabras_y_add(lista_equipamientos,value,lista)\n\nvalue = \", \".join(lista)\nreturn value",
+    "onError": "set-to-blank",
+    "newColumnName": "equipamiento_cleaned1",
+    "columnInsertIndex": 5,
+    "description": "Create column equipamiento_cleaned1 at index 5 based on column EQUIPAMIENTO using expression jython:import re\npista1 = re.findall('(pista de \\w+[ \\w+]{1,20}?)',value)\npista2 = re.findall('pista polideportivas?.*\\(.*\\)',value)\ncampo = re.findall('campos? de futbol',value)\ncircuito = re.findall('circuito de \\w+',value)\n\nlista = pista1 + pista2 +campo +circuito\n#Otros equipamientos que quiero buscar\nlista_equipamientos = ['piscina', 'pabellón polideportivo','rocódromo','frontón','patinódromo','tenis de mesa']\n\n# Palabras que tienen varias una apariciones y quiero que me coja la primera\ndef buscar_palabras_y_add(lista_palabras, cadena_texto, lista_provisional):\n    for palabra in lista_palabras:\n        #Busco si la palabra está en la celda\n        palabra_buscada = re.search(palabra,cadena_texto)\n        #Si la palabra está la añado a mi lista de equipamientos encontrados\n        if palabra_buscada is not None:\n            palabra_buscada = palabra_buscada.group(0)\n            lista_provisional.append(palabra_buscada)\n    return lista_provisional\n\n#Llamo a la función\nlista_final = buscar_palabras_y_add(lista_equipamientos,value,lista)\n\nvalue = \", \".join(lista)\nreturn value"
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "equipamiento_cleaned1",
+    "keyColumnName": "PK",
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "description": "Split multi-valued cells in column equipamiento_cleaned1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "equipamiento_cleaned1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pista de petanca",
+          " pista de petanca",
+          " pista de petanca ",
+          "pista de petanca "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de petanca"
+      },
+      {
+        "from": [
+          "pista de balonmano",
+          "pista de balonmano ",
+          " pista de balonmano ",
+          " pista de balonmano"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de balonmano"
+      },
+      {
+        "from": [
+          "pista de baloncesto",
+          "pista de baloncesto ",
+          " pista de baloncesto",
+          " pista de baloncesto "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de baloncesto"
+      },
+      {
+        "from": [
+          "pista de futbol ",
+          " pista de futbol ",
+          "pista de futbol",
+          " pista de futbol"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de futbol "
+      },
+      {
+        "from": [
+          "pista de patinaje",
+          "pista de patinaje ",
+          " pista de patinaje",
+          " pista de patinaje "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de patinaje"
+      },
+      {
+        "from": [
+          "pista de hockey ",
+          " pista de hockey ",
+          "pista de hockey"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de hockey "
+      },
+      {
+        "from": [
+          "pista de chito",
+          "pista de chito ",
+          " pista de chito"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de chito"
+      },
+      {
+        "from": [
+          " pista de voleibol",
+          "pista de voleibol ",
+          " pista de voleibol "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " pista de voleibol"
+      },
+      {
+        "from": [
+          "pista de minibaloncesto",
+          "pista de minibaloncesto ",
+          " pista de minibaloncesto "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de minibaloncesto"
+      },
+      {
+        "from": [
+          " pista de tenis ",
+          "pista de tenis",
+          "pista de tenis "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " pista de tenis "
+      },
+      {
+        "from": [
+          " pista de fronton ",
+          "pista de fronton "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " pista de fronton "
+      },
+      {
+        "from": [
+          " campos de futbol",
+          "campos de futbol"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " campos de futbol"
+      },
+      {
+        "from": [
+          "pista de skate",
+          " pista de skate"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de skate"
+      },
+      {
+        "from": [
+          "circuito de footing",
+          " circuito de footing"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "circuito de footing"
+      },
+      {
+        "from": [
+          " pista de voley ",
+          "pista de voley "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " pista de voley "
+      },
+      {
+        "from": [
+          "campo de futbol",
+          " campo de futbol"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "campo de futbol"
+      },
+      {
+        "from": [
+          " pista de padel",
+          " pista de padel "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " pista de padel"
+      },
+      {
+        "from": [
+          "pista de bolos ",
+          " pista de bolos "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de bolos "
+      },
+      {
+        "from": [
+          "pista polideportiva (con marcajes de futbol sala y  de baloncesto)",
+          "pista polideportiva (con marcajes de futbol sala y baloncesto)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista polideportiva (con marcajes de futbol sala y  de baloncesto)"
+      },
+      {
+        "from": [
+          " pista de street ",
+          "pista de street "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " pista de street "
+      },
+      {
+        "from": [
+          " circuito de bicicletas",
+          "circuito de bicicletas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " circuito de bicicletas"
+      },
+      {
+        "from": [
+          " tenis de mesa",
+          "tenis de mesa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " tenis de mesa"
+      }
+    ],
+    "description": "Mass edit cells in column equipamiento_cleaned1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "equipamiento_cleaned1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pista de baloncesto",
+          "pista de baloncestovestuario",
+          "pista de baloncestovestuarios"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de baloncesto"
+      }
+    ],
+    "description": "Mass edit cells in column equipamiento_cleaned1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "equipamiento_cleaned1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "campo de futbol",
+          " campos de futbol"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "campo de futbol"
+      },
+      {
+        "from": [
+          " pista de voleibol",
+          " pista de voley "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " pista de voleibol"
+      }
+    ],
+    "description": "Mass edit cells in column equipamiento_cleaned1"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "equipamiento_cleaned1",
+    "expression": "jython:import re\npistas = ['futbol sala', 'voleibol','balonmano','baloncesto']\npistaPolideportiva = re.findall('pista polideportiva',value)\nlista = []\nif len(pistaPolideportiva) != 0:\n    for pista in pistas:\n        resultado = re.findall(pista, value)\n        if resultado:\n            resultado = 'pista de '+str(resultado[0])\n            lista.append(resultado)\n            value = ''\n        else:\n            lista\nelse: value\nvalue2 = \", \".join(lista)\nvalue = value + value2\nreturn value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column equipamiento_cleaned1 using expression jython:import re\npistas = ['futbol sala', 'voleibol','balonmano','baloncesto']\npistaPolideportiva = re.findall('pista polideportiva',value)\nlista = []\nif len(pistaPolideportiva) != 0:\n    for pista in pistas:\n        resultado = re.findall(pista, value)\n        if resultado:\n            resultado = 'pista de '+str(resultado[0])\n            lista.append(resultado)\n            value = ''\n        else:\n            lista\nelse: value\nvalue2 = \", \".join(lista)\nvalue = value + value2\nreturn value"
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "equipamiento_cleaned1",
+    "keyColumnName": "PK",
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "description": "Split multi-valued cells in column equipamiento_cleaned1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "equipamiento_cleaned1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " pista de voleibol",
+          "pista de voleibol"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " pista de voleibol"
+      }
+    ],
+    "description": "Mass edit cells in column equipamiento_cleaned1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "equipamiento_cleaned1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pista de futbol ",
+          "pista de futbol sala"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de futbol "
+      }
+    ],
+    "description": "Mass edit cells in column equipamiento_cleaned1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "equipamiento_cleaned1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " circuito de bici"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " circuito de bicicletas"
+      }
+    ],
+    "description": "Mass edit cells in column equipamiento_cleaned1"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "equipamiento_cleaned1",
+    "expression": "value.replace(\"^ \",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column equipamiento_cleaned1 using expression value.replace(\"^ \",\"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "equipamiento_cleaned1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " pista de calva"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column equipamiento_cleaned1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "equipamiento_cleaned1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pista de chito"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column equipamiento_cleaned1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "equipamiento_cleaned1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pista de futbol ",
+          "pista de futbol"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pista de futbol "
+      }
+    ],
+    "description": "Mass edit cells in column equipamiento_cleaned1"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "equipamiento_cleaned1",
+    "expression": "jython:value = str(value) \nif 'piscina' in value: return 'natacion' \n#Deportes de balón\nif 'futbol' in value: return 'futbol' \nif 'baloncesto' in value: return 'baloncesto' \nif 'balonmano' in value: return 'balonmano' \nif 'voley' in value: return 'voley' \nif 'petanca' in value: return 'petanca'\n\n#Deportes de raqueta\nif 'badminton' in value: return 'badminton' \nif 'padel' in value: return 'padel'\nif 'squash' in value: return 'squash'\nif 'fronton' in value: return 'fronton'\nif value == 'tenis de mesa': return 'ping-pong'\nif value == 'pista de tenis': return 'tenis'\nif value == 'tenis de mesa': return 'ping-pong'\n\n#Deportes de ruedas\nif 'patinodromo' in value: return 'patinaje' \nif 'skate' in value: return 'skate'\nif 'patinaje' in value: return 'patinaje' \nif 'hockey' in value: return 'hockey'\nif 'bicicleta' in value: return 'ciclismo'\n\n#Otros deportes\nif 'rocodromo' in value: return 'escalada'\nif 'atletismo' in value: return 'atletismo'",
+    "onError": "set-to-blank",
+    "newColumnName": "deporte",
+    "columnInsertIndex": 6,
+    "description": "Create column deporte at index 6 based on column equipamiento_cleaned1 using expression jython:value = str(value) \nif 'piscina' in value: return 'natacion' \n#Deportes de balón\nif 'futbol' in value: return 'futbol' \nif 'baloncesto' in value: return 'baloncesto' \nif 'balonmano' in value: return 'balonmano' \nif 'voley' in value: return 'voley' \nif 'petanca' in value: return 'petanca'\n\n#Deportes de raqueta\nif 'badminton' in value: return 'badminton' \nif 'padel' in value: return 'padel'\nif 'squash' in value: return 'squash'\nif 'fronton' in value: return 'fronton'\nif value == 'tenis de mesa': return 'ping-pong'\nif value == 'pista de tenis': return 'tenis'\nif value == 'tenis de mesa': return 'ping-pong'\n\n#Deportes de ruedas\nif 'patinodromo' in value: return 'patinaje' \nif 'skate' in value: return 'skate'\nif 'patinaje' in value: return 'patinaje' \nif 'hockey' in value: return 'hockey'\nif 'bicicleta' in value: return 'ciclismo'\n\n#Otros deportes\nif 'rocodromo' in value: return 'escalada'\nif 'atletismo' in value: return 'atletismo'"
+  }
+    {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "PK",
+    "description": "Fill down cells in column PK"
+  }
+]
