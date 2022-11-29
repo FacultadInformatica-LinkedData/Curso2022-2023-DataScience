@@ -91,10 +91,9 @@ g.add((ns.JohnSmith, VCARD.Work, ns.upm))
 # Visualize the results
 #=======
 # Visualize the results
-vcard = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
-g.add((ns.JaneSmith, vcard.fullName, Literal("Jane Smith")))
-g.add((ns.JaneSmith, vcard.given, Literal("Jane")))
-g.add((ns.JaneSmith, vcard.familynames, Literal("Smith")))
+g.add((ns.JaneSmith, VCARD.fullName, Literal("Jane Smith")))
+g.add((ns.JaneSmith, VCARD.given, Literal("Jane")))
+g.add((ns.JaneSmith, VCARD.familynames, Literal("Smith")))
 
 for s, p, o in g:
   print(s,p,o)
@@ -102,9 +101,8 @@ for s, p, o in g:
 """**TASK 6.5: Add UPM as the university where John Smith works**"""
 
 # TO DO
-vcard = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
 g.add((ns.UPM, RDF.type, ns.University))
-g.add((ns.JohnSmith,vcard.work,ns.UPM))
+g.add((ns.JohnSmith,ns.worksAt,ns.UPM))
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)
