@@ -185,16 +185,16 @@
       rr:termType rr:Literal]
   ].
   
-<#adressMap>
+<#addressMap>
   rml:logicalSource [
     rml:source "./data/bibliobuses-bibliotecas-updated-csv.csv" ;
     rml:referenceFormulation ql:CSV
   ];
   
   rr:subjectMap [
-    rr:template "https://www.biblioescuela.educamadrid.org/resource/Adress/{PK}";
+    rr:template "https://www.biblioescuela.educamadrid.org/resource/Address/{PK}";
     rr:termType rr:IRI;
-    rr:class lib:Adress
+    rr:class lib:Address
   ];
   
   rr:predicateObjectMap [
@@ -255,14 +255,14 @@
     rr:predicate lib:hasZipCode;
     rr:objectMap [
       rml:reference "COD-POSTAL";
-      rr:datatype xsd:integer]
+      rr:datatype xsd:string]
   ];
   
   rr:predicateObjectMap [
     rr:predicate lib:hasNeighbourhoodCode;
     rr:objectMap [
       rml:reference "COD-BARRIO";
-      rr:datatype xsd:integer]
+      rr:datatype xsd:string]
   ];
   
   rr:predicateObjectMap [
@@ -276,7 +276,7 @@
     rr:predicate lib:hasDistrictCode;
     rr:objectMap [
       rml:reference "COD-DISTRITO";
-      rr:datatype xsd:integer]
+      rr:datatype xsd:string]
   ];
   
   rr:predicateObjectMap [
@@ -322,14 +322,14 @@
     rr:predicate lib:hasLongitude;
     rr:objectMap [
       rml:reference "LONGITUD" ;
-      rr:datatype xsd:string]
+      rr:datatype xsd:integer]
   ];
   
   rr:predicateObjectMap [
     rr:predicate lib:hasLatitude;
     rr:objectMap [
       rml:reference "LATITUD" ;
-      rr:datatype xsd:string]
+      rr:datatype xsd:integer]
   ].
 
 <#contactMap>
