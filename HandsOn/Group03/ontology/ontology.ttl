@@ -64,6 +64,7 @@ base:tieneFecha a owl:DatatypeProperty ;
 
 base:tieneCoordY a owl:DatatypeProperty ;
     rdfs:label "tiene coord y" ;
+    rdfs:domain base:Localizacion ;
     rdfs:range xsd:float .
 
 base:tieneLesividad a owl:ObjectProperty ;
