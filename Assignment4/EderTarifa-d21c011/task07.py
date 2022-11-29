@@ -24,69 +24,36 @@ g.namespace_manager.bind('vcard', Namespace("http://www.w3.org/2001/vcard-rdf/3.
 g.parse(github_storage+"/rdf/example6.rdf", format="xml")
 
 """**TASK 7.1: List all subclasses of "Person" with RDFLib and SPARQL**"""
-
 # TO DO
 from rdflib.plugins.sparql import prepareQuery
 
-schema = Namespace("http://www.w3.org/2000/01/rdf-schema#")
-
-q1 = prepareQuery('''
-  SELECT ?Subclass WHERE {
-    ?Subclass schema:subClassOf <http://somewhere#Person>
-  }
-  ''',
-  initNs = { "schema": schema }
-)
-# Visualize the results
-for r in g.query(q1):
-  print(r.Subclass)
-# Visualize the results
-
-from rdflib.plugins.sparql import prepareQuery
 ns = Namespace("http://somewhere#")
 
-for s1,p1,o1 in g.triples((None, RDFS.subClassOf, ns.Person)):
-  print(s1)
-
-
 q1 = prepareQuery('''
-  SELECT 
-    ?x 
-  WHERE { 
-    ?x rdfs:subClassOf ns:Person. 
+  SELECT ?Subclass WHERE { 
+    ?Subclass RDFS:subClassOf/RDFS:subClassOf* ns:Person.
   }
   ''',
-  initNs = { "rdfs": RDFS, "ns":ns}
-)
+                  initNs={"RDFS": RDFS, "ns": ns}
+                  )
+# Visualize the results
 
-for  t1 in g.query(q1):
-  print(t1)
-#for r in g.query(q1):
-#  print(r)
+#SPARQL
+for r in g.query(q1):
+  print(r.Subclass)
+
+#RDFLib
+subclass_of_person = []
+for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
+    print(s)
+    subclass_of_person.append(s)
+print(g.value(None, RDFS.subClassOf, s))
 
 
 """**TASK 7.2: List all individuals of "Person" with RDFLib and SPARQL (remember the subClasses)**
 
 """
-
 # TO DO
-syntax = Namespace('http://www.w3.org/1999/02/22-rdf-syntax-ns#')
-vcar = Namespace('http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/')
-
-q2= prepareQuery('''
-SELECT ?Fullname ?Fullname2 WHERE {
-  ?Peopleiri syntax:type <http://somewhere#Person>.
-  ?Peopleiri vcar:FN ?Fullname.
-  ?Subclassiri syntax:type <http://somewhere#Researcher>.
-  ?Subclassiri vcar:FN ?Fullname2
-}
-''',
-    initNs = { "syntax": syntax, 'vcar': vcar }
-)
-# Visualize the results
-for r in g.query(q2):
-  print(r.Fullname, r.Fullname2)
-# Visualize the results
 for s1,p1,o1 in g.triples((None, RDF.type, ns.Person)):
   print(s1)
 
@@ -115,8 +82,8 @@ for t2 in g.query(q2):
 """**TASK 7.3: List all individuals of "Person" and all their properties including their class with RDFLib and SPARQL**
 
 """
-
 # TO DO
+syntax = Namespace('http://www.w3.org/1999/02/22-rdf-syntax-ns#')
 q3 = prepareQuery('''
 SELECT * WHERE{
   ?Person syntax:type <http://somewhere#Person>.
@@ -126,6 +93,7 @@ SELECT * WHERE{
   initNs= { 'syntax': syntax }
 )
 # Visualize the results
+
 for r in g.query(q3):
   print(r.Person, r.P, r.O)
 # Visualize the results
