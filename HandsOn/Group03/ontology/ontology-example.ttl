@@ -1,0 +1,81 @@
+@prefix base: <http://accidentesdetrafico.es/ontology/TrafficAccident#> .
+@prefix basei: <http://accidentesdetrafico.es/resource/TrafficAccident#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com> rdf:type owl:Ontology ;
+    dc:description "Ontology code created by Chowlk" .
+
+#----PROPERTIES:----#
+
+base:enDistrito rdf:type owl:ObjectProperty ;
+    rdfs:label "en distrito" .
+
+base:involucraA rdf:type owl:ObjectProperty ;
+    rdfs:label "involucra a" .
+
+base:tieneLesividad rdf:type owl:ObjectProperty ;
+    rdfs:label "tiene lesividad" .
+
+base:tieneLocalizacion rdf:type owl:ObjectProperty ;
+    rdfs:label "tiene localizacion" .
+
+
+#----CLASSES:----#
+
+base:Distrito rdf:type owl:Class ;
+    rdfs:label "Distrito" .
+
+base:Lesividad rdf:type owl:Class ;
+    rdfs:label "Lesividad" .
+
+base:Localizacion rdf:type owl:Class ;
+    rdfs:label "Localizacion" .
+
+base:Persona rdf:type owl:Class ;
+    rdfs:label "Persona" .
+
+base:Accidente rdf:type owl:Class ;
+    rdfs:label "Accidente" .
+
+#----INSTANCES:----#
+
+basei:Distrito1 rdf:type owl:NamedIndividual ;
+    rdf:type base:Distrito .
+
+basei:Persona1 rdf:type owl:NamedIndividual ;
+    rdf:type base:Persona .
+
+basei:Localizacion1 rdf:type owl:NamedIndividual ;
+    rdf:type base:Localizacion .
+
+basei:Lesividad1 rdf:type owl:NamedIndividual ;
+    rdf:type base:Lesividad
+
+basei:Accidente1 rdf:type owl:NamedIndividual ;
+    rdf:type base:Accidente
+
+
+basei:Accidente1 base:tieneFecha "2022-01-02T00:05:00Z"^^datetime
+basei:Accidente1 base:tieneTipoAccidente "Caída"^^string
+basei:Accidente1 base:conVehiculo "Bicicleta EPAC (pedaleo asistido)"^^string
+basei:Accidente1 base:conEstadoMeteorologico "Despejado"^^string
+basei:Accidente1 base:conNumeroExpediente "2022S000034"^^string
+basei:Accidente1 base:tieneLocalizacion basei:Localizacion1
+basei:Accidente1 base:involucraA basei:Persona1
+basei:Localizacion1 base:tieneNombreCalle "Call. María Teresa Saenz de Heredia, 6"^^string
+basei:Localizacion1 base:tieneNumeroCalle "6"^^string
+basei:Localizacion1 base:tieneCoordX "444462.918"^^float
+basei:Localizacion1 base:tieneCoordY "4474808.752"^^float
+basei:Distrito1 base:tieneNombreDistrito "Ciudad Lineal"^^string
+basei:Distrito1 base:tieneCodigoDistrito "15"^^integer
+basei:Persona1 base:tieneRangoEdad "De 25 a 29 años"^^string
+basei:Persona1 base:tieneTipoPersona "Conductor"^^string
+basei:Persona1 base:tieneSexo "Hombre"^^string
+basei:Persona1 base:positivaAlcohol "True"^^boolean
+basei:Persona1 base:positivaDroga "False"^^boolean
+basei:Persona1 base:tieneLesividad basei:Lesividad1 
+basei:Lesividad1 base:tieneCodigoLesividad "7"^^integer
+basei:Lesividad1 base:nombreLesividad "Asistencia sanitaria sólo en el lugar del accidente"^^string

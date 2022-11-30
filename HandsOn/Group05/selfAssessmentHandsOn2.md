@@ -31,4 +31,10 @@
 - [X] Contains at least one class that will be used to link to other entities
 
 ## Comments on the self-assessment
-_(No comments)_
+_Repartición de trabajo:
+
+* Ester Esteban Bruña/esteresteban ---> buscar la info y redactar la parte de "The analyses performed over the data source" en analysis.html
+* Cristina Fernández Gómez/crisfernandez ---> buscar la info y redactar la parte de "The licensing of the data source and the potential license" en analysis.html
+* Jose Maria Sanchez Garabito/chgara ---> hacer el html de analysis.html
+* Paula Velasco López/PauVL ----> selfAssessmentHandsOn2.md, subida al Github del trabajo, ontology.ttl (y su EscuelaInfantil.xml), ontology-example.ttl, y la parte del "The resource naming strategy defined" en analysis.html.
+_

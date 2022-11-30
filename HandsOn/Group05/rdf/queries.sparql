@@ -1,0 +1,98 @@
+# Query para ver las estaciones de Metro y los buses de los centros de Latina y Usera:
+
+PREFIX ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?centro ?bus ?metro
+WHERE
+{ 
+    ?dis rdf:type ns:District. 
+	?id rdf:type ns:EducationalCenter.
+	{?dis ns:districtName "USERA"} UNION {?dis ns:districtName "LATINA"}.
+	?id ns:hasDistrict ?dis.
+	?id ns:name ?centro.
+	OPTIONAL{?id ns:subway ?metro}.
+	OPTIONAL{?id ns:bus ?bus}
+}
+LIMIT 20
+
+
+
+
+
+# Query para ver los centros que tengan código postal 28016
+
+PREFIX ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?centro
+WHERE
+{
+  ?id rdf:type ns:EducationalCenter.
+  ?id ns:postalCode "28016".
+  ?id ns:name ?centro
+}
+LIMIT 20
+
+
+
+
+
+# Query para ver los centros que están en el distrito de Salamanca y su accesibilidad:
+
+PREFIX ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?centro ?acc
+WHERE
+{
+    ?dis rdf:type ns:District.
+    ?id rdf:type ns:EducationalCenter.
+    ?dis ns:districtName "SALAMANCA".
+    ?id ns:hasDistrict ?dis.
+    ?id ns:name ?centro.
+    ?id ns:accesibility ?acc
+}
+LIMIT 20
+
+
+
+
+
+# Query para ver los centros accesibles para personas con dificultad de movimiento, la dirección del centro, su email y su teléfono:
+
+PREFIX ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sch: <https://schema.org/>
+SELECT ?centro ?tipo ?calle ?num ?email ?tel
+WHERE
+{
+    ?id rdf:type ns:EducationalCenter.
+    ?id ns:accesibility "1".
+    ?id ns:name ?centro.
+    ?id ns:streetType ?tipo.
+    ?id ns:streetName ?calle.
+    OPTIONAL{?id ns:streetNumber ?num}.
+    OPTIONAL{?id sch:email ?email}.
+    ?id sch:telephone ?tel
+}
+LIMIT 20 
+
+
+
+# Query para ver todos los centros que tienen guardería, su dirección y su número de teléfono
+
+PREFIX ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sch: <https://schema.org/>
+
+SELECT ?centro ?tipo ?calle ?num ?tel
+WHERE
+{
+    ?id rdf:type ns:EducationalCenter.
+    ?id ns:nurseryEducation "true".
+    ?id ns:name ?centro.
+    ?id ns:streetType ?tipo.
+    ?id ns:streetName ?calle.
+    OPTIONAL{?id ns:streetNumber ?num}.
+    OPTIONAL{?id sch:telephone ?tel}
+}
+LIMIT 20 

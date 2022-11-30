@@ -1,0 +1,65 @@
+[
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "TIPO_DATO",
+      "DIRECCION_COMPLETA",
+      "DISTRITO",
+      "CODIGO POSTAL",
+      "UTMX",
+      "UTMY",
+      "HORARIO"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIPO_DATO",
+    "newColumnName": "TIPO",
+    "description": "Rename column TIPO_DATO to TIPO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DIRECCION_COMPLETA",
+    "newColumnName": "DIRECCION",
+    "description": "Rename column DIRECCION_COMPLETA to DIRECCION"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "UTMX",
+    "newColumnName": "COORDENADA-X",
+    "description": "Rename column UTMX to COORDENADA-X"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "UTMY",
+    "newColumnName": "COORDENADA-Y",
+    "description": "Rename column UTMY to COORDENADA-Y"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE",
+          "expression": "grel:Punto Limpio Fijo",
+          "columnName": "NOMBRE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "TIPO",
+    "expression": "join ([coalesce(cells['TIPO'].value,''),coalesce(cells['COORDENADA-X'].value,''),coalesce(cells['COORDENADA-Y'].value,'')],'-')",
+    "onError": "keep-original",
+    "newColumnName": "ID",
+    "columnInsertIndex": 1,
+    "description": "Create column ID at index 1 based on column TIPO using expression join ([coalesce(cells['TIPO'].value,''),coalesce(cells['COORDENADA-X'].value,''),coalesce(cells['COORDENADA-Y'].value,'')],'-')"
+  }
+]

@@ -1,0 +1,266 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix vocab: <http://example.org/>.
+@prefix sch: <https://www.biblioescuela.educamadrid.org/ontologies/School/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vc: <http://www.owl-ontologies.com/vcard#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix resource: <http://www.biblioescuela.educamadrid.org/resource/>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+
+
+<#SchoolTriplesMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/colegios-publicos-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://www.biblioescuela.educamadrid.org/resource/{PK}";
+    rr:termType rr:IRI;
+    rr:class vocab:School;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasPK;
+    rr:objectMap [
+      rml:reference "PK"; 
+      rr:datatype xsd:integer
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:EducationType;
+    rr:objectMap [
+      rml:reference "DESCRIPCION";
+      rr:termType rr:Literal;
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasAccesibility;
+    rr:objectMap [
+      rml:reference "ACCESIBILIDAD";
+      rr:datatype xsd:integer
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vcard:hasURL;
+    rr:objectMap [
+      rml:reference "CONTENT-URL";
+      rr:termType rr:IRI
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate foaf:name;
+    rr:objectMap [
+      rml:reference "NOMBRE";
+      rr:termType rr:Literal
+      ]
+  ].
+  
+<#LocationTriplesMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/colegios-publicos-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://www.biblioescuela.educamadrid.org/resource/Location/{PK}";
+    rr:termType rr:IRI;
+    rr:class vocab:Location
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasLocation;
+    rr:objectMap [
+      rml:reference "LOCALIDAD"
+    ]
+  ].
+
+<#CoordinatesTriplesMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/colegios-publicos-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://www.biblioescuela.educamadrid.org/resource/Coordinates/{PK}";
+    rr:termType rr:IRI;
+    rr:class vocab:Coordinates
+  ];
+
+
+  rr:predicateObjectMap [
+    rr:predicate wgs84_pos:lat;
+    rr:objectMap [
+      rml:reference "LATITUD"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate wgs84_pos:long;
+    rr:objectMap [
+      rml:reference "LONGITUD"
+    ]
+  ].
+
+<#ContactInfoTriplesMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/colegios-publicos-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://www.biblioescuela.educamadrid.org/resource/ContactInfo/{PK}";
+    rr:termType rr:IRI;
+    rr:class vocab:ContactInfo
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vcard:hasEmail;
+    rr:objectMap [
+      rml:reference "EMAIL";
+      rr:termType rr:Literal
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vcard:hasTelephone;
+    rr:objectMap [
+      rml:reference "TELEFONO";
+      rr:termType rr:Literal
+      ]
+  ].
+
+<#TransportTriplesMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/colegios-publicos-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://www.biblioescuela.educamadrid.org/resource/Transport/{PK}";
+    rr:termType rr:IRI;
+    rr:class vocab:Transport
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasBusLine;
+    rr:objectMap [
+      rml:reference "BUS_FINAL";
+      rr:termType rr:Literal
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasRailways;
+    rr:objectMap [
+      rml:reference "RENFE_FINAL";
+      rr:termType rr:Literal
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasUnderground;
+    rr:objectMap [
+      rml:reference "METRO_FINAL";
+      rr:termType rr:Literal
+      ]
+  ].
+
+<#AddressTriplesMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/colegios-publicos-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://www.biblioescuela.educamadrid.org/resource/Address/{NOMBRE-VIA}";
+    rr:termType rr:IRI;
+    rr:class vocab:Address
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasVialClass;
+    rr:objectMap [
+      rml:reference "CLASE-VIAL";
+      rr:termType rr:Literal
+      ]
+  ];  
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasNumber;
+    rr:objectMap [
+      rml:reference "NUM";
+      rr:termType rr:Literal
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate foaf:name;
+    rr:objectMap [
+      rml:reference "NOMBRE-VIA";
+      rr:termType rr:Literal
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasZipCode;
+    rr:objectMap [
+      rml:reference "CODIGO-POSTAL";
+      rr:termType rr:Literal
+      ]
+  ].
+
+<#DistrictTriplesMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/colegios-publicos-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://www.biblioescuela.educamadrid.org/resource/District/{DISTRITO}";
+    rr:class vocab:District
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vcard:hasUID;
+    rr:objectMap [
+      rml:reference "COD-DISTRITO";
+      rr:datatype xsd:integer
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate foaf:name;
+    rr:objectMap [
+      rml:reference "DISTRITO";
+      rr:termType rr:Literal
+      ]
+  ].
+
+<#NeighbourhoodTriplesMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/colegios-publicos-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://www.biblioescuela.educamadrid.org/resource/Neighbourhood/{BARRIO}";
+    rr:termType rr:IRI;
+    rr:class vocab:Neighbourhood
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vcard:hasUID;
+    rr:objectMap [
+      rml:reference "COD-BARRIO";
+      rr:datatype xsd:integer
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate foaf:name;
+    rr:objectMap [
+      rml:reference "BARRIO";
+      rr:termType rr:Literal
+      ]
+  ].

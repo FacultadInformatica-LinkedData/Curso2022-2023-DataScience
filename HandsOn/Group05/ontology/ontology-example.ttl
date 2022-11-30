@@ -1,5 +1,4 @@
 @prefix : <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#> .
-@prefix db: <http://dbpedia.org/ontology#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -10,83 +9,296 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix schema: <https://schema.org/> .
-@prefix esautob: <http://vocab.ciudadesabiertas.es/def/transporte/autobus#> .
 @base <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter> .
 
 <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter> rdf:type owl:Ontology ;
                                                                              dc:description "Ontology code created by Chowlk" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#hasDistrict
+ns:hasDistrict rdf:type owl:ObjectProperty ;
+               rdfs:domain ns:EducationalCenter ;
+               rdfs:range ns:District ;
+               rdfs:label "has district" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#hasNeighborhood
+ns:hasNeighborhood rdf:type owl:ObjectProperty ;
+                   rdfs:domain ns:EducationalCenter ;
+                   rdfs:range ns:Neighborhood ;
+                   rdfs:label "has neighborhood" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#accesibility
+ns:accesibility rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:string ;
+                rdfs:label "accesibility" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#bus
+ns:bus rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:string ;
+       rdfs:label "bus" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#cafeteria
+ns:cafeteria rdf:type owl:DatatypeProperty ;
+             rdfs:domain ns:EducationalCenter ;
+             rdfs:range xsd:boolean ;
+             rdfs:label "cafeteria" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#city
+ns:city rdf:type owl:DatatypeProperty ;
+        rdfs:range xsd:string ;
+        rdfs:label "city" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#description
+ns:description rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:string ;
+               rdfs:label "description" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#districtName
+ns:districtName rdf:type owl:DatatypeProperty ;
+                rdfs:domain ns:District ;
+                rdfs:range xsd:string ;
+                rdfs:label "district name" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#equipment
+ns:equipment rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:string ;
+             rdfs:label "equipment" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#extraHourOpening
+ns:extraHourOpening rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ns:EducationalCenter ;
+                    rdfs:range xsd:boolean ;
+                    rdfs:label "extra hour opening" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#name
+ns:name rdf:type owl:DatatypeProperty ;
+        rdfs:domain ns:EducationalCenter ;
+        rdfs:range xsd:string ;
+        rdfs:label "name" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#neighborhoodName
+ns:neighborhoodName rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ns:Neighborhood ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "neighborhood name" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#nurseryEducation
+ns:nurseryEducation rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ns:EducationalCenter ;
+                    rdfs:range xsd:boolean ;
+                    rdfs:label "nursery education" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#orientation
+ns:orientation rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:string ;
+               rdfs:label "orientation" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#postalCode
+ns:postalCode rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:string ;
+              rdfs:label "postal code" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#province
+ns:province rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string ;
+            rdfs:label "province" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#railwayStation
+ns:railwayStation rdf:type owl:DatatypeProperty ;
+                  rdfs:label "railway station" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#streetName
+ns:streetName rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:string ;
+              rdfs:label "street name" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#streetNumber
+ns:streetNumber rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:string ;
+                rdfs:label "street number" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#streetNumberType
+ns:streetNumberType rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "street number type" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#streetType
+ns:streetType rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:string ;
+              rdfs:label "street type" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#subway
+ns:subway rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string ;
+          rdfs:label "subway" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#type
+ns:type rdf:type owl:DatatypeProperty ;
+        rdfs:range xsd:string ;
+        rdfs:label "type" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#xCoordinate
+ns:xCoordinate rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:nonNegativeInteger ;
+               rdfs:label "x coordinate" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#yCoordinate
+ns:yCoordinate rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:nonNegativeInteger ;
+               rdfs:label "y coordinate" .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
+wgs84:lat rdf:type owl:DatatypeProperty ;
+          rdfs:domain wgs84:SpatialThing ;
+          rdfs:range xsd:float ;
+          rdfs:label "lat" .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#long
+wgs84:long rdf:type owl:DatatypeProperty ;
+           rdfs:domain wgs84:SpatialThing ;
+           rdfs:range xsd:float ;
+           rdfs:label "long" .
+
+
+###  https://schema.org/email
+schema:email rdf:type owl:DatatypeProperty ;
+             rdfs:domain schema:EducationalOrganization ;
+             rdfs:range xsd:string ;
+             rdfs:label "email" .
+
+
+###  https://schema.org/telephone
+schema:telephone rdf:type owl:DatatypeProperty ;
+                 rdfs:domain schema:EducationalOrganization ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "telephone" .
+
+
+###  https://schema.org/url
+schema:url rdf:type owl:DatatypeProperty ;
+           rdfs:domain schema:EducationalOrganization ;
+           rdfs:range xsd:string ;
+           rdfs:label "url" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#District
+ns:District rdf:type owl:Class ;
+            rdfs:label "District" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#EducationalCenter
+ns:EducationalCenter rdf:type owl:Class ;
+                     rdfs:subClassOf wgs84:SpatialThing ,
+                                     schema:EducationalOrganization ;
+                     rdfs:label "Educational Center" .
+
+
+###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#Neighborhood
+ns:Neighborhood rdf:type owl:Class ;
+                rdfs:label "Neighborhood" .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+wgs84:SpatialThing rdf:type owl:Class ;
+                   rdfs:label "Spatial Thing" .
+
+
+###  https://schema.org/EducationalOrganization
+schema:EducationalOrganization rdf:type owl:Class ;
+                               rdfs:label "Educational Organization" .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#BusLine
-ns:BusLine rdf:type owl:NamedIndividual ,
-                    esautob:Linea ;
-           ns:Description "BUS: 44 , 128" .
+###  http://findeducationalcenter.linkeddata.es/lcc/resource/District/9
+<http://findeducationalcenter.linkeddata.es/lcc/resource/District/9> rdf:type owl:NamedIndividual ,
+                                                                                       ns:District ;
+                                                                                       ns:districtName "MONCLOA-ARAVACA" .
+
+                                                              
+###  http://findeducationalcenter.linkeddata.es/lcc/resource/EducationalCenter/11055694
+<http://findeducationalcenter.linkeddata.es/lcc/resource/EducationalCenter/11055694> rdf:type owl:NamedIndividual ,
+                                                                                                       ns:EducationalCenter ;
+                                                                                                       ns:hasDistrict
+<http://findeducationalcenter.linkeddata.es/lcc/resource/District/9> ;
+                                                                                                       ns:hasNeighborhood <http://findeducationalcenter.linkeddata.es/lcc/resource/Neighborhood/1> ;
+                                                                                                       ns:accesibility 0 ;
+                                                                                                       ns:bus "41, 46, 75" ;
+                                                                                                       ns:cafeteria "true"^^xsd:boolean ;
+                                                                                                       ns:city "MADRID" ;
+                                                                                                       ns:description "ENSEÑANZA: Educación infantil (Primer ciclo)" ;
+                                                                                                       ns:extraHourOpening "true"^^xsd:boolean ;
+                                                                                                       ns:name "Escuela infantil municipal Antonio Mercero" ;
+                                                                                                       ns:nurseryEducation "false"^^xsd:boolean ;
+                                                                                                       ns:postalCode 28008 ;
+                                                                                                       ns:province "MADRID" ;
+                                                                                                       ns:railwayStation "Príncipe Pío" ;
+                                                                                                       ns:streetName "VALLADOLID" ;
+                                                                                                       ns:streetNumber 49 ;
+                                                                                                       ns:streetNumberType "V" ;
+                                                                                                       ns:streetType "AVENIDA" ;
+                                                                                                       ns:subway "Príncipe Pío" ;
+                                                                                                       ns:type "/contenido/entidadesYorganismos/CentrosEducacion/EscuelasInfantilesPublicas" ;
+                                                                                                       ns:xCoordinate 437929 ;
+                                                                                                       ns:yCoordinate 4475679 ;
+                                                                                                       wgs84:lat 40.42943683896261 ;
+                                                                                                       wgs84:long -3.73176497417963 ;
+                                                                                                       schema:email "eiantoniomercero@madrid.es" ;
+                                                                                                       schema:telephone "91 540 03 19" ;
+                                                                                                       schema:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=fdf343c4d873e610VgnVCM2000001f4a900aRCR" .
 
 
-###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#Coordinates1
-ns:Coordinates1 rdf:type owl:NamedIndividual ,
-                         ns:Coordinate ;
-                ns:x 439852 ;
-                ns:y 4478398 .
-
-
-###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#District1
-ns:District1 rdf:type owl:NamedIndividual ,
-                      ns:District ;
-             ns:neighborhoodCode 1 ;
-             ns:neighborhoodName "BELLAS VISTAS" .
-
-
-###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#EducationalLevel1
-ns:EducationalLevel1 rdf:type owl:NamedIndividual ,
-                              ns:EductationLevel ;
-                     ns:bachillerato "false"^^xsd:boolean ;
-                     ns:eso "false"^^xsd:boolean ;
-                     ns:infantilCiclo1 "true"^^xsd:boolean ;
-                     ns:infantilCiclo2 "true"^^xsd:boolean ;
-                     ns:primaria "false"^^xsd:boolean .
-
-
-###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#RailWayStation1
-ns:RailWayStation1 rdf:type owl:NamedIndividual ,
-                            db:RailwayStation .
-
-
-###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#Spatial1
-ns:Spatial1 rdf:type owl:NamedIndividual ,
-                     wgs84:SpatialThing ;
-          		   wgs84:lat 447978470;
-			   wgs84:long 444591127;
-
-
-###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#catalog1
-ns:catalog1 rdf:type owl:NamedIndividual ,
-                     schema:OfferCatalog ;
-            ns:Description "Horario ampliado. Comedor." .
-
-
-###  http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#escuela_infantil_municipal_agua_dulce
-ns:escuela_infantil_municipal_agua_dulce rdf:type owl:NamedIndividual ,
-                                                  ns:EducationalCenter ;
-                                         ns:hasBusLine ns:BusLine ;
-                                         ns:hasCoordinate ns:Coordinates1 ;
-                                         ns:hasDistrict ns:District1 ;
-                                         ns:hasEducationLevel ns:EducationalLevel1 ;
-                                         ns:hasSpatialThing ns:Spatial1 ;
-                                         schema:hasOfferCatalog ns:catalog1 ;
-                                         ns:accesibility 0 ;
-                                         ns:centerName "Escuela Infantil Municipal Agua Dulce" ;
-                                         ns:city "Madrid" ;
-                                         ns:province "Madrid" ;
-                                         schema:address "Madrid, calle Lecheros, nº 5" ;
-                                         schema:email "eiaguadulce@madrid.es" ;
-                                         schema:telephone "914 594 049" ;
-                                         ns:CenterType "/contenido/entidadesYorganismos/CentrosEducacion/EscuelasInfantilesPublicas" ;
-                                         ns:Description "ENSEÑANZA: Educación Infantil (Primer Ciclo)" .
+###  http://findeducationalcenter.linkeddata.es/lcc/resource/Neighborhood/1  
+<http://findeducationalcenter.linkeddata.es/lcc/resource/Neighborhood/1> rdf:type owl:NamedIndividual ,
+                                                                                                    ns:Neighborhood ;
+                                                                                           ns:neighborhoodName "CASA DE CAMPO" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

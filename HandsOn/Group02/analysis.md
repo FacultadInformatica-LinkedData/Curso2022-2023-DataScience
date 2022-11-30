@@ -83,12 +83,14 @@ To name the elements we have decided to follow the following structure.
 
 * The domain chosen for the URIs is the following http://DeportesMadridGroup2.es, which we have verified is not in use
 
-* Instances of any class in the ontology have the URI in the form http://DeportesMadridGroup2.es/Espacios/instances/#
+* Instances of any class in the ontology have the URI in the form http://DeportesMadridGroup2.es/Espacios/instances/{instance_id}
 
-* The ontology classes will have the URI in the form http://DeportesMadridGroup2.es/Espacios/ontology/#
+* The ontology classes will have the URI in the form http://DeportesMadridGroup2.es/Espacios/ontology/{class_name}
 
 * In the case of street instances, the name of the street will appear in camelCase in its URI.
 
-* For instances of sports space subclasses, their URI is that of any instance followed by a unique ID that appears in the data obtained.
+* For instances of sports space subclasses, their URI is that of any instance followed by a unique ID that appears in the data obtained, named PK which we ensured is unique for all the instances in the csv files.
 
-* Finally, for instances of other classes such as Location or Address, a LocationXX style naming will be followed, where XX is the unique ID of the instance it will be reference to.
+* Finally, for instances of other classes such as Location or Address, a Location/XX style naming will be followed, where XX is the unique ID of the instance it will be reference to, i.e, its PK.
+
+* For instances of 'Calles Tranquilas' the URI's for this instances will follow the type. http://DeportesMadridGroup2.es/Espacios/instances/calles/{street_name}

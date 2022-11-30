@@ -1,4 +1,4 @@
- @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix ns: <http://DeportesMadridGroup2.es/Espacios/ontology/#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -31,11 +31,11 @@ ns:CentrosAltoRendimiento a owl:Class ;
     rdfs:label "Centros Alto Rendimiento" ;
     rdfs:subClassOf ns:EspaciosDeporte .
 
-ns:CircuitoCiclismo a owl:Class ;
+ns:CircuitosCiclismo a owl:Class ;
     rdfs:label "Circuito Ciclismo" ;
     rdfs:subClassOf ns:InstalacionDeportiva .
 
-ns:CircuitoFooting a owl:Class ;
+ns:CircuitosFooting a owl:Class ;
     rdfs:label "Circuito Footing" ;
     rdfs:subClassOf ns:InstalacionDeportiva .
 
@@ -43,15 +43,15 @@ ns:ColeccionesBotanicas a owl:Class ;
     rdfs:label "Colecciones Botanicas" ;
     rdfs:subClassOf ns:ParquesJardines .
 
-ns:Embarcadero a owl:Class ;
+ns:Embarcaderos a owl:Class ;
     rdfs:label "Embarcadero" ;
     rdfs:subClassOf ns:InstalacionDeportiva .
 
-ns:Fronton a owl:Class ;
+ns:Frontones a owl:Class ;
     rdfs:label "Frontón" ;
     rdfs:subClassOf ns:InstalacionDeportiva .
 
-ns:InstalacionDeportivaBasica a owl:Class ;
+ns:InstalacionesDeportivaBasica a owl:Class ;
     rdfs:label "Instalacion Deportiva Basica" ;
     rdfs:subClassOf ns:InstalacionDeportiva .
 
@@ -63,17 +63,18 @@ ns:ParquesHistoricos a owl:Class ;
     rdfs:label "Parques Historicos" ;
     rdfs:subClassOf ns:ParquesJardines .
 
-ns:PistaPadel a owl:Class ;
+ns:PistasPadel a owl:Class ;
     rdfs:label "Pista Padel" ;
     rdfs:subClassOf ns:InstalacionDeportiva .
 
-ns:PistaTenisBadminton a owl:Class ;
+ns:PistasTenisBadminton a owl:Class ;
     rdfs:label "Pista Tenis Badminton" ;
     rdfs:subClassOf ns:InstalacionDeportiva .
 
 ns:PistasPatinaje a owl:Class ;
     rdfs:label "Pistas Patinaje" ;
     rdfs:subClassOf ns:InstalacionDeportiva .
+
 
 ns:estaEnBarrio a owl:DatatypeProperty ;
     rdfs:label "esta en barrio" ;
@@ -125,7 +126,7 @@ ns:tieneNombre a owl:DatatypeProperty ;
     rdfs:domain ns:EspaciosDeporte ;
     rdfs:range xsd:string .
 
-ns:tieneNúmero a owl:DatatypeProperty ;
+ns:tieneNumero a owl:DatatypeProperty ;
     rdfs:label "tiene número" ;
     rdfs:domain ns:Direccion ;
     rdfs:range xsd:integer .
