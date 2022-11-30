@@ -1,0 +1,72 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CLASE-VIAL",
+    "expression": "join ([coalesce(cells['CLASE-VIAL'].value,''),coalesce(cells['NOMBRE-VIA'].value,'')],' ')",
+    "onError": "keep-original",
+    "newColumnName": "Location",
+    "columnInsertIndex": 11,
+    "description": "Create column Location at index 11 based on column CLASE-VIAL using expression join ([coalesce(cells['CLASE-VIAL'].value,''),coalesce(cells['NOMBRE-VIA'].value,'')],' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Location",
+    "expression": "jython:words = value.split()\nressult = \"\"\nfor element in words:\n  ressult += element[0] + element[1:].lower() + \" \"\nreturn ressult[:-1]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Location using expression jython:words = value.split()\nressult = \"\"\nfor element in words:\n  ressult += element[0] + element[1:].lower() + \" \"\nreturn ressult[:-1]"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "ParquesJardines"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO",
+    "expression": "jython:import re\nif \"ParquesJardines/\" in value:\n  return re.findall(\"(?<=ParquesJardines/).*?$\", value)[0]\nelif \"ParquesJardines/\" not in value:\n  return re.findall(\"(?<=entidadesYorganismos/).*?$\", value)[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO using expression jython:import re\nif \"ParquesJardines/\" in value:\n  return re.findall(\"(?<=ParquesJardines/).*?$\", value)[0]\nelif \"ParquesJardines/\" not in value:\n  return re.findall(\"(?<=entidadesYorganismos/).*?$\", value)[0]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NUM using expression value.toNumber()"
+  }
+]
