@@ -1,8 +1,9 @@
- @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ns: <http://example.com> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns: <http://DeportesMadridGroup2.es/Espacios/ontology/> .
+@prefix nso: <http://DeportesMadridGroup2.es/Espacios/instances/> .
 
 ns: a owl:Ontology ;
     dc:description "Ontology code created by Chowlk" .
