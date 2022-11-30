@@ -6,8 +6,11 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix ns: <http://DeportesMadridGroup2.es/Espacios/ontology/#> .
-@prefix nsi: <http://DeportesMadridGroup2.es/Espacios/resource/#>
+@prefix ns: <http://DeportesMadridGroup2.es/Espacios/ontology/> .
+@prefix nsi: <http://DeportesMadridGroup2.es/Espacios/resource/>.
+@prefix nsl: <http://DeportesMadridGroup2.es/Espacios/resource/localizacion/>.
+@prefix nsd: <http://DeportesMadridGroup2.es/Espacios/resource/direccion/>.
+@prefix nsc: <http://DeportesMadridGroup2.es/Espacios/resource/calle/>.
 @prefix other: <http://other.namespace.com> .
 @base <http://example.com> .
 
@@ -63,33 +66,30 @@ nsi:11358784 rdf:type owl:NamedIndividual;
 		rdf:type ns:PistasPatinaje;
 		rdf:type ns:PistasPatinaje .
 
-### nsi:Localizacion1
-nsi:Localizacion1 rdf:type owl:NamedIndividual;
+### nsi:localizacion/11358784
+nsl:11358784 rdf:type owl:NamedIndividual;
 		rdf:type ns:Localización;
 		rdf:type ns:Localización .
 
-### nsi:Dirección1
-nsi:Dirección1 rdf:type owl:NamedIndividual;
+### nsi:direccion/11358784
+nsd:11358784 rdf:type owl:NamedIndividual;
 		rdf:type ns:Dirección;
 		rdf:type ns:Dirección .
 
-### nsi:puertoDePorzuna
-nsi:puertoDePorzuna rdf:type owl:NamedIndividual;
+### nsc:puertoDePorzuna
+nsc:puertoDePorzuna rdf:type owl:NamedIndividual;
 		rdf:type ns:Calle;
 		rdf:type ns:Calle .
 
-nsi:11358784 ns:tieneDirección nsi:Dirección11358784 .
-nsi:11358784 ns:tieneLocalizacion nsi:Localizacion11358784 .
+nsi:11358784 ns:tieneDirección nsd:11358784 .
+nsi:11358784 ns:tieneLocalizacion nsl:11358784 .
 nsi:11358784 ns:tieneNombre "Instalación Deportiva Básica Pista de Patinaje"^^string .
 nsi:11358784 ns:estaEnLocalidad "MADRID"^^string .
 nsi:11358784 ns:tieneCodigoPostal "28031"^^string .
 nsi:11358784 ns:estaEnBarrio "ENSANCHE DE VALLECAS"^^string .
 nsi:11358784 ns:estaEnDistrito "VILLA DE VALLECAS"^^string .
-nsi:Localizacion11358784 ns:tieneLatitud "40.37277996162931"^^float .
-nsi:Localizacion11358784 ns:tieneLongitud "-3.6253783281885656"^^float .
-nsi:Dirección11358784 ns:tieneCalle nsi:puertoDePorzuna .
-nsi:Dirección11358784 ns:tieneNúmero "0"^^integer .
-#################################################################
-#    General Axioms
-#################################################################
+nsl:11358784 ns:tieneLatitud "40.37277996162931"^^float .
+nsl:11358784 ns:tieneLongitud "-3.6253783281885656"^^float .
+nsd:11358784 ns:tieneCalle nsc:puertoDePorzuna .
+nsd:11358784 ns:tieneNúmero "0"^^integer .
 

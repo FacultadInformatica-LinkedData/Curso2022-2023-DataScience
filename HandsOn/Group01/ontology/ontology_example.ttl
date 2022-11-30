@@ -24,7 +24,8 @@ resource:Biblioteca_Pública_Villaverde a owl:NamedIndividual ,
                                                                                                :hasTransport resource:Library/Transport/Transport1 ;
 											       :hasDescription "Lectura fácil, audiodescripción, letra grande" ;
                                                                                                :hasFacilities "Wifi gratuito" ;
-											       :hasAccesibility 1 ;
+											       :accesibility 1 ;
+											       :espacios ;
                                                                                                vcard:hasUID 86719 ;
                                                                                                foaf:name "Biblioteca Pública María Moliner Villaverde" ;
                                                                                                vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=127979262ef5d010VgnVCM1000000b205a0aRCRD" .
@@ -33,15 +34,22 @@ resource:Biblioteca_Pública_Villaverde a owl:NamedIndividual ,
 ###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Library/ContactInfo/Contact1
 resource:Library/ContactInfo/Contact1 a owl:NamedIndividual ,
                                                                              :ContactInfo ;
-                                                                        vcard:hasEmail "bib.villaverde@madrid.org" ;
-                                                                        vcard:hasTelephone "917 230 194" .
+									:hasFax "917 979 458" ;
+	                                                                vcard:hasTelephone "917 230 194" ;
+                                                                        vcard:hasEmail "bib.villaverde@madrid.org" .
+
+
+
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Library/Coordinates/Coordinates1
 resource:Library/Coordinates/Coordinates1 a owl:NamedIndividual ,
                                                                                     :Coordinates ;
                                                                            :hasLatitude "40.34952409541233" ;
-                                                                           :hasLongitude "-3.710123586489839" .
+                                                                           :hasLongitude "-3.710123586489839" ;
+					                                   :hasCoordinateX 439694 ;
+									   :hasCoordinateY 4469348 .
+
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Library/Location/Location1
@@ -49,14 +57,16 @@ resource:Location/Location1 a owl:NamedIndividual ,
                                                                               :Location ;
                                                                      :hasAdress resource:Library/Adress/Direccion1 ;
                                                                      :hasDistrict resource:Library/District/Distrito1 ;
+								     :province "Madrid" ;
                                                                      vcard:hasLocality "Madrid" .
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Library/Adress/Direccion1
 resource:Library/Adress/Direccion1 a owl:NamedIndividual ,
                                                                                 :Adress ;
-                                                                       foaf:name "Villalonso" ;
+                                                                       :streetName "Villalonso" ;
                                                                        :hasNumber "16" ;
+								       :numType "V"
                                                                        :hasZIpCode "28021" ;
                                                                        :hasVialClass "Calle" .
 
@@ -66,6 +76,7 @@ resource:Library/District/Distrito1 a owl:NamedIndividual ,
                                                                                  :District ;
 									:hasNeighbourhood resource:Library/Neighbourhood/Barrio1 ;
 									:vcard:hasUID 21 ;
+									:hasCode ;
                                                                         foaf:name "Villaverde" .
 
 
@@ -73,6 +84,7 @@ resource:Library/District/Distrito1 a owl:NamedIndividual ,
 resource:Library/Neighbourhood/Barrio1 a owl:NamedIndividual ,
                                                                                  :Neighbourhood ;
 									:vcard:hasUID 21 ;
+									:hasCode ;
                                                                         foaf:name "San Andrés" .
 
 
@@ -81,7 +93,8 @@ resource:openingHours/openingHours1 a owl:NamedIndividual ,
                                                                       :openingHours ;
                                                              :closeDays "Sábados: 16 de abril; todos los sábados de julio, agosto y septiembre; 24 y 31 de diciembre. DOMINGOS: todos; FESTIVOS:1 y 6 de enero; 14 y 15 de abril; 2 y 16 mayo; 25 julio; 15 agosto; 12 octubre; 1 y 9 de noviembre; 6, 8 y 26 de diciembre." ;
                                                              :closeAt "21:00:00" ;
-                                                             :openAt "09:00:00" .
+                                                             :openAt "09:00:00" ;
+							     :comments .
 
 
 
@@ -115,16 +128,20 @@ resource:Colegio_Público_Ciudad_de_Jaén a owl:NamedIndividual ,
 ###  https://www.biblioescuela.educamadrid.org/ontologies/resource/School/ContactInfo/Contact1
 resource:School/ContactInfo/Contact1 a owl:NamedIndividual ,
                                                                              :ContactInfo ;
-                                                                        vcard:hasEmail "cp.ciudaddejaen.madrid@educa.madrid.org" ;
-                                                                        vcard:hasTelephone "913 171 644" .
+									hasfaxNumber "913 171 644" ;
+				                                        vcard:hasTelephone "913 174 313 - 913 171 644" ;
+                                                                        vcard:hasEmail "cp.ciudaddejaen.madrid@educa.madrid.org" .
+
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/resource/School/Coordinates/Coordinates1
 resource:School/Coordinates/Coordinates1 a owl:NamedIndividual ,
                                                                                     :Coordinates ;
                                                                            :hasLatitude "40.37258947821977" ;
-                                                                           :hasLongitude "--3.701248162459656" .
-
+                                                                           :hasLongitude "--3.701248162459656" ;
+					                                   :coordinateX 440468 ;
+									   :coordinateY 4469348 .
+ 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/resource/School/Location/Location1
 resource:Location/Location1 a owl:NamedIndividual ,
@@ -161,3 +178,4 @@ resource:School/Transport/Transport1 a owl:NamedIndividual ,
                                                                                  :Transport ;
                                                                         :hasBusLine "18, 22, 59, 76, 78, 79, 81, 116, 121" ;
                                                                         :hasUnderground "Hospital 12 de octubre" .
+

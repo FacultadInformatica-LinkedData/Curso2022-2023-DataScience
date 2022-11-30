@@ -1,0 +1,64 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  ont: http://www.madridcontenedores.com/
+  
+mappings:
+  triplesmap1:
+    sources:
+      - [Contenedores.csv~csv]
+    s: http://www.madridcontenedores.com/Contenedor/$(ID)
+    po:
+      - [a, ont:Contenedor]
+      - [ont:id,$(ID),xsd:string]
+      - [ont:tipo,$(TIPO),xsd:string]
+      - [ont:ubicacion,$(UBICACION),xsd:string]
+      - [ont:horario,$(HORARIO),xsd:string]
+      - p: ont:localizacion
+        o:
+         - mapping: triplesmap2
+           condition:
+            function: equal
+            parameters:
+              - [str1, $(UBICACION)]
+              - [str2, $(ID)]
+              
+      - p: ont:tipoResiduo
+        o:
+         - mapping: triplesmap3
+           condition:
+            function: equal
+            parameters:
+              - [str1, $(TIPO)]
+              - [str2, $(TIPORESIDUO)]
+      
+
+  triplesmap2:
+    sources:
+      - [Ubicacion.csv~csv]
+    s: http://www.madridcontenedores.com/Ubicacion/$(CALLE)
+    po:
+      - [a, ont:Ubicacion]
+      - [ont:id,$(ID),xsd:string]
+      - [ont:distrito,$(DISTRITO),xsd:string]
+      - [ont:calle,$(CALLE),xsd:string]
+      - [ont:coordenada_x,$(COORDENADA-X),xsd:float]
+      - [ont:coordenada_y,$(COORDENADA-Y),xsd:float]
+      - [ont:codigoPostal,$(CODIGOPOSTAL),xsd:float]
+      
+  triplesmap3:
+    sources:
+      - [Residuos.csv~csv]
+    s: http://www.madridcontenedores.com/Residuos/$(TIPORESIDUO)
+    po:
+      - [a, ont:Residuos]
+      - [ont:tipoResiduo,$(TIPORESIDUO),xsd:string]
+      - [ont:tipoContenedor,$(TIPOCONTENEDOR),xsd:string]

@@ -84,7 +84,7 @@
             <tbody>
             <tr>
               <td class="tg-roi2">PK</td>
-              <td class="tg-9wq8">string</td>
+              <td class="tg-9wq8">integer</td>
               <td class="tg-9wq8">Unique, (/empty)</td>
               <td class="tg-9wq8">Identifies each element. 1 empty element.</td>
             </tr>
@@ -103,7 +103,7 @@
               <tr>
                 <td class="tg-roi2">HORARIO</td>
                 <td class="tg-9wq8">string</td>
-                <td class="tg-9wq8">Not Unique, ((0.00-23.59), weekdays, days and months/empty) </td>
+                <td class="tg-9wq8">Not Unique, (/empty)</td>
                 <td class="tg-9wq8">1 empty value</td>
               </tr>
               <tr>
@@ -114,7 +114,7 @@
               </tr>
               <tr>
                 <td class="tg-roi2">TRANSPORTE<br>                 </td>
-                <td class="tg-9wq8">string/integer</td>
+                <td class="tg-9wq8">string</td>
                 <td class="tg-9wq8">Not Unique, (all buses/metro/cercanías stations/empty)</td>
                 <td class="tg-9wq8">4 empty cells</td>
               </tr>
@@ -126,13 +126,13 @@
               </tr>
               <tr>
                 <td class="tg-roi2">ACCESIBILIDAD</td>
-                <td class="tg-9wq8">integer</td>
+                <td class="tg-9wq8">string</td>
                 <td class="tg-9wq8">Not Unique, (0-6/ empty)</td>
                 <td class="tg-9wq8">1 empty value. Most of them have just one value, few have two and one has three</td>
               </tr>
               <tr>
                 <td class="tg-roi2">CONTENT-URL</td>
-                <td class="tg-9wq8">string</td>
+                <td class="tg-9wq8">anyURI</td>
                 <td class="tg-9wq8">Unique, (/empty)</td>
                 <td class="tg-9wq8">It is the reference of the element in the webpage. 1 empty value</td>
               </tr>
@@ -230,36 +230,36 @@
               <tr>
                 <td class="tg-roi2">COORDENADA-X</td>
                 <td class="tg-9wq8">integer</td>
-                <td class="tg-9wq8">Not Unique, (430.000-450.000/empty)</td>
+                <td class="tg-9wq8">Not Unique, (430000-450000/empty)</td>
                 <td class="tg-9wq8">1 empty value</td>
               </tr>
               <tr>
                 <td class="tg-roi2">COORDENADA-Y</td>
                 <td class="tg-9wq8">integer</td>
-                <td class="tg-9wq8">Not Unique, (440.000-450.000/empty)</td>
+                <td class="tg-9wq8">Not Unique, (440000-450000/empty)</td>
                 <td class="tg-9wq8">1 empty value</td>
               </tr>
               <tr>
                 <td class="tg-roi2">LATITUD</td>
-                <td class="tg-9wq8">decimal</td>
+                <td class="tg-9wq8">string</td>
                 <td class="tg-9wq8">Not Unique, (40-50/empty)</td>
                 <td class="tg-9wq8">1 empty value</td>
               </tr>
               <tr>
                 <td class="tg-roi2">LONGITUD</td>
-                <td class="tg-9wq8">decimal</td>
+                <td class="tg-9wq8">string</td>
                 <td class="tg-9wq8">Not Unique, ([-3]-[-4]/empty) </td>
                 <td class="tg-9wq8">1 empty value</td>
               </tr>
               <tr>
                 <td class="tg-roi2">TELEFONO</td>
-                <td class="tg-9wq8">integer</td>
+                <td class="tg-9wq8">string</td>
                 <td class="tg-9wq8">Unique, (/empty)</td>
                 <td class="tg-9wq8">1 empty value</td>
               </tr>
               <tr>
                 <td class="tg-roi2">FAX</td>
-                <td class="tg-9wq8">integer</td>
+                <td class="tg-9wq8">string</td>
                 <td class="tg-9wq8">Unique, (/empty)</td>
                 <td class="tg-9wq8">Most of the cells are empty</td>
               </tr>
@@ -325,7 +325,7 @@
             </tr>
             <tr>
               <td class="tg-ke2d">HORARIO</td>
-              <td class="tg-9s6n">time/date</td>
+              <td class="tg-9s6n">string</td>
               <td class="tg-9s6n">Not Unique, (/empty)</td>
               <td class="tg-9s6n">Most elements have this property empty.</td>
             </tr>
@@ -338,7 +338,7 @@
             <tr>
               <td class="tg-ke2d">TRANSPORTE</td>
               <td class="tg-9s6n">string</td>
-              <td class="tg-9s6n">Not Unique, (/empty)</td>
+              <td class="tg-9s6n">Not Unique, (all buses/metro/cercanías stations/empty)</td>
               <td class="tg-9s6n">2 empty values. </td>
             </tr>
             <tr>
@@ -349,13 +349,13 @@
             </tr>
             <tr>
               <td class="tg-ke2d">ACCESIBILIDAD</td>
-              <td class="tg-9s6n">integer</td>
-              <td class="tg-9s6n">Not Unique, (0/1/2/empty)</td>
+              <td class="tg-9s6n">string</td>
+              <td class="tg-9s6n">Not Unique, (0-6/empty)</td>
               <td class="tg-9s6n">Most elements have a value of 0 in this property. Only one has value 2. 1 empty value.</td>
             </tr>
             <tr>
               <td class="tg-ke2d">CONTENT-URL</td>
-              <td class="tg-9s6n">string</td>
+              <td class="tg-9s6n">anyURI</td>
               <td class="tg-9s6n">Unique, (/empty)</td>
               <td class="tg-9s6n">It is the reference of the element in the webpage. 1 empty value.</td>
             </tr>
@@ -385,25 +385,25 @@
             </tr>
             <tr>
               <td class="tg-ke2d">PLANTA</td>
-              <td class="tg-9s6n">empty</td>
+              <td class="tg-9s6n">integer</td>
               <td class="tg-9s6n">Not Unique, (empty)</td>
               <td class="tg-9s6n">None of the elements have a value for this property.</td>
             </tr>
             <tr>
               <td class="tg-ke2d">PUERTA</td>
-              <td class="tg-9s6n">empty</td>
+              <td class="tg-9s6n">string</td>
               <td class="tg-9s6n">Not Unique, (empty)</td>
               <td class="tg-9s6n">None of the elements have a value for this property.</td>
             </tr>
             <tr>
               <td class="tg-ke2d">ESCALERAS</td>
-              <td class="tg-9s6n">empty</td>
+              <td class="tg-9s6n">string</td>
               <td class="tg-9s6n">Not Unique, (empty)</td>
               <td class="tg-9s6n">None of the elements have a value for this property.</td>
             </tr>
             <tr>
               <td class="tg-ke2d">ORIENTACION</td>
-              <td class="tg-9s6n">empty</td>
+              <td class="tg-9s6n">string</td>
               <td class="tg-9s6n">Not Unique, (empty)</td>
               <td class="tg-9s6n">None of the elements have a value for this property.</td>
             </tr>
@@ -434,7 +434,7 @@
             <tr>
               <td class="tg-ke2d">BARRIO</td>
               <td class="tg-9s6n">string</td>
-              <td class="tg-9s6n">Not Unique, (/empty)</td>
+              <td class="tg-9s6n">Not Unique, (119 barrios/empty)</td>
               <td class="tg-9s6n">1 empty value.</td>
             </tr>
             <tr>
@@ -446,42 +446,42 @@
             <tr>
               <td class="tg-ke2d">DISTRITO</td>
               <td class="tg-9s6n">string</td>
-              <td class="tg-9s6n">Not Unique, (/empty)</td>
+              <td class="tg-9s6n">Not Unique, (21 distritos/empty)</td>
               <td class="tg-9s6n">1 empty value.</td>
             </tr>
             <tr>
               <td class="tg-ke2d">COORDENADA-X</td>
               <td class="tg-9s6n">integer</td>
-              <td class="tg-i1ny">Not Unique, (430.000-450.000/empty)</td>
+              <td class="tg-i1ny">Not Unique, (430000-450000/empty)</td>
               <td class="tg-9s6n">There are 246 possible values in this property. 1 empty value.</td>
             </tr>
             <tr>
               <td class="tg-ke2d">COORDENADA-Y</td>
               <td class="tg-9s6n">integer</td>
-              <td class="tg-9s6n">Not Unique, (440.000-450.000/empty)</td>
+              <td class="tg-9s6n">Not Unique, (440000-450000/empty)</td>
               <td class="tg-9s6n">There are 246 possible values in this property. 1 empty values.</td>
             </tr>
             <tr>
               <td class="tg-ke2d">LATITUD</td>
-              <td class="tg-9s6n">integer</td>
+              <td class="tg-9s6n">string</td>
               <td class="tg-9s6n">Not Unique, (40-50/empty)</td>
               <td class="tg-9s6n">There is just one value that repeats itself. 1 empty value.</td>
             </tr>
             <tr>
               <td class="tg-ke2d">LONGITUD</td>
-              <td class="tg-9s6n">integer</td>
+              <td class="tg-9s6n">string</td>
               <td class="tg-9s6n">Not Unique, ([-3]-[-4]/empty)</td>
               <td class="tg-9s6n">There is just one value that repeats itself. 1 empty value.</td>
             </tr>
             <tr>
               <td class="tg-ke2d">TELEFONO</td>
-              <td class="tg-9s6n">integer</td>
+              <td class="tg-9s6n">string</td>
               <td class="tg-9s6n">Unique, (/empty)</td>
               <td class="tg-9s6n">Some have text, specifying the entity related to the phone number. 1 empty value.</td>
             </tr>
             <tr>
               <td class="tg-ke2d">FAX</td>
-              <td class="tg-9s6n">integer</td>
+              <td class="tg-9s6n">string</td>
               <td class="tg-9s6n">Unique, (/empty)</td>
               <td class="tg-9s6n">18 empty values.</td>
             </tr>

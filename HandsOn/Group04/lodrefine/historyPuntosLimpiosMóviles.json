@@ -1,0 +1,109 @@
+[
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "﻿TIPO_DATO",
+      "DIRECCION_COMPLETA",
+      "DISTRITO",
+      "UTMX",
+      "UTMY",
+      "DÍA SEMANA",
+      "HORA INICIO",
+      "HORA FINAL"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "﻿TIPO_DATO",
+    "expression": "join ([coalesce(cells['﻿TIPO_DATO'].value,''),coalesce(cells['UTMX'].value,''),coalesce(cells['UTMY'].value,'')],'-')",
+    "onError": "keep-original",
+    "newColumnName": "ID",
+    "columnInsertIndex": 1,
+    "description": "Create column ID at index 1 based on column ﻿TIPO_DATO using expression join ([coalesce(cells['﻿TIPO_DATO'].value,''),coalesce(cells['UTMX'].value,''),coalesce(cells['UTMY'].value,'')],'-')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DISTRITO",
+    "expression": "grel:null",
+    "onError": "set-to-blank",
+    "newColumnName": "CODIGO POSTAL",
+    "columnInsertIndex": 4,
+    "description": "Create column CODIGO POSTAL at index 4 based on column DISTRITO using expression grel:null"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "UTMX",
+    "newColumnName": "COORDENADA-X",
+    "description": "Rename column UTMX to COORDENADA-X"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "UTMY",
+    "newColumnName": "COORDENADA-Y",
+    "description": "Rename column UTMY to COORDENADA-Y"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "HORA INICIO",
+    "expression": "join ([coalesce(cells['HORA INICIO'].value,''),coalesce(cells['HORA FINAL'].value,'')],'-')",
+    "onError": "keep-original",
+    "newColumnName": "HORA",
+    "columnInsertIndex": 9,
+    "description": "Create column HORA at index 9 based on column HORA INICIO using expression join ([coalesce(cells['HORA INICIO'].value,''),coalesce(cells['HORA FINAL'].value,'')],'-')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "﻿TIPO_DATO",
+      "ID",
+      "DIRECCION_COMPLETA",
+      "DISTRITO",
+      "CODIGO POSTAL",
+      "COORDENADA-X",
+      "COORDENADA-Y",
+      "DÍA SEMANA",
+      "HORA"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DÍA SEMANA",
+    "expression": "join ([coalesce(cells['DÍA SEMANA'].value,''),coalesce(cells['HORA'].value,'')],' ')",
+    "onError": "keep-original",
+    "newColumnName": "HORARIO",
+    "columnInsertIndex": 8,
+    "description": "Create column HORARIO at index 8 based on column DÍA SEMANA using expression join ([coalesce(cells['DÍA SEMANA'].value,''),coalesce(cells['HORA'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "﻿TIPO_DATO",
+      "ID",
+      "DIRECCION_COMPLETA",
+      "DISTRITO",
+      "CODIGO POSTAL",
+      "COORDENADA-X",
+      "COORDENADA-Y",
+      "HORARIO"
+    ],
+    "description": "Reorder columns"
+  }
+]

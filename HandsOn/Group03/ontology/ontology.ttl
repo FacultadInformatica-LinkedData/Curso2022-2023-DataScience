@@ -10,17 +10,17 @@ base: a owl:Ontology ;
 base:conEstadoMeteorologico a owl:DatatypeProperty ;
     rdfs:label "con estado meteorologico" ;
     rdfs:domain base:Accidente ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:string .
 
 base:conNumeroExpediente a owl:DatatypeProperty ;
     rdfs:label "con numero expediente" ;
     rdfs:domain base:Accidente ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:string .
 
 base:conVehiculo a owl:DatatypeProperty ;
     rdfs:label "con vehiculo" ;
     rdfs:domain base:Accidente ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:string .
 
 base:enDistrito a owl:ObjectProperty ;
     rdfs:label "en distrito" ;
@@ -35,41 +35,36 @@ base:involucraA a owl:ObjectProperty ;
 base:nombreLesividad a owl:DatatypeProperty ;
     rdfs:label "nombre lesividad" ;
     rdfs:domain base:Lesividad ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:integer .
 
 base:positivaAlcohol a owl:DatatypeProperty ;
     rdfs:label "positiva alcohol" ;
     rdfs:domain base:Persona ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:boolean .
 
 base:positivaDroga a owl:DatatypeProperty ;
     rdfs:label "positiva droga" ;
     rdfs:domain base:Persona ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:boolean .
 
 base:tieneCodigoDistrito a owl:DatatypeProperty ;
     rdfs:label "tiene codigo distrito" ;
     rdfs:domain base:Distrito ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:integer .
 
 base:tieneCodigoLesividad a owl:DatatypeProperty ;
     rdfs:label "tiene codigo lesividad" ;
     rdfs:domain base:Lesividad ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:integer .
 
 base:tieneFecha a owl:DatatypeProperty ;
     rdfs:label "tiene fecha" ;
     rdfs:domain base:Accidente ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:dateTime .
 
-base:tieneHora a owl:DatatypeProperty ;
-    rdfs:label "tiene hora" ;
-    rdfs:domain base:Accidente ;
-    rdfs:range xsd:xsd .
-
-base:tieneLatitud a owl:DatatypeProperty ;
-    rdfs:label "tiene latitud" ;
-    rdfs:range xsd:xsd .
+base:tieneCoordY a owl:DatatypeProperty ;
+    rdfs:label "tiene coord y" ;
+    rdfs:range xsd:float .
 
 base:tieneLesividad a owl:ObjectProperty ;
     rdfs:label "tiene lesividad" ;
@@ -81,45 +76,45 @@ base:tieneLocalizacion a owl:ObjectProperty ;
     rdfs:domain base:Accidente ;
     rdfs:range base:Localizacion .
 
-base:tieneLongitud a owl:DatatypeProperty ;
-    rdfs:label "tiene longitud" ;
+base:tieneCoordX a owl:DatatypeProperty ;
+    rdfs:label "tiene coord x" ;
     rdfs:domain base:Localizacion ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:float .
 
 base:tieneNombreCalle a owl:DatatypeProperty ;
     rdfs:label "tiene nombre calle" ;
     rdfs:domain base:Localizacion ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:string .
 
 base:tieneNombreDistrito a owl:DatatypeProperty ;
     rdfs:label "tiene nombre distrito" ;
     rdfs:domain base:Distrito ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:string .
 
 base:tieneNumeroCalle a owl:DatatypeProperty ;
     rdfs:label "tiene numero calle" ;
     rdfs:domain base:Localizacion ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:string .
 
 base:tieneRangoEdad a owl:DatatypeProperty ;
     rdfs:label "tiene rango edad" ;
     rdfs:domain base:Persona ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:string .
 
 base:tieneSexo a owl:DatatypeProperty ;
     rdfs:label "tiene sexo" ;
     rdfs:domain base:Persona ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:string .
 
 base:tieneTipoAccidente a owl:DatatypeProperty ;
     rdfs:label "tiene tipo accidente" ;
     rdfs:domain base:Accidente ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:string .
 
 base:tieneTipoPersona a owl:DatatypeProperty ;
     rdfs:label "tiene tipo persona" ;
     rdfs:domain base:Persona ;
-    rdfs:range xsd:xsd .
+    rdfs:range xsd:string .
 
 base:Distrito a owl:Class ;
     rdfs:label "Distrito" .
@@ -130,9 +125,9 @@ base:Lesividad a owl:Class ;
 base:Localizacion a owl:Class ;
     rdfs:label "Localizacion" .
 
-base:Persona a owl:Class ;
-    rdfs:label "Persona" .
-
 base:Accidente a owl:Class ;
     rdfs:label "Accidente" .
+
+base:Persona a owl:Class ;
+    rdfs:label "Persona" .
 
