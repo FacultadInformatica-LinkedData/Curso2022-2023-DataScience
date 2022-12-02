@@ -7,10 +7,10 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix ns: <http://DeportesMadridGroup2.es/Espacios/ontology/> .
-@prefix nsi: <http://DeportesMadridGroup2.es/Espacios/resource/>.
-@prefix nsl: <http://DeportesMadridGroup2.es/Espacios/resource/localizacion/>.
-@prefix nsd: <http://DeportesMadridGroup2.es/Espacios/resource/direccion/>.
-@prefix nsc: <http://DeportesMadridGroup2.es/Espacios/resource/calle/>.
+@prefix nsi: <http://DeportesMadridGroup2.es/Espacios/instances/>.
+@prefix nsl: <http://DeportesMadridGroup2.es/Espacios/instances/localizacion/>.
+@prefix nsd: <http://DeportesMadridGroup2.es/Espacios/instances/direccion/>.
+@prefix nsc: <http://DeportesMadridGroup2.es/Espacios/instances/calle/>.
 @prefix other: <http://other.namespace.com> .
 @base <http://example.com> .
 
