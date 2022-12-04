@@ -157,13 +157,13 @@
               </tr>
               <tr>
                 <td class="tg-roi2">NUM</td>
-                <td class="tg-9wq8">integer</td>
+                <td class="tg-9wq8">string</td>
                 <td class="tg-9wq8">Not Unique, (/empty)</td>
                 <td class="tg-9wq8">1 empty cell</td>
               </tr>
               <tr>
                 <td class="tg-roi2">PLANTA</td>
-                <td class="tg-9wq8">integer</td>
+                <td class="tg-9wq8">string</td>
                 <td class="tg-9wq8">Not Unique, (/empty)</td>
                 <td class="tg-9wq8">All the cells are empty<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
               </tr>
@@ -199,13 +199,13 @@
               </tr>
               <tr>
                 <td class="tg-roi2">CODIGO-POSTAL</td>
-                <td class="tg-9wq8">integer</td>
+                <td class="tg-9wq8">string</td>
                 <td class="tg-9wq8">Not Unique, (28001-28080/empty)</td>
                 <td class="tg-9wq8">1 empty value</td>
               </tr>
               <tr>
                 <td class="tg-roi2">COD-BARRIO<br>                 </td>
-                <td class="tg-9wq8">integer</td>
+                <td class="tg-9wq8">string</td>
                 <td class="tg-9wq8">Not Unique, (1-9/empty)</td>
                 <td class="tg-9wq8">5 empty values</td>
               </tr>
@@ -217,7 +217,7 @@
               </tr>
               <tr>
                 <td class="tg-roi2">COD-DISTRITO</td>
-                <td class="tg-9wq8">integer</td>
+                <td class="tg-9wq8">string</td>
                 <td class="tg-9wq8">Not Unique, (1-21/empty)</td>
                 <td class="tg-9wq8">5 empty values</td>
               </tr>
@@ -241,13 +241,13 @@
               </tr>
               <tr>
                 <td class="tg-roi2">LATITUD</td>
-                <td class="tg-9wq8">string</td>
+                <td class="tg-9wq8">float</td>
                 <td class="tg-9wq8">Not Unique, (40-50/empty)</td>
                 <td class="tg-9wq8">1 empty value</td>
               </tr>
               <tr>
                 <td class="tg-roi2">LONGITUD</td>
-                <td class="tg-9wq8">string</td>
+                <td class="tg-9wq8">float</td>
                 <td class="tg-9wq8">Not Unique, ([-3]-[-4]/empty) </td>
                 <td class="tg-9wq8">1 empty value</td>
               </tr>
@@ -379,13 +379,13 @@
             </tr>
             <tr>
               <td class="tg-ke2d">NUM</td>
-              <td class="tg-9s6n">integer</td>
+              <td class="tg-9s6n">string</td>
               <td class="tg-9s6n">Not Unique, (1-332/empty)</td>
               <td class="tg-9s6n">1 empty value.</td>
             </tr>
             <tr>
               <td class="tg-ke2d">PLANTA</td>
-              <td class="tg-9s6n">integer</td>
+              <td class="tg-9s6n">string</td>
               <td class="tg-9s6n">Not Unique, (empty)</td>
               <td class="tg-9s6n">None of the elements have a value for this property.</td>
             </tr>
@@ -421,13 +421,13 @@
             </tr>
             <tr>
               <td class="tg-ke2d">CODIGO-POSTAL</td>
-              <td class="tg-9s6n">integer</td>
+              <td class="tg-9s6n">string</td>
               <td class="tg-9s6n">Not Unique, (28001-28080/empty)</td>
               <td class="tg-9s6n">1 empty value.</td>
             </tr>
             <tr>
               <td class="tg-ke2d">COD-BARRIO</td>
-              <td class="tg-9s6n">integer</td>
+              <td class="tg-9s6n">string</td>
               <td class="tg-9s6n">Not Unique, (1-9/empty)</td>
               <td class="tg-9s6n">10 empty values.</td>
             </tr>
@@ -439,7 +439,7 @@
             </tr>
             <tr>
               <td class="tg-ke2d">COD-DISTRITO</td>
-              <td class="tg-9s6n">integer</td>
+              <td class="tg-9s6n">string</td>
               <td class="tg-9s6n">Not Unique, (1-21/empty)</td>
               <td class="tg-9s6n">10 empty values.</td>
             </tr>
@@ -463,13 +463,13 @@
             </tr>
             <tr>
               <td class="tg-ke2d">LATITUD</td>
-              <td class="tg-9s6n">string</td>
+              <td class="tg-9s6n">float</td>
               <td class="tg-9s6n">Not Unique, (40-50/empty)</td>
               <td class="tg-9s6n">There is just one value that repeats itself. 1 empty value.</td>
             </tr>
             <tr>
               <td class="tg-ke2d">LONGITUD</td>
-              <td class="tg-9s6n">string</td>
+              <td class="tg-9s6n">float</td>
               <td class="tg-9s6n">Not Unique, ([-3]-[-4]/empty)</td>
               <td class="tg-9s6n">There is just one value that repeats itself. 1 empty value.</td>
             </tr>
@@ -527,13 +527,15 @@
           <br>Las Uris de definición de propiedades para "Library" tienen el siguiente formato:&nbsp;<b>https://www.biblioescuela.educamadrid.org/ontologies/Library#[property_name]</b>
           <br>Las Uris de definición de clases para "School" tendrán el siguiente formato:&nbsp;<b>https://www.biblioescuela.educamadrid.org/ontologies/School#[class_name]</b>
           <br>Las Uris de definición de propiedades para "School" tienen el siguiente formato:&nbsp;<b>https://www.biblioescuela.educamadrid.org/ontologies/School#[property_name]</b>
+          <br>Las Uris de definición de clases comunes para ambos edificios tendrán el siguiente formato:&nbsp;<b>https://www.biblioescuela.educamadrid.org/ontologies/Building#[class_name]</b>
+          <br>Las Uris de definición de propiedades comunes para ambos edificios tienen el siguiente formato:&nbsp;<b>https://www.biblioescuela.educamadrid.org/ontologies/Building#[property_name]</b>
         </p>
         <h3>Uris de los Recursos</h3>
         <p>
           <span></span>
           <span>Todas ellas comienzan por:&nbsp;</span><b>h&ZeroWidthSpace;ttps://www.biblioescuela.educamadrid.org/resource/</b>
           <br>
-          <span> Las Uris se dividiran en dos tipos:</span>
+          <span> Las Uris se dividiran en tres tipos:</span>
           <br>
         </p>
         <ul>
@@ -549,8 +551,26 @@
         </ul>
         <p> En esta categoria: las uris tienen esta forma:<br><b>https://www.biblioescuela.educamadrid.org/resource/School/[class_name]/[identifier]</b>
         </p>
-        <p> Ejemplos de URIs<br>Base: https://www.biblioescuela.educamadrid.org/g01_linked_data/ontologies<br>Clase: https://www.biblioescuela.educamadrid.org/ontologies/Library#Transport<br>Clase: https://www.biblioescuela.educamadrid.org/ontologies/School#ContactInfo<br>Propiedades: https://www.biblioescuela.educamadrid.org/ontologies/Library#hasAdress<br>Individual: https://www.biblioescuela.educamadrid.org/resource/Library/openingHours/openingHours1<br>Individual: https://www.biblioescuela.educamadrid.org/resource/Library/Coordinates/Coordinates1<br>Individual: https://www.biblioescuela.educamadrid.org/resource/School/Location/Location1<br>Individual: https://www.biblioescuela.educamadrid.org/resource/School/District/District1<br>
-          <br>
+        <ul>
+          <li>Uris referentes a ambos edificios</li>
+        </ul>
+        <p> En esta categoria: las uris tienen esta forma:<br><b>https://www.biblioescuela.educamadrid.org/resource/Building/[class_name]/[identifier]</b>
         </p>
+        <h4> Ejemplos de URIs</h4>
+          <ol>
+            <li>Base: https://www.biblioescuela.educamadrid.org/ontologies</li>
+            <li>Clase: https://www.biblioescuela.educamadrid.org/ontologies/Library#Transport</li>
+            <li>Clase: https://www.biblioescuela.educamadrid.org/ontologies/Building#Location</li>
+            <li>Clase: https://www.biblioescuela.educamadrid.org/ontologies/School#ContactInfo</li>
+            <li>Propiedades: https://www.biblioescuela.educamadrid.org/ontologies/Library#hasAdress</li>
+            <li>Individual: https://www.biblioescuela.educamadrid.org/resource/Building/Location/Location1</li>
+            <li>Individual: https://www.biblioescuela.educamadrid.org/resource/Building/Coordinates/Coordinates1</li>
+            <li>Individual: https://www.biblioescuela.educamadrid.org/resource/Library/openingHours/openingHours1</li>
+            <li>Individual: https://www.biblioescuela.educamadrid.org/resource/Library/Coordinates/Coordinates1</li>
+            <li>Individual: https://www.biblioescuela.educamadrid.org/resource/School/Location/Location1</li>
+            <li>Individual: https://www.biblioescuela.educamadrid.org/resource/School/District/District1</li>
+          <ol>
       </div>
     </section>
+  </body>
+</html>
