@@ -20,7 +20,7 @@ mappings:
       - [ns:tieneCodigoPostal, $(CODIGO-POSTAL)]
       - [ns:seEncuentraEn, $(BARRIO)]
       - [ns:tieneDistrito, $(DISTRITO)]
-      - p: ns:tienelocalizacion
+      - p: ns:tieneLocalizacion
         o:
           mapping: mapLocalizacionEspacioDeporte
           condition:
@@ -28,7 +28,7 @@ mappings:
             parameters: 
             - [str1, $(PK)]
             
-      - p: ns:tienedireccion
+      - p: ns:tieneDireccion
         o:
           mapping: mapDireccionEspacioDeporte
           condition:
@@ -61,7 +61,7 @@ mappings:
       - [ns:tieneNumero, $(NUM), xsd:int]
       - p: ns:tieneCalle
         o:
-          mapping: mapEquipamientoEspacioDeporte
+          mapping: mapCalleEspacioDeporte
           condition:
             function: equal
             parameters:
@@ -147,7 +147,7 @@ mappings:
       - [ns:tieneNumero, $(NUM), xsd:int]
       - p: ns:tieneCalle
         o:
-          mapping: mapEquipamientoInstalacionDeportiva
+          mapping: mapCalleInstalacionDeportiva
           condition:
             function: equal
             parameters:

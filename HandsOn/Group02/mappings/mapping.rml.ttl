@@ -220,7 +220,7 @@ map:om_013 rml:reference "NUM" ;
 
 map:om_014 rdf:type rr:ObjectMap ;
 	rr:joinCondition map:jc_003 ;
-	rr:parentTriplesMap map:map_mapEquipamientoEspacioDeporte_000 .
+	rr:parentTriplesMap map:map_mapCalleEspacioDeporte_000 .
 
 map:om_015 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Equipamiento" ;
@@ -303,7 +303,7 @@ map:om_033 rml:reference "NUM" ;
 
 map:om_034 rdf:type rr:ObjectMap ;
 	rr:joinCondition map:jc_007 ;
-	rr:parentTriplesMap map:map_mapEquipamientoInstalacionDeportiva_000 .
+	rr:parentTriplesMap map:map_mapCalleInstalacionDeportiva_000 .
 
 map:om_035 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Equipamiento" ;
@@ -419,10 +419,10 @@ map:pm_005 rdf:type rr:PredicateMap ;
 	rr:constant ns:tieneDistrito .
 
 map:pm_006 rdf:type rr:PredicateMap ;
-	rr:constant ns:tienelocalizacion .
+	rr:constant ns:tieneLocalizacion .
 
 map:pm_007 rdf:type rr:PredicateMap ;
-	rr:constant ns:tienedireccion .
+	rr:constant ns:tieneDireccion .
 
 map:pm_008 rdf:type rr:PredicateMap ;
 	rr:constant ns:tieneEquipamiento .

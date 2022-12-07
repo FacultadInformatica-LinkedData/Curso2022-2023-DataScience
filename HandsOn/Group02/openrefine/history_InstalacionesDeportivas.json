@@ -1773,5 +1773,331 @@
     "op": "core/column-removal",
     "columnName": "EQUIPAMIENTO_3",
     "description": "Remove column EQUIPAMIENTO_3"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "(frente al nº 86)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "86"
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "136 (c/v Calle Flandes, 4 posterior)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "136"
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "17 posterior"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "17"
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1c/vcalleAlcalá,535"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "535"
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "28-30"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "30"
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "4 y 6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "6"
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "41, 43, 45 y 47"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "45"
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "535, c/v Avenida 25 Septiembre"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "535"
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "6-10"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "6"
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "6y8"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "8"
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "7 y 9"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "9"
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "7y11"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "11"
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "frente nº 57"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "57"
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "s/n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column NUM"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LATITUD",
+    "expression": "jython:return round(float(value), 5)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LATITUD using expression jython:return round(float(value), 5)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONGITUD",
+    "expression": "jython:return round(float(value), 5)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LONGITUD using expression jython:return round(float(value), 5)"
   }
 ]
