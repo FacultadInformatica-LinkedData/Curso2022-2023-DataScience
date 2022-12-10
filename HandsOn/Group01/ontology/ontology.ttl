@@ -223,48 +223,34 @@ sch:educationType a owl:ObjectProperty ;
     rdfs:range xsd:string .
 
 
-###  http://www.w3.org/2006/vcard/ns#hasSchoolCanteen
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasSchoolCanteen
 sch:hasSchoolCanteen a owl:ObjectProperty ;
     rdfs:label "has school canteen" ;
     rdfs:domain sch:Facilities ;
     rdfs:range xsd:integer .
 
-###  http://www.w3.org/2006/vcard/ns#hasExtendedSchedule
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasExtendedSchedule
 sch:hasExtendedSchedule a owl:ObjectProperty ;
     rdfs:label "has extended schedule" ;
     rdfs:domain sch:Facilities ;
     rdfs:range xsd:integer .
 
-###  http://www.w3.org/2006/vcard/ns#hasImprovementPlans
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasImprovementPlans
 sch:hasImprovementPlans a owl:ObjectProperty ;
     rdfs:label "has improvement plans" ;
     rdfs:domain sch:Facilities ;
     rdfs:range xsd:integer .
 
-###  http://www.w3.org/2006/vcard/ns#hasIntegrationProgram
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasIntegrationProgram
 sch:hasIntegrationProgram a owl:ObjectProperty ;
     rdfs:label "has integration program" ;
     rdfs:domain sch:Facilities ;
     rdfs:range xsd:string .
 
-###  http://www.w3.org/2006/vcard/ns#hasExtraEquipment
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasExtraEquipment
 sch:hasExtraEquipment a owl:ObjectProperty ;
     rdfs:label "has integration program" ;
     rdfs:domain sch:Facilities ;
-    rdfs:range xsd:string .
-
-
-### https://www.biblioescuela.educamadrid.org/ontologies/School#openingHours
-sch:openingHours a owl:ObjectProperty ;
-    rdfs:label "opening hours" ;
-    rdfs:domain sch:Timetable ;
-    rdfs:range xsd:string .
-
-
-### https://www.biblioescuela.educamadrid.org/ontologies/School#openingDays
-sch:openingDays a owl:ObjectProperty ;
-    rdfs:label "opening days" ;
-    rdfs:domain sch:Timetable ;
     rdfs:range xsd:string .
 
 
@@ -424,10 +410,6 @@ bldg:Transport a owl:Class ;
 lib:OpeningHours a owl:Class ;
     rdfs:label "opening Hours" .
 
-
-### https://www.biblioescuela.educamadrid.org/ontologies/School#Timetable
-sch:Timetable a owl:Class ;
-    rdfs:label "Timetable" .
 
 bldg:Library a owl:Class ;
 		rdfs:subClassOf bldg:Building
