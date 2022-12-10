@@ -22,7 +22,7 @@ lib:openDays a owl:ObjectProperty ;
     rdfs:range date:Hour .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Building#closeDays
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#closeDays
 bldg:closeDays a owl:ObjectProperty ;
     rdfs:label "close days" ;
     rdfs:domain bldg:OpeningHours ;
@@ -355,15 +355,21 @@ bldg:hasFax a owl:ObjectProperty ;
 #    Classes
 #################################################################
 
+### https://www.biblioescuela.educamadrid.org/ontologies/Building#Building
+bldg:Building a owl:Class ;
+    rdfs:label "Building" .
+
+
+
 ### https://www.biblioescuela.educamadrid.org/ontologies/Building#Library
 bldg:Library a owl:Class ;
-    rdfs:label "Library" .
+                  rdfs:subClassOf bldg:Building .
 
 
 
 ### https://www.biblioescuela.educamadrid.org/ontologies/Building#School
 bldg:School a owl:Class ;
-    rdfs:label "School" .
+                  rdfs:subClassOf bldg:Building .
 
 
 ### https://www.biblioescuela.educamadrid.org/ontologies/Building#Coordinates
@@ -410,10 +416,3 @@ bldg:Transport a owl:Class ;
 lib:OpeningHours a owl:Class ;
     rdfs:label "opening Hours" .
 
-
-bldg:Library a owl:Class ;
-		rdfs:subClassOf bldg:Building
-
-
-bldg:School a owl:Class ;
-		rdfs:subClassOf bldg:Building
