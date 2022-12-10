@@ -14,6 +14,19 @@
 #    Data properties
 #################################################################
 
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#isSchool
+bldg:isSchool a owl:ObjectProperty ;
+    rdfs:label "is school" ;
+    rdfs:domain bldg:Building ;
+    rdfs:range bldg:School .
+
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#isLibrary
+bldg:isLibrary a owl:ObjectProperty ;
+    rdfs:label "is library" ;
+    rdfs:domain bldg:Building ;
+    rdfs:range bldg:Library .
+
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#openDays
 lib:openDays a owl:ObjectProperty ;
@@ -94,7 +107,7 @@ lib:hasServices a owl:ObjectProperty ;
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasAccessibility
 bldg:hasAccessibility a owl:ObjectProperty ;
-    rdfs:label "accessibility" ;
+    rdfs:label "has accessibility" ;
     rdfs:domain bldg:Building ;
     rdfs:range xsd:string .
 
@@ -135,7 +148,7 @@ vcard:Longitude a owl:ObjectProperty ;
 
 
 ###  http://www.owl-ontologies.com/vcard#Latitude
-vcard:hasLatitude a owl:ObjectProperty ;
+vcard:Latitude a owl:ObjectProperty ;
     rdfs:label "has latitude" ;
     rdfs:domain bldg:Coordinates ;
     rdfs:range xsd:float .
@@ -450,5 +463,5 @@ bldg:Transport a owl:Class ;
 
 ### https://www.biblioescuela.educamadrid.org/ontologies/Library#OpeningHours
 lib:OpeningHours a owl:Class ;
-    rdfs:label "opening Hours" .
+    rdfs:label "Opening Hours" .
 
