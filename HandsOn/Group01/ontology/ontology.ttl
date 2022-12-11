@@ -120,13 +120,6 @@ bldg:hasLocation a owl:ObjectProperty ;
     rdfs:range bldg:Location .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Building#province
-bldg:province a owl:ObjectProperty ;
-    rdfs:label "province" ;
-    rdfs:domain bldg:Location ;
-    rdfs:range xsd:string .
-
-
 ###  http://www.owl-ontologies.com/vcard#Longitude
 vcard:Longitude a owl:ObjectProperty ;
     rdfs:label "has longitude" ;
@@ -183,7 +176,7 @@ bldg:hasRailways a owl:ObjectProperty ;
     rdfs:range xsd:string .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library##hasTimetable
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasTimetable
 lib:hasTimetable a owl:ObjectProperty ;
     rdfs:label "has timetable" ;
     rdfs:domain bldg:Library ;
@@ -218,16 +211,16 @@ bldg:hasZipCode a owl:ObjectProperty ;
     rdfs:range xsd:string .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Building#openAt
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#openAt
 lib:openAt a owl:ObjectProperty ;
     rdfs:label "open at" ;
-    rdfs:domain lib:openingHours ;
+    rdfs:domain lib:OpeningHours ;
     rdfs:range date:Hour .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#educationType
-sch:educationType a owl:ObjectProperty ;
-    rdfs:label "education type" ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasEducationType
+sch:hasEducationType a owl:ObjectProperty ;
+    rdfs:label "has education type" ;
     rdfs:domain bldg:School ;
     rdfs:range xsd:string .
 
@@ -255,13 +248,6 @@ sch:hasImprovementPlans a owl:ObjectProperty ;
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasIntegrationProgram
 sch:hasIntegrationProgram a owl:ObjectProperty ;
-    rdfs:label "has integration program" ;
-    rdfs:domain sch:Facilities ;
-    rdfs:range xsd:string .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasExtraEquipment
-sch:hasExtraEquipment a owl:ObjectProperty ;
     rdfs:label "has integration program" ;
     rdfs:domain sch:Facilities ;
     rdfs:range xsd:string .
