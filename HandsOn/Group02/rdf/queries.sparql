@@ -42,3 +42,67 @@ WHERE {
   ?loc ns:tieneLatitud ?lat.
   ?loc ns:tieneLongitud ?lon
 }
+
+#todos los centros deportivos donde se practique baloncesto y tengan el codigo postal 28023
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd:<https://www.wikidata.org/wiki/>
+PREFIX ns: <http://DeportesMadridGroup2.es/Espacios/ontology/>
+PREFIX nsi: <http://DeportesMadridGroup2.es/Espacios/instances/>
+PREFIX nseq: <http://DeportesMadridGroup2.es/Espacios/instances/Equipamiento/>
+SELECT ?n ?d
+WHERE {
+  ?centro ns:tieneCodigoPostal "28023".
+  ?centro ns:tieneEquipamiento ?d.
+  ?d ns:sePractica "basketball".
+  ?centro ns:tieneNombre ?n
+}
+
+
+
+#centros con logitud -3.6785954778654113 y latitud 40.43346186779773
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd:<https://www.wikidata.org/wiki/>
+PREFIX ns: <http://DeportesMadridGroup2.es/Espacios/ontology/>
+PREFIX nsi: <http://DeportesMadridGroup2.es/Espacios/instances/>
+PREFIX nseq: <http://DeportesMadridGroup2.es/Espacios/instances/Equipamiento/>
+SELECT ?n ?d
+WHERE {
+  ?centro ns:tieneLocalizacion ?d.
+  {?d ns:tieneLongitud "-3.6785954778654113"^^xsd:float} UNION{?d ns:tieneLatitud "40.43346186779773"^^xsd:float}.
+  ?centro ns:tieneNombre ?n
+}
+
+
+
+#todos los centros deportivos que tengan como direccion el numero 5
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd:<https://www.wikidata.org/wiki/>
+PREFIX ns: <http://DeportesMadridGroup2.es/Espacios/ontology/>
+PREFIX nsi: <http://DeportesMadridGroup2.es/Espacios/instances/>
+PREFIX nseq: <http://DeportesMadridGroup2.es/Espacios/instances/Equipamiento/>
+SELECT ?n ?d 
+WHERE {
+  ?centro ns:tieneDireccion ?d.
+  ?d ns:tieneNumero "5"^^xsd:int.
+  ?centro ns:tieneNombre ?n
+  
+}
+
+
+#todos los centros deportivos donde se practique baloncesto en el distrito de moratalaz
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd:<https://www.wikidata.org/wiki/>
+PREFIX ns: <http://DeportesMadridGroup2.es/Espacios/ontology/>
+PREFIX nsi: <http://DeportesMadridGroup2.es/Espacios/instances/>
+PREFIX nseq: <http://DeportesMadridGroup2.es/Espacios/instances/Equipamiento/>
+SELECT ?n ?d
+WHERE {
+  ?centro ns:estaEnDistrito "Moratalaz".
+  ?centro ns:tieneEquipamiento ?d.
+  ?d ns:sePractica "basketball".
+  ?centro ns:tieneNombre ?n
+}
