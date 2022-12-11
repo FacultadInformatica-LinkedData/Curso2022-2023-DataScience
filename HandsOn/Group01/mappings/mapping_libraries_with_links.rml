@@ -1,0 +1,475 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix resource: <https://www.biblioescuela.educamadrid.org/resource/>.
+@prefix lib: <https://www.biblioescuela.educamadrid.org/ontologies/Library#>.
+@prefix bldg: <https://www.biblioescuela.educamadrid.org/ontologies/Building#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@base <https://www.biblioescuela.educamadrid.org/ontologies#>.
+
+<#LibraryMap>
+  rml:logicalSource [
+    rml:source "./data/bibliobuses-bibliotecas-with-all-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  
+  rr:subjectMap [
+    rr:template "https://www.biblioescuela.educamadrid.org/resource/Library/{PK}";
+    rr:termType rr:IRI;
+    rr:class bldg:Library
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate foaf:name;
+    rr:objectMap [
+      rml:reference "NOMBRE";
+	  rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasUID;
+    rr:objectMap [
+      rml:reference "PK";
+      rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate lib:hasServices;
+    rr:objectMap [
+      rml:reference "SERVICIOS";
+	  rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasTransport;
+    rr:objectMap [
+       rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/Transport/{PK}";
+       rr:termType rr:Literal]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasAccessibility;
+    rr:objectMap [
+       rml:reference "ACCESIBILIDAD";
+       rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vcard:hasURL;
+    rr:objectMap [
+      rml:reference "CONTENT-URL" ;
+      rr:dataType xsd:anyURI]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasAddress;
+    rr:objectMap [
+      rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/Address/{PK}";
+      rr:termType rr:Literal]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasLocation;
+    rr:objectMap [
+      rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/Location/{PK}";
+      rr:termType rr:Literal]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vcard:hasGeo;
+    rr:objectMap [
+      rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/Coordinates/{PK}";
+      rr:termType rr:Literal]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasContactInfo;
+    rr:objectMap [
+      rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/ContactInfo/{PK}";
+      rr:termType rr:Literal]
+  ];
+	
+  rr:predicateObjectMap [
+    rr:predicate lib:hasTimetable;
+    rr:objectMap [
+      rr:template "https://www.biblioescuela.educamadrid.org/resource/Library/OpeningHours/{PK}" ;
+      rr:termType rr:Literal]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate lib:hasHistoryBackground;
+    rr:objectMap [
+      rml:reference "DESCRIPCION-ENTIDAD";
+	  rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate lib:espacios;
+    rr:objectMap [
+      rml:reference "ESPACIOS";
+	  rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate lib:hasDescription;
+    rr:objectMap [
+       rml:reference "DESCRIPCION";
+       rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+	rr:objectMap [
+	  rml:reference "same_as_wikidata_biblio";
+	  rr:dataType xsd:anyURI]
+  ].
+  
+<#OpeningHoursMap>
+  rml:logicalSource [
+    rml:source "./data/bibliobuses-bibliotecas-with-all-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  
+  rr:subjectMap [
+    rr:template "https://www.biblioescuela.educamadrid.org/resource/Library/OpeningHours/{PK}";
+    rr:termType rr:IRI;
+    rr:class lib:OpeningHours
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate lib:openDays;
+    rr:objectMap [
+      rml:reference "DIAS APERTURA" ;
+      rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate lib:openAt;
+    rr:objectMap [
+      rml:reference "HORARIO APERTURA" ;
+      rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate lib:closeDays;
+    rr:objectMap [
+      rml:reference "DIAS DE CIERRE" ;
+      rr:dataType xsd:string]
+  ];
+  
+    rr:predicateObjectMap [
+    rr:predicate lib:comments;
+    rr:objectMap [
+      rml:reference "COMENTARIOS";
+      rr:dataType xsd:string]
+  ].
+  
+<#TransportMap>
+  rml:logicalSource [
+    rml:source "./data/bibliobuses-bibliotecas-with-all-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/Transport/{PK}";
+    rr:termType rr:IRI;
+    rr:class bldg:Transport
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasRailways;
+    rr:objectMap [
+      rml:reference "renfeLine" ;
+      rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasBusLine;
+    rr:objectMap [
+      rml:reference "busLine" ;
+      rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasUnderground;
+    rr:objectMap [
+      rml:reference "metroLine" ;
+      rr:dataType xsd:string]
+  ].
+  
+<#AddressMap>
+  rml:logicalSource [
+    rml:source "./data/bibliobuses-bibliotecas-with-all-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  
+  rr:subjectMap [
+    rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/Address/{PK}";
+    rr:termType rr:IRI;
+    rr:class bldg:Address
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasStreetName;
+    rr:objectMap [
+      rml:reference "NOMBRE-VIA" ;
+      rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasVialClass;
+    rr:objectMap [
+      rml:reference "CLASE-VIAL" ;
+      rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasNumType;
+    rr:objectMap [
+      rml:reference "TIPO-NUM" ;
+      rr:dataType xsd:string]
+  ];
+  
+    rr:predicateObjectMap [
+    rr:predicate bldg:hasNumber;
+    rr:objectMap [
+      rml:reference "NUM" ;
+      rr:dataType xsd:string]
+  ];
+    
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasZipCode;
+    rr:objectMap [
+      rml:reference "CODIGO-POSTAL";
+      rr:dataType xsd:string]
+  ].
+  
+<#LocationMap>
+  rml:logicalSource [
+    rml:source "./data/bibliobuses-bibliotecas-with-all-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  
+  rr:subjectMap [
+    rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/Location/{PK}";
+    rr:termType rr:IRI;
+    rr:class vcard:Location
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasLocality;
+    rr:objectMap [
+      rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/Locality/{PK}";
+	  rr:termType rr:Literal]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasProvince;
+    rr:objectMap [
+      rml:reference "https://www.biblioescuela.educamadrid.org/resource/Building/Province/{PK}";
+      rr:termType xsd:Literal]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasDistrict;
+    rr:objectMap [
+      rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/District/{PK}";
+      rr:dataType xsd:string]
+  ].
+  
+<#LocalityMap>
+  rml:logicalSource [
+    rml:source "./data/bibliobuses-bibliotecas-with-all-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  
+  rr:subjectMap [
+    rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/Locality/{PK}";
+    rr:termType rr:IRI;
+    rr:class bldg:Locality
+  ]; 
+  
+  rr:predicateObjectMap [
+    rr:predicate foaf:name;
+    rr:objectMap [
+      rml:reference "LOCALIDAD";
+      rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+    rr:objectMap [
+      rml:reference "same_as_wikidata_localidad";
+      rr:dataType xsd:anyURI]
+  ].
+  
+<#ProvinceMap>
+  rml:logicalSource [
+    rml:source "./data/bibliobuses-bibliotecas-with-all-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  
+  rr:subjectMap [
+    rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/Province/{PK}";
+    rr:termType rr:IRI;
+    rr:class bldg:Province
+  ]; 
+  
+  rr:predicateObjectMap [
+    rr:predicate foaf:name;
+    rr:objectMap [
+      rml:reference "PROVINCIA";
+      rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+    rr:objectMap [
+      rml:reference "same_as_wikidata_provincia";
+      rr:dataType xsd:anyURI]
+  ].
+  
+<#DistrictMap>
+  rml:logicalSource [
+    rml:source "./data/bibliobuses-bibliotecas-with-all-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  
+  rr:subjectMap [
+    rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/District/{PK}";
+    rr:termType rr:IRI;
+    rr:class bldg:District
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate foaf:name;
+    rr:objectMap [
+      rml:reference "DISTRITO";
+      rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasDistrictCode;
+    rr:objectMap [
+      rml:reference "COD-DISTRITO";
+      rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasNeighbourhood;
+    rr:objectMap [
+      rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/Neighbourhood/{PK}";
+      rr:termType rr:Literal]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+    rr:objectMap [
+      rml:reference "same_as_wikidata_distrito";
+      rr:dataType xsd:anyURI]
+  ].
+
+<#NeighbourhoodMap>
+  rml:logicalSource [
+    rml:source "./data/bibliobuses-bibliotecas-with-all-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  
+  rr:subjectMap [
+    rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/Neighbourhood/{PK}";
+    rr:termType rr:IRI;
+    rr:class bldg:Neighbourhood
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate foaf:name;
+    rr:objectMap [
+      rml:reference "BARRIO";
+      rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasNeighbourhoodCode;
+    rr:objectMap [
+      rml:reference "COD-BARRIO";
+      rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+    rr:objectMap [
+      rml:reference "same_as_wikidata_barrio";
+      rr:dataType xsd:anyURI]
+  ].
+
+<#CoordinatesMap>
+  rml:logicalSource [
+    rml:source "./data/bibliobuses-bibliotecas-with-all-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/Coordinates/{PK}";
+    rr:termType rr:IRI;
+    rr:class bldg:Coordinates
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:coordinateX;
+    rr:objectMap [
+      rml:reference "COORDENADA-X";
+      rr:dataType xsd:integer]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:coordinateY;
+    rr:objectMap [
+      rml:reference "COORDENADA-Y";
+      rr:dataType xsd:integer]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vcard:Longitude;
+    rr:objectMap [
+      rml:reference "LONGITUD" ;
+      rr:dataType xsd:float]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vcard:Latitude;
+    rr:objectMap [
+      rml:reference "LATITUD" ;
+      rr:dataType xsd:float]
+  ].
+
+<#ContactInfoMap>
+  rml:logicalSource [
+    rml:source "./data/bibliobuses-bibliotecas-with-all-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://www.biblioescuela.educamadrid.org/resource/Building/ContactInfo/{PK}";
+    rr:termType rr:IRI;
+    rr:class bldg:ContactInfo
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vcard:hasTelephone;
+    rr:objectMap [
+      rml:reference "TELEFONO" ;
+      rr:dataType xsd:string]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate bldg:hasFax;
+    rr:objectMap [
+      rml:reference "FAX" ;
+      rr:dataType xsd:string]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vcard:hasEmail;
+    rr:objectMap [
+      rml:reference "EMAIL" ;
+      rr:dataType xsd:string]
+  ].
