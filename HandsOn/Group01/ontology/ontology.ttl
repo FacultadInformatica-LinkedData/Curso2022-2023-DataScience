@@ -14,19 +14,6 @@
 #    Data properties
 #################################################################
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Building#isSchool
-bldg:isSchool a owl:ObjectProperty ;
-    rdfs:label "is school" ;
-    rdfs:domain bldg:Building ;
-    rdfs:range bldg:School .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/Building#isLibrary
-bldg:isLibrary a owl:ObjectProperty ;
-    rdfs:label "is library" ;
-    rdfs:domain bldg:Building ;
-    rdfs:range bldg:Library .
-
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#openDays
 lib:openDays a owl:ObjectProperty ;
@@ -428,17 +415,17 @@ sch:Facilities a owl:Class ;
 
 ### https://www.biblioescuela.educamadrid.org/ontologies/Building#Neighbourhood
 bldg:Neighbourhood a owl:Class ;
-                  rdfs:subClassOf bldg:District .
+     rdfs:label "Neighbourhood" .
 
 
 ### https://www.biblioescuela.educamadrid.org/ontologies/Building#District
 bldg:District a owl:Class ;
-                  rdfs:subClassOf bldg:Location .
+     rdfs:label "District" .
 
 
 ### https://www.biblioescuela.educamadrid.org/ontologies/Building#Locality
 bldg:Locality a owl:Class ;
-                  rdfs:subClassOf bldg:Location .
+     rdfs:label "Locality" .
 
 
 ### https://www.biblioescuela.educamadrid.org/ontologies/Building#Location
@@ -448,12 +435,12 @@ bldg:Location a owl:Class ;
 
 ### https://www.biblioescuela.educamadrid.org/ontologies/Building#Province
 bldg:Province a owl:Class ;
-                  rdfs:subClassOf bldg:Location .
+    rdfs:label "Province" .
 
 
 ### https://www.biblioescuela.educamadrid.org/ontologies/Building#Address
 bldg:Address a owl:Class ;
-                  rdfs:subClassOf bldg:Location .
+    rdfs:label "Address" .
 
 
 ### https://www.biblioescuela.educamadrid.org/ontologies/Building#Transport
