@@ -28,11 +28,11 @@
       "mode": "record-based"
     },
     "baseColumnName": "DISTRITO",
-    "expression": "grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id",
+    "expression": "grel:\"https://www.wikidata.org/entity/\"+cell.recon.match.id",
     "onError": "set-to-blank",
     "newColumnName": "wikidata_id_DISTRITO",
     "columnInsertIndex": 25,
-    "description": "Create column wikidata_id_DISTRITO at index 25 based on column DISTRITO using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
+    "description": "Create column wikidata_id_DISTRITO at index 25 based on column DISTRITO using expression grel:\"https://www.wikidata.org/entity/\"+cell.recon.match.id"
   },
   {
     "op": "core/recon",
@@ -63,10 +63,10 @@
       "mode": "record-based"
     },
     "baseColumnName": "BARRIO",
-    "expression": "grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
     "onError": "set-to-blank",
     "newColumnName": "wikidata_id_BARRIO",
     "columnInsertIndex": 23,
-    "description": "Create column wikidata_id_BARRIO at index 23 based on column BARRIO using expression grel:\"https://wikidata.org/wiki/\"+cell.recon.match.id"
+    "description": "Create column wikidata_id_BARRIO at index 23 based on column BARRIO using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
   }
 ]
