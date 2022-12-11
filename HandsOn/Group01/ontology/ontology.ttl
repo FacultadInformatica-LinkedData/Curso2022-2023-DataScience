@@ -4,7 +4,6 @@
 @prefix sce: <https://www.schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix date: <http://www.contextus.net/ontology/ontomedia/misc/date#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix vcard: <http://www.owl-ontologies.com/vcard#> .
@@ -215,7 +214,7 @@ bldg:hasZipCode a owl:ObjectProperty ;
 lib:openAt a owl:ObjectProperty ;
     rdfs:label "open at" ;
     rdfs:domain lib:OpeningHours ;
-    rdfs:range date:Hour .
+    rdfs:range xsd:string .
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasEducationType
