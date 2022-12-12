@@ -24,26 +24,23 @@ resource:Biblioteca_Pública_Villaverde a owl:NamedIndividual ,
                                                                                                :hasTimeTable resource:Library/openingHours/openingHours1 ;
                                                                                                :hasTransport resource:Building/Transport/Transport1 ;
 											       :hasDescription "Lectura fácil, audiodescripción, letra grande" ;
-                                                                                               :hasFacilities "Wifi gratuito" ;
+                                                                                               :hasServices "Wifi gratuito" ;
 											       :hasAccesibility 1 ;
                                                                                                vcard:hasUID 86719 ;
                                                                                                foaf:name "Biblioteca Pública María Moliner Villaverde" ;
                                                                                                vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=127979262ef5d010VgnVCM1000000b205a0aRCRD" .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Library/ContactInfo/Contact1
-resource:Library/ContactInfo/Contact1 a owl:NamedIndividual ,
+###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Building/ContactInfo/Contact1
+resource:Building/ContactInfo/Contact1 a owl:NamedIndividual ,
                                                                              :ContactInfo ;
-									:hasfaxNumber "917 979 458" ;
+									:hasFax "917 979 458" ;
 	                                                                vcard:hasTelephone "917 230 194" ;
                                                                         vcard:hasEmail "bib.villaverde@madrid.org" .
 
 
-
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Library/Coordinates/Coordinates1
-resource:Library/Coordinates/Coordinates1 a owl:NamedIndividual ,
+###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Building/Coordinates/Coordinates1
+resource:Building/Coordinates/Coordinates1 a owl:NamedIndividual ,
                                                                                     :Coordinates ;
                                                                            :hasLatitude "40.34952409541233" ;
                                                                            :hasLongitude "-3.710123586489839" ;
@@ -51,36 +48,37 @@ resource:Library/Coordinates/Coordinates1 a owl:NamedIndividual ,
 									   :coordinateY 4469348 .
 
 
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Library/Location/Location1
-resource:Location/Location1 a owl:NamedIndividual ,
+###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Building/Library/Location/Location1
+resource:Building/Location/Location1 a owl:NamedIndividual ,
                                                                               :Location ;
-                                                                     :hasAdress resource:Library/Adress/Direccion1 ;
-                                                                     :hasDistrict resource:Library/District/Distrito1 ;
-                                                                     vcard:hasLocality "Madrid" .
+                                                                     :hasLocality "Madrid" ;
+                                                                     :hasProvince "MADRID" ;
+								     :hasDistrict resource:Library/District/Distrito1 .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Library/Adress/Direccion1
-resource:Library/Adress/Direccion1 a owl:NamedIndividual ,
-                                                                                :Adress ;
-                                                                       foaf:name "Villalonso" ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Library/Address/Direccion1
+resource:Library/Address/Direccion1 a owl:NamedIndividual ,
+                                                                                :Address ;
+                                                                       :hasStreetName "Villalonso" ;
                                                                        :hasNumber "16" ;
-                                                                       :hasZIpCode "28021" ;
-                                                                       :hasVialClass "Calle" .
+                                                                       :hasZipCode "28021" ;
+                                                                       :hasVialClass "Calle" ;
+								       :hasNumType "V" ;
+								       foaf:name "C. Villalonso, 16" .
 
 
 ###   https://www.biblioescuela.educamadrid.org/ontologies/resource/Library/District/Distrito1
 resource:Library/District/Distrito1 a owl:NamedIndividual ,
                                                                                  :District ;
 									:hasNeighbourhood resource:Library/Neighbourhood/Barrio1 ;
-									:vcard:hasUID 21 ;
+								        :hasDistrictCode "17" ;
                                                                         foaf:name "Villaverde" .
 
 
 ###   https://www.biblioescuela.educamadrid.org/ontologies/resource/Library/Neighbourhood/Barrio1
 resource:Library/Neighbourhood/Barrio1 a owl:NamedIndividual ,
                                                                                  :Neighbourhood ;
-									:vcard:hasUID 21 ;
+									:hasNeighbourhoodCode "4" ;
                                                                         foaf:name "San Andrés" .
 
 
@@ -90,7 +88,6 @@ resource:openingHours/openingHours1 a owl:NamedIndividual ,
                                                              :closeDays "Sábados: 16 de abril; todos los sábados de julio, agosto y septiembre; 24 y 31 de diciembre. DOMINGOS: todos; FESTIVOS:1 y 6 de enero; 14 y 15 de abril; 2 y 16 mayo; 25 julio; 15 agosto; 12 octubre; 1 y 9 de noviembre; 6, 8 y 26 de diciembre." ;
                                                              :closeAt "21:00:00" ;
                                                              :openAt "09:00:00" .
-
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Library/Transport/Transport1
@@ -105,15 +102,15 @@ resource:Library/Transport/Transport1 a owl:NamedIndividual ,
 #    Individuals from School
 #################################################################
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/resource/School/School/5119
+###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Building/School/5119
 resource:Colegio_Público_Ciudad_de_Jaén a owl:NamedIndividual ,
                                                                                                     :School ;
-                                                                                               :hasContactInfo resource:School/ContactInfo/Contact1 ;
-                                                                                               :hasCoordinates resource:School/Coordinates/Coordinates1 ;
-                                                                                               :hasLocation resource:School/Location/Location1 ;
-                                                                                               :hasTransport resource:School/Transport/Transport1 ;
-											       :EducationType "ENSEÑANZA: Educación Infantil - Primaria" ;
-                                                                                               :hasAddress resource:School/Adress/Direccion1 ;
+                                                                                               :hasContactInfo resource:Building/ContactInfo/Contact1 ;
+                                                                                               vcard:hasGeo resource:Building/Coordinates/Coordinates1 ; ;
+                                                                                               :hasLocation resource:Building/Location/Location1 ;
+                                                                                               :hasTransport resource:Building/Transport/Transport1 ;
+											       :hasEducationType "ENSEÑANZA: Educación Infantil - Primaria" ;
+                                                                                               :hasAddress resource:Building/Address/Direccion1 ;
 											       :hasFacilities resource:/Facilities/Facilities1 ;
 											       :hasAccesibility "1" ;
                                                                                                vcard:hasUID "5119" ;
@@ -121,47 +118,55 @@ resource:Colegio_Público_Ciudad_de_Jaén a owl:NamedIndividual ,
                                                                                                vcard:hasURL "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c75ba3f5ca71c010VgnVCM1000000b205a0aRCRD" .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/resource/School/ContactInfo/Contact1
-resource:School/ContactInfo/Contact1 a owl:NamedIndividual ,
+###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Building/ContactInfo/Contact1
+resource:Building/ContactInfo/Contact1 a owl:NamedIndividual ,
                                                                              :ContactInfo ;
-									hasFax "913 171 644" ;
+									:hasFax "913 171 644" ;
 				                                        vcard:hasTelephone "913 174 313 - 913 171 644" ;
                                                                         vcard:hasEmail "cp.ciudaddejaen.madrid@educa.madrid.org" .
 
 
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/resource/School/Coordinates/Coordinates1
-resource:School/Coordinates/Coordinates1 a owl:NamedIndividual ,
+###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Building/Coordinates/Coordinates1
+resource:Building/Coordinates/Coordinates1 a owl:NamedIndividual ,
                                                                                     :Coordinates ;
                                                                            vcard:Latitude "40.37258947821977" ;
-                                                                           vcard:Longitude "--3.701248162459656" ;
+                                                                           vcard:Longitude "-3.701248162459656" ;
 					                                   :coordinateX 440468 ;
 									   :coordinateY 4469348 .
  
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/resource/School/Location/Location1
-resource:Location/Location1 a owl:NamedIndividual ,
+###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Building/Location/Location1
+resource:Building/Location/Location1 a owl:NamedIndividual ,
                                                                               	     :Location ;
-							             vcard:Locality "Madrid" ;
-                                                                     :hasAddress resource:School/Adress/Direccion1 ;
-                                                                     :province "MADRID" ;
-								     :hasZipCode "28041" ;
-								     :province "MADRID" ;
-								     :hasZipCode "28041" ;
-								     :hasNeighbourhoodCode "2" ;
-							             :hasNeighbourhood "ORCASUR" ;
-								     :hasDistrictCode "12" ;
-								     :hasDistrict "USERA".
+							             :hasLocality "Madrid" ;
+                                                                     :hasAddress resource:School/Address/Direccion1 ;
+								     :hasProvince "MADRID" .
                                                                      
 
-###  ###  https://www.biblioescuela.educamadrid.org/ontologies/resource/School/Address/Direccion1
-resource:School/Address/Direccion1 a owl:NamedIndividual ,
+###  ###  https://www.biblioescuela.educamadrid.org/ontologies/resource/Building/Address/Direccion1
+resource:Building/Address/Direccion1 a owl:NamedIndividual ,
                                                                                 :Address ;
-                                                                       :streetName "Madre Rosa Blanco" ;
+                                                                       :hasStreetName "Madre Rosa Blanco" ;
                                                                        :hasNumber "3" ;
                                                                        :hasZipCode "28041" ;
-                                                                       :hasvialClass "Calle" ;
-								       :numType "V" .
+                                                                       :hasVialClass "Calle" ;
+								       :hasNumType "V" ;
+								       foaf:name "C. de la Madre Rosa Blanco, 3," .
+
+
+###   https://www.biblioescuela.educamadrid.org/ontologies/resource/School/District/Distrito1
+resource:Library/District/Distrito1 a owl:NamedIndividual ,
+                                                                                 :District ;
+									:hasNeighbourhood resource:Library/Neighbourhood/Barrio1 ;
+								        :hasDistrictCode "12" ;
+                                                                        foaf:name "USERA" .
+
+
+###   https://www.biblioescuela.educamadrid.org/ontologies/resource/Library/Neighbourhood/Barrio1
+resource:Library/Neighbourhood/Barrio1 a owl:NamedIndividual ,
+                                                                                 :Neighbourhood ;
+									:hasNeighbourhoodCode "2" ;
+                                                                        foaf:name "ORCASUR" .
 
 
 ### https://www.biblioescuela.educamadrid.org/resource/Facilities/5119
@@ -177,7 +182,7 @@ resource:/Facilities/Facilities1 a owl:NamedIndividual ,
 ###  https://www.biblioescuela.educamadrid.org/ontologies/resource/School/Transport/Transport1
 resource:School/Transport/Transport1 a owl:NamedIndividual ,
                                                                                  :Transport ;
-                                                                        :hasRailWays "No tiene" ;
+                                                                        :hasRailways "No tiene" ;
 									:hasBusLine "BUS: 18  22  59  76  78  79  81  116  121 " ;
 									:hasUnderground "METRO: Hospital 12 de Octubre" .
 
