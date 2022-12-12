@@ -1,12 +1,12 @@
-PREFIX lib: <https://www.biblioescuela.educamadrid.org/ontologies/Library#> 
-PREFIX sch: <https://www.biblioescuela.educamadrid.org/ontologies/School#> 
-PREFIX sce: <https://www.schema.org/> 
-PREFIX owl: <http://www.w3.org/2002/07/owl#> 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-PREFIX date: <http://www.contextus.net/ontology/ontomedia/misc/date#> 
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
-PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
-PREFIX vcard: <http://www.owl-ontologies.com/vcard#> 
+@prefix lib: <https://www.biblioescuela.educamadrid.org/ontologies/Library#> .
+@prefix sch: <https://www.biblioescuela.educamadrid.org/ontologies/School#> .
+@prefix bldg: <https://www.biblioescuela.educamadrid.org/ontologies/Building#> .
+@prefix sce: <https://www.schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.owl-ontologies.com/vcard#> .
 
 
 # QUERIES CLASS LIBRARY
@@ -14,32 +14,32 @@ PREFIX vcard: <http://www.owl-ontologies.com/vcard#>
 
 # 1: It returns all the libraries (52 in total).
 SELECT ?Library WHERE {
-    ?Library rdf:type lib:Library.
+    ?Library rdf:type bldg:Library.
 }
 
 # 2: It returns all the libraries with its respective telephone numbers (52 in total).
 SELECT ?Library ?Phone WHERE {
-   ?Library rdf:type lib:Library.
-   ?Library lib:hasContactInfo ?Contact.
+   ?Library rdf:type bldg:Library.
+   ?Library bldg:ContactInfo ?Contact.
    ?Contact vcard:hasTelephone ?Phone.
 }
 
 # 3: It returns all the neighbourhoods of Madrid that have a public library (44 distinct neighbourhoods).
 SELECT DISTINCT ?Neighbourhood_name WHERE {
-   ?Neighbourhood rdf:type lib:hasNeighbourhood.
+   ?Neighbourhood rdf:type bldg:hasNeighbourhood.
    ?Neighbourhood foaf:name ?Neighbourhood_name.
 }
 
 # 4: It returns all the libraries which are accesible by bus and its respective bus lines (49 libraries).
 SELECT DISTINCT ?Library ?Bus WHERE {
-   ?Library rdf:type lib:Library.
-   ?Library lib:hasTransport ?Transport.
-   ?Transport lib:hasBusLine ?Bus.
+   ?Library rdf:type bldg:Library.
+   ?Library bldg:hasTransport ?Transport.
+   ?Transport bldg:hasBusLine ?Bus.
 }
 
 # 5: It returns the name of the libraries (only the ones in wikidata) as well as their link to wikidata.
 SELECT ?Library_name ?Wiki_Library WHERE {
-    ?Library rdf:type lib:Library.
+    ?Library rdf:type bldg:Library.
     ?Library owl:sameAs ?Wiki_Library.
     ?Library foaf:name ?Library_name.
 }
@@ -50,33 +50,30 @@ SELECT ?Library_name ?Wiki_Library WHERE {
 
 # 1: It returns all the schools (251 in total).
 SELECT ?School WHERE {
-    ?School rdf:type sch:School.
+    ?School a bldg:School.
 }
 
-# 2: It returns all the schools with its respective coordinates (251 in total).
-SELECT ?School ?Latitude ?Longitude WHERE {
-    ?School rdf:type sch:School.
-    ?School vcard:hasGeo ?Coordinates.
-    ?Coordinates sch:hasLatitude ?Latitude.
-    ?Coordinates sch:hasLongitude ?Longitude.
+# 2: It returns all the schools with its respective coordinates (249 in total).
+SELECT ?Latitude ?Longitude WHERE {
+    ?Coordinates a bldg:Coordinates.
+    ?Coordinates vcard:Latitude ?Latitude.
+    ?Coordinates vcard:Longitude ?Longitude.
 }
 
 # 3: It returns all the districts of Madrid that have a public school (21 distinct districts).
 SELECT DISTINCT ?District_name WHERE {
-    ?District rdf:type sch:hasDistrict.
+    ?District rdf:type bldg:District.
     ?District foaf:name ?District_name.
 }
 
-# 4: It returns the public schools of Madrid and their respective educational stage (251 in total).
-SELECT DISTINCT ?School ?Education WHERE {
-    ?School rdf:type sch:School.
-    ?School sch:EducationType ?Education.
+# 4: It returns the public schools of Madrid and their respective educational stage (249 in total).
+SELECT DISTINCT ?School_link ?Education WHERE {
+    ?School_link a bldg:School.
+    ?School_link sch:hasEducationType ?Education.
 }
 
-# 5: It returns the name of the schools (only the ones in wikidata) as well as their link to wikidata.
-SELECT ?School_name ?Wiki_School WHERE {
-    ?School_name rdf:type sch:Library.
-    ?School_name owl:sameAs ?Wiki_School.
-    ?School_name foaf:name ?School_name.
+# 5: It returns the name of the schools (only the ones in wikidata) as well as their link.
+SELECT ?School_name ?School_link WHERE {
+    ?School_link a bldg:School.
+    ?School_link foaf:name ?School_name.
 }
-
