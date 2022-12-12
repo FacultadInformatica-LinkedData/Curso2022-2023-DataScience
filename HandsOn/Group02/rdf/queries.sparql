@@ -7,7 +7,7 @@ WHERE {
   ?centro ns:tieneCodigoPostal "28025".
   ?centro ns:tieneEquipamiento ?eq.
   ?eq ns:sePractica "basketball".
-  ?centro ns:tieneNombre ?n
+  ?centro ns:tieneNombre ?name
 }
 
 
@@ -24,7 +24,7 @@ WHERE {
   FILTER (?lat > 40.2)
   ?centro ns:tieneEquipamiento ?eq.
   ?eq ns:sePractica "paddle tennis".
-  ?centro ns:tieneNombre ?n
+  ?centro ns:tieneNombre ?name
 }
 
 
