@@ -1,0 +1,650 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix schema: <https://schema.org/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix vocab: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#> .
+@base <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter> .
+
+<#202318-0-escuelas-infantiles-updated> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "202318-0-escuelas-infantiles-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://findeducationalcenter.linkeddata.es/lcc/resource/EducationalCenter/{PK}";
+    rr:class vocab:EducationalCenter
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:name;
+    rr:objectMap [
+      rml:reference "NOMBRE";
+  	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:cafeteria;
+    rr:objectMap [
+      rml:reference "COMEDOR";
+	rr:datatype xsd:boolean;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:extraHourOpening;
+    rr:objectMap [
+      rml:reference "HORARIO-AMPLIADO";
+	rr:datatype xsd:boolean;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:nurseryEducation;
+    rr:objectMap [
+      rml:reference "EDUCACIÓN_0-3";
+	rr:datatype xsd:boolean;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:subway;
+    rr:objectMap [
+      rml:reference "METRO";
+ 	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:bus;
+    rr:objectMap [
+      rml:reference "BUS";
+  	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:railwayStation;
+    rr:objectMap [
+      rml:reference "RENFE/CERCANÍAS";
+  	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:description;
+    rr:objectMap [
+      rml:reference "DESCRIPCION";
+  	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:accesibility;
+    rr:objectMap [
+      rml:reference "ACCESIBILIDAD";
+  	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+
+  rr:predicateObjectMap [
+    rr:predicate schema:url;
+    rr:objectMap [
+      rr:template "{CONTENT-URL}";
+      rr:termType rr:IRI;
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:streetName;
+    rr:objectMap [
+      rml:reference "NOMBRE-VIA";
+  	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:streetType;
+    rr:objectMap [
+      rml:reference "CLASE-VIAL";
+  	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:streetNumberType;
+    rr:objectMap [
+      rml:reference "TIPO-NUM";
+  	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:streetNumber;
+    rr:objectMap [
+      rml:reference "NUM";
+  	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:city;
+    rr:objectMap [
+      rml:reference "LOCALIDAD";
+  	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:province;
+    rr:objectMap [
+      rml:reference "PROVINCIA";
+  	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:postalCode;
+    rr:objectMap [
+      rml:reference "CODIGO-POSTAL";
+  	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:xCoordinate;
+    rr:objectMap [
+      rml:reference "COORDENADA-X";
+	rr:datatype xsd:NonNegativeInteger;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:yCoordinate;
+    rr:objectMap [
+      rml:reference "COORDENADA-Y";
+	rr:datatype xsd:NonNegativeInteger;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate wgs84_pos:lat;
+    rr:objectMap [
+      rml:reference "LATITUD";
+	rr:datatype xsd:float;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate wgs84_pos:long;
+    rr:objectMap [
+      rml:reference "LONGITUD";
+	rr:datatype xsd:float;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:telephone;
+    rr:objectMap [
+      rml:reference "TELEFONO";
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:email;
+    rr:objectMap [
+      rml:reference "EMAIL";
+  	rr:datatype xsd:string ;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+rr:predicateObjectMap [
+        rr:predicate vocab:hasNeighborhood;
+        rr:objectMap [
+            rr:parentTriplesMap <#BarriosEducacion>;
+            rr:joinCondition [
+                rr:child "BARRIO";
+                rr:parent "BARRIO";
+            ];
+        ];
+    ];
+
+
+rr:predicateObjectMap [
+        rr:predicate vocab:hasDistrict;
+        rr:objectMap [
+            rr:parentTriplesMap <#DistritosEducacion>;
+            rr:joinCondition [
+                rr:child "COD-DISTRITO";
+                rr:parent "COD-DISTRITO";
+            ];
+        ];
+    ];
+
+rr:predicateObjectMap [
+        rr:predicate vocab:hasNeighborhood;
+        rr:objectMap [
+            rr:parentTriplesMap <#BarriosEducacion2>;
+            rr:joinCondition [
+                rr:child "BARRIO";
+                rr:parent "BARRIO";
+            ];
+        ];
+    ];
+
+
+rr:predicateObjectMap [
+        rr:predicate vocab:hasDistrict;
+        rr:objectMap [
+            rr:parentTriplesMap <#DistritosEducacion2>;
+            rr:joinCondition [
+                rr:child "COD-DISTRITO";
+                rr:parent "COD-DISTRITO";
+            ];
+        ];
+    ];
+
+
+  rr:predicateObjectMap [
+    rr:predicate schema:type;
+    rr:objectMap [
+      rml:reference "TIPO";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ]
+
+.
+
+# Second RML map (second source)
+
+<#212790-0-centros-educacion-updated.csv> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "212790-0-centros-educacion-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://findeducationalcenter.linkeddata.es/lcc/resource/EducationalCenter/{PK}";
+    rr:class vocab:EducationalCenter
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:name;
+    rr:objectMap [
+      rml:reference "NOMBRE";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:openingHours;
+    rr:objectMap [
+      rml:reference "HORARIO";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:equipment;
+    rr:objectMap [
+      rml:reference "EQUIPAMIENTO";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:subway;
+    rr:objectMap [
+      rml:reference "METRO";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:bus;
+    rr:objectMap [
+      rml:reference "BUS";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:description;
+    rr:objectMap [
+      rml:reference "DESCRIPCION";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:accesibility;
+    rr:objectMap [
+      rml:reference "ACCESIBILIDAD";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:url;
+    rr:objectMap [
+      rr:template "{CONTENT-URL}";
+      rr:termType rr:IRI;
+    ]
+  ];
+
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:streetName;
+    rr:objectMap [
+      rml:reference "NOMBRE-VIA";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:streetType;
+    rr:objectMap [
+      rml:reference "CLASE-VIAL";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:streetNumberType;
+    rr:objectMap [
+      rml:reference "TIPO-NUM";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:streetNumber;
+    rr:objectMap [
+      rml:reference "NUM";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:orientation;
+    rr:objectMap [
+      rml:reference "ORIENTACION";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:city;
+    rr:objectMap [
+      rml:reference "LOCALIDAD";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:province;
+    rr:objectMap [
+      rml:reference "PROVINCIA";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:postalCode;
+    rr:objectMap [
+      rml:reference "CODIGO-POSTAL";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+
+
+
+
+
+
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:xCoordinate;
+    rr:objectMap [
+      rml:reference "COORDENADA-X";
+	rr:datatype xsd:NonNegativeInteger;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:yCoordinate;
+    rr:objectMap [
+      rml:reference "COORDENADA-Y";
+	rr:datatype xsd:NonNegativeInteger;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+
+  rr:predicateObjectMap [
+    rr:predicate wgs84_pos:lat;
+    rr:objectMap [
+      rml:reference "LATITUD";
+	rr:datatype xsd:float;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate wgs84_pos:long;
+    rr:objectMap [
+      rml:reference "LONGITUD";
+	rr:datatype xsd:float;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:telephone;
+    rr:objectMap [
+      rml:reference "TELEFONO";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:email;
+    rr:objectMap [
+      rml:reference "EMAIL";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ];
+
+rr:predicateObjectMap [
+        rr:predicate vocab:hasNeighborhood;
+        rr:objectMap [
+            rr:parentTriplesMap <#BarriosEducacion>;
+            rr:joinCondition [
+                rr:child "BARRIO";
+                rr:parent "BARRIO";
+            ];
+        ];
+    ];
+
+
+rr:predicateObjectMap [
+        rr:predicate vocab:hasDistrict;
+        rr:objectMap [
+            rr:parentTriplesMap <#DistritosEducacion>;
+            rr:joinCondition [
+                rr:child "COD-DISTRITO";
+                rr:parent "COD-DISTRITO";
+            ];
+        ];
+    ];
+
+rr:predicateObjectMap [
+        rr:predicate vocab:hasNeighborhood;
+        rr:objectMap [
+            rr:parentTriplesMap <#BarriosEducacion2>;
+            rr:joinCondition [
+                rr:child "BARRIO";
+                rr:parent "BARRIO";
+            ];
+        ];
+    ];
+
+
+rr:predicateObjectMap [
+        rr:predicate vocab:hasDistrict;
+        rr:objectMap [
+            rr:parentTriplesMap <#DistritosEducacion2>;
+            rr:joinCondition [
+                rr:child "COD-DISTRITO";
+                rr:parent "COD-DISTRITO";
+            ];
+        ];
+    ];
+
+
+  rr:predicateObjectMap [
+    rr:predicate schema:type;
+    rr:objectMap [
+      rml:reference "TIPO";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ]
+.
+
+
+# 3 RML map (second source BARRIO 1 csv)
+
+<#BarriosEducacion> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "212790-0-centros-educacion-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://findeducationalcenter.linkeddata.es/lcc/resource/Neighborhood/{BARRIO}";
+    rr:class vocab:Neighborhood
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:neighborhoodName;
+    rr:objectMap [
+      rml:reference "BARRIO";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ]
+.
+
+# 4 RML map (second source DISTRITO 1 CSV)
+<#DistritosEducacion> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "212790-0-centros-educacion-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://findeducationalcenter.linkeddata.es/lcc/resource/District/{COD-DISTRITO}";
+    rr:class vocab:District
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:districtName;
+    rr:objectMap [
+      rml:reference "DISTRITO";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ]
+.
+
+# 5 RML map (second source BARRIO 2 csv)
+
+<#BarriosEducacion2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "202318-0-escuelas-infantiles-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://findeducationalcenter.linkeddata.es/lcc/resource/Neighborhood/{BARRIO}";
+    rr:class vocab:Neighborhood
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:neighborhoodName;
+    rr:objectMap [
+      rml:reference "BARRIO";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ]
+.
+
+# 6 RML map (second source DISTRITO 2 CSV)
+<#DistritosEducacion2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "202318-0-escuelas-infantiles-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://findeducationalcenter.linkeddata.es/lcc/resource/District/{COD-DISTRITO}";
+    rr:class vocab:District
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:districtName;
+    rr:objectMap [
+      rml:reference "DISTRITO";
+  	rr:datatype xsd:string;
+	rr:termType rr:Literal 
+      ]
+   ]
+.

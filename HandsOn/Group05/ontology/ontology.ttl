@@ -1,0 +1,179 @@
+ @prefix base: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+base: a owl:Ontology ;
+    dc:description "Ontology code created by Chowlk" .
+
+ns:accesibility a owl:DatatypeProperty ;
+    rdfs:label "accesibility" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:bus a owl:DatatypeProperty ;
+    rdfs:label "bus" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:cafeteria a owl:DatatypeProperty ;
+    rdfs:label "cafeteria" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:boolean .
+
+ns:city a owl:DatatypeProperty ;
+    rdfs:label "city" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:description a owl:DatatypeProperty ;
+    rdfs:label "description" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:districtName a owl:DatatypeProperty ;
+    rdfs:label "district name" ;
+    rdfs:domain ns:District ;
+    rdfs:range xsd:string .
+
+ns:equipment a owl:DatatypeProperty ;
+    rdfs:label "equipment" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:extraHourOpening a owl:DatatypeProperty ;
+    rdfs:label "extra hour opening" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:boolean .
+
+ns:hasDistrict a owl:ObjectProperty ;
+    rdfs:label "has district" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range ns:District .
+
+ns:hasNeighborhood a owl:ObjectProperty ;
+    rdfs:label "has neighborhood" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range ns:Neighborhood .
+
+ns:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:neighborhoodName a owl:DatatypeProperty ;
+    rdfs:label "neighborhood name" ;
+    rdfs:domain ns:Neighborhood ;
+    rdfs:range xsd:string .
+
+ns:nurseryEducation a owl:DatatypeProperty ;
+    rdfs:label "nursery education" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:boolean .
+
+ns:orientation a owl:DatatypeProperty ;
+    rdfs:label "orientation" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:postalCode a owl:DatatypeProperty ;
+    rdfs:label "postal code" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:province a owl:DatatypeProperty ;
+    rdfs:label "province" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:railwayStation a owl:DatatypeProperty ;
+    rdfs:label "railway station" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:streetName a owl:DatatypeProperty ;
+    rdfs:label "street name" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:streetNumber a owl:DatatypeProperty ;
+    rdfs:label "street number" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:streetNumberType a owl:DatatypeProperty ;
+    rdfs:label "street number type" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:streetType a owl:DatatypeProperty ;
+    rdfs:label "street type" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:subway a owl:DatatypeProperty ;
+    rdfs:label "subway" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:type a owl:DatatypeProperty ;
+    rdfs:label "type" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:string .
+
+ns:xCoordinate a owl:DatatypeProperty ;
+    rdfs:label "x coordinate" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:nonNegativeInteger .
+
+ns:yCoordinate a owl:DatatypeProperty ;
+    rdfs:label "y coordinate" ;
+    rdfs:domain ns:EducationalCenter ;
+    rdfs:range xsd:nonNegativeInteger .
+
+wgs84:lat a owl:DatatypeProperty ;
+    rdfs:label "lat" ;
+    rdfs:domain wgs84:SpatialThing ;
+    rdfs:range xsd:float .
+
+wgs84:long a owl:DatatypeProperty ;
+    rdfs:label "long" ;
+    rdfs:domain wgs84:SpatialThing ;
+    rdfs:range xsd:float .
+
+schema:email a owl:DatatypeProperty ;
+    rdfs:label "email" ;
+    rdfs:domain schema:EducationalOrganization ;
+    rdfs:range xsd:string .
+
+schema:telephone a owl:DatatypeProperty ;
+    rdfs:label "telephone" ;
+    rdfs:domain schema:EducationalOrganization ;
+    rdfs:range xsd:string .
+
+schema:url a owl:DatatypeProperty ;
+    rdfs:label "url" ;
+    rdfs:domain schema:EducationalOrganization ;
+    rdfs:range xsd:string .
+
+ns:District a owl:Class ;
+    rdfs:label "District" .
+
+ns:Neighborhood a owl:Class ;
+    rdfs:label "Neighborhood" .
+
+wgs84:SpatialThing a owl:Class ;
+    rdfs:label "Spatial Thing" .
+
+schema:EducationalOrganization a owl:Class ;
+    rdfs:label "Educational Organization" .
+
+ns:EducationalCenter a owl:Class ;
+    rdfs:label "Educational Center" ;
+    rdfs:subClassOf wgs84:SpatialThing,
+        schema:EducationalOrganization .
+

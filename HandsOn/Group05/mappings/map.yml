@@ -1,0 +1,69 @@
+base: http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  wgs84_pos: http://www.w3.org/2003/01/geo/wgs84_pos#
+  schema: https://schema.org/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  vocab: http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#
+mappings:
+  EducationalCenter:
+    sources:
+      - ["202318-0-escuelas-infantiles-updated.csv", "CSV"]
+      - ["212790-0-centros-educacion-updated.csv", "CSV"]
+    s: http://findeducationalcenter.linkeddata.es/lcc/resource/EducationalCenter/{PK}
+    p:
+      - [a, vocab:EducationalCenter]
+      - [vocab:name, "NOMBRE", "xsd:string"]
+      - [vocab:cafeteria, "COMEDOR", "xsd:boolean"]
+      - [vocab:extraHourOpening, "HORARIO-AMPLIADO", "xsd:boolean"]
+      - [vocab:nurseryEducation, "EDUCACIÓN_0-3", "xsd:boolean"]
+      - [vocab:subway, "METRO", "xsd:string"]
+      - [vocab:bus, "BUS", "xsd:string"]
+      - [vocab:railwayStation, "RENFE/CERCANÍAS", "xsd:string"]
+      - [vocab:description, "DESCRIPCION", "xsd:string"]
+      - [vocab:accesibility, "ACCESIBILIDAD", "xsd:string"]
+      - [vocab:url, "{CONTENT_URL}", "xsd:uri"]
+      - [vocab:streetName, "NOMBRE-VIA", "xsd:string"]
+      - [vocab:streetType, "CLASE-VIAL", "xsd:string"]
+      - [vocab:streetNumberType, "TIPO-NUM", "xsd:string"]
+      - [vocab:streetNumber, "NUM", "xsd:string"]
+      - [vocab:city, "LOCALIDAD", "xsd:string"]
+      - [vocab:province, "PROVINCIA", "xsd:string"]
+      - [vocab:postalCode, "CODIGO-POSTAL", "xsd:string"]
+      - [vocab:xCoordinate, "COORDENADA-X", "xsd:NonNegativeInteger"]
+      - [vocab:yCoordinate, "COORDENADA-Y", "xsd:NonNegativeInteger"]
+      - [wgs84_pos:lat, "LATITUD", "xsd:decimal"]
+      - [wgs84_pos:long, "LONGITUD", "xsd:decimal"]
+      - [schema:telephone, "TELEFONO", "xsd:string"]
+      - [schema:email, "EMAIL", "xsd:string"]
+      - [vocab:hasNeighborhood, [rr:parent, Neighborhood, { BARRIO: BARRIO }]]
+      - [
+          vocab:hasDistrict,
+          [rr:parent, District, { COD-DISTRITO: COD-DISTRITO }],
+        ]
+      - [schema:type, "TIPO", "xsd:string"]
+      - [schema:openingHours, "HORARIO", "xsd:string"]
+      - [vocab:equipment, "EQUIPAMIENTO", "xsd:string"]
+      - [vocab:orientation, "ORIENTACION", "xsd:string"]
+
+  Neighborhood:
+    sources:
+      - ["202318-0-escuelas-infantiles-updated.csv", "CSV"]
+      - ["212790-0-centros-educacion-updated.csv", "CSV"]
+    s: http://findeducationalcenter.linkeddata.es/lcc/resource/Neighborhood/{BARRIO}
+    p:
+      - [a, vocab:Neighborhood]
+      - [vocab:neighborhoodName, "BARRIO", "xsd:string"]
+
+  District:
+    sources:
+      - ["202318-0-escuelas-infantiles-updated.csv", "CSV"]
+      - ["212790-0-centros-educacion-updated.csv", "CSV"]
+    s: http://findeducationalcenter.linkeddata.es/lcc/resource/District/{COD-DISTRITO}
+    p:
+      - [a, vocab:District]
+      - [vocab:districtName, "DISTRITO", "xsd:string"]
+
