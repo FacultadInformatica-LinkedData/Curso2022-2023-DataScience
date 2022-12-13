@@ -77,7 +77,7 @@ bldg:hasDistrictCode a owl:ObjectProperty ;
     rdfs:range xsd:integer .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/School##hasFacilities
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasFacilities
 sch:hasFacilities a owl:ObjectProperty ;
     rdfs:label "has facilities" ;
     rdfs:domain bldg:School ;
