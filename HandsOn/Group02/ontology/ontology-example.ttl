@@ -86,8 +86,8 @@ nsi:11358784 ns:tieneLocalizacion nsl:11358784 .
 nsi:11358784 ns:tieneNombre "Instalación Deportiva Básica Pista de Patinaje"^^string .
 nsi:11358784 ns:estaEnLocalidad "MADRID"^^string .
 nsi:11358784 ns:tieneCodigoPostal "28031"^^string .
-nsi:11358784 ns:estaEnBarrio "ENSANCHE DE VALLECAS"^^string .
-nsi:11358784 ns:estaEnDistrito "VILLA DE VALLECAS"^^string .
+nsi:11358784 ns:estaEnBarrio nsi:/Barrio/ENSANCHE DE VALLECAS .
+nsi:11358784 ns:estaEnDistrito nsi:/Distrito/VILLA DE VALLECAS .
 nsl:11358784 ns:tieneLatitud "40.37277996162931"^^float .
 nsl:11358784 ns:tieneLongitud "-3.6253783281885656"^^float .
 nsd:11358784 ns:tieneCalle nsc:puertoDePorzuna .

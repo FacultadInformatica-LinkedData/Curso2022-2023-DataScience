@@ -23,7 +23,7 @@ map:jc_004 rr:child "PK" .
 
 map:jc_005 rr:child "PK" .
 
-map:jc_006 rr:child "PK" .
+map:jc_006 rr:child "EQUIPAMIENTO_CLEANED" .
 
 map:jc_007 rr:child "PK" .
 
@@ -33,23 +33,39 @@ map:jc_009 rr:child "PK" .
 
 map:jc_010 rr:child "PK" .
 
+map:jc_011 rr:child "PK" .
+
+map:jc_012 rr:child "PK" .
+
+map:jc_013 rr:child "EQUIPAMIENTO_CLEANED" .
+
+map:jc_014 rr:child "PK" .
+
+map:jc_015 rr:child "PK" .
+
+map:jc_016 rr:child "PK" .
+
+map:jc_017 rr:child "PK" .
+
+map:jc_018 rr:child "PK" .
+
 map:map_mapCalleEspacioDeporte_000 rml:logicalSource map:source_004 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapCalleEspacioDeporte" ;
 	rr:predicateObjectMap map:pom_017 ;
 	rr:subjectMap map:s_004 .
 
-map:map_mapCalleInstalacionDeportiva_000 rml:logicalSource map:source_011 ;
+map:map_mapCalleInstalacionDeportiva_000 rml:logicalSource map:source_012 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapCalleInstalacionDeportiva" ;
-	rr:predicateObjectMap map:pom_037 ;
-	rr:subjectMap map:s_011 .
+	rr:predicateObjectMap map:pom_040 ;
+	rr:subjectMap map:s_012 .
 
-map:map_mapCalleParques_000 rml:logicalSource map:source_017 ;
+map:map_mapCalleParques_000 rml:logicalSource map:source_019 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapCalleParques" ;
-	rr:predicateObjectMap map:pom_054 ;
-	rr:subjectMap map:s_017 .
+	rr:predicateObjectMap map:pom_060 ;
+	rr:subjectMap map:s_019 .
 
 map:map_mapDireccionEspacioDeporte_000 rml:logicalSource map:source_002 ;
 	rdf:type rr:TriplesMap ;
@@ -57,17 +73,17 @@ map:map_mapDireccionEspacioDeporte_000 rml:logicalSource map:source_002 ;
 	rr:predicateObjectMap map:pom_012, map:pom_013, map:pom_014 ;
 	rr:subjectMap map:s_002 .
 
-map:map_mapDireccionInstalacionDeportiva_000 rml:logicalSource map:source_009 ;
+map:map_mapDireccionInstalacionDeportiva_000 rml:logicalSource map:source_010 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapDireccionInstalacionDeportiva" ;
-	rr:predicateObjectMap map:pom_032, map:pom_033, map:pom_034 ;
-	rr:subjectMap map:s_009 .
+	rr:predicateObjectMap map:pom_035, map:pom_036, map:pom_037 ;
+	rr:subjectMap map:s_010 .
 
-map:map_mapDireccionParques_000 rml:logicalSource map:source_016 ;
+map:map_mapDireccionParques_000 rml:logicalSource map:source_018 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapDireccionParques" ;
-	rr:predicateObjectMap map:pom_051, map:pom_052, map:pom_053 ;
-	rr:subjectMap map:s_016 .
+	rr:predicateObjectMap map:pom_057, map:pom_058, map:pom_059 ;
+	rr:subjectMap map:s_018 .
 
 map:map_mapEquipamientoEspacioDeporte_000 rml:logicalSource map:source_003 ;
 	rdf:type rr:TriplesMap ;
@@ -75,11 +91,11 @@ map:map_mapEquipamientoEspacioDeporte_000 rml:logicalSource map:source_003 ;
 	rr:predicateObjectMap map:pom_015, map:pom_016 ;
 	rr:subjectMap map:s_003 .
 
-map:map_mapEquipamientoInstalacionDeportiva_000 rml:logicalSource map:source_010 ;
+map:map_mapEquipamientoInstalacionDeportiva_000 rml:logicalSource map:source_011 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapEquipamientoInstalacionDeportiva" ;
-	rr:predicateObjectMap map:pom_035, map:pom_036 ;
-	rr:subjectMap map:s_010 .
+	rr:predicateObjectMap map:pom_038, map:pom_039 ;
+	rr:subjectMap map:s_011 .
 
 map:map_mapEspaciosDeportes_000 rml:logicalSource map:source_000 ;
 	rdf:type rr:TriplesMap ;
@@ -87,11 +103,11 @@ map:map_mapEspaciosDeportes_000 rml:logicalSource map:source_000 ;
 	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008 ;
 	rr:subjectMap map:s_000 .
 
-map:map_mapInstalacionesDeportivas_000 rml:logicalSource map:source_007 ;
+map:map_mapInstalacionesDeportivas_000 rml:logicalSource map:source_008 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapInstalacionesDeportivas" ;
-	rr:predicateObjectMap map:pom_020, map:pom_021, map:pom_022, map:pom_023, map:pom_024, map:pom_025, map:pom_026, map:pom_027, map:pom_028 ;
-	rr:subjectMap map:s_007 .
+	rr:predicateObjectMap map:pom_023, map:pom_024, map:pom_025, map:pom_026, map:pom_027, map:pom_028, map:pom_029, map:pom_030, map:pom_031 ;
+	rr:subjectMap map:s_008 .
 
 map:map_mapLocalizacionEspacioDeporte_000 rml:logicalSource map:source_001 ;
 	rdf:type rr:TriplesMap ;
@@ -99,65 +115,77 @@ map:map_mapLocalizacionEspacioDeporte_000 rml:logicalSource map:source_001 ;
 	rr:predicateObjectMap map:pom_009, map:pom_010, map:pom_011 ;
 	rr:subjectMap map:s_001 .
 
-map:map_mapLocalizacionInstalacionDeportiva_000 rml:logicalSource map:source_008 ;
+map:map_mapLocalizacionInstalacionDeportiva_000 rml:logicalSource map:source_009 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapLocalizacionInstalacionDeportiva" ;
-	rr:predicateObjectMap map:pom_029, map:pom_030, map:pom_031 ;
-	rr:subjectMap map:s_008 .
+	rr:predicateObjectMap map:pom_032, map:pom_033, map:pom_034 ;
+	rr:subjectMap map:s_009 .
 
-map:map_mapLocalizacionParques_000 rml:logicalSource map:source_015 ;
+map:map_mapLocalizacionParques_000 rml:logicalSource map:source_017 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapLocalizacionParques" ;
-	rr:predicateObjectMap map:pom_048, map:pom_049, map:pom_050 ;
-	rr:subjectMap map:s_015 .
+	rr:predicateObjectMap map:pom_054, map:pom_055, map:pom_056 ;
+	rr:subjectMap map:s_017 .
 
-map:map_mapParquesJardines_000 rml:logicalSource map:source_014 ;
+map:map_mapParquesJardines_000 rml:logicalSource map:source_016 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapParquesJardines" ;
-	rr:predicateObjectMap map:pom_040, map:pom_041, map:pom_042, map:pom_043, map:pom_044, map:pom_045, map:pom_046, map:pom_047 ;
-	rr:subjectMap map:s_014 .
+	rr:predicateObjectMap map:pom_046, map:pom_047, map:pom_048, map:pom_049, map:pom_050, map:pom_051, map:pom_052, map:pom_053 ;
+	rr:subjectMap map:s_016 .
 
 map:map_mapWikidataEspacioDeporte1_000 rml:logicalSource map:source_005 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapWikidataEspacioDeporte1" ;
-	rr:predicateObjectMap map:pom_018 ;
+	rr:predicateObjectMap map:pom_018, map:pom_019 ;
 	rr:subjectMap map:s_005 .
 
 map:map_mapWikidataEspacioDeporte2_000 rml:logicalSource map:source_006 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapWikidataEspacioDeporte2" ;
-	rr:predicateObjectMap map:pom_019 ;
+	rr:predicateObjectMap map:pom_020, map:pom_021 ;
 	rr:subjectMap map:s_006 .
 
-map:map_mapWikidataInstalacionDeportiva1_000 rml:logicalSource map:source_012 ;
+map:map_mapWikidataEspacioDeporteDistrito_000 rml:logicalSource map:source_007 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "mapWikidataEspacioDeporteDistrito" ;
+	rr:predicateObjectMap map:pom_022 ;
+	rr:subjectMap map:s_007 .
+
+map:map_mapWikidataInstalacionDeportiva1_000 rml:logicalSource map:source_013 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapWikidataInstalacionDeportiva1" ;
-	rr:predicateObjectMap map:pom_038 ;
-	rr:subjectMap map:s_012 .
-
-map:map_mapWikidataInstalacionDeportiva2_000 rml:logicalSource map:source_013 ;
-	rdf:type rr:TriplesMap ;
-	rdfs:label "mapWikidataInstalacionDeportiva2" ;
-	rr:predicateObjectMap map:pom_039 ;
+	rr:predicateObjectMap map:pom_041, map:pom_042 ;
 	rr:subjectMap map:s_013 .
 
-map:map_mapWikidataParques1_000 rml:logicalSource map:source_018 ;
+map:map_mapWikidataInstalacionDeportiva2_000 rml:logicalSource map:source_014 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "mapWikidataInstalacionDeportiva2" ;
+	rr:predicateObjectMap map:pom_043, map:pom_044 ;
+	rr:subjectMap map:s_014 .
+
+map:map_mapWikidataInstalacionDeportiva3_000 rml:logicalSource map:source_015 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "mapWikidataInstalacionDeportiva3" ;
+	rr:predicateObjectMap map:pom_045 ;
+	rr:subjectMap map:s_015 .
+
+map:map_mapWikidataParques1_000 rml:logicalSource map:source_020 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapWikidataParques1" ;
-	rr:predicateObjectMap map:pom_055 ;
-	rr:subjectMap map:s_018 .
+	rr:predicateObjectMap map:pom_061, map:pom_062 ;
+	rr:subjectMap map:s_020 .
 
-map:map_mapWikidataParques2_000 rml:logicalSource map:source_019 ;
+map:map_mapWikidataParques2_000 rml:logicalSource map:source_021 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "mapWikidataParques2" ;
-	rr:predicateObjectMap map:pom_056 ;
-	rr:subjectMap map:s_019 .
+	rr:predicateObjectMap map:pom_063, map:pom_064 ;
+	rr:subjectMap map:s_021 .
 
-map:map_person_000 rml:logicalSource map:source_020 ;
+map:map_person_000 rml:logicalSource map:source_022 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "person" ;
-	rr:predicateObjectMap map:pom_057 ;
-	rr:subjectMap map:s_020 .
+	rr:predicateObjectMap map:pom_065 ;
+	rr:subjectMap map:s_022 .
 
 map:om_000 rdf:type rr:ObjectMap ;
 	rr:template "http://DeportesMadridGroup2.es/Espacios/ontology/{TIPO}" ;
@@ -175,24 +203,24 @@ map:om_003 rml:reference "CODIGO-POSTAL" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_004 rml:reference "BARRIO" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+map:om_004 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_000 ;
+	rr:parentTriplesMap map:map_mapWikidataEspacioDeporte2_000 .
 
-map:om_005 rml:reference "DISTRITO" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+map:om_005 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_001 ;
+	rr:parentTriplesMap map:map_mapWikidataEspacioDeporteDistrito_000 .
 
 map:om_006 rdf:type rr:ObjectMap ;
-	rr:joinCondition map:jc_000 ;
+	rr:joinCondition map:jc_002 ;
 	rr:parentTriplesMap map:map_mapLocalizacionEspacioDeporte_000 .
 
 map:om_007 rdf:type rr:ObjectMap ;
-	rr:joinCondition map:jc_001 ;
+	rr:joinCondition map:jc_003 ;
 	rr:parentTriplesMap map:map_mapDireccionEspacioDeporte_000 .
 
 map:om_008 rdf:type rr:ObjectMap ;
-	rr:joinCondition map:jc_002 ;
+	rr:joinCondition map:jc_004 ;
 	rr:parentTriplesMap map:map_mapEquipamientoEspacioDeporte_000 .
 
 map:om_009 rdf:type rr:ObjectMap ;
@@ -219,7 +247,7 @@ map:om_013 rml:reference "NUM" ;
 	rr:termType rr:Literal .
 
 map:om_014 rdf:type rr:ObjectMap ;
-	rr:joinCondition map:jc_003 ;
+	rr:joinCondition map:jc_005 ;
 	rr:parentTriplesMap map:map_mapCalleEspacioDeporte_000 .
 
 map:om_015 rdf:type rr:ObjectMap ;
@@ -227,176 +255,208 @@ map:om_015 rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
 map:om_016 rdf:type rr:ObjectMap ;
-	rr:template "{DEPORTE})" ;
-	rr:termType rr:Literal .
+	rr:joinCondition map:jc_006 ;
+	rr:parentTriplesMap map:map_mapWikidataEspacioDeporte1_000 .
 
 map:om_017 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Calle" ;
 	rr:termType rr:IRI .
 
-map:om_018 rml:reference "wikidata_id_DEPORTE" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+map:om_018 rdf:type rr:ObjectMap ;
+	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Deporte" ;
+	rr:termType rr:IRI .
 
-map:om_019 rml:reference "wikidata_id_BARRIO" ;
+map:om_019 rml:reference "wikidata_id_DEPORTE" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
 map:om_020 rdf:type rr:ObjectMap ;
+	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Barrio" ;
+	rr:termType rr:IRI .
+
+map:om_021 rml:reference "wikidata_id_BARRIO" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_022 rdf:type rr:ObjectMap ;
+	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Distrito" ;
+	rr:termType rr:IRI .
+
+map:om_023 rdf:type rr:ObjectMap ;
 	rr:template "http://DeportesMadridGroup2.es/Espacios/ontology/{TIPO}" ;
 	rr:termType rr:IRI .
 
-map:om_021 rml:reference "BARRIO" ;
+map:om_024 rml:reference "LOCALIDAD" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_022 rml:reference "DISTRITO" ;
+map:om_025 rml:reference "CODIGO-POSTAL" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_023 rml:reference "LOCALIDAD" ;
+map:om_026 rml:reference "NOMBRE" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
-
-map:om_024 rml:reference "CODIGO-POSTAL" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
-
-map:om_025 rml:reference "NOMBRE" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
-
-map:om_026 rdf:type rr:ObjectMap ;
-	rr:joinCondition map:jc_004 ;
-	rr:parentTriplesMap map:map_mapLocalizacionInstalacionDeportiva_000 .
 
 map:om_027 rdf:type rr:ObjectMap ;
-	rr:joinCondition map:jc_005 ;
-	rr:parentTriplesMap map:map_mapDireccionInstalacionDeportiva_000 .
+	rr:joinCondition map:jc_007 ;
+	rr:parentTriplesMap map:map_mapWikidataInstalacionDeportiva3_000 .
 
 map:om_028 rdf:type rr:ObjectMap ;
-	rr:joinCondition map:jc_006 ;
-	rr:parentTriplesMap map:map_mapEquipamientoInstalacionDeportiva_000 .
+	rr:joinCondition map:jc_008 ;
+	rr:parentTriplesMap map:map_mapWikidataInstalacionDeportiva2_000 .
 
 map:om_029 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_009 ;
+	rr:parentTriplesMap map:map_mapLocalizacionInstalacionDeportiva_000 .
+
+map:om_030 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_010 ;
+	rr:parentTriplesMap map:map_mapDireccionInstalacionDeportiva_000 .
+
+map:om_031 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_011 ;
+	rr:parentTriplesMap map:map_mapEquipamientoInstalacionDeportiva_000 .
+
+map:om_032 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Localizacion" ;
 	rr:termType rr:IRI .
 
-map:om_030 rml:reference "LONGITUD" ;
+map:om_033 rml:reference "LONGITUD" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
 
-map:om_031 rml:reference "LATITUD" ;
+map:om_034 rml:reference "LATITUD" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
 
-map:om_032 rdf:type rr:ObjectMap ;
+map:om_035 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Direccion" ;
 	rr:termType rr:IRI .
 
-map:om_033 rml:reference "NUM" ;
+map:om_036 rml:reference "NUM" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:int ;
-	rr:termType rr:Literal .
-
-map:om_034 rdf:type rr:ObjectMap ;
-	rr:joinCondition map:jc_007 ;
-	rr:parentTriplesMap map:map_mapCalleInstalacionDeportiva_000 .
-
-map:om_035 rdf:type rr:ObjectMap ;
-	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Equipamiento" ;
-	rr:termType rr:IRI .
-
-map:om_036 rml:reference "DEPORTE" ;
-	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
 map:om_037 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_012 ;
+	rr:parentTriplesMap map:map_mapCalleInstalacionDeportiva_000 .
+
+map:om_038 rdf:type rr:ObjectMap ;
+	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Equipamiento" ;
+	rr:termType rr:IRI .
+
+map:om_039 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_013 ;
+	rr:parentTriplesMap map:map_mapWikidataInstalacionDeportiva1_000 .
+
+map:om_040 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Calle" ;
 	rr:termType rr:IRI .
 
-map:om_038 rml:reference "wikidata_id_DEPORTE" ;
+map:om_041 rdf:type rr:ObjectMap ;
+	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Deporte" ;
+	rr:termType rr:IRI .
+
+map:om_042 rml:reference "wikidata_id_DEPORTE" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_039 rml:reference "wikidata_id_DISTRITO" ;
+map:om_043 rdf:type rr:ObjectMap ;
+	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Distrito" ;
+	rr:termType rr:IRI .
+
+map:om_044 rml:reference "wikidata_id_DISTRITO" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_040 rdf:type rr:ObjectMap ;
+map:om_045 rdf:type rr:ObjectMap ;
+	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Barrio" ;
+	rr:termType rr:IRI .
+
+map:om_046 rdf:type rr:ObjectMap ;
 	rr:template "http://DeportesMadridGroup2.es/Espacios/ontology/{TIPO}" ;
 	rr:termType rr:IRI .
 
-map:om_041 rml:reference "BARRIO" ;
+map:om_047 rml:reference "LOCALIDAD" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_042 rml:reference "DISTRITO" ;
+map:om_048 rml:reference "CODIGO-POSTAL" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_043 rml:reference "LOCALIDAD" ;
+map:om_049 rml:reference "NOMBRE" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_044 rml:reference "CODIGO-POSTAL" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+map:om_050 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_014 ;
+	rr:parentTriplesMap map:map_mapWikidataParques2_000 .
 
-map:om_045 rml:reference "NOMBRE" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+map:om_051 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_015 ;
+	rr:parentTriplesMap map:map_mapWikidataParques1_000 .
 
-map:om_046 rdf:type rr:ObjectMap ;
-	rr:joinCondition map:jc_008 ;
+map:om_052 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_016 ;
 	rr:parentTriplesMap map:map_mapLocalizacionParques_000 .
 
-map:om_047 rdf:type rr:ObjectMap ;
-	rr:joinCondition map:jc_009 ;
+map:om_053 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_017 ;
 	rr:parentTriplesMap map:map_mapDireccionParques_000 .
 
-map:om_048 rdf:type rr:ObjectMap ;
+map:om_054 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Localizacion" ;
 	rr:termType rr:IRI .
 
-map:om_049 rml:reference "LONGITUD" ;
+map:om_055 rml:reference "LONGITUD" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
 
-map:om_050 rml:reference "LATITUD" ;
+map:om_056 rml:reference "LATITUD" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
 
-map:om_051 rdf:type rr:ObjectMap ;
+map:om_057 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Direccion" ;
 	rr:termType rr:IRI .
 
-map:om_052 rml:reference "NUM" ;
+map:om_058 rml:reference "NUM" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:int ;
 	rr:termType rr:Literal .
 
-map:om_053 rdf:type rr:ObjectMap ;
-	rr:joinCondition map:jc_010 ;
+map:om_059 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_018 ;
 	rr:parentTriplesMap map:map_mapCalleParques_000 .
 
-map:om_054 rdf:type rr:ObjectMap ;
+map:om_060 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Calle" ;
 	rr:termType rr:IRI .
 
-map:om_055 rml:reference "wikidata_id_DISTRITO" ;
+map:om_061 rdf:type rr:ObjectMap ;
+	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Distrito" ;
+	rr:termType rr:IRI .
+
+map:om_062 rml:reference "wikidata_id_DISTRITO" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_056 rml:reference "wikidata_id_BARRIO" ;
+map:om_063 rdf:type rr:ObjectMap ;
+	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Barrio" ;
+	rr:termType rr:IRI .
+
+map:om_064 rml:reference "wikidata_id_BARRIO" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_057 rdf:type rr:ObjectMap ;
+map:om_065 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/calleTranquila" ;
 	rr:termType rr:IRI .
 
@@ -413,10 +473,10 @@ map:pm_003 rdf:type rr:PredicateMap ;
 	rr:constant ns:tieneCodigoPostal .
 
 map:pm_004 rdf:type rr:PredicateMap ;
-	rr:constant ns:seEncuentraEn .
+	rr:constant ns:estaEnBarrio .
 
 map:pm_005 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneDistrito .
+	rr:constant ns:estaEnDistrito .
 
 map:pm_006 rdf:type rr:PredicateMap ;
 	rr:constant ns:tieneLocalizacion .
@@ -455,7 +515,7 @@ map:pm_017 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_018 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant rdf:type .
 
 map:pm_019 rdf:type rr:PredicateMap ;
 	rr:constant owl:sameAs .
@@ -464,114 +524,138 @@ map:pm_020 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_021 rdf:type rr:PredicateMap ;
-	rr:constant ns:estaEnBarrio .
+	rr:constant owl:sameAs .
 
 map:pm_022 rdf:type rr:PredicateMap ;
-	rr:constant ns:estaEnDistrito .
-
-map:pm_023 rdf:type rr:PredicateMap ;
-	rr:constant ns:estaEnLocalidad .
-
-map:pm_024 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneCodigoPostal .
-
-map:pm_025 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneNombre .
-
-map:pm_026 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneLocalizacion .
-
-map:pm_027 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneDireccion .
-
-map:pm_028 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneEquipamiento .
-
-map:pm_029 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
+map:pm_023 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_024 rdf:type rr:PredicateMap ;
+	rr:constant ns:estaEnLocalidad .
+
+map:pm_025 rdf:type rr:PredicateMap ;
+	rr:constant ns:tieneCodigoPostal .
+
+map:pm_026 rdf:type rr:PredicateMap ;
+	rr:constant ns:tieneNombre .
+
+map:pm_027 rdf:type rr:PredicateMap ;
+	rr:constant ns:estaEnBarrio .
+
+map:pm_028 rdf:type rr:PredicateMap ;
+	rr:constant ns:estaEnDistrito .
+
+map:pm_029 rdf:type rr:PredicateMap ;
+	rr:constant ns:tieneLocalizacion .
+
 map:pm_030 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneLongitud .
+	rr:constant ns:tieneDireccion .
 
 map:pm_031 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneLatitud .
+	rr:constant ns:tieneEquipamiento .
 
 map:pm_032 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_033 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneNumero .
+	rr:constant ns:tieneLongitud .
 
 map:pm_034 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneCalle .
+	rr:constant ns:tieneLatitud .
 
 map:pm_035 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_036 rdf:type rr:PredicateMap ;
-	rr:constant ns:sePractica .
+	rr:constant ns:tieneNumero .
 
 map:pm_037 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant ns:tieneCalle .
 
 map:pm_038 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant rdf:type .
 
 map:pm_039 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant ns:sePractica .
 
 map:pm_040 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_041 rdf:type rr:PredicateMap ;
-	rr:constant ns:estaEnBarrio .
+	rr:constant rdf:type .
 
 map:pm_042 rdf:type rr:PredicateMap ;
-	rr:constant ns:estaEnDistrito .
+	rr:constant owl:sameAs .
 
 map:pm_043 rdf:type rr:PredicateMap ;
-	rr:constant ns:estaEnLocalidad .
+	rr:constant rdf:type .
 
 map:pm_044 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneCodigoPostal .
+	rr:constant owl:sameAs .
 
 map:pm_045 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneNombre .
+	rr:constant rdf:type .
 
 map:pm_046 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneLocalizacion .
+	rr:constant rdf:type .
 
 map:pm_047 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneDireccion .
+	rr:constant ns:estaEnLocalidad .
 
 map:pm_048 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant ns:tieneCodigoPostal .
 
 map:pm_049 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneLongitud .
+	rr:constant ns:tieneNombre .
 
 map:pm_050 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneLatitud .
+	rr:constant ns:estaEnBarrio .
 
 map:pm_051 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant ns:estaEnDistrito .
 
 map:pm_052 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneNumero .
+	rr:constant ns:tieneLocalizacion .
 
 map:pm_053 rdf:type rr:PredicateMap ;
-	rr:constant ns:tieneCalle .
+	rr:constant ns:tieneDireccion .
 
 map:pm_054 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_055 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant ns:tieneLongitud .
 
 map:pm_056 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant ns:tieneLatitud .
 
 map:pm_057 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_058 rdf:type rr:PredicateMap ;
+	rr:constant ns:tieneNumero .
+
+map:pm_059 rdf:type rr:PredicateMap ;
+	rr:constant ns:tieneCalle .
+
+map:pm_060 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_061 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_062 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_063 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_064 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_065 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -806,7 +890,39 @@ map:pom_057 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_057 ;
 	rr:predicateMap map:pm_057 .
 
-map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_mapCalleEspacioDeporte_000, map:map_mapCalleInstalacionDeportiva_000, map:map_mapCalleParques_000, map:map_mapDireccionEspacioDeporte_000, map:map_mapDireccionInstalacionDeportiva_000, map:map_mapDireccionParques_000, map:map_mapEquipamientoEspacioDeporte_000, map:map_mapEquipamientoInstalacionDeportiva_000, map:map_mapEspaciosDeportes_000, map:map_mapInstalacionesDeportivas_000, map:map_mapLocalizacionEspacioDeporte_000, map:map_mapLocalizacionInstalacionDeportiva_000, map:map_mapLocalizacionParques_000, map:map_mapParquesJardines_000, map:map_mapWikidataEspacioDeporte1_000, map:map_mapWikidataEspacioDeporte2_000, map:map_mapWikidataInstalacionDeportiva1_000, map:map_mapWikidataInstalacionDeportiva2_000, map:map_mapWikidataParques1_000, map:map_mapWikidataParques2_000, map:map_person_000 ;
+map:pom_058 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_058 ;
+	rr:predicateMap map:pm_058 .
+
+map:pom_059 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_059 ;
+	rr:predicateMap map:pm_059 .
+
+map:pom_060 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_060 ;
+	rr:predicateMap map:pm_060 .
+
+map:pom_061 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_061 ;
+	rr:predicateMap map:pm_061 .
+
+map:pom_062 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_062 ;
+	rr:predicateMap map:pm_062 .
+
+map:pom_063 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_063 ;
+	rr:predicateMap map:pm_063 .
+
+map:pom_064 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_064 ;
+	rr:predicateMap map:pm_064 .
+
+map:pom_065 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_065 ;
+	rr:predicateMap map:pm_065 .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_mapCalleEspacioDeporte_000, map:map_mapCalleInstalacionDeportiva_000, map:map_mapCalleParques_000, map:map_mapDireccionEspacioDeporte_000, map:map_mapDireccionInstalacionDeportiva_000, map:map_mapDireccionParques_000, map:map_mapEquipamientoEspacioDeporte_000, map:map_mapEquipamientoInstalacionDeportiva_000, map:map_mapEspaciosDeportes_000, map:map_mapInstalacionesDeportivas_000, map:map_mapLocalizacionEspacioDeporte_000, map:map_mapLocalizacionInstalacionDeportiva_000, map:map_mapLocalizacionParques_000, map:map_mapParquesJardines_000, map:map_mapWikidataEspacioDeporte1_000, map:map_mapWikidataEspacioDeporte2_000, map:map_mapWikidataEspacioDeporteDistrito_000, map:map_mapWikidataInstalacionDeportiva1_000, map:map_mapWikidataInstalacionDeportiva2_000, map:map_mapWikidataInstalacionDeportiva3_000, map:map_mapWikidataParques1_000, map:map_mapWikidataParques2_000, map:map_person_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
@@ -831,45 +947,51 @@ map:s_006 rdf:type rr:SubjectMap ;
 	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Barrio/{BARRIO}" .
 
 map:s_007 rdf:type rr:SubjectMap ;
-	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/{PK}" .
+	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Distrito/{DISTRITO}" .
 
 map:s_008 rdf:type rr:SubjectMap ;
-	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Localizacion/{PK}" .
-
-map:s_009 rdf:type rr:SubjectMap ;
-	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Direccion/{PK}" .
-
-map:s_010 rdf:type rr:SubjectMap ;
-	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Equipamiento/{EQUIPAMIENTO_CLEANED}" .
-
-map:s_011 rdf:type rr:SubjectMap ;
-	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Calle/{NOMBRE-VIA}" .
-
-map:s_012 rdf:type rr:SubjectMap ;
-	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Deporte/{DEPORTE}" .
-
-map:s_013 rdf:type rr:SubjectMap ;
-	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Distrito/{DISTRITO}" .
-
-map:s_014 rdf:type rr:SubjectMap ;
 	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/{PK}" .
 
-map:s_015 rdf:type rr:SubjectMap ;
+map:s_009 rdf:type rr:SubjectMap ;
 	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Localizacion/{PK}" .
 
-map:s_016 rdf:type rr:SubjectMap ;
+map:s_010 rdf:type rr:SubjectMap ;
 	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Direccion/{PK}" .
 
-map:s_017 rdf:type rr:SubjectMap ;
-	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Calle/{Location}" .
+map:s_011 rdf:type rr:SubjectMap ;
+	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Equipamiento/{EQUIPAMIENTO_CLEANED}" .
 
-map:s_018 rdf:type rr:SubjectMap ;
+map:s_012 rdf:type rr:SubjectMap ;
+	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Calle/{NOMBRE-VIA}" .
+
+map:s_013 rdf:type rr:SubjectMap ;
+	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Deporte/{DEPORTE}" .
+
+map:s_014 rdf:type rr:SubjectMap ;
 	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Distrito/{DISTRITO}" .
 
-map:s_019 rdf:type rr:SubjectMap ;
+map:s_015 rdf:type rr:SubjectMap ;
 	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Barrio/{BARRIO}" .
 
+map:s_016 rdf:type rr:SubjectMap ;
+	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/{PK}" .
+
+map:s_017 rdf:type rr:SubjectMap ;
+	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Localizacion/{PK}" .
+
+map:s_018 rdf:type rr:SubjectMap ;
+	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Direccion/{PK}" .
+
+map:s_019 rdf:type rr:SubjectMap ;
+	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Calle/{Location}" .
+
 map:s_020 rdf:type rr:SubjectMap ;
+	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Distrito/{DISTRITO}" .
+
+map:s_021 rdf:type rr:SubjectMap ;
+	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Barrio/{BARRIO}" .
+
+map:s_022 rdf:type rr:SubjectMap ;
 	rr:template "http://DeportesMadridGroup2.es/Espacios/instances/Calle/{TX_NOMBRE}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
@@ -901,7 +1023,7 @@ map:source_006 rml:referenceFormulation ql:CSV ;
 	rdf:type rml:LogicalSource .
 
 map:source_007 rml:referenceFormulation ql:CSV ;
-	rml:source "./csv/InstalacionesDeportivas-updated-with-links.csv" ;
+	rml:source "./csv/EspacioDeporte-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_008 rml:referenceFormulation ql:CSV ;
@@ -929,19 +1051,19 @@ map:source_013 rml:referenceFormulation ql:CSV ;
 	rdf:type rml:LogicalSource .
 
 map:source_014 rml:referenceFormulation ql:CSV ;
-	rml:source "./csv/ParquesJardines-updated.csv" ;
+	rml:source "./csv/InstalacionesDeportivas-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_015 rml:referenceFormulation ql:CSV ;
-	rml:source "./csv/ParquesJardines-updated.csv" ;
+	rml:source "./csv/InstalacionesDeportivas-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_016 rml:referenceFormulation ql:CSV ;
-	rml:source "./csv/ParquesJardines-updated.csv" ;
+	rml:source "./csv/ParquesJardines-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_017 rml:referenceFormulation ql:CSV ;
-	rml:source "./csv/ParquesJardines-updated.csv" ;
+	rml:source "./csv/ParquesJardines-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_018 rml:referenceFormulation ql:CSV ;
@@ -953,6 +1075,14 @@ map:source_019 rml:referenceFormulation ql:CSV ;
 	rdf:type rml:LogicalSource .
 
 map:source_020 rml:referenceFormulation ql:CSV ;
+	rml:source "./csv/ParquesJardines-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_021 rml:referenceFormulation ql:CSV ;
+	rml:source "./csv/ParquesJardines-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_022 rml:referenceFormulation ql:CSV ;
 	rml:source "./csv/calles_tranquilas.csv" ;
 	rdf:type rml:LogicalSource .
 

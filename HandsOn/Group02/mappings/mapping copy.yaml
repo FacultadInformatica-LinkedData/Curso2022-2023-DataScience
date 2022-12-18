@@ -238,7 +238,7 @@ mappings:
   
   mapParquesJardines:
     sources:
-      - [./csv/ParquesJardines-updated-with-links.csv~csv]
+      - [./csv/ParquesJardines-updated.csv~csv]
     s: nso:$(PK)
     po:
       - [a, ns:$(TIPO)]
@@ -276,7 +276,7 @@ mappings:
 
   mapLocalizacionParques:
     sources:
-      - [./csv/ParquesJardines-updated-with-links.csv~csv]
+      - [./csv/ParquesJardines-updated.csv~csv]
     s: nso:Localizacion/$(PK)
     po:
       - [a, ns:Localizacion]
@@ -285,7 +285,7 @@ mappings:
   
   mapDireccionParques:
     sources:
-      - [./csv/ParquesJardines-updated-with-links.csv~csv]
+      - [./csv/ParquesJardines-updated.csv~csv]
     s: nso:Direccion/$(PK)
     po:
       - [a, ns:Direccion]
@@ -300,7 +300,7 @@ mappings:
   
   mapCalleParques:
     sources:
-      - [./csv/ParquesJardines-updated-with-links.csv~csv]
+      - [./csv/ParquesJardines-updated.csv~csv]
     s: nso:Calle/$(Location)
     po:
       - [a, ns:Calle]

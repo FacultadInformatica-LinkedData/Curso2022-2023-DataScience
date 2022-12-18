@@ -8,10 +8,12 @@
 ns: a owl:Ontology ;
     dc:description "Ontology code created by Chowlk" .
 
-ns:Barrio a owl:DatatypeProperty ;
-    rdfs:label "barrio" ;
+ns:estaEnBarrio a owl:ObjectProperty;
+    rdfs:label "esta en barrio" ;
     rdfs:domain ns:EspaciosDeporte ;
-    rdfs:range xsd:string .
+    rdfs:range ns:Barrio .
+
+
 
 ns:CalleTranquila a owl:Class ;
     rdfs:label "Calle Tranquila" ;
@@ -58,10 +60,10 @@ ns:ColeccionesBotanicas a owl:Class ;
     rdfs:label "Colecciones Botanicas" ;
     rdfs:subClassOf ns:ParquesJardines .
 
-ns:Distrito a owl:DatatypeProperty ;
+ns:estaEnDistrito a owl:ObjectProperty ;
     rdfs:label "distrito" ;
     rdfs:domain ns:EspaciosDeporte ;
-    rdfs:range xsd:string .
+    rdfs:range ns:Distrito .
 
 ns:Embarcaderos a owl:Class ;
     rdfs:label "Embarcaderos" ;
@@ -169,13 +171,16 @@ ns:tieneLocalizacion a owl:ObjectProperty ;
     rdfs:domain ns:EspaciosDeporte ;
     rdfs:range ns:Localizacion .
 
-
 ns:Deporte a owl:Class ;
     rdfs:label "Deporte" .
 
 ns:Equipamiento a owl:Class ;
     rdfs:label "Equipamiento" ;
-    rdfs:subClassOf ns:Deporte .
+
+ns:sePractica a owl:ObjectProperty ;
+    rdfs:label "se Practica" ;
+    rdfs:domain ns:Equipamiento ;
+    rdfs:range ns:Deporte .    
 
 ns:Calle a owl:Class ;
     rdfs:label "Calle" .
@@ -186,6 +191,11 @@ ns:Direccion a owl:Class ;
 ns:Localizacion a owl:Class ;
     rdfs:label "Localizacion" .
 
+ns:Barrio a owl:Class ;
+    rdfs:label "Barrio" .
+
+ns:Distrito a owl:Class ;
+    rdfs:label "Distrito" .
 
 ns:ParquesJardines a owl:Class ;
     rdfs:label "Parques Jardines" ;
