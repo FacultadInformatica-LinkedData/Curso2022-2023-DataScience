@@ -106,7 +106,7 @@ mappings:
     s: nso:Deporte/$(DEPORTE)
     po:
       - [a, ns:Deporte]
-      - [owl:sameAs, $(wikidata_id_DEPORTE)]
+      - [owl:sameAs, $(wikidata_id_DEPORTE)~iri]
       
   mapWikidataEspacioDeporte2:
     sources:
@@ -114,7 +114,7 @@ mappings:
     s: nso:Barrio/$(BARRIO)
     po:
       - [a, ns:Barrio]
-      - [owl:sameAs, $(wikidata_id_BARRIO)]
+      - [owl:sameAs, $(wikidata_id_BARRIO)~iri]
   
   mapWikidataEspacioDeporteDistrito:
     sources:
@@ -219,7 +219,7 @@ mappings:
     s: nso:Deporte/$(DEPORTE)
     po:
       - [a, ns:Deporte]
-      - [owl:sameAs, $(wikidata_id_DEPORTE)]
+      - [owl:sameAs, $(wikidata_id_DEPORTE)~iri]
       
   mapWikidataInstalacionDeportiva2:
     sources:
@@ -227,7 +227,7 @@ mappings:
     s: nso:Distrito/$(DISTRITO)
     po:
       - [a, ns:Distrito]
-      - [owl:sameAs, $(wikidata_id_DISTRITO)]
+      - [owl:sameAs, $(wikidata_id_DISTRITO)~iri]
 
   mapWikidataInstalacionDeportiva3:
     sources:
@@ -311,7 +311,7 @@ mappings:
     s: nso:Distrito/$(DISTRITO)
     po:
       - [a, ns:Distrito]
-      - [owl:sameAs, $(wikidata_id_DISTRITO)]
+      - [owl:sameAs, $(wikidata_id_DISTRITO)~iri]
       
   mapWikidataParques2:
     sources:
@@ -319,7 +319,7 @@ mappings:
     s: nso:Barrio/$(BARRIO)
     po:
       - [a, ns:Barrio]
-      - [owl:sameAs, $(wikidata_id_BARRIO)]
+      - [owl:sameAs, $(wikidata_id_BARRIO)~iri]
 
   mapCallesTranquilas:
   person:

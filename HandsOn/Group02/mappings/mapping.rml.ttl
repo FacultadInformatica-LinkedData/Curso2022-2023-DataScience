@@ -268,7 +268,7 @@ map:om_018 rdf:type rr:ObjectMap ;
 
 map:om_019 rml:reference "wikidata_id_DEPORTE" ;
 	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
 
 map:om_020 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Barrio" ;
@@ -276,7 +276,7 @@ map:om_020 rdf:type rr:ObjectMap ;
 
 map:om_021 rml:reference "wikidata_id_BARRIO" ;
 	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
 
 map:om_022 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Distrito" ;
@@ -363,7 +363,7 @@ map:om_041 rdf:type rr:ObjectMap ;
 
 map:om_042 rml:reference "wikidata_id_DEPORTE" ;
 	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
 
 map:om_043 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Distrito" ;
@@ -371,7 +371,7 @@ map:om_043 rdf:type rr:ObjectMap ;
 
 map:om_044 rml:reference "wikidata_id_DISTRITO" ;
 	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
 
 map:om_045 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Barrio" ;
@@ -446,7 +446,7 @@ map:om_061 rdf:type rr:ObjectMap ;
 
 map:om_062 rml:reference "wikidata_id_DISTRITO" ;
 	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
 
 map:om_063 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/Barrio" ;
@@ -454,7 +454,7 @@ map:om_063 rdf:type rr:ObjectMap ;
 
 map:om_064 rml:reference "wikidata_id_BARRIO" ;
 	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
 
 map:om_065 rdf:type rr:ObjectMap ;
 	rr:constant "http://DeportesMadridGroup2.es/Espacios/ontology/calleTranquila" ;
