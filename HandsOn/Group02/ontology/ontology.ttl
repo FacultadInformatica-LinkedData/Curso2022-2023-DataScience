@@ -13,8 +13,6 @@ ns:estaEnBarrio a owl:ObjectProperty;
     rdfs:domain ns:EspaciosDeporte ;
     rdfs:range ns:Barrio .
 
-
-
 ns:CalleTranquila a owl:Class ;
     rdfs:label "Calle Tranquila" ;
     rdfs:subClassOf ns:Calle .
@@ -85,28 +83,28 @@ ns:InstalacionDeportivaBásica a owl:Class ;
     rdfs:label "Instalacion Deportiva Básica" ;
     rdfs:subClassOf ns:InstalacionDeportiva .
 
-ns:Latitud a owl:DatatypeProperty ;
-    rdfs:label "latitud" ;
+ns:tieneLatitud a owl:DatatypeProperty ;
+    rdfs:label "tiene latitud" ;
     rdfs:domain ns:Localizacion ;
     rdfs:range xsd:float .
 
-ns:Localidad a owl:DatatypeProperty ;
-    rdfs:label "localidad" ;
+ns:tieneLocalidad a owl:DatatypeProperty ;
+    rdfs:label "tiene localidad" ;
     rdfs:domain ns:EspaciosDeporte ;
     rdfs:range xsd:string .
 
-ns:Longitud a owl:DatatypeProperty ;
-    rdfs:label "longitud" ;
+ns:tieneLongitud a owl:DatatypeProperty ;
+    rdfs:label "tiene longitud" ;
     rdfs:domain ns:Localizacion ;
     rdfs:range xsd:float .
 
-ns:Nombre a owl:DatatypeProperty ;
-    rdfs:label "nombre" ;
+ns:tieneNombre a owl:DatatypeProperty ;
+    rdfs:label "tiene nombre" ;
     rdfs:domain ns:EspaciosDeporte ;
     rdfs:range xsd:string .
 
-ns:Numero a owl:DatatypeProperty ;
-    rdfs:label "numero" ;
+ns:tieneNumero a owl:DatatypeProperty ;
+    rdfs:label "tiene numero" ;
     rdfs:domain ns:Direccion ;
     rdfs:range xsd:integer .
 
