@@ -5,6 +5,7 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix map: <http://mapping.example.com/> .
 @prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -23,13 +24,13 @@ map:map_Accidente_000 rml:logicalSource map:source_000 ;
 map:map_Distrito_000 rml:logicalSource map:source_002 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "Distrito" ;
-	rr:predicateObjectMap map:pom_014, map:pom_015, map:pom_016, map:pom_017, map:pom_018 ;
+	rr:predicateObjectMap map:pom_014, map:pom_015, map:pom_016, map:pom_017 ;
 	rr:subjectMap map:s_002 .
 
 map:map_Lesividad_000 rml:logicalSource map:source_004 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "Lesividad" ;
-	rr:predicateObjectMap map:pom_026, map:pom_027, map:pom_028 ;
+	rr:predicateObjectMap map:pom_025, map:pom_026, map:pom_027 ;
 	rr:subjectMap map:s_004 .
 
 map:map_Localizacion_000 rml:logicalSource map:source_001 ;
@@ -41,7 +42,7 @@ map:map_Localizacion_000 rml:logicalSource map:source_001 ;
 map:map_Persona_000 rml:logicalSource map:source_003 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "Persona" ;
-	rr:predicateObjectMap map:pom_019, map:pom_020, map:pom_021, map:pom_022, map:pom_023, map:pom_024, map:pom_025 ;
+	rr:predicateObjectMap map:pom_018, map:pom_019, map:pom_020, map:pom_021, map:pom_022, map:pom_023, map:pom_024 ;
 	rr:subjectMap map:s_003 .
 
 map:om_000 rdf:type rr:ObjectMap ;
@@ -80,7 +81,7 @@ map:om_007 rdf:type rr:ObjectMap ;
 	rr:parentTriplesMap map:map_Persona_000 .
 
 map:om_008 rdf:type rr:ObjectMap ;
-	rr:constant "http://accidentesdetrafico.es/ontology/TrafficAccident#Accidente" ;
+	rr:constant "http://accidentesdetrafico.es/ontology/TrafficAccident#Localizacion" ;
 	rr:termType rr:IRI .
 
 map:om_009 rml:reference "localizacion" ;
@@ -107,12 +108,12 @@ map:om_013 rdf:type rr:ObjectMap ;
 	rr:parentTriplesMap map:map_Distrito_000 .
 
 map:om_014 rdf:type rr:ObjectMap ;
-	rr:constant "http://accidentesdetrafico.es/ontology/TrafficAccident#Accidente" ;
+	rr:constant "http://accidentesdetrafico.es/ontology/TrafficAccident#Distrito" ;
 	rr:termType rr:IRI .
 
 map:om_015 rml:reference "cod_distrito" ;
 	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:int ;
+	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
 map:om_016 rml:reference "distrito" ;
@@ -120,58 +121,52 @@ map:om_016 rml:reference "distrito" ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_017 rml:reference "coordenada_x_utm" ;
+map:om_017 rml:reference "wikidata_id_distrito" ;
 	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:float ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
 
-map:om_018 rml:reference "coordenada_y_utm" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:float ;
-	rr:termType rr:Literal .
-
-map:om_019 rdf:type rr:ObjectMap ;
+map:om_018 rdf:type rr:ObjectMap ;
 	rr:constant "http://accidentesdetrafico.es/ontology/TrafficAccident#Persona" ;
 	rr:termType rr:IRI .
 
-map:om_020 rml:reference "rango_edad" ;
+map:om_019 rml:reference "rango_edad" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_021 rml:reference "tipo_persona" ;
+map:om_020 rml:reference "tipo_persona" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_022 rml:reference "positiva_alcohol" ;
+map:om_021 rml:reference "positiva_alcohol" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:boolean ;
 	rr:termType rr:Literal .
 
-map:om_023 rml:reference "positiva_droga" ;
+map:om_022 rml:reference "positiva_droga" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:boolean ;
 	rr:termType rr:Literal .
 
-map:om_024 rml:reference "sexo" ;
+map:om_023 rml:reference "sexo" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_025 rdf:type rr:ObjectMap ;
+map:om_024 rdf:type rr:ObjectMap ;
 	rr:parentTriplesMap map:map_Lesividad_000 .
 
-map:om_026 rdf:type rr:ObjectMap ;
+map:om_025 rdf:type rr:ObjectMap ;
 	rr:constant "http://accidentesdetrafico.es/ontology/TrafficAccident#Lesividad" ;
 	rr:termType rr:IRI .
 
-map:om_027 rml:reference "cod_lesividad" ;
+map:om_026 rml:reference "cod_lesividad" ;
 	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:int ;
+	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_028 rml:reference "lesividad" ;
+map:om_027 rml:reference "lesividad" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
@@ -228,39 +223,36 @@ map:pm_016 rdf:type rr:PredicateMap ;
 	rr:constant vocab:tieneNombreDistrito .
 
 map:pm_017 rdf:type rr:PredicateMap ;
-	rr:constant vocab:tieneCoordX .
+	rr:constant owl:sameAs .
 
 map:pm_018 rdf:type rr:PredicateMap ;
-	rr:constant vocab:tieneCoordY .
+	rr:constant rdf:type .
 
 map:pm_019 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-map:pm_020 rdf:type rr:PredicateMap ;
 	rr:constant vocab:tieneRangoEdad .
 
-map:pm_021 rdf:type rr:PredicateMap ;
+map:pm_020 rdf:type rr:PredicateMap ;
 	rr:constant vocab:tieneTipoPersona .
 
-map:pm_022 rdf:type rr:PredicateMap ;
+map:pm_021 rdf:type rr:PredicateMap ;
 	rr:constant vocab:positivaAlcohol .
 
-map:pm_023 rdf:type rr:PredicateMap ;
+map:pm_022 rdf:type rr:PredicateMap ;
 	rr:constant vocab:positivaDroga .
 
-map:pm_024 rdf:type rr:PredicateMap ;
+map:pm_023 rdf:type rr:PredicateMap ;
 	rr:constant vocab:tieneSexo .
 
-map:pm_025 rdf:type rr:PredicateMap ;
+map:pm_024 rdf:type rr:PredicateMap ;
 	rr:constant vocab:tieneLesividad .
 
-map:pm_026 rdf:type rr:PredicateMap ;
+map:pm_025 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-map:pm_027 rdf:type rr:PredicateMap ;
+map:pm_026 rdf:type rr:PredicateMap ;
 	rr:constant vocab:tieneCodigoLesividad .
 
-map:pm_028 rdf:type rr:PredicateMap ;
+map:pm_027 rdf:type rr:PredicateMap ;
 	rr:constant vocab:nombreLesividad .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -375,10 +367,6 @@ map:pom_027 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_027 ;
 	rr:predicateMap map:pm_027 .
 
-map:pom_028 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_028 ;
-	rr:predicateMap map:pm_028 .
-
 map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_Accidente_000, map:map_Distrito_000, map:map_Lesividad_000, map:map_Localizacion_000, map:map_Persona_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
@@ -386,34 +374,34 @@ map:s_000 rdf:type rr:SubjectMap ;
 	rr:template "http://accidentesdetrafico.es/Accidente/{num_expediente}" .
 
 map:s_001 rdf:type rr:SubjectMap ;
-	rr:template "http://accidentesdetrafico.es/Localizacion/{localizacion}" .
+	rr:template "http://accidentesdetrafico.es/Localizacion/{coordenadas_x_y}" .
 
 map:s_002 rdf:type rr:SubjectMap ;
 	rr:template "http://accidentesdetrafico.es/Distrito/{cod_distrito}" .
 
 map:s_003 rdf:type rr:SubjectMap ;
-	rr:template "http://accidentesdetrafico.es/Persona/{rango_edad}" .
+	rr:template "http://accidentesdetrafico.es/Persona/{persona}" .
 
 map:s_004 rdf:type rr:SubjectMap ;
-	rr:template "http://accidentesdetrafico.es/Lesividad/{cod_distrito}" .
+	rr:template "http://accidentesdetrafico.es/Lesividad/{cod_lesividad}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "csv/AccidentesBicicletas-2022-updated.csv" ;
+	rml:source "csv/AccidentesBicicletas-2022-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "csv/AccidentesBicicletas-2022-updated.csv" ;
+	rml:source "csv/AccidentesBicicletas-2022-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_002 rml:referenceFormulation ql:CSV ;
-	rml:source "csv/AccidentesBicicletas-2022-updated.csv" ;
+	rml:source "csv/AccidentesBicicletas-2022-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_003 rml:referenceFormulation ql:CSV ;
-	rml:source "csv/AccidentesBicicletas-2022-updated.csv" ;
+	rml:source "csv/AccidentesBicicletas-2022-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_004 rml:referenceFormulation ql:CSV ;
-	rml:source "csv/AccidentesBicicletas-2022-updated.csv" ;
+	rml:source "csv/AccidentesBicicletas-2022-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
