@@ -35,9 +35,9 @@ mappings:
   Localizacion:
     sources:
       - [csv/AccidentesBicicletas-2022-updated.csv~csv]
-    s: http://accidentesdetrafico.es/Localizacion/$(localizacion)
+    s: http://accidentesdetrafico.es/Localizacion/$(coordenadas_x_y)
     po:
-      - [a, vocab:Accidente]
+      - [a, vocab:Localizacion]
       - [vocab:tieneNombreCalle,$(localizacion),xsd:string]
       - [vocab:tieneNumeroCalle,$(numero),xsd:string]
       - [vocab:tieneCoordX,$(coordenada_x_utm),xsd:float]
@@ -51,16 +51,14 @@ mappings:
       - [csv/AccidentesBicicletas-2022-updated.csv~csv]
     s: http://accidentesdetrafico.es/Distrito/$(cod_distrito)
     po:
-      - [a, vocab:Accidente]
-      - [vocab:tieneCodigoDistrito,$(cod_distrito),xsd:int]
+      - [a, vocab:Distrito]
+      - [vocab:tieneCodigoDistrito,$(cod_distrito),xsd:string]
       - [vocab:tieneNombreDistrito,$(distrito),xsd:string]
-      - [vocab:tieneCoordX,$(coordenada_x_utm),xsd:float]
-      - [vocab:tieneCoordY,$(coordenada_y_utm),xsd:float]
 
   Persona:
     sources:
       - [csv/AccidentesBicicletas-2022-updated.csv~csv]
-    s: http://accidentesdetrafico.es/Persona/$(rango_edad)
+    s: http://accidentesdetrafico.es/Persona/$(persona)
     po:
       - [a, vocab:Persona]
       - [vocab:tieneRangoEdad,$(rango_edad),xsd:string]
@@ -75,8 +73,8 @@ mappings:
   Lesividad:
     sources:
       - [csv/AccidentesBicicletas-2022-updated.csv~csv]
-    s: http://accidentesdetrafico.es/Lesividad/$(cod_distrito)
+    s: http://accidentesdetrafico.es/Lesividad/$(cod_lesividad)
     po:
       - [a, vocab:Lesividad]
-      - [vocab:tieneCodigoLesividad,$(cod_lesividad),xsd:int]
+      - [vocab:tieneCodigoLesividad,$(cod_lesividad),xsd:string]
       - [vocab:nombreLesividad,$(lesividad),xsd:string]
