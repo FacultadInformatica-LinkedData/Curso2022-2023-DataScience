@@ -15,12 +15,11 @@ mappings:
   triplesmap1:
     sources:
       - [Contenedores.csv~csv]
-    s: http://www.madridcontenedores.com/Contenedor/$(ID)
+    s: http://www.madridcontenedores.com/Contenedores/$(ID)
     po:
       - [a, ont:Contenedor]
       - [ont:id,$(ID),xsd:string]
       - [ont:tipo,$(TIPO),xsd:string]
-      - [ont:ubicacion,$(UBICACION),xsd:string]
       - [ont:horario,$(HORARIO),xsd:string]
       - p: ont:localizacion
         o:
@@ -44,15 +43,14 @@ mappings:
   triplesmap2:
     sources:
       - [Ubicacion.csv~csv]
-    s: http://www.madridcontenedores.com/Ubicacion/$(CALLE)
+    s: http://www.madridcontenedores.com/Ubicacion/$(ID)
     po:
       - [a, ont:Ubicacion]
-      - [ont:id,$(ID),xsd:string]
       - [ont:distrito,$(DISTRITO),xsd:string]
       - [ont:calle,$(CALLE),xsd:string]
       - [ont:coordenada_x,$(COORDENADA-X),xsd:float]
       - [ont:coordenada_y,$(COORDENADA-Y),xsd:float]
-      - [ont:codigoPostal,$(CODIGOPOSTAL),xsd:float]
+      - [ont:codigoPostal,$(CODIGOPOSTAL),xsd:string]
       
   triplesmap3:
     sources:

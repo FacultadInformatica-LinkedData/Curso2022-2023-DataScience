@@ -19,7 +19,7 @@ properties:calle a owl:DatatypeProperty ;
 properties:codigoPostal a owl:DatatypeProperty ;
     rdfs:label "codigo postal" ;
     rdfs:domain classes:Ubicacion ;
-    rdfs:range xsd:int .
+    rdfs:range xsd:string .
 
 ### http://madridcontenedores.com/ontologia/coordenadaX
 properties:coordenadaX a owl:DatatypeProperty ;
@@ -43,13 +43,13 @@ properties:distrito a owl:DatatypeProperty ;
 properties:esDeTipo a owl:DatatypeProperty ;
     rdfs:label "es de tipo" ;
     rdfs:domain classes:Residuo ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:cadena .
 
 ### http://madridcontenedores.com/ontologia/seTiraEn
 properties:seTiraEn a owl:ObjectProperty ;
     rdfs:label "se tira en" ;
     rdfs:domain classes:Residuo ;
-    rdfs:range classes:TipoContenedor .
+    rdfs:range classes:Contenedor .
 
 ### http://madridcontenedores.com/ontologia/seUbicaEn
 properties:seUbicaEn a owl:ObjectProperty ;
@@ -66,11 +66,6 @@ properties:tieneHorario a owl:ObjectProperty ;
 ### http://madridcontenedores.com/ontologia/Horario
 classes:Horario a owl:Class ;
     rdfs:label "Horario" .
-
-### http://madridcontenedores.com/ontologia/TipoContenedor
-classes:TipoContenedor a owl:Class ;
-    rdfs:label "Tipo Contenedor" ;
-    rdfs:subClassOf classes:Contenedor .
 
 ### http://madridcontenedores.com/ontologia/Residuo
 classes:Residuo a owl:Class ;
