@@ -1,34 +1,34 @@
 TIPORESIDUO,WIKIDATA ITEM,TIPOCONTENEDOR
 Arena de gato o similar,,RESTO
-biodegradable bag,https://www.wikidata.org/wiki/Q4914747,ORGACNICA
+biodegradable bag,https://www.wikidata.org/wiki/Q4914747,ORGANICO
 Briks,https://www.wikidata.org/wiki/Q12304384,ENVASES
 paper,https://www.wikidata.org/wiki/Q11472,PAPEL-CARTON
 glass bottle,https://www.wikidata.org/wiki/Q5567094,VIDRIO
 cooking oil,https://www.wikidata.org/wiki/Q427457,PUNTO LIMPIO FIJO
 cooking oil,https://www.wikidata.org/wiki/Q427457,PUNTO LIMPIO MÓVIL
 cooking oil,https://www.wikidata.org/wiki/Q427457,PUNTO LIMPIO DE PROXIMIDAD
-battery,https://www.wikidata.org/wiki/Q267298,MARQUESINA PARADAS AUTOBÚS
-clothing,https://www.wikidata.org/wiki/Q11460,CONTENEDOR DE RESIDUOS TEXTILES
+battery,https://www.wikidata.org/wiki/Q267298,CONTENEDOR DE PILAS
+clothing,https://www.wikidata.org/wiki/Q11460,CONTENEDOR DE ROPA
 Excrementos de animales domésticos,,RESTO
-"Servilletas y papel manchadas de grasa, aceite o restos de comida",,ORGACNICA
+"Servilletas y papel manchadas de grasa, aceite o restos de comida",,ORGANICO
 plastic container,https://www.wikidata.org/wiki/Q41804911,ENVASES
 "Todo tipo de envases de cartón o papel, como cajas de zapatos, cereales…",,PAPEL-CARTON
 glass container,https://www.wikidata.org/wiki/Q5164895,VIDRIO
 clothing,https://www.wikidata.org/wiki/Q11460,PUNTO LIMPIO FIJO
 clothing,https://www.wikidata.org/wiki/Q11460,PUNTO LIMPIO MÓVIL
 clothing,https://www.wikidata.org/wiki/Q11460,PUNTO LIMPIO DE PROXIMIDAD
-"Bolsos, cinturones y complementos de vestir",,CONTENEDOR DE RESIDUOS TEXTILES
+"Bolsos, cinturones y complementos de vestir",,CONTENEDOR DE ROPA
 light bulb,https://www.wikidata.org/wiki/Q1318740,RESTO
-Restos de frutas y verduras,,ORGACNICA
+Restos de frutas y verduras,,ORGANICO
 plastic container,https://www.wikidata.org/wiki/Q41804911,ENVASES
 "Hojas, cuadernos, sobres (con sellos pegados inclusive), periódicos, revistas, y demás productos de papel y cartón",,PAPEL-CARTON
 Frascos de vidrio con roll-on o atomizador,,VIDRIO
 coffee capsule,https://www.wikidata.org/wiki/Q4236462,PUNTO LIMPIO FIJO
 coffee capsule,https://www.wikidata.org/wiki/Q4236462,PUNTO LIMPIO MÓVIL
 coffee capsule,https://www.wikidata.org/wiki/Q4236462,PUNTO LIMPIO DE PROXIMIDAD
-Muñecos de peluche,,CONTENEDOR DE RESIDUOS TEXTILES
+Muñecos de peluche,,CONTENEDOR DE ROPA
 porcelain,https://www.wikidata.org/wiki/Q130693,RESTO
-nut,https://www.wikidata.org/wiki/Q3320037,ORGACNICA
+nut,https://www.wikidata.org/wiki/Q3320037,ORGANICO
 Envases de cosméticos de plástico,,ENVASES
 Billetes de metro ,,PAPEL-CARTON
 Envases de cosméticos de vidrio,,VIDRIO
@@ -36,7 +36,7 @@ Radiografías (50 unidades),,PUNTO LIMPIO FIJO
 Radiografías (50 unidades),,PUNTO LIMPIO MÓVIL
 Radiografías (50 unidades),,PUNTO LIMPIO DE PROXIMIDAD
 latex,https://www.wikidata.org/wiki/Q244680,RESTO
-food,https://www.wikidata.org/wiki/Q2095,ORGACNICA
+food,https://www.wikidata.org/wiki/Q2095,ORGANICO
 "Envases de metales: aerosoles vacíos: desodorantes, limpiadores domésticos..., botes de bebidas, latas de conserva, platos y bandejas de aluminio, chapas y tapas de metal…",,ENVASES
 Servilletas manchadas de polvo o húmedas de agua (sin manchar),,PAPEL-CARTON
 "Frascos de colonia, esmaltes de uñas…",,VIDRIO
@@ -44,7 +44,7 @@ Aerosoles (10 unidades),,PUNTO LIMPIO FIJO
 aerosol,https://www.wikidata.org/wiki/Q104541,PUNTO LIMPIO MÓVIL
 aerosol,https://www.wikidata.org/wiki/Q104541,PUNTO LIMPIO DE PROXIMIDAD
 Goma,,RESTO
-Restos de carnes o pescados,,ORGACNICA
+Restos de carnes o pescados,,ORGANICO
 Tippex,,ENVASES
 Sobres (plástico/papel),,PAPEL-CARTON
 Recipientes velas vidrio,,VIDRIO
@@ -52,50 +52,50 @@ Recipientes velas vidrio,,VIDRIO
 "Pilas alcalinas, salinas y baterías usadas",,PUNTO LIMPIO MÓVIL
 "Pilas alcalinas, salinas y baterías usadas",,PUNTO LIMPIO DE PROXIMIDAD
 Pañales y compresas,,RESTO
-Papel y cartón sucios de aceite,,ORGACNICA
+Papel y cartón sucios de aceite,,ORGANICO
 "Cajas de madera, de vino, fresas, puros, estuches…",,ENVASES
 Envoltorio de pan (de papel),,PAPEL-CARTON
 Cartuchos de tinta y tóner (4 unidades),,PUNTO LIMPIO FIJO
 Cartuchos de tinta y tóner (4 unidades),,PUNTO LIMPIO MÓVIL
 Cartuchos de tinta y tóner (4 unidades),,PUNTO LIMPIO DE PROXIMIDAD
 "Toallitas húmedas, hilo dental",,RESTO
-"Cáscaras de huevo, de marisco y frutos secos",,ORGACNICA
+"Cáscaras de huevo, de marisco y frutos secos",,ORGANICO
 plastic container,https://www.wikidata.org/wiki/Q41804911,ENVASES
 "Guías telefónicas, folletos y propaganda",,PAPEL-CARTON
 Bombillas de bajo consumo y tubos fluorescentes (3 unidades),,PUNTO LIMPIO FIJO
 Bombillas de bajo consumo y tubos fluorescentes (3 unidades),,PUNTO LIMPIO MÓVIL
 Bombillas de bajo consumo y tubos fluorescentes (3 unidades),,PUNTO LIMPIO DE PROXIMIDAD
 "Residuos de pequeñas curas como tiritas, esparadrapo, gasas, vendas, algodón…",,RESTO
-used coffee grounds,https://www.wikidata.org/wiki/Q362788,ORGACNICA
+used coffee grounds,https://www.wikidata.org/wiki/Q362788,ORGANICO
 "Plástico de los envases tipo blíster: donde vienen las pilas, las cuchillas de afeitar…",,ENVASES
 Hueveras de cartón,,PAPEL-CARTON
 "CD´s, DVD´s, casetes... y sus embalajes (50 unidades)",,PUNTO LIMPIO FIJO
 "CD´s, DVD´s, casetes... y sus embalajes (20 unidades)",,PUNTO LIMPIO MÓVIL
 "CD´s, DVD´s, casetes... y sus embalajes (20 unidades)",,PUNTO LIMPIO DE PROXIMIDAD
 "Papel: servilletas, papel de cocina, folios... y cartón sucios (de pintura o de otros líquidos que no son de uso alimentario…)",,RESTO
-Restos de infusiones,,ORGACNICA
+Restos de infusiones,,ORGANICO
 Papel de aluminio o film,,ENVASES
 Tubos y canutos de cartón,,PAPEL-CARTON
 Cintas de video (50 unidades),,PUNTO LIMPIO FIJO
 Cintas de video (20 unidades),,PUNTO LIMPIO MÓVIL
 Cintas de video (20 unidades),,PUNTO LIMPIO DE PROXIMIDAD
 Encerados,,RESTO
-Tapones de corcho,,ORGACNICA
+Tapones de corcho,,ORGANICO
 Papel de plata de los paquetes de cigarro,,ENVASES
 Bases de cartón de los envoltorios de productos,,PAPEL-CARTON
 "Pequeños aparatos elécrtricos y electrónicos (RAEE´s): ebooks, MP3, MP4, MP5, Ipods, tablets, mandos de televisión, USB´s y teléfonos móviles, lectores de DVDs y CDs ",,PUNTO LIMPIO FIJO
 "Pequeños aparatos elécrtricos y electrónicos (RAEE´s): ebooks, MP3, MP4, MP5, Ipods, tablets, mandos de televisión, USB´s y teléfonos móviles, lectores de DVDs y CDs… (1 unidad) ",,PUNTO LIMPIO MÓVIL
 "Pequeños aparatos elécrtricos y electrónicos (RAEE´s): ebooks, MP3, MP4, MP5, Ipods, tablets, mandos de televisión, USB´s y teléfonos móviles, lectores de DVDs y CDs… (1 unidad) ",,PUNTO LIMPIO DE PROXIMIDAD
 hair,https://www.wikidata.org/wiki/Q28472,RESTO
-match,https://www.wikidata.org/wiki/Q37507,ORGACNICA
+match,https://www.wikidata.org/wiki/Q37507,ORGANICO
 container,https://www.wikidata.org/wiki/Q987767,PUNTO LIMPIO FIJO
 container,https://www.wikidata.org/wiki/Q987767,PUNTO LIMPIO MÓVIL
 "Plástico que no sea envases, bolsas ni envoltorios, como muñecos, maquinillas de afeitar, agujas de coser, tejer, de plástico…",,RESTO
-Serrín,,ORGACNICA
+Serrín,,ORGANICO
 Envases contaminados (producción doméstica),,PUNTO LIMPIO FIJO
 Envases contaminados (6 unidades),,PUNTO LIMPIO MÓVIL
 "Residuos de limpieza doméstica: Polvo, restos de barrer, bolsas de aspiradora…",,RESTO
-"Pequeños restos de poda y jardinería: plantas, hojarasca, ramos de flores…",,ORGACNICA
+"Pequeños restos de poda y jardinería: plantas, hojarasca, ramos de flores…",,ORGANICO
 Baterías de automovil (2 unidades),,PUNTO LIMPIO FIJO
 Baterías de automovil (1 unidades),,PUNTO LIMPIO MÓVIL
 "Adhesivos: celo, cintas de embalar, pegatinas…",,RESTO
