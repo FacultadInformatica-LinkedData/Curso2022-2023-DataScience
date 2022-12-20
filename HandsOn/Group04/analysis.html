@@ -15,18 +15,28 @@
 			<li type="square"><b>Rightsholder.</b> El ayuntamiento de la comunidad de Madrid.</li>
 			<li type="square"><b>License: </b><a href="https://datos.madrid.es/egob/catalogo/aviso-legal"</a> https://datos.madrid.es/egob/catalogo/aviso-legal</a>
 				<ul>
-					<li type="circle">Garantizar que la información mostrada en su sistema esté siempre actualizada.</li>
-					<li type="circle">Permite difundir, reutilizar o adaptar los datos siempre y cuando se haga referencia a la autoría de estos, el ayuntamiento de Madrid.</li>
-                    <li type="circle">Condiciones generales para la reutilización</li>
-                    <ul>
-                        <li> Está prohibido desnaturalizar el sentido de la información.</li>
-                        <li> Debe citarse la fuente de los documentos objeto de la reutilización. Esta cita podrá realizarse de la siguiente manera: "Origen de los datos: Ayuntamiento de Madrid (o, en su caso, órgano administrativo, organismo o entidad de que se trate)".</li>
-                        <li> Debe mencionarse la fecha de la última actualización de los documentos objeto de la reutilización, siempre y cuando estuviera incluida en el documento original.</li>
-                        <li> No se podrá indicar, insinuar o sugerir que el Ayuntamiento de Madrid participa, patrocina o apoya la reutilización que se lleve a cabo con la información.</li>
-                        <li> Deben conservarse, no alterarse ni suprimirse los metadatos sobre la fecha de actualización y las condiciones de reutilización aplicables incluidos, en su caso, en el documento puesto a disposición para su reutilización.</li>
-                        <li> En caso de información anonimizada por protección de datos personales u otros motivos, está expresamente prohibido realizar labores de re-identificación de personas a partir de estos datos y otras fuentes de datos e información posibles, pasadas, actuales o futuras.</li>
-                    </ul>
-                    <li type="circle">Para obtener más información sobre la licencia acceda al link facilitado.</li>
+					<li>El uso y transformación de los datos, requiere realizar un análisis de los derechos y licencia de todos ellos. 
+						En nuestro caso, en base al portal de datos abiertos del ayuntamiento de Madrid, las condiciones de uso son las expuestas a continuación.
+						
+						Las presentes condiciones generales permiten la reutilización de los documentos y datos sometidos a ellas para fines comerciales y no comerciales.
+						
+						Condiciones generales para la reutilización.
+						Son de aplicación las siguientes condiciones generales para la reutilización de los documentos sometidos a ellas:
+						<ul>
+							<li> 1. Está prohibido desnaturalizar el sentido de la información.</li>
+							<li> 2. Debe citarse la fuente de los documentos objeto de la reutilización. Esta cita podrá realizarse de la siguiente manera: "Origen de los datos: Ayuntamiento de Madrid (o, en su caso, órgano administrativo, organismo o entidad de que se trate)".</li>
+							<li> 3. Debe mencionarse la fecha de la última actualización de los documentos objeto de la reutilización, siempre y cuando estuviera incluida en el documento original.</li>
+							<li> 4. No se podrá indicar, insinuar o sugerir que el Ayuntamiento de Madrid participa, patrocina o apoya la reutilización que se lleve a cabo con la información.</li>
+							<li> 5. Deben conservarse, no alterarse ni suprimirse los metadatos sobre la fecha de actualización y las condiciones de reutilización aplicables incluidos, en su caso, en el documento puesto a disposición para su reutilización.</li>
+							<li> 6. En caso de información anonimizada por protección de datos personales u otros motivos, está expresamente prohibido realizar labores de re-identificación de personas a partir de estos datos y otras fuentes de datos e información posibles, pasadas, actuales o futuras.</li>
+						</ul>
+					</li>
+                    <li>Por tanto, es una licencia de Open Data Commons Attribution License, la cual permite difundir, reutilizar o adaptar los datos siempre y cuando se haga referencia a la autoría de estos, el ayuntamiento de Madrid.
+						Para obtener más información sobre la licencia, acceder al siguiente enlace: <a href="https://datos.madrid.es/egob/catalogo/aviso-legal"</a> https://datos.madrid.es/egob/catalogo/aviso-legal</a>
+					</li>
+					<li>
+						Desde nuestro punto de vista, la licencia mencionada con anterioridad, es la que más se ajusta a nuestra preferencia con respecto al uso de los datos, ya que permite que sean accesibles para toda persona que requiera su uso.
+					</li>
 				</ul>
 			</li>	
 		</ul>
@@ -101,7 +111,7 @@
 		<tr>
 
 			<td>CÓDIGO POSTAL</td>
-			<td>Int</td>
+			<td>String</td>
 			<td>Indica el código postal donde se ubica el contenedor</td>
 
 		
@@ -115,19 +125,21 @@
 	<h3>Resource naming strategy</h3>
 		<ul>
 			<li><b>Domain: </b><a href="https://www.madridcontenedores.com/">https://www.madridcontenedores.com/</a> </li>
-			<li><b>Classes: </b><a href="https://www.madridcontenedores.com/classes#">https://www.madridcontenedores.com/classes#</a>
+		<li><b>Ontology: </b><a href="https://www.madridcontenedores.com/ontologia/">https://www.madridcontenedores.com/ontologia/</a> </li>
+
+			<li><b>Classes: </b><a href="https://www.madridcontenedores.com/classes">https://www.madridcontenedores.com/ontologia/classes</a>
 				<ul>
-					<li>Contenedor</li>
-					<li>Ubicación</li>
-					<li>Residuos</li>
+					<li>Contenedor </li>
+					<li>Ubicación </li>
+					<li>Residuos </li>
 					<li>Horario</li>
-                    <li>Tipo de Contenedor (Subclass of Contenedor)</li>
 				</ul>
 			</li>
-			<li><b>Properties: </b><a href="https://www.madridcontenedores.com/properties#">https://www.madridcontenedores.com/properties#</a> 
+			<li><b>Properties: </b><a href="https://www.madridcontenedores.com/properties">https://www.madridcontenedores.com/ontologia/properties</a> 
 				<ul>
 					<li type="circle">se tira en</li>
 					<li type="circle">se ubica en</li>
+					<li type="circle">tiene horario</li>
 					<li type="circle">coordenada X</li>
 					<li type="circle">coordenada Y</li>
 					<li type="circle">distrito</li>
@@ -135,7 +147,9 @@
 					<li type="circle">código postal</li>
 				</ul>
 			</li>
-			<li><b>Individuals: </b><a href="https://www.madridcontenedores.com/individuals#">https://www.madridcontenedores.com/individuals#</a> </li>
+			<li><b>Individuals: </b><a href="https://www.madridcontenedores.com/instances">https://www.madridcontenedores.com/recurso/[nameClasses]/instances</a> </li>
+
+		
 		</ul>
 		
   </body>

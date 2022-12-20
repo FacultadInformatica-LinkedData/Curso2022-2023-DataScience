@@ -1,0 +1,150 @@
+@base <http://madridcontenedores.com/ontologia> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix classes: <http://madridcontenedores.com/ontologia/classes#> .
+@prefix properties: <http://madridcontenedores.com/ontologia/properties#> .
+@prefix instances: <http://madridcontenedores.com/ontologia/instance#> .
+
+<http://madridcontenedores.com/ontologia> rdf:type owl:Ontology ;
+			dc:description "Ontology code created by Chowlk" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+### properties:seTiraEn
+properties:seTiraEn rdf:type owl:ObjectProperty ;
+		rdfs:domain classes:Residuo ;
+		rdfs:range classes:Contenedor ;
+		rdfs:label "se tira en" .
+
+### properties:seUbicaEn
+properties:seUbicaEn rdf:type owl:ObjectProperty ;
+		rdfs:domain classes:Contenedor ;
+		rdfs:range classes:Ubicacion ;
+		rdfs:label "se ubica en" .
+
+### properties:tieneHorario
+properties:tieneHorario rdf:type owl:ObjectProperty ;
+		rdfs:domain classes:Contenedor ;
+		rdfs:range classes:Horario ;
+		rdfs:label "tiene horario" .
+
+#################################################################
+#    Data Properties
+#################################################################
+
+### properties:distrito
+properties:distrito rdf:type owl:DatatypeProperty ;
+		rdfs:domain classes:Ubicacion ;
+		rdfs:range xsd:string ;
+		rdfs:label "distrito" .
+
+### properties:calle
+properties:calle rdf:type owl:DatatypeProperty ;
+		rdfs:domain classes:Ubicacion ;
+		rdfs:range xsd:string ;
+		rdfs:label "calle" .
+
+### properties:coordenadaX
+properties:coordenadaX rdf:type owl:DatatypeProperty ;
+		rdfs:domain classes:Ubicacion ;
+		rdfs:range xsd:float ;
+		rdfs:label "coordenada x" .
+
+### properties:coordenadaY
+properties:coordenadaY rdf:type owl:DatatypeProperty ;
+		rdfs:domain classes:Ubicacion ;
+		rdfs:range xsd:float ;
+		rdfs:label "coordenada y" .
+
+### properties:esDeTipo
+properties:esDeTipo rdf:type owl:DatatypeProperty ;
+		rdfs:domain classes:Residuo ;
+		rdfs:range xsd:cadena ;
+		rdfs:label "es de tipo" .
+
+### properties:codigoPostal
+properties:codigoPostal rdf:type owl:DatatypeProperty ;
+		rdfs:domain classes:Ubicacion ;
+		rdfs:range xsd:string ;
+		rdfs:label "codigo postal" .
+
+#################################################################
+#    Classes
+#################################################################
+
+### classes:Ubicacion
+classes:Ubicacion rdf:type owl:Class ;
+	rdfs:label "Ubicacion" .
+
+### classes:Contenedor
+classes:Contenedor rdf:type owl:Class ;
+	rdfs:label "Contenedor" .
+
+### classes:Residuo
+classes:Residuo rdf:type owl:Class ;
+	rdfs:label "Residuo" .
+
+### classes:Horario
+classes:Horario rdf:type owl:Class ;
+	rdfs:label "Horario" .
+
+#################################################################
+#    Instances
+#################################################################
+
+### instances:28221
+instances:28221 rdf:type owl:NamedIndividual;
+		rdf:type classes:Ubicacion .
+
+### instances:4480646.12
+instances:4480646.12 rdf:type owl:NamedIndividual;
+		rdf:type classes:Ubicacion .
+
+### instances:429056.6
+instances:429056.6 rdf:type owl:NamedIndividual;
+		rdf:type classes:Ubicacion .
+
+### instances:CalleFedericoOriol,12
+instances:CalleFedericoOriol,12 rdf:type owl:NamedIndividual;
+		rdf:type classes:Ubicacion .
+
+### instances:Moncloa-Aravaca
+instances:Moncloa-Aravaca rdf:type owl:NamedIndividual;
+		rdf:type classes:Ubicacion .
+
+### instances:24horas
+instances:24horas rdf:type owl:NamedIndividual;
+		rdf:type classes:Horario;
+		rdf:type classes:Horario .
+
+### instances:Envases- 429056.6- 4480646.12
+instances:Envases- 429056.6- 4480646.12 rdf:type owl:NamedIndividual;
+		rdf:type classes:Contenedor;
+		rdf:type classes:Contenedor .
+
+### instances:Brick
+instances:Brick rdf:type owl:NamedIndividual;
+		rdf:type classes:Residuo;
+		rdf:type classes:Residuo .
+
+### instances:Envases
+instances:Envases rdf:type owl:NamedIndividual;
+		rdf:type classes:Residuo .
+
+### instances: 429056.6- 4480646.12
+instances: 429056.6- 4480646.12 rdf:type owl:NamedIndividual;
+		rdf:type classes:Ubicacion;
+		rdf:type classes:Ubicacion .
+
+#################################################################
+#    General Axioms
+#################################################################
+
