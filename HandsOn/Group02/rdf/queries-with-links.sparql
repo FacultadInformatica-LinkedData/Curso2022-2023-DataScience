@@ -1,0 +1,93 @@
+# Todos los centros deportivos donde se practique baloncesto y cuyo código postal sea 28025, y con el enlace de wikidata de su barrio.
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns: <http://DeportesMadridGroup2.es/Espacios/ontology/>
+PREFIX nsd: <http://DeportesMadridGroup2.es/Espacios/instances/Deporte/>
+PREFIX wd: <https://wikidata.org/entity/>
+SELECT ?name ?wikibarrio
+WHERE {
+  ?centro ns:tieneCodigoPostal "28025".
+  ?centro ns:estaEnBarrio ?barrio.
+  ?barrio owl:sameAs ?wikibarrio.
+  ?centro ns:tieneEquipamiento ?eq.
+  ?eq ns:sePractica ?sp.
+  ?sp owl:sameAs wd:Q5372.
+  ?centro ns:tieneNombre ?name
+}
+
+
+# Todos los centros deportivos que cumplan con las restricciones de coordenadas. Se muestra los links del distrito y del deporte que se practica.
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns: <http://DeportesMadridGroup2.es/Espacios/ontology/>
+SELECT ?name ?wikidist ?wikisport
+WHERE {
+  ?centro ns:tieneLocalizacion ?d.
+  ?d ns:tieneLongitud ?lon.
+  ?d ns:tieneLatitud ?lat
+  FILTER (?lon < -3.75)
+  FILTER (?lat > 40.5)
+  ?centro ns:estaEnDistrito ?dist.
+  ?dist owl:sameAs ?wikidist.
+  ?centro ns:tieneEquipamiento ?eq.
+  ?eq ns:sePractica ?sp.
+  ?sp owl:sameAs ?wikisport.
+  ?centro ns:tieneNombre ?name
+}
+
+
+# Todos los parques y jardines que pertenezcan al distrito de Carabanchel. Además indicamos el link de wikidata del barrio en el que se encuentran.
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd:<https://www.wikidata.org/entity/>
+PREFIX ns: <http://DeportesMadridGroup2.es/Espacios/ontology/>
+SELECT ?name ?wikibarrio
+WHERE {
+  ?park a ns:ParquesJardines.
+  ?park ns:estaEnDistrito ?dis.
+  ?dis owl:sameAs wd:Q1001991.
+  ?park ns:estaEnBarrio ?barrio.
+  ?barrio owl:sameAs ?wikibarrio.
+  ?park ns:tieneNombre ?name
+}
+
+
+# Todos los centros deportivos donde se practique badminton. Se muestra el link de wikidata de su barrio, además de la calle y el número.
+PREFIX wd: <https://wikidata.org/entity/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns: <http://DeportesMadridGroup2.es/Espacios/ontology/>
+SELECT ?name ?wikibarrio ?calle ?num
+WHERE {
+  ?centro ns:estaEnBarrio ?barrio.
+  ?centro ns:tieneDireccion ?dir.
+  ?dir ns:tieneCalle ?calle.
+  ?dir ns:tieneNumero ?num.
+  ?barrio owl:sameAs ?wikibarrio.
+  ?centro ns:tieneEquipamiento ?eq.
+  ?eq ns:sePractica ?sp.
+  ?sp owl:sameAs wd:Q7291.
+  ?centro ns:tieneNombre ?name
+}
+
+
+# Las latitudes y longitudes de todos los centros deportivos donde se pueda jugar a la petanca.
+PREFIX wd: <https://wikidata.org/entity/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns: <http://DeportesMadridGroup2.es/Espacios/ontology/>
+SELECT ?name ?lon ?lat ?wikidis
+WHERE {
+  ?centro ns:tieneEquipamiento ?eq.
+  ?eq ns:sePractica ?sp.
+  ?sp owl:sameAs wd:Q189317.
+  ?centro ns:tieneLocalizacion ?loc.
+  ?loc ns:tieneLongitud ?lon.
+  ?loc ns:tieneLatitud ?lat.
+  ?centro ns:tieneNombre ?name
+}
