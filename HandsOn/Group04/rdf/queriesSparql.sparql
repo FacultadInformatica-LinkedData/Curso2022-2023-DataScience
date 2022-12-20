@@ -34,3 +34,15 @@ SELECT DISTINCT ?distrito ?distritoLink ?calle ?h WHERE {
   ?distrito owl:sameAs ?distritoLink.
   ?ubi cont:calle ?calle
 }
+
+
+4. Dónde tirar aceite estando en el codigo postal 28016
+SELECT ?calle ?tipo ?horario WHERE {
+	?s cont:tipoResiduo 'cooking oil'.
+	?s cont:tipoContenedor ?tipo.
+	?contenedor cont:tipo ?tipo.
+	?contenedor cont:localizacion ?loc.
+	?loc cont:codigoPostal '28016'.
+	?loc cont:calle ?calle.
+	?contenedor cont:horario ?horario.
+}
