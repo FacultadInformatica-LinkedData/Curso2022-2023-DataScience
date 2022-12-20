@@ -5,6 +5,7 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix map: <http://mapping.example.com/> .
 @prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -13,12 +14,15 @@
 @prefix schema: <http://schema.org/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix ont: <http://www.madridcontenedores.com/> .
+@prefix wiki: <https://www.wikidata.org/wiki/> .
 
 map:jc_000 rr:child "UBICACION" ;
 	rr:parent "ID" .
 
 map:jc_001 rr:child "TIPO" ;
 	rr:parent "TIPORESIDUO" .
+
+map:jc_002 rr:child "DISTRITO" .
 
 map:map_triplesmap1_000 rml:logicalSource map:source_000 ;
 	rdf:type rr:TriplesMap ;
@@ -29,14 +33,20 @@ map:map_triplesmap1_000 rml:logicalSource map:source_000 ;
 map:map_triplesmap2_000 rml:logicalSource map:source_001 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "triplesmap2" ;
-	rr:predicateObjectMap map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011 ;
+	rr:predicateObjectMap map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012 ;
 	rr:subjectMap map:s_001 .
 
 map:map_triplesmap3_000 rml:logicalSource map:source_002 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "triplesmap3" ;
-	rr:predicateObjectMap map:pom_012, map:pom_013, map:pom_014 ;
+	rr:predicateObjectMap map:pom_013, map:pom_014 ;
 	rr:subjectMap map:s_002 .
+
+map:map_triplesmap4_000 rml:logicalSource map:source_003 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "triplesmap4" ;
+	rr:predicateObjectMap map:pom_015, map:pom_016, map:pom_017, map:pom_018 ;
+	rr:subjectMap map:s_003 .
 
 map:om_000 rdf:type rr:ObjectMap ;
 	rr:constant "http://www.madridcontenedores.com/Contenedor" ;
@@ -63,7 +73,7 @@ map:om_004 rdf:type rr:ObjectMap ;
 
 map:om_005 rdf:type rr:ObjectMap ;
 	rr:joinCondition map:jc_001 ;
-	rr:parentTriplesMap map:map_triplesmap3_000 .
+	rr:parentTriplesMap map:map_triplesmap4_000 .
 
 map:om_006 rdf:type rr:ObjectMap ;
 	rr:constant "http://www.madridcontenedores.com/Ubicacion" ;
@@ -95,15 +105,31 @@ map:om_011 rml:reference "CODIGOPOSTAL" ;
 	rr:termType rr:Literal .
 
 map:om_012 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_002 ;
+	rr:parentTriplesMap map:map_triplesmap3_000 .
+
+map:om_013 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.madridcontenedores.com/distrito" ;
+	rr:termType rr:IRI .
+
+map:om_014 rml:reference "WIKIDATA DISTRICT" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_015 rdf:type rr:ObjectMap ;
 	rr:constant "http://www.madridcontenedores.com/Residuos" ;
 	rr:termType rr:IRI .
 
-map:om_013 rml:reference "TIPORESIDUO" ;
+map:om_016 rml:reference "TIPORESIDUO" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_014 rml:reference "TIPOCONTENEDOR" ;
+map:om_017 rml:reference "WIKIDATA ITEM" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_018 rml:reference "TIPOCONTENEDOR" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
@@ -145,12 +171,24 @@ map:pm_011 rdf:type rr:PredicateMap ;
 	rr:constant ont:codigoPostal .
 
 map:pm_012 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant ont:distrito .
 
 map:pm_013 rdf:type rr:PredicateMap ;
-	rr:constant ont:tipoResiduo .
+	rr:constant rdf:type .
 
 map:pm_014 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_015 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_016 rdf:type rr:PredicateMap ;
+	rr:constant ont:tipoResiduo .
+
+map:pm_017 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_018 rdf:type rr:PredicateMap ;
 	rr:constant ont:tipoContenedor .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -213,7 +251,23 @@ map:pom_014 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_014 ;
 	rr:predicateMap map:pm_014 .
 
-map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_triplesmap1_000, map:map_triplesmap2_000, map:map_triplesmap3_000 ;
+map:pom_015 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_015 ;
+	rr:predicateMap map:pm_015 .
+
+map:pom_016 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_016 ;
+	rr:predicateMap map:pm_016 .
+
+map:pom_017 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_017 ;
+	rr:predicateMap map:pm_017 .
+
+map:pom_018 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_018 ;
+	rr:predicateMap map:pm_018 .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_triplesmap1_000, map:map_triplesmap2_000, map:map_triplesmap3_000, map:map_triplesmap4_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
@@ -223,6 +277,9 @@ map:s_001 rdf:type rr:SubjectMap ;
 	rr:template "http://www.madridcontenedores.com/Ubicacion/{ID}" .
 
 map:s_002 rdf:type rr:SubjectMap ;
+	rr:template "http://www.madridcontenedores.com/distrito/{DISTRITO}" .
+
+map:s_003 rdf:type rr:SubjectMap ;
 	rr:template "http://www.madridcontenedores.com/Residuos/{TIPORESIDUO}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
@@ -230,9 +287,14 @@ map:source_000 rml:referenceFormulation ql:CSV ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "Ubicacion.csv" ;
+	rml:source "Ubicacion-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_002 rml:referenceFormulation ql:CSV ;
-	rml:source "Residuos.csv" ;
+	rml:source "Ubicacion-with-links.csv" ;
 	rdf:type rml:LogicalSource .
+
+map:source_003 rml:referenceFormulation ql:CSV ;
+	rml:source "Residuos-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+

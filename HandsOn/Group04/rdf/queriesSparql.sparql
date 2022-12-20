@@ -1,0 +1,36 @@
+1. Se puede tirar al contenedor de restos y si lo hay te da el link a wikidata
+SELECT ?o ?p WHERE {
+  ?s cont:tipoContenedor 'RESTO'.
+  ?s cont:tipoResiduo ?o.
+  OPTIONAL {?s owl:sameAs ?p.}.
+}
+
+
+2. Puntos limpios hay en el centro abiertos 24h y devuelvo la calle y las coordenadas
+SELECT ?calle ?coordx ?coordy WHERE {
+  {
+    ?contenedor cont:tipo 'PUNTO LIMPIO FIJO'.}
+  UNION
+  {
+    ?contenedor cont:tipo 'PUNTO LIMPIO MÓVIL'.}
+  UNION
+  {
+    ?contenedor cont:tipo 'PUNTO LIMPIO DE PROXIMIDAD'.}
+  ?contenedor cont:horario '24 horas'.
+  ?contenedor cont:localizacion ?ubi.
+  ?ubi cont:distrito 'Centro'.
+  ?ubi cont:calle ?calle.
+  ?ubi cont:coordenada_x ?coordx.
+  ?ubi cont:coordenada_y ?coordy.
+}
+
+3. Calles con los distritos(y sus links) de los puntos limpios que no cierran el 25 de diciembre
+SELECT DISTINCT ?distrito ?distritoLink ?calle ?h WHERE {
+  ?contenedor cont:tipo 'PUNTO LIMPIO DE PROXIMIDAD'.
+  ?contenedor cont:localizacion ?ubi.
+  {?contenedor cont:horario ?h.
+    FILTER (!regex(?h, "Cerrado.*25.*diciembre","i"))}
+  ?ubi cont:distrito ?distrito.
+  ?distrito owl:sameAs ?distritoLink.
+  ?ubi cont:calle ?calle
+}
