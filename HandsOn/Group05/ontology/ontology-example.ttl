@@ -1,4 +1,4 @@
-@prefix : <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#> .
+ºº@prefix : <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -268,7 +268,7 @@ schema:EducationalOrganization rdf:type owl:Class ;
                                                                                                        ns:EducationalCenter ;
                                                                                                        ns:hasDistrict
 <http://findeducationalcenter.linkeddata.es/lcc/resource/District/9> ;
-                                                                                                       ns:hasNeighborhood <http://findeducationalcenter.linkeddata.es/lcc/resource/Neighborhood/1> ;
+                                                                                                       ns:hasNeighborhood <http://findeducationalcenter.linkeddata.es/lcc/resource/Neighborhood/CASA DE CAMPO> ;
                                                                                                        ns:accesibility 0 ;
                                                                                                        ns:bus "41, 46, 75" ;
                                                                                                        ns:cafeteria "true"^^xsd:boolean ;
@@ -295,8 +295,8 @@ schema:EducationalOrganization rdf:type owl:Class ;
                                                                                                        schema:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=fdf343c4d873e610VgnVCM2000001f4a900aRCR" .
 
 
-###  http://findeducationalcenter.linkeddata.es/lcc/resource/Neighborhood/1  
-<http://findeducationalcenter.linkeddata.es/lcc/resource/Neighborhood/1> rdf:type owl:NamedIndividual ,
+###  http://findeducationalcenter.linkeddata.es/lcc/resource/Neighborhood/CASA DE CAMPO  
+<http://findeducationalcenter.linkeddata.es/lcc/resource/Neighborhood/CASA DE CAMPO> rdf:type owl:NamedIndividual ,
                                                                                                     ns:Neighborhood ;
                                                                                            ns:neighborhoodName "CASA DE CAMPO" .
 

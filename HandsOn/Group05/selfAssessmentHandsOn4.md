@@ -28,10 +28,9 @@
 - [X] Uses the correct datatype (e.g., values of 0-1 may be booleans and not integers, not every string made of numbers is a number)
 
 ## Comments on the self-assessment
-_Repartición de trabajo:
+Repartición de trabajo:
 
 * Ester Esteban Bruña/esteresteban ---> queries.sparql
 * Cristina Fernández Gómez/crisfernandez ---> out.ttl
-* Jose Maria Sanchez Garabito/chgara ---> mapping.yml
-* Paula Velasco López/PauVL ----> selfAssessmentHandsOn4.md, subida al Github del trabajo y mapping.rml (y su out.nt).
-_
+* Jose Maria Sanchez Garabito/chgara ---> map.yml
+* Paula Velasco López/PauVL ----> selfAssessmentHandsOn4.md, subida al Github del trabajo y map.rml (y su out.nt).

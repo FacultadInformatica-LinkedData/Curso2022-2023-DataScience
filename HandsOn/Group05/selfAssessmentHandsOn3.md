@@ -22,10 +22,9 @@
 - [X] Is related to a column in the CSV file
 
 ## Comments on the self-assessment
-_Repartición de trabajo:
+Repartición de trabajo:
 
 * Ester Esteban Bruña/esteresteban ---> limpieza de los csvs y creación de sus versiones updated y los ficheros .json
 * Cristina Fernández Gómez/crisfernandez ---> limpieza de los csvs y creación de sus versiones updated y los ficheros .json
 * Jose Maria Sanchez Garabito/chgara ---> limpieza de los csvs y creación de sus versiones updated y los ficheros .json
 * Paula Velasco López/PauVL ----> selfAssessmentHandsOn3.md, subida al Github del trabajo y retoques de los csvs updated.
-_

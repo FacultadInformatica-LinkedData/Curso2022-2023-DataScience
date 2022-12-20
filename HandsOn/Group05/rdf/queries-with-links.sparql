@@ -1,0 +1,88 @@
+# Query para ver todos los distritos que hay en el dataset y sus links en wikidata
+
+PREFIX ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT ?disname ?link
+WHERE
+{ 
+    ?dis rdf:type ns:District. 
+	?dis ns:districtName ?disname.
+	?dis owl:sameAs ?link
+}
+
+
+# Query para ver todas las escuelas con código postal 28020, su barrio y su distrito con links
+
+PREFIX ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT ?centro ?bnombre ?blink ?dnombre ?dlink
+WHERE
+{ 
+	?id rdf:type ns:EducationalCenter.
+	?id ns:postalCode "28020".
+	?id ns:name ?centro.
+    ?id ns:hasNeighborhood ?bar. 
+	?bar ns:neighborhoodName ?bnombre.
+	?bar owl:sameAs ?blink.
+	?id ns:hasDistrict ?dist.
+	?dist ns:districtName ?dnombre.
+	?dist owl:sameAs ?dlink
+}
+LIMIT 20
+
+
+# Query para ver los centros del distrito de Chamberí, el barrio en el que están (con link) y su accesibilidad
+PREFIX ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT ?centro ?acc ?bnombre ?blink
+WHERE
+{ 
+	?id rdf:type ns:EducationalCenter.
+	?dis rdf:type ns:District.
+	?dis ns:districtName "Chamberí".
+	?id ns:name ?centro.
+	?id ns:hasDistrict ?dis.
+	?id ns:hasNeighborhood ?bar. 
+	?bar ns:neighborhoodName ?bnombre.
+	?bar owl:sameAs ?blink.
+	?id ns:accesibility ?acc
+}
+LIMIT 20
+
+
+# Query para ver los centros accesibles para personas con dificultad de movimiento y su barrio (con link):
+PREFIX ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT ?centro ?bnombre ?blink
+WHERE
+{ 
+	?id rdf:type ns:EducationalCenter.
+	?id ns:accesibility "1".
+	?id ns:name ?centro.
+	?id ns:hasNeighborhood ?bar. 
+	?bar ns:neighborhoodName ?bnombre.
+	?bar owl:sameAs ?blink
+}
+LIMIT 20
+
+
+# Query para ver todos los centros que tienen guardería y su barrio (con link):
+
+PREFIX ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT ?centro ?bnombre ?blink
+WHERE
+{ 
+	?id rdf:type ns:EducationalCenter.
+	?id ns:nurseryEducation true.
+	?id ns:name ?centro.
+	?id ns:hasNeighborhood ?bar. 
+	?bar ns:neighborhoodName ?bnombre.
+	?bar owl:sameAs ?blink
+}
+LIMIT 20

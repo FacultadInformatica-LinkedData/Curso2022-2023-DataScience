@@ -41,7 +41,7 @@ LIMIT 20
 PREFIX ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT ?centro ?acc
+SELECT DISTINCT ?centro ?acc
 WHERE
 {
     ?dis rdf:type ns:District.
@@ -62,7 +62,7 @@ LIMIT 20
 PREFIX ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalCenter#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX sch: <https://schema.org/>
-SELECT ?centro ?tipo ?calle ?num ?email ?tel
+SELECT DISTINCT ?centro ?tipo ?calle ?num ?email ?tel
 WHERE
 {
     ?id rdf:type ns:EducationalCenter.
@@ -84,11 +84,11 @@ PREFIX ns: <http://findeducationalcenter.linkeddata.es/lcc/ontology/EducationalC
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX sch: <https://schema.org/>
 
-SELECT ?centro ?tipo ?calle ?num ?tel
+SELECT DISTINCT ?centro ?tipo ?calle ?num ?tel
 WHERE
 {
     ?id rdf:type ns:EducationalCenter.
-    ?id ns:nurseryEducation "true".
+    ?id ns:nurseryEducation true.
     ?id ns:name ?centro.
     ?id ns:streetType ?tipo.
     ?id ns:streetName ?calle.
