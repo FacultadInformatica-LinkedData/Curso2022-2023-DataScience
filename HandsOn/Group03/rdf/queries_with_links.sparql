@@ -1,0 +1,25 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns: <http://accidentesdetrafico.es/ontology/TrafficAccident#>
+
+# resultado: distritos y su id en wikidata
+SELECT DISTINCT ?distrito ?wikidata_id
+WHERE {
+    ?localizacion ns:enDistrito ?distrito .
+    ?distrito owl:sameAs ?wikidata_id .
+}
+
+
+# resultado: accidentes que involucran hombres de 21 a 24 años con vehículo pedelec tal que 
+# los distritos en los que suceden tienen id en wikidata (todos)
+SELECT DISTINCT ?accidente
+WHERE {
+    ?accidente ns:involucraA ?persona .
+    ?persona ns:tieneSexo  'Hombre' .
+    ?persona ns:tieneRangoEdad 'De 21 a 24 años' .
+    ?accidente ns:conVehiculo 'pedelec' .
+    ?accidente ns:tieneLocalizacion ?localizacion .
+    ?localizacion ns:enDistrito ?distrito .
+    ?distrito owl:sameAs ?wikidata_id .
+}

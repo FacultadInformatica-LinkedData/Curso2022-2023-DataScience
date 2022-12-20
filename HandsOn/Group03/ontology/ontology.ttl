@@ -50,12 +50,12 @@ base:positivaDroga a owl:DatatypeProperty ;
 base:tieneCodigoDistrito a owl:DatatypeProperty ;
     rdfs:label "tiene codigo distrito" ;
     rdfs:domain base:Distrito ;
-    rdfs:range xsd:integer .
+    rdfs:range xsd:string .
 
 base:tieneCodigoLesividad a owl:DatatypeProperty ;
     rdfs:label "tiene codigo lesividad" ;
     rdfs:domain base:Lesividad ;
-    rdfs:range xsd:integer .
+    rdfs:range xsd:string .
 
 base:tieneFecha a owl:DatatypeProperty ;
     rdfs:label "tiene fecha" ;
@@ -64,6 +64,7 @@ base:tieneFecha a owl:DatatypeProperty ;
 
 base:tieneCoordY a owl:DatatypeProperty ;
     rdfs:label "tiene coord y" ;
+    rdfs:domain base:Localizacion ;
     rdfs:range xsd:float .
 
 base:tieneLesividad a owl:ObjectProperty ;

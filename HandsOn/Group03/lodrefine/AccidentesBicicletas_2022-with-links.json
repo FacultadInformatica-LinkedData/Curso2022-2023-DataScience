@@ -233,6 +233,129 @@
     "description": "Text transform on cells in column distrito using expression value.toTitlecase()"
   },
   {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column distrito to type Q3032114"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "distrito",
+    "expression": "grel:'https://www.wikidata.org/wiki/'+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_id_distrito",
+    "columnInsertIndex": 6,
+    "description": "Create column wikidata_id_distrito at index 6 based on column distrito using expression grel:'https://www.wikidata.org/wiki/'+cell.recon.match.id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "grel:value.replace('Bicicleta EPAC (pedaleo asistido)','pedelec')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column tipo_vehiculo using expression grel:value.replace('Bicicleta EPAC (pedaleo asistido)','pedelec')"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q109734237",
+        "name": "individual means of transport"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column tipo_vehiculo to type Q109734237"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "pedelec",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2066172",
+      "name": "pedelec",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item pedelec (Q2066172) for cells containing \"pedelec\" in column tipo_vehiculo"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "tipo_vehiculo",
+    "expression": "grel:'https://www.wikidata.org/wiki/'+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_id_tipo_vehiculo",
+    "columnInsertIndex": 10,
+    "description": "Create column wikidata_id_tipo_vehiculo at index 10 based on column tipo_vehiculo using expression grel:'https://www.wikidata.org/wiki/'+cell.recon.match.id"
+  },
+  {
     "op": "core/column-addition",
     "engineConfig": {
       "facets": [],
@@ -300,6 +423,114 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column persona using expression grel:if(isBlank(value),cells['num_expediente'].value+'-3',value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "expression": "grel:value.replace('Conductor','driver')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column tipo_persona using expression grel:value.replace('Conductor','driver')"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q12737077",
+        "name": "occupation"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column tipo_persona to type Q12737077"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "similarValue": "driver",
+    "judgment": "matched",
+    "match": {
+      "id": "Q352388",
+      "name": "driver",
+      "types": [
+        "Q12737077"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item driver (Q352388) for cells containing \"driver\" in column tipo_persona"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_persona",
+          "expression": "value",
+          "columnName": "tipo_persona",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Pasajero",
+                "l": "Pasajero"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "similarValue": "Pasajero",
+    "judgment": "matched",
+    "match": {
+      "id": "Q319604",
+      "name": "passenger",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item passenger (Q319604) for cells containing \"Pasajero\" in column tipo_persona"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "tipo_persona",
+    "expression": "grel:'https://www.wikidata.org/wiki/'+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_id_tipo_persona",
+    "columnInsertIndex": 13,
+    "description": "Create column wikidata_id_tipo_persona at index 13 based on column tipo_persona using expression grel:'https://www.wikidata.org/wiki/'+cell.recon.match.id"
   },
   {
     "op": "core/text-transform",
