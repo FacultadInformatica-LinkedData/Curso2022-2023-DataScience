@@ -1,9 +1,9 @@
 @prefix lib: <https://www.biblioescuela.educamadrid.org/ontologies/Library#> .
 @prefix sch: <https://www.biblioescuela.educamadrid.org/ontologies/School#> .
+@prefix bldg: <https://www.biblioescuela.educamadrid.org/ontologies/Building#> .
 @prefix sce: <https://www.schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix date: <http://www.contextus.net/ontology/ontomedia/misc/date#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix vcard: <http://www.owl-ontologies.com/vcard#> .
@@ -14,497 +14,382 @@
 #################################################################
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#closeAt
-lib:closeAt a owl:ObjectProperty ;
-    rdfs:label "close at" ;
-    rdfs:domain lib:openingHours ;
-    rdfs:range date:Hour .
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#openDays
+lib:openDays a owl:ObjectProperty ;
+    rdfs:label "open days" ;
+    rdfs:domain lib:OpeningHours ;
+    rdfs:range xsd:string .
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#closeDays
-lib:closeDays a owl:ObjectProperty ;
+bldg:closeDays a owl:ObjectProperty ;
     rdfs:label "close days" ;
-    rdfs:domain lib:openingHours ;
+    rdfs:domain lib:OpeningHours ;
     rdfs:range xsd:string .
+
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#comments
 lib:comments a owl:ObjectProperty ;
     rdfs:label "comments" ;
-    rdfs:domain lib:openingHours ;
+    rdfs:domain lib:OpeningHours ;
     rdfs:range xsd:string .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasAdress
-lib:hasAdress a owl:ObjectProperty ;
-    rdfs:label "has adress" ;
-    rdfs:domain lib:Location ;
-    rdfs:range lib:Adress .
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasAddress
+bldg:hasAddress a owl:ObjectProperty ;
+    rdfs:label "has Address" ;
+    rdfs:domain bldg:Building ;
+    rdfs:range bldg:Address .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasBusLine
-lib:hasBusLine a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasBusLine
+bldg:hasBusLine a owl:ObjectProperty ;
     rdfs:label "has bus line" ;
-    rdfs:domain lib:Transport ;
+    rdfs:domain bldg:Transport ;
     rdfs:range xsd:string .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasContactInfo
-lib:hasContactInfo a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasContactInfo
+bldg:hasContactInfo a owl:ObjectProperty ;
     rdfs:label "has contact info" ;
-    rdfs:domain lib:Library ;
-    rdfs:range lib:ContactInfo .
+    rdfs:domain bldg:Building ;
+    rdfs:range bldg:ContactInfo .
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasDescription
 lib:hasDescription a owl:ObjectProperty ;
     rdfs:label "has description" ;
-    rdfs:domain lib:Library ;
+    rdfs:domain bldg:Library ;
     rdfs:range xsd:string .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasDistrict
-lib:hasDistrict a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasDistrict
+bldg:hasDistrict a owl:ObjectProperty ;
     rdfs:label "has district" ;
-    rdfs:domain lib:Location ;
-    rdfs:range lib:District .
+    rdfs:domain bldg:Location ;
+    rdfs:range bldg:District .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasDistrictCode
-lib:hasDistrictCode a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasDistrictCode
+bldg:hasDistrictCode a owl:ObjectProperty ;
     rdfs:label "has district code" ;
-    rdfs:domain lib:District ;
+    rdfs:domain bldg:District ;
     rdfs:range xsd:integer .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFacilities
-lib:hasFacilities a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasFacilities
+sch:hasFacilities a owl:ObjectProperty ;
     rdfs:label "has facilities" ;
-    rdfs:domain lib:Library ;
+    rdfs:domain bldg:School ;
     rdfs:range xsd:string .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#accessibility
-lib:accessibility a owl:ObjectProperty ;
-    rdfs:label "accessibility" ;
-    rdfs:domain lib:Library ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasServices
+lib:hasServices a owl:ObjectProperty ;
+    rdfs:label "has facilities" ;
+    rdfs:domain bldg:Library ;
+    rdfs:range xsd:string .
+
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasAccessibility
+bldg:hasAccessibility a owl:ObjectProperty ;
+    rdfs:label "has accessibility" ;
+    rdfs:domain bldg:Building ;
     rdfs:range xsd:string .
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#espacios
 lib:espacios a owl:ObjectProperty ;
     rdfs:label "espacios" ;
-    rdfs:domain lib:Library ;
+    rdfs:domain bldg:Library ;
     rdfs:range xsd:string .
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasHistoryBackground
 lib:hasHistoryBackground a owl:ObjectProperty ;
     rdfs:label "has history background" ;
-    rdfs:domain lib:Library ;
+    rdfs:domain bldg:Library ;
     rdfs:range xsd:string .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasLocation
-lib:hasLocation a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasLocation
+bldg:hasLocation a owl:ObjectProperty ;
     rdfs:label "has location" ;
-    rdfs:domain lib:Library ;
-    rdfs:range lib:Location .
+    rdfs:domain bldg:Building ;
+    rdfs:range bldg:Location .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#province
-lib:province a owl:ObjectProperty ;
-    rdfs:label "province" ;
-    rdfs:domain lib:Location ;
-    rdfs:range xsd:string .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasLongitude
-lib:hasLongitude a owl:ObjectProperty ;
+###  http://www.owl-ontologies.com/vcard#Longitude
+vcard:Longitude a owl:ObjectProperty ;
     rdfs:label "has longitude" ;
-    rdfs:domain lib:Coordinates ;
-    rdfs:range vcard:Longitude .
+    rdfs:domain bldg:Coordinates ;
+    rdfs:range xsd:float .
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasLatitude
-lib:hasLatitude a owl:ObjectProperty ;
+
+###  http://www.owl-ontologies.com/vcard#Latitude
+vcard:Latitude a owl:ObjectProperty ;
     rdfs:label "has latitude" ;
-    rdfs:domain lib:Coordinates ;
-    rdfs:range vcard:Latitude .
+    rdfs:domain bldg:Coordinates ;
+    rdfs:range xsd:float .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasNeighbourhood
-lib:hasNeighbourhood a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasNeighbourhood
+bldg:hasNeighbourhood a owl:ObjectProperty ;
     rdfs:label "has neighbourhood" ;
-    rdfs:domain lib:District ;
-    rdfs:range lib:Neighbourhood .
+    rdfs:domain bldg:District ;
+    rdfs:range bldg:Neighbourhood .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasNeighbourhoodCode
-lib:hasNeighbourhoodCode a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasNeighbourhoodCode
+bldg:hasNeighbourhoodCode a owl:ObjectProperty ;
     rdfs:label "has neighbourhood code" ;
-    rdfs:domain lib:Neighbourhood ;
+    rdfs:domain bldg:Neighbourhood ;
     rdfs:range xsd:integer .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasNumber
-lib:hasNumber a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasNumber
+bldg:hasNumber a owl:ObjectProperty ;
     rdfs:label "has number" ;
-    rdfs:domain lib:Adress ;
+    rdfs:domain bldg:Address ;
     rdfs:range xsd:string .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#numType
-lib:numType a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasNumType
+bldg:hasNumType a owl:ObjectProperty ;
     rdfs:label "num type" ;
-    rdfs:domain lib:Adress ;
+    rdfs:domain bldg:Address ;
     rdfs:range xsd:string .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#streetName
-lib:streetName a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasStreetName
+bldg:hasStreetName a owl:ObjectProperty ;
     rdfs:label "street name" ;
-    rdfs:domain lib:Adress ;
+    rdfs:domain bldg:Address ;
     rdfs:range xsd:string .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasRailways
-lib:hasRailways a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasRailways
+bldg:hasRailways a owl:ObjectProperty ;
     rdfs:label "has railways" ;
-    rdfs:domain lib:Transport ;
+    rdfs:domain bldg:Transport ;
     rdfs:range xsd:string .
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasTimetable
 lib:hasTimetable a owl:ObjectProperty ;
     rdfs:label "has timetable" ;
-    rdfs:domain lib:Library ;
-    rdfs:range lib:openingHours .
+    rdfs:domain bldg:Library ;
+    rdfs:range lib:OpeningHours .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasTransport
-lib:hasTransport a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasTransport
+bldg:hasTransport a owl:ObjectProperty ;
     rdfs:label "has transport" ;
-    rdfs:domain lib:Library ;
-    rdfs:range lib:Transport .
+    rdfs:domain bldg:Building ;
+    rdfs:range bldg:Transport .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasUnderground
-lib:hasUnderground a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasUnderground
+bldg:hasUnderground a owl:ObjectProperty ;
     rdfs:label "has underground" ;
-    rdfs:domain lib:Transport ;
+    rdfs:domain bldg:Transport ;
     rdfs:range xsd:string .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasVialClass
-lib:hasVialClass a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasVialClass
+bldg:hasVialClass a owl:ObjectProperty ;
     rdfs:label "has vial class" ;
-    rdfs:domain lib:Adress ;
+    rdfs:domain bldg:Address ;
     rdfs:range xsd:string .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasZipCode
-lib:hasZipCode a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasZipCode
+bldg:hasZipCode a owl:ObjectProperty ;
     rdfs:label "has zip code" ;
-    rdfs:domain lib:Adress ;
+    rdfs:domain bldg:Address ;
     rdfs:range xsd:string .
 
 
 ###  https://www.biblioescuela.educamadrid.org/ontologies/Library#openAt
 lib:openAt a owl:ObjectProperty ;
     rdfs:label "open at" ;
-    rdfs:domain lib:openingHours ;
-    rdfs:range date:Hour .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#EducationType
-sch:EducationType a owl:ObjectProperty ;
-    rdfs:label "education type" ;
-    rdfs:domain sch:School ;
+    rdfs:domain lib:OpeningHours ;
     rdfs:range xsd:string .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasAccesibility
-sch:hasAccesibility a owl:ObjectProperty ;
-    rdfs:label "has accesibility" ;
-    rdfs:domain sch:School ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasEducationType
+sch:hasEducationType a owl:ObjectProperty ;
+    rdfs:label "has education type" ;
+    rdfs:domain bldg:School ;
     rdfs:range xsd:string .
 
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasAdress
-sch:hasAdress a owl:ObjectProperty ;
-    rdfs:label "has adress" ;
-    rdfs:domain sch:Location ;
-    rdfs:range sch:Adress .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasBusLine
-sch:hasBusLine a owl:ObjectProperty ;
-    rdfs:label "has bus line" ;
-    rdfs:domain sch:Transport ;
-    rdfs:range xsd:string .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasContactInfo
-sch:hasContactInfo a owl:ObjectProperty ;
-    rdfs:label "has contact info" ;
-    rdfs:domain sch:School ;
-    rdfs:range sch:ContactInfo .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasDistrict
-sch:hasDistrict a owl:ObjectProperty ;
-    rdfs:label "has district" ;
-    rdfs:domain sch:Location ;
-    rdfs:range sch:District .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasFacilities
-sch:hasFacilities a owl:ObjectProperty ;
-    rdfs:label "has facilities" ;
-    rdfs:domain sch:School ;
-    rdfs:range sch:Facilities .
-
-
-###  http://www.w3.org/2006/vcard/ns#hasSchoolCanteen
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasSchoolCanteen
 sch:hasSchoolCanteen a owl:ObjectProperty ;
     rdfs:label "has school canteen" ;
     rdfs:domain sch:Facilities ;
     rdfs:range xsd:integer .
 
-###  http://www.w3.org/2006/vcard/ns#hasExtendedSchedule
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasExtendedSchedule
 sch:hasExtendedSchedule a owl:ObjectProperty ;
     rdfs:label "has extended schedule" ;
     rdfs:domain sch:Facilities ;
     rdfs:range xsd:integer .
 
-###  http://www.w3.org/2006/vcard/ns#hasImprovementPlans
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasImprovementPlans
 sch:hasImprovementPlans a owl:ObjectProperty ;
     rdfs:label "has improvement plans" ;
     rdfs:domain sch:Facilities ;
     rdfs:range xsd:integer .
 
-###  http://www.w3.org/2006/vcard/ns#hasIntegrationProgram
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasIntegrationProgram
 sch:hasIntegrationProgram a owl:ObjectProperty ;
     rdfs:label "has integration program" ;
     rdfs:domain sch:Facilities ;
     rdfs:range xsd:string .
 
-###  http://www.w3.org/2006/vcard/ns#hasExtraEquipment
-sch:hasExtraEquipment a owl:ObjectProperty ;
-    rdfs:label "has integration program" ;
-    rdfs:domain sch:Facilities ;
-    rdfs:range xsd:string .
 
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasLatitude
-sch:hasLatitude a owl:ObjectProperty ;
-    rdfs:label "has latitude" ;
-    rdfs:domain sch:Coordinates ;
-    rdfs:range vcard:Latitude .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasLocation
-sch:hasLocation a owl:ObjectProperty ;
-    rdfs:label "has location" ;
-    rdfs:domain sch:School ;
-    rdfs:range sch:Location .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasNeighbourhood
-sch:hasNeighbourhood a owl:ObjectProperty ;
-    rdfs:label "has neighbourhood" ;
-    rdfs:domain sch:District ;
-    rdfs:range sch:Neighbourhood .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasNumber
-sch:hasNumber a owl:ObjectProperty ;
-    rdfs:label "has number" ;
-    rdfs:domain sch:Adress ;
-    rdfs:range xsd:string .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasRailways
-sch:hasRailways a owl:ObjectProperty ;
-    rdfs:label "has railways" ;
-    rdfs:domain sch:Transport ;
-    rdfs:range xsd:string .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasTransport
-sch:hasTransport a owl:ObjectProperty ;
-    rdfs:label "has transport" ;
-    rdfs:domain sch:School ;
-    rdfs:range sch:Transport .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasUnderground
-sch:hasUnderground a owl:ObjectProperty ;
-    rdfs:label "has underground" ;
-    rdfs:domain sch:Transport ;
-    rdfs:range xsd:string .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasVialClass
-sch:hasVialClass a owl:ObjectProperty ;
-    rdfs:label "has vial class" ;
-    rdfs:domain sch:Adress ;
-    rdfs:range xsd:string .
-
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#hasZipCode
-sch:hasZipCode a owl:ObjectProperty ;
-    rdfs:label "has zip code" ;
-    rdfs:domain sch:Adress ;
-    rdfs:range xsd:string .
-
-
-### https://www.biblioescuela.educamadrid.org/ontologies/School#openingHours
-sch:openingHours a owl:ObjectProperty ;
-    rdfs:label "opening hours" ;
-    rdfs:domain sch:Timetable ;
-    rdfs:range xsd:string .
-
-
-### https://www.biblioescuela.educamadrid.org/ontologies/School#openingDays
-sch:openingDays a owl:ObjectProperty ;
-    rdfs:label "opening days" ;
-    rdfs:domain sch:Timetable ;
-    rdfs:range xsd:string .
-
-
-###  http://www.w3.org/2006/vcard/ns#Locality
-vcard:Locality a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasLocality
+bldg:hasLocality a owl:ObjectProperty ;
     rdfs:label "locality" ;
-    rdfs:domain lib:Location,
-        sch:Location ;
+    rdfs:domain bldg:Location;
+    rdfs:range xsd:string .
+
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasProvince
+bldg:hasProvince a owl:ObjectProperty ;
+    rdfs:label "has province" ;
+    rdfs:domain bldg:Location ;
     rdfs:range xsd:string .
 
 
 ###  http://www.w3.org/2006/vcard/ns#hasEmail
 vcard:hasEmail a owl:ObjectProperty ;
     rdfs:label "has email" ;
-    rdfs:domain lib:ContactInfo,
-        sch:ContactInfo ;
+    rdfs:domain bldg:ContactInfo;
     rdfs:range xsd:string .
 
 
 ###  http://www.w3.org/2006/vcard/ns#hasGeo
 vcard:hasGeo a owl:ObjectProperty ;
     rdfs:label "has geo" ;
-    rdfs:domain lib:Library,
-        sch:School ;
-    rdfs:range lib:Coordinates,
-        sch:Coordinates .
+    rdfs:domain bldg:Building;
+    rdfs:range bldg:Coordinates .
 
 
 ###  http://www.w3.org/2006/vcard/ns#hasTelephone
 vcard:hasTelephone a owl:ObjectProperty ;
     rdfs:label "has telephone" ;
-    rdfs:domain lib:ContactInfo,
-        sch:ContactInfo ;
+    rdfs:domain bldg:ContactInfo;
     rdfs:range xsd:string .
 
 
 ###  http://www.w3.org/2006/vcard/ns#hasURL
 vcard:hasURL a owl:ObjectProperty ;
-    rdfs:label "has u r l" ;
-    rdfs:domain lib:Library,
-	sch:School ;
+    rdfs:label "has url" ;
+    rdfs:domain bldg:Building;
     rdfs:range xsd:string .
 
 
 ###  http://www.w3.org/2006/vcard/ns#hasUID
 vcard:hasUID a owl:ObjectProperty ;
-    rdfs:label "has u i d" ;
-    rdfs:domain lib:Library,
-        sch:School,
-	lib:District,
-        lib:Neighbourdhood,
-        sch:District,
-        sch:Neighbourdhood ;
-    rdfs:range sce:int .
+    rdfs:label "has uid" ;
+    rdfs:domain bldg:Building ;
+    rdfs:range xsd:string .
 
 
 ###  http://xmlns.com/foaf/0.1/name
 foaf:name a owl:ObjectProperty ;
     rdfs:label "name" ;
-    rdfs:domain lib:Adress,
-        lib:District,
-        lib:Library,
-        lib:Neighbourdhood,
-        sch:Adress,
-        sch:District,
-        sch:Neighbourdhood,
-        sch:School ;
+    rdfs:domain bldg:District ;
     rdfs:range xsd:string .
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#coordinateX
-sch:coordinateX a owl:ObjectProperty ;
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name a owl:ObjectProperty ;
+    rdfs:label "name" ;
+    rdfs:domain bldg:Address;
+    rdfs:range xsd:string .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name a owl:ObjectProperty ;
+    rdfs:label "name" ;
+    rdfs:domain bldg:Building;
+    rdfs:range xsd:string .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name a owl:ObjectProperty ;
+    rdfs:label "name" ;
+    rdfs:domain bldg:Neighbourdhood ;
+    rdfs:range xsd:string .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name a owl:ObjectProperty ;
+    rdfs:label "name" ;
+    rdfs:domain bldg:Locality ;
+    rdfs:range xsd:string .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name a owl:ObjectProperty ;
+    rdfs:label "name" ;
+    rdfs:domain bldg:Province ;
+    rdfs:range xsd:string .
+
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#coordinateX
+bldg:coordinateX a owl:ObjectProperty ;
 	rdfs:label "Coordinates X" ;
-	rdfs:domain sch:Coordinates ;
-	rdfs:range xsd:int.
+	rdfs:domain bldg:Coordinates ;
+	rdfs:range xsd:integer.
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/School#coordinateY
-sch:coordinateY a owl:ObjectProperty ;
+
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#coordinateY
+bldg:coordinateY a owl:ObjectProperty ;
 	rdfs:label "Coordinates Y" ;
-	rdfs:domain sch:Coordinates ;
-	rdfs:range xsd:int.
+	rdfs:domain bldg:Coordinates ;
+	rdfs:range xsd:integer.
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasCoordinateX
-lib:hasCoordinateX a owl:ObjectProperty ;
-	rdfs:label "Coordinates X" ;
-	rdfs:domain lib:Coordinates ;
-	rdfs:range xsd:int.
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasCoordinateY
-lib:hasCoordinateY a owl:ObjectProperty ;
-	rdfs:label "Coordinates Y" ;
-	rdfs:domain lib:Coordinates ;
-	rdfs:range xsd:int.
-
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#hasFax
-lib:hasFax a owl:ObjectProperty ;
+###  https://www.biblioescuela.educamadrid.org/ontologies/Building#hasFax
+bldg:hasFax a owl:ObjectProperty ;
 	rdfs:label "has fax number" ;
-	rdfs:domain lib:ContactInfo ;
+	rdfs:domain bldg:ContactInfo ;
 	rdfs:range xsd:string.
 
-###  https://www.biblioescuela.educamadrid.org/ontologies/Library#faxNumber
-sch:hasfaxNumber a owl:ObjectProperty ;
-	rdfs:label "has fax number" ;
-	rdfs:domain sch:ContactInfo ;
-	rdfs:range xsd:string.
 
 #################################################################
 #    Classes
 #################################################################
 
-### https://www.biblioescuela.educamadrid.org/ontologies/Library#Library
-lib:Library a owl:Class ;
-    rdfs:label "Library" .
+### https://www.biblioescuela.educamadrid.org/ontologies/Building#Building
+bldg:Building a owl:Class ;
+    rdfs:label "Building" .
 
 
-### https://www.biblioescuela.educamadrid.org/ontologies/School#School
-sch:School a owl:Class ;
-    rdfs:label "School" .
+### https://www.biblioescuela.educamadrid.org/ontologies/Building#Library
+bldg:Library a owl:Class ;
+                  rdfs:subClassOf bldg:Building .
 
 
-### https://www.biblioescuela.educamadrid.org/ontologies/Library#Coordinates
-lib:Coordinates a owl:Class ;
+### https://www.biblioescuela.educamadrid.org/ontologies/Building#School
+bldg:School a owl:Class ;
+                  rdfs:subClassOf bldg:Building .
+
+
+### https://www.biblioescuela.educamadrid.org/ontologies/Building#Coordinates
+bldg:Coordinates a owl:Class ;
     rdfs:label "Coordinates" .
 
 
-### https://www.biblioescuela.educamadrid.org/ontologies/School#Coordinates
-sch:Coordinates a owl:Class ;
-    rdfs:label "Coordinates" .
-
-
-### https://www.biblioescuela.educamadrid.org/ontologies/Library#ContactInfo
-lib:ContactInfo a owl:Class ;
-    rdfs:label "Contact Info" .
-
-
-### https://www.biblioescuela.educamadrid.org/ontologies/School#ContactInfo
-sch:ContactInfo a owl:Class ;
+### https://www.biblioescuela.educamadrid.org/ontologies/Building#ContactInfo
+bldg:ContactInfo a owl:Class ;
     rdfs:label "Contact Info" .
 
 
@@ -513,63 +398,42 @@ sch:Facilities a owl:Class ;
     rdfs:label "Facilities" .
 
 
-### https://www.biblioescuela.educamadrid.org/ontologies/Library#Location
-lib:Location a owl:Class ;
+### https://www.biblioescuela.educamadrid.org/ontologies/Building#Neighbourhood
+bldg:Neighbourhood a owl:Class ;
+     rdfs:label "Neighbourhood" .
+
+
+### https://www.biblioescuela.educamadrid.org/ontologies/Building#District
+bldg:District a owl:Class ;
+     rdfs:label "District" .
+
+
+### https://www.biblioescuela.educamadrid.org/ontologies/Building#Locality
+bldg:Locality a owl:Class ;
+     rdfs:label "Locality" .
+
+
+### https://www.biblioescuela.educamadrid.org/ontologies/Building#Location
+bldg:Location a owl:Class ;
     rdfs:label "Location" .
 
 
-### https://www.biblioescuela.educamadrid.org/ontologies/Library#Neighbourhood
-lib:Neighbourhood a owl:Class ;
-                  rdfs:subClassOf lib:District .
+### https://www.biblioescuela.educamadrid.org/ontologies/Building#Province
+bldg:Province a owl:Class ;
+    rdfs:label "Province" .
 
 
-### https://www.biblioescuela.educamadrid.org/ontologies/Library#District
-lib:District a owl:Class ;
-                  rdfs:subClassOf lib:Location .
+### https://www.biblioescuela.educamadrid.org/ontologies/Building#Address
+bldg:Address a owl:Class ;
+    rdfs:label "Address" .
 
 
-### https://www.biblioescuela.educamadrid.org/ontologies/School#Location
-sch:Location a owl:Class ;
-    rdfs:label "Location" .
-
-
-### https://www.biblioescuela.educamadrid.org/ontologies/School#Adress
-lib:Adress a owl:Class ;
-                  rdfs:subClassOf lib:Location .
-
-
-### https://www.biblioescuela.educamadrid.org/ontologies/Library#Adress
-sch:Adress a owl:Class ;
-                  rdfs:subClassOf sch:Location .
-
-
-### https://www.biblioescuela.educamadrid.org/ontologies/School#Neighbourhood
-sch:Neighbourhood a owl:Class ;
-                  rdfs:subClassOf sch:District .
-
-
-### https://www.biblioescuela.educamadrid.org/ontologies/School#District
-sch:District a owl:Class ;
-                  rdfs:subClassOf sch:Location .
-
-
-### https://www.biblioescuela.educamadrid.org/ontologies/Library#Transport
-lib:Transport a owl:Class ;
+### https://www.biblioescuela.educamadrid.org/ontologies/Building#Transport
+bldg:Transport a owl:Class ;
     rdfs:label "Transport" .
 
 
-### https://www.biblioescuela.educamadrid.org/ontologies/School#Transport
-sch:Transport a owl:Class ;
-    rdfs:label "Transport" .
-
-
-### https://www.biblioescuela.educamadrid.org/ontologies/Library#openingHours
-lib:openingHours a owl:Class ;
-    rdfs:label "opening Hours" .
-
-
-### https://www.biblioescuela.educamadrid.org/ontologies/School#Timetable
-sch:Timetable a owl:Class ;
-    rdfs:label "Timetable" .
-
+### https://www.biblioescuela.educamadrid.org/ontologies/Library#OpeningHours
+lib:OpeningHours a owl:Class ;
+    rdfs:label "Opening Hours" .
 
